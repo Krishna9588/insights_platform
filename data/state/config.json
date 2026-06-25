@@ -1,0 +1,17 @@
+{
+  "use_defaults": true,
+  "provider": "gemini",
+  "backend_url": "http://127.0.0.1:8000/",
+  "play_store_count": "100",
+  "app_store_count": "100",
+  "reddit_mode": "auto",
+  "reddit_count": "20",
+  "youtube_mode": "auto",
+  "youtube_count": "5",
+  "drive_folder_id": "",
+  "huggingface_model": "",
+  "auto_detect_store": true,
+  "run_company_profile": true,
+  "grounded_copilot": true,
+  "include_news": false
+}

@@ -1,0 +1,16 @@
+{
+  "india-and-russia-new-deal": {
+    "id": "india-and-russia-new-deal",
+    "name": "India and Russia new deal",
+    "query": "India and Russia new deal",
+    "schedule_time": "20:00",
+    "timezone": "Asia/Kolkata",
+    "sources": [
+      "news",
+      "sebi",
+      "rbi"
+    ],
+    "enabled": true,
+    "updated_at": "2026-06-25T19:00:58Z"
+  }
+}

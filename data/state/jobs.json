@@ -1,0 +1,602 @@
+{
+  "5e0e6e94-db53-4bd7-be6d-b5a52c3366a6": {
+    "id": "5e0e6e94-db53-4bd7-be6d-b5a52c3366a6",
+    "kind": "pipeline",
+    "status": "complete",
+    "payload": {
+      "project_name": "groww",
+      "provider": "gemini",
+      "domain": null,
+      "start_from": "agent1",
+      "only": null,
+      "agent1_payload": null
+    },
+    "created_at": "2026-05-14T14:56:58Z",
+    "updated_at": "2026-05-14T14:59:16Z",
+    "result": {
+      "project_name": "groww",
+      "domain": null,
+      "processing_status": {
+        "agent2_insights_extracted": true,
+        "agent3_synthesis_done": true,
+        "agent4_product_brief_done": true
+      },
+      "data_sources": [
+        "company_profile"
+      ],
+      "problem_count": 12,
+      "insight_count": 5,
+      "brief_count": 4
+    },
+    "error": null
+  },
+  "3f259868-b86c-4537-a30d-65f74cf275bf": {
+    "id": "3f259868-b86c-4537-a30d-65f74cf275bf",
+    "kind": "pipeline",
+    "status": "complete",
+    "payload": {
+      "project_name": "groww",
+      "provider": "gemini",
+      "domain": null,
+      "start_from": "agent1",
+      "only": null,
+      "agent1_payload": null
+    },
+    "created_at": "2026-05-14T14:57:32Z",
+    "updated_at": "2026-05-14T15:00:53Z",
+    "result": {
+      "project_name": "groww",
+      "domain": null,
+      "processing_status": {
+        "agent2_insights_extracted": true,
+        "agent3_synthesis_done": true,
+        "agent4_product_brief_done": true
+      },
+      "data_sources": [
+        "company_profile"
+      ],
+      "problem_count": 10,
+      "insight_count": 4,
+      "brief_count": 4
+    },
+    "error": null
+  },
+  "8beceeb1-ad57-4e33-8789-d05156e89924": {
+    "id": "8beceeb1-ad57-4e33-8789-d05156e89924",
+    "kind": "local_transcripts",
+    "status": "complete",
+    "payload": {
+      "project_name": "Stockgro",
+      "input_path": "/Users/krishnabirla/PycharmProjects/insights/transcript_input",
+      "provider": "gemini",
+      "domain": null,
+      "run_async": true
+    },
+    "created_at": "2026-05-14T15:18:14Z",
+    "updated_at": "2026-05-14T15:19:12Z",
+    "result": {
+      "project_name": "Stockgro",
+      "domain": "https://www.stockgro.club/",
+      "processing_status": {
+        "agent2_insights_extracted": true,
+        "agent3_synthesis_done": true,
+        "agent4_product_brief_done": true
+      },
+      "data_sources": [
+        "company_profile",
+        "play_store",
+        "app_store",
+        "reddit",
+        "youtube",
+        "internal_transcripts"
+      ],
+      "problem_count": 16,
+      "insight_count": 5,
+      "brief_count": 5
+    },
+    "error": null
+  },
+  "0d4eeb7e-ffb8-420c-9a06-1ca0141c2856": {
+    "id": "0d4eeb7e-ffb8-420c-9a06-1ca0141c2856",
+    "kind": "pipeline",
+    "status": "complete",
+    "payload": {
+      "project_name": "Stockgro",
+      "provider": "gemini",
+      "domain": null,
+      "start_from": "agent1",
+      "only": null,
+      "agent1_payload": {
+        "project_name": "Stockgro",
+        "domain": "https://www.stockgro.club/"
+      }
+    },
+    "created_at": "2026-05-14T15:18:23Z",
+    "updated_at": "2026-05-14T15:21:08Z",
+    "result": {
+      "project_name": "Stockgro",
+      "domain": "https://www.stockgro.club/",
+      "processing_status": {
+        "agent2_insights_extracted": true,
+        "agent3_synthesis_done": true,
+        "agent4_product_brief_done": true
+      },
+      "data_sources": [
+        "company_profile",
+        "play_store",
+        "app_store",
+        "reddit",
+        "youtube",
+        "internal_transcripts"
+      ],
+      "problem_count": 13,
+      "insight_count": 5,
+      "brief_count": 4
+    },
+    "error": null
+  },
+  "ce7423bb-24b2-41d3-8529-6ae2f10df1b1": {
+    "id": "ce7423bb-24b2-41d3-8529-6ae2f10df1b1",
+    "kind": "pipeline",
+    "status": "complete",
+    "payload": {
+      "project_name": "Unacademy",
+      "provider": "gemini",
+      "domain": null,
+      "start_from": "agent1",
+      "only": null,
+      "agent1_payload": {
+        "project_name": "Unacademy",
+        "domain": "https://unacademy.com/"
+      }
+    },
+    "created_at": "2026-05-14T15:20:28Z",
+    "updated_at": "2026-05-14T15:22:55Z",
+    "result": {
+      "project_name": "Unacademy",
+      "domain": "https://unacademy.com/",
+      "processing_status": {
+        "agent2_insights_extracted": true,
+        "agent3_synthesis_done": true,
+        "agent4_product_brief_done": true
+      },
+      "data_sources": [
+        "company_profile"
+      ],
+      "problem_count": 11,
+      "insight_count": 4,
+      "brief_count": 4
+    },
+    "error": null
+  },
+  "5e9bd888-658e-4a72-a4a4-81cf3baaf902": {
+    "id": "5e9bd888-658e-4a72-a4a4-81cf3baaf902",
+    "kind": "local_transcripts",
+    "status": "complete",
+    "payload": {
+      "project_name": "Krishna",
+      "input_path": "",
+      "provider": "gemini",
+      "domain": null,
+      "run_async": true
+    },
+    "created_at": "2026-06-24T18:36:30Z",
+    "updated_at": "2026-06-24T18:37:07Z",
+    "result": {
+      "project_name": "Krishna",
+      "domain": null,
+      "processing_status": {
+        "agent2_insights_extracted": true,
+        "agent3_synthesis_done": true,
+        "agent4_product_brief_done": true
+      },
+      "data_sources": [
+        "internal_transcripts"
+      ],
+      "problem_count": 10,
+      "insight_count": 4,
+      "brief_count": 4
+    },
+    "error": null
+  },
+  "f6bf0c92-63fa-4428-b570-a12bbdeeed71": {
+    "id": "f6bf0c92-63fa-4428-b570-a12bbdeeed71",
+    "kind": "local_transcripts",
+    "status": "failed",
+    "payload": {
+      "project_name": "Krishna",
+      "input_path": "",
+      "provider": "gemini",
+      "domain": null,
+      "run_async": true
+    },
+    "created_at": "2026-06-24T18:36:36Z",
+    "updated_at": "2026-06-24T18:36:56Z",
+    "result": null,
+    "error": "agent3_output.insights is empty. Run Agent 3 first.\nprocessing_status: {'agent2_insights_extracted': True, 'agent3_synthesis_done': True, 'agent4_product_brief_done': False}"
+  },
+  "fbc0b203-7245-4a24-a0a5-3be8d8f35d03": {
+    "id": "fbc0b203-7245-4a24-a0a5-3be8d8f35d03",
+    "kind": "pipeline",
+    "status": "failed",
+    "payload": {
+      "project_name": "unacademy 2026-06-25",
+      "provider": "gemini",
+      "domain": null,
+      "start_from": "agent1",
+      "only": null,
+      "agent1_payload": {
+        "project_name": "unacademy 2026-06-25",
+        "domain": "https://unacademy.com/",
+        "play_store": {
+          "link_or_id": "https://play.google.com/store/apps/details?id=com.unacademyapp&hl=en_IN",
+          "reviews_count": 100
+        },
+        "app_store": {
+          "link_or_id": "https://apps.apple.com/in/app/unacademy-learner-app/id1342565069",
+          "reviews_count": 100
+        },
+        "reddit": [
+          {
+            "input": "r/stocks",
+            "mode": "auto",
+            "limit": 20,
+            "category": "top"
+          }
+        ],
+        "youtube": [
+          {
+            "mode": "search",
+            "count": 5,
+            "query": "Is Unacademy better than physics wallah"
+          }
+        ]
+      }
+    },
+    "created_at": "2026-06-25T15:20:07Z",
+    "updated_at": "2026-06-25T15:21:46Z",
+    "result": null,
+    "error": "agent2_output.problems is empty. Run Agent 2 first.\nprocessing_status: {'agent2_insights_extracted': True, 'agent3_synthesis_done': False, 'agent4_product_brief_done': False}"
+  },
+  "1c83d1ab-92f5-41ea-9bf3-8cc4f7c587c0": {
+    "id": "1c83d1ab-92f5-41ea-9bf3-8cc4f7c587c0",
+    "kind": "pipeline",
+    "status": "failed",
+    "payload": {
+      "project_name": "unacademy 2026-06-25",
+      "provider": "gemini",
+      "domain": null,
+      "start_from": "agent1",
+      "only": null,
+      "agent1_payload": {
+        "project_name": "unacademy 2026-06-25",
+        "domain": "https://unacademy.com/",
+        "play_store": {
+          "link_or_id": "https://play.google.com/store/apps/details?id=com.unacademyapp&hl=en_IN",
+          "reviews_count": 100
+        },
+        "app_store": {
+          "link_or_id": "https://apps.apple.com/in/app/unacademy-learner-app/id1342565069",
+          "reviews_count": 100
+        },
+        "reddit": [
+          {
+            "input": "r/stocks",
+            "mode": "auto",
+            "limit": 20,
+            "category": "top"
+          }
+        ],
+        "youtube": [
+          {
+            "mode": "search",
+            "count": 5,
+            "query": "Is Unacademy better than physics wallah"
+          }
+        ]
+      }
+    },
+    "created_at": "2026-06-25T15:20:31Z",
+    "updated_at": "2026-06-25T15:22:11Z",
+    "result": null,
+    "error": "agent2_output.problems is empty. Run Agent 2 first.\nprocessing_status: {'agent2_insights_extracted': True, 'agent3_synthesis_done': False, 'agent4_product_brief_done': False}"
+  },
+  "916a1892-e301-411b-822a-d95343b160ba": {
+    "id": "916a1892-e301-411b-822a-d95343b160ba",
+    "kind": "pipeline",
+    "status": "failed",
+    "payload": {
+      "project_name": "unacademy 2026-06-25",
+      "provider": "gemini",
+      "domain": null,
+      "start_from": "agent1",
+      "only": null,
+      "agent1_payload": {
+        "project_name": "unacademy 2026-06-25",
+        "domain": "https://unacademy.com/",
+        "play_store": {
+          "link_or_id": "https://play.google.com/store/apps/details?id=com.unacademyapp&hl=en_IN",
+          "reviews_count": 100
+        },
+        "app_store": {
+          "link_or_id": "https://apps.apple.com/in/app/unacademy-learner-app/id1342565069",
+          "reviews_count": 100
+        },
+        "reddit": [
+          {
+            "input": "r/stocks",
+            "mode": "auto",
+            "limit": 20,
+            "category": "top"
+          }
+        ],
+        "youtube": [
+          {
+            "mode": "search",
+            "count": 5,
+            "query": "Is Unacademy better than physics wallah"
+          }
+        ]
+      }
+    },
+    "created_at": "2026-06-25T15:52:25Z",
+    "updated_at": "2026-06-25T15:55:10Z",
+    "result": null,
+    "error": "agent2_output.problems is empty. Run Agent 2 first.\nprocessing_status: {'agent2_insights_extracted': True, 'agent3_synthesis_done': False, 'agent4_product_brief_done': False}"
+  },
+  "47b9198f-18e7-441e-93f3-18a32bcd4be0": {
+    "id": "47b9198f-18e7-441e-93f3-18a32bcd4be0",
+    "kind": "pipeline",
+    "status": "failed",
+    "payload": {
+      "project_name": "unacademy 2026-06-25",
+      "provider": "gemini",
+      "domain": null,
+      "start_from": "agent1",
+      "only": null,
+      "agent1_payload": {
+        "project_name": "unacademy 2026-06-25",
+        "domain": "https://unacademy.com/",
+        "play_store": {
+          "link_or_id": "https://play.google.com/store/apps/details?id=com.unacademyapp&hl=en_IN",
+          "reviews_count": 100
+        },
+        "app_store": {
+          "link_or_id": "https://apps.apple.com/in/app/unacademy-learner-app/id1342565069",
+          "reviews_count": 100
+        },
+        "reddit": [
+          {
+            "input": "r/stocks",
+            "mode": "auto",
+            "limit": 20,
+            "category": "top"
+          }
+        ],
+        "youtube": [
+          {
+            "mode": "search",
+            "count": 5,
+            "query": "Is Unacademy better than physics wallah"
+          }
+        ]
+      }
+    },
+    "created_at": "2026-06-25T16:11:41Z",
+    "updated_at": "2026-06-25T16:13:06Z",
+    "result": null,
+    "error": "agent2_output.problems is empty. Run Agent 2 first.\nprocessing_status: {'agent2_insights_extracted': True, 'agent3_synthesis_done': False, 'agent4_product_brief_done': False}"
+  },
+  "01b31bbe-da2f-4015-bf98-9bfc77c71451": {
+    "id": "01b31bbe-da2f-4015-bf98-9bfc77c71451",
+    "kind": "pipeline",
+    "status": "failed",
+    "payload": {
+      "project_name": "unacademy 2026-06-25",
+      "provider": "gemini",
+      "domain": null,
+      "start_from": "agent1",
+      "only": null,
+      "agent1_payload": {
+        "project_name": "unacademy 2026-06-25",
+        "domain": "https://unacademy.com/",
+        "play_store": {
+          "link_or_id": "https://play.google.com/store/apps/details?id=com.unacademyapp&hl=en_IN",
+          "reviews_count": 100
+        },
+        "app_store": {
+          "link_or_id": "https://apps.apple.com/in/app/unacademy-learner-app/id1342565069",
+          "reviews_count": 100
+        },
+        "reddit": [
+          {
+            "input": "r/stocks",
+            "mode": "auto",
+            "limit": 20,
+            "category": "top"
+          }
+        ],
+        "youtube": [
+          {
+            "mode": "search",
+            "count": 5,
+            "query": "Is Unacademy better than physics wallah"
+          }
+        ]
+      }
+    },
+    "created_at": "2026-06-25T16:11:43Z",
+    "updated_at": "2026-06-25T16:13:28Z",
+    "result": null,
+    "error": "agent3_output.insights is empty. Run Agent 3 first.\nprocessing_status: {'agent2_insights_extracted': True, 'agent3_synthesis_done': True, 'agent4_product_brief_done': False}"
+  },
+  "e3261057-559f-4f9c-96e0-31fd0f2ea0c1": {
+    "id": "e3261057-559f-4f9c-96e0-31fd0f2ea0c1",
+    "kind": "pipeline",
+    "status": "failed",
+    "payload": {
+      "project_name": "unacademy 2026-06-25",
+      "provider": "gemini",
+      "domain": null,
+      "start_from": "agent1",
+      "only": null,
+      "agent1_payload": {
+        "project_name": "unacademy 2026-06-25",
+        "domain": "https://unacademy.com/",
+        "play_store": {
+          "link_or_id": "https://play.google.com/store/apps/details?id=com.unacademyapp&hl=en_IN",
+          "reviews_count": 100
+        },
+        "app_store": {
+          "link_or_id": "https://apps.apple.com/in/app/unacademy-learner-app/id1342565069",
+          "reviews_count": 100
+        },
+        "reddit": [
+          {
+            "input": "r/stocks",
+            "mode": "auto",
+            "limit": 20,
+            "category": "top"
+          }
+        ],
+        "youtube": [
+          {
+            "mode": "search",
+            "count": 5,
+            "query": "Is Unacademy better than physics wallah"
+          }
+        ]
+      }
+    },
+    "created_at": "2026-06-25T16:11:44Z",
+    "updated_at": "2026-06-25T16:13:33Z",
+    "result": null,
+    "error": "agent2_output.problems is empty. Run Agent 2 first.\nprocessing_status: {'agent2_insights_extracted': True, 'agent3_synthesis_done': False, 'agent4_product_brief_done': False}"
+  },
+  "ef0634ac-296f-4733-981d-5d4fd3c07b1d": {
+    "id": "ef0634ac-296f-4733-981d-5d4fd3c07b1d",
+    "kind": "pipeline",
+    "status": "failed",
+    "payload": {
+      "project_name": "physics wallah 2026-06-25",
+      "provider": "gemini",
+      "domain": null,
+      "start_from": "agent1",
+      "only": null,
+      "agent1_payload": {
+        "project_name": "physics wallah 2026-06-25",
+        "domain": "https://www.pw.live/",
+        "play_store": {
+          "link_or_id": "https://play.google.com/store/apps/details?id=xyz.penpencil.physicswala&hl=en_IN",
+          "reviews_count": 100
+        },
+        "app_store": {
+          "link_or_id": "https://apps.apple.com/in/app/physics-wallah/id1641443555",
+          "reviews_count": 100
+        },
+        "reddit": [
+          {
+            "input": "r/stocks",
+            "mode": "auto",
+            "limit": 20,
+            "category": "top"
+          }
+        ],
+        "youtube": [
+          {
+            "mode": "search",
+            "count": 5,
+            "query": "Is physics wallah better than unacademy"
+          }
+        ]
+      }
+    },
+    "created_at": "2026-06-25T16:23:31Z",
+    "updated_at": "2026-06-25T16:25:21Z",
+    "result": null,
+    "error": "agent2_output.problems is empty. Run Agent 2 first.\nprocessing_status: {'agent2_insights_extracted': True, 'agent3_synthesis_done': False, 'agent4_product_brief_done': False}"
+  },
+  "441c2527-54b0-490c-8c6a-4cdc98f09068": {
+    "id": "441c2527-54b0-490c-8c6a-4cdc98f09068",
+    "kind": "pipeline",
+    "status": "failed",
+    "payload": {
+      "project_name": "physics wallah 2026-06-25",
+      "provider": "gemini",
+      "domain": null,
+      "start_from": "agent1",
+      "only": null,
+      "agent1_payload": {
+        "project_name": "physics wallah 2026-06-25",
+        "domain": "https://www.pw.live/",
+        "play_store": {
+          "link_or_id": "https://play.google.com/store/apps/details?id=xyz.penpencil.physicswala&hl=en_IN",
+          "reviews_count": 100
+        },
+        "app_store": {
+          "link_or_id": "https://apps.apple.com/in/app/physics-wallah/id1641443555",
+          "reviews_count": 100
+        },
+        "reddit": [
+          {
+            "input": "r/stocks",
+            "mode": "auto",
+            "limit": 20,
+            "category": "top"
+          }
+        ],
+        "youtube": [
+          {
+            "mode": "search",
+            "count": 5,
+            "query": "Is physics wallah better than unacademy"
+          }
+        ]
+      }
+    },
+    "created_at": "2026-06-25T16:25:22Z",
+    "updated_at": "2026-06-25T16:26:59Z",
+    "result": null,
+    "error": "agent2_output.problems is empty. Run Agent 2 first.\nprocessing_status: {'agent2_insights_extracted': True, 'agent3_synthesis_done': False, 'agent4_product_brief_done': False}"
+  },
+  "00020b2a-cbd5-48ad-9316-0c3784347851": {
+    "id": "00020b2a-cbd5-48ad-9316-0c3784347851",
+    "kind": "pipeline",
+    "status": "failed",
+    "payload": {
+      "project_name": "Unacademy",
+      "provider": "gemini",
+      "domain": null,
+      "start_from": "agent1",
+      "only": null,
+      "agent1_payload": {
+        "project_name": "Unacademy",
+        "domain": "https://unacademy.com/",
+        "skip_company_profile": false
+      }
+    },
+    "created_at": "2026-06-25T18:53:00Z",
+    "updated_at": "2026-06-25T18:54:57Z",
+    "result": null,
+    "error": "agent3_output.insights is empty. Run Agent 3 first.\nprocessing_status: {'agent2_insights_extracted': True, 'agent3_synthesis_done': True, 'agent4_product_brief_done': False}"
+  },
+  "cdf175ba-1ec5-42cb-b59e-2491882472a4": {
+    "id": "cdf175ba-1ec5-42cb-b59e-2491882472a4",
+    "kind": "google_drive_transcripts",
+    "status": "failed",
+    "payload": {
+      "project_name": "Mine",
+      "folder_id": "https://drive.google.com/drive/folders/1VW40AdRhXNpXww1uUhIuBUyLNZLuCj49?usp=sharing",
+      "provider": "gemini",
+      "domain": null,
+      "credentials_path": null,
+      "token_path": null,
+      "include_existing": false,
+      "run_async": true
+    },
+    "created_at": "2026-06-25T18:55:28Z",
+    "updated_at": "2026-06-25T18:55:28Z",
+    "result": null,
+    "error": "No db_document found for 'Mine'. Run Agent 1 first. Expected path: /Users/krishnabirla/PycharmProjects/insights/agents/database_mock/Mine/db_document.json"
+  }
+}

@@ -1,0 +1,1741 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insights Platform</title>
+  <style>
+    :root {
+      --canvas: #f8f7f1;
+      --surface: #ffffff;
+      --surface-strong: #e0e2e6;
+      --ink: #181d26;
+      --body: #333840;
+      --muted: #667085;
+      --hairline: #dddddd;
+      --primary: #181d26;
+      --primary-active: #0d1218;
+      --on-primary: #ffffff;
+      --link: #1b61c9;
+      --success: #006400;
+      --warning: #a15c00;
+      --danger: #a42318;
+      --coral: #aa2d00;
+      --forest: #0a2e0e;
+      --cream: #f5e9d4;
+      --sky: #dbeafe;
+      --lavender: #ede9fe;
+      --sage: #dcfce7;
+      --accent-blue: #2563eb;
+      --accent-violet: #7c3aed;
+      --accent-green: #15803d;
+      --peach: #fcab79;
+      --mint: #a8d8c4;
+      --yellow: #f4d35e;
+      --radius-lg: 12px;
+      --radius-md: 10px;
+      --radius-sm: 6px;
+      --sidebar: 256px;
+      --copilot: 430px;
+      color-scheme: light;
+    }
+
+    [data-theme="dark"] {
+      --canvas: #111318;
+      --surface: #1a1d24;
+      --surface-strong: #232a32;
+      --ink: #f4f6f8;
+      --body: #d8dee6;
+      --muted: #9aa4b2;
+      --hairline: #323a45;
+      --primary: #f4f6f8;
+      --primary-active: #ffffff;
+      --on-primary: #101418;
+      --cream: #2b271e;
+      --sky: #1e293b;
+      --lavender: #2e2448;
+      --sage: #173323;
+      color-scheme: dark;
+    }
+
+    * { box-sizing: border-box; }
+
+    [hidden] { display: none !important; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--canvas);
+      color: var(--body);
+      letter-spacing: 0;
+    }
+
+    button, input, textarea, select {
+      font: inherit;
+      letter-spacing: 0;
+    }
+
+    button {
+      border: 0;
+      cursor: pointer;
+    }
+
+    .app {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: var(--sidebar) minmax(0, 1fr) var(--copilot);
+      background: var(--canvas);
+    }
+
+    .sidebar {
+      min-height: 100vh;
+      border-right: 1px solid var(--hairline);
+      padding: 20px 16px;
+      position: sticky;
+      top: 0;
+      align-self: start;
+      background: var(--surface);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0 8px 20px;
+      color: var(--ink);
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      background: var(--primary);
+      color: var(--on-primary);
+      display: grid;
+      place-items: center;
+      font-weight: 700;
+    }
+
+    .nav-group-title {
+      padding: 18px 10px 8px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nav-group-title::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--accent-blue);
+      flex: 0 0 auto;
+    }
+
+    .nav-group-title.data::before { background: var(--accent-violet); }
+    .nav-group-title.system::before { background: var(--accent-green); }
+
+    .nav-button {
+      width: 100%;
+      height: 42px;
+      padding: 0 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 8px;
+      background: transparent;
+      color: var(--body);
+      font-weight: 500;
+      text-align: left;
+      margin-bottom: 2px;
+    }
+
+    .nav-button span:first-child {
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .nav-button.active {
+      background: var(--canvas);
+      color: var(--ink);
+    }
+
+    .sidebar-bottom {
+      margin-top: auto;
+      padding: 16px 8px 0;
+      display: grid;
+      gap: 10px;
+    }
+
+    .theme-toggle {
+      width: 100%;
+      min-height: 42px;
+      border-radius: 10px;
+      padding: 4px;
+      border: 1px solid var(--hairline);
+      background: var(--canvas);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px;
+    }
+
+    .theme-toggle span {
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    [data-theme="light"] .theme-toggle .light,
+    [data-theme="dark"] .theme-toggle .dark {
+      background: var(--primary);
+      color: var(--on-primary);
+    }
+
+    .nav-badge {
+      min-width: 22px;
+      height: 22px;
+      padding: 0 7px;
+      border-radius: 999px;
+      display: inline-grid;
+      place-items: center;
+      background: var(--surface-strong);
+      color: var(--ink);
+      font-size: 12px;
+      flex: 0 0 auto;
+    }
+
+    .main {
+      min-width: 0;
+      padding: 28px 32px 48px;
+    }
+
+    .topbar {
+      min-height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .eyebrow {
+      margin: 0 0 6px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    h1, h2, h3 {
+      color: var(--ink);
+      font-weight: 500;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 34px;
+      line-height: 1.16;
+    }
+
+    h2 {
+      font-size: 22px;
+      line-height: 1.3;
+    }
+
+    h3 {
+      font-size: 16px;
+      line-height: 1.35;
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .button {
+      min-height: 42px;
+      border-radius: var(--radius-lg);
+      padding: 0 16px;
+      background: var(--primary);
+      color: var(--on-primary);
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+    }
+
+    .button.secondary {
+      background: var(--canvas);
+      color: var(--ink);
+      border: 1px solid var(--hairline);
+    }
+
+    .button.compact {
+      min-height: 34px;
+      padding: 0 12px;
+      border-radius: 8px;
+      font-size: 13px;
+    }
+
+    .button:active {
+      background: var(--primary-active);
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .grid.cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .grid.cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .grid.cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .card {
+      border: 1px solid var(--hairline);
+      border-radius: var(--radius-md);
+      background: var(--surface);
+      padding: 18px;
+      min-width: 0;
+      transition: all 150ms ease-out;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .metric {
+      min-height: 136px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .metric.accent-blue { background: linear-gradient(0deg, var(--surface), var(--surface)), var(--sky); border-top: 4px solid var(--accent-blue); }
+    .metric.accent-violet { border-top: 4px solid var(--accent-violet); }
+    .metric.accent-green { border-top: 4px solid var(--accent-green); }
+    .metric.accent-coral { border-top: 4px solid var(--coral); }
+
+    .metric strong {
+      display: block;
+      color: var(--ink);
+      font-size: 32px;
+      line-height: 1;
+      font-weight: 500;
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.4;
+    }
+
+    .panel {
+      margin-top: 24px;
+      display: none;
+    }
+
+    .panel.active {
+      display: block;
+    }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin: 0 0 12px;
+    }
+
+    .list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .list-item {
+      min-width: 0;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 12px;
+      align-items: center;
+      padding: 14px;
+      border: 1px solid var(--hairline);
+      border-radius: var(--radius-md);
+      background: var(--surface);
+      transition: all 150ms ease-out;
+    }
+
+    .list-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .item-title {
+      color: var(--ink);
+      font-weight: 600;
+      overflow-wrap: anywhere;
+    }
+
+    .status-line {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 13px;
+      flex-wrap: wrap;
+    }
+
+    .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 999px;
+      background: var(--muted);
+      flex: 0 0 auto;
+    }
+
+    .dot.ok { background: var(--success); }
+    .dot.warn { background: var(--warning); }
+    .dot.bad { background: var(--danger); }
+
+    .form {
+      display: grid;
+      gap: 14px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    label {
+      display: grid;
+      gap: 7px;
+      color: var(--ink);
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      border: 1px solid var(--hairline);
+      border-radius: var(--radius-sm);
+      background: var(--canvas);
+      color: var(--body);
+      min-height: 42px;
+      padding: 10px 12px;
+      outline: none;
+    }
+
+    textarea {
+      min-height: 116px;
+      resize: vertical;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      border-color: #458fff;
+    }
+
+    .drop-zone {
+      border: 1px dashed var(--hairline);
+      border-radius: var(--radius-md);
+      padding: 18px;
+      background: var(--surface);
+      min-height: 122px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    .tabs {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+
+    .tab {
+      border: 1px solid var(--hairline);
+      background: var(--canvas);
+      color: var(--body);
+      min-height: 36px;
+      padding: 0 12px;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+
+    .tab.active {
+      background: var(--primary);
+      color: var(--on-primary);
+      border-color: var(--primary);
+    }
+
+    .signature {
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      background: var(--cream);
+      border: 1px solid transparent;
+      color: var(--body);
+    }
+
+    .soft-band {
+      border-radius: var(--radius-lg);
+      background: var(--sky);
+      padding: 14px;
+      border: 1px solid rgba(37, 99, 235, 0.16);
+    }
+
+    .toggle-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .check-row {
+      min-height: 42px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      border: 1px solid var(--hairline);
+      border-radius: var(--radius-sm);
+      background: var(--surface);
+      color: var(--body);
+      font-weight: 500;
+    }
+
+    .check-row input {
+      width: 18px;
+      height: 18px;
+      min-height: 18px;
+      padding: 0;
+      accent-color: var(--accent-blue);
+      flex: 0 0 auto;
+    }
+
+    .inline-controls {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .mini-toggle {
+      min-height: 32px;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 9px;
+      border-radius: 8px;
+      border: 1px solid var(--hairline);
+      background: var(--surface);
+      color: var(--body);
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .mini-toggle input {
+      width: 15px;
+      height: 15px;
+      min-height: 15px;
+      padding: 0;
+      accent-color: var(--accent-violet);
+    }
+
+    .scroll-box {
+      max-height: 154px;
+      overflow: auto;
+      border: 1px solid var(--hairline);
+      border-radius: var(--radius-md);
+      background: var(--surface);
+      padding: 8px;
+      display: grid;
+      gap: 6px;
+    }
+
+    .composer {
+      border: 1px solid var(--hairline);
+      border-radius: var(--radius-lg);
+      background: #fbfaf6;
+      overflow: hidden;
+      box-shadow: 0 10px 24px rgba(24, 29, 38, 0.06);
+    }
+
+    .composer textarea {
+      min-height: 92px;
+      max-height: 180px;
+      border: 0;
+      border-radius: 0;
+      resize: vertical;
+      background: transparent;
+      font-size: 15px;
+    }
+
+    .composer-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 10px;
+      border-top: 1px solid var(--hairline);
+      flex-wrap: wrap;
+    }
+
+    .composer-drawers {
+      display: grid;
+      gap: 8px;
+    }
+
+    .signature.dark {
+      background: var(--primary);
+      color: var(--on-primary);
+    }
+
+    .signature.dark h2,
+    .signature.dark h3,
+    .signature.dark .muted {
+      color: var(--on-primary);
+    }
+
+    .query-card {
+      border-left: 4px solid var(--coral);
+    }
+
+    .code {
+      border-radius: var(--radius-sm);
+      background: var(--surface);
+      border: 1px solid var(--hairline);
+      padding: 12px;
+      overflow: auto;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 12px;
+      max-height: 320px;
+    }
+
+    .copilot {
+      height: 100vh;
+      border-left: 1px solid var(--hairline);
+      background: #f1eee6;
+      position: sticky;
+      top: 0;
+      align-self: start;
+      display: grid;
+      grid-template-rows: auto minmax(0, 1fr) auto;
+      overflow: hidden;
+    }
+
+    .copilot-head {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--hairline);
+      background: #f6f3ec;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .copilot-title {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      min-width: 0;
+      flex: 0 0 auto;
+    }
+
+    .copilot-title .eyebrow {
+      margin: 0;
+      flex: 0 0 auto;
+    }
+
+    .context-pill {
+      display: inline-flex;
+      max-width: 100%;
+      border: 1px solid var(--hairline);
+      border-radius: 999px;
+      padding: 6px 10px;
+      color: var(--muted);
+      font-size: 13px;
+      background: #fbfaf6;
+      flex: 0 1 auto;
+      min-width: 0;
+    }
+
+    .context-pill strong {
+      color: var(--ink);
+      margin-left: 4px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .faq {
+      padding: 10px;
+      display: grid;
+      gap: 8px;
+      border: 1px solid var(--hairline);
+      border-radius: var(--radius-md);
+      background: #fbfaf6;
+      max-height: 156px;
+      overflow: auto;
+    }
+
+    .faq[hidden] {
+      display: none !important;
+    }
+
+    .faq button {
+      min-height: 34px;
+      text-align: left;
+      border-radius: 8px;
+      padding: 8px 10px;
+      background: #f6f3ec;
+      color: var(--body);
+      border: 1px solid var(--hairline);
+      overflow-wrap: anywhere;
+    }
+
+    .chat-log {
+      padding: 16px 18px;
+      overflow: auto;
+      min-height: 0;
+      display: grid;
+      align-content: start;
+      gap: 12px;
+    }
+
+    .message {
+      border-radius: 14px;
+      padding: 14px;
+      background: #fbfaf6;
+      border: 1px solid var(--hairline);
+      line-height: 1.45;
+      font-size: 14px;
+      overflow-wrap: anywhere;
+      max-width: 100%;
+    }
+
+    .message.user {
+      background: var(--primary);
+      color: var(--on-primary);
+      border-color: var(--primary);
+    }
+
+    .message small {
+      display: block;
+      color: var(--muted);
+      margin-top: 8px;
+    }
+
+    .message.user small {
+      color: var(--on-primary);
+    }
+
+    .chat-form {
+      padding: 14px 18px 18px;
+      border-top: 1px solid var(--hairline);
+      background: #f6f3ec;
+      display: grid;
+      gap: 10px;
+      min-height: 0;
+    }
+
+    .chat-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 8px;
+    }
+
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 24px;
+      transform: translateX(-50%);
+      background: var(--primary);
+      color: var(--on-primary);
+      border-radius: 999px;
+      padding: 10px 16px;
+      font-size: 13px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 160ms ease;
+      z-index: 20;
+    }
+
+    .toast.show {
+      opacity: 1;
+    }
+
+    @media (max-width: 1180px) {
+      .app {
+        grid-template-columns: 220px minmax(0, 1fr);
+      }
+      .copilot {
+        grid-column: 1 / -1;
+        min-height: 520px;
+        position: relative;
+        border-left: 0;
+        border-top: 1px solid var(--hairline);
+      }
+      .grid.cols-4 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 820px) {
+      .app {
+        display: block;
+      }
+      .sidebar {
+        min-height: auto;
+        position: relative;
+        border-right: 0;
+        border-bottom: 1px solid var(--hairline);
+      }
+      .main {
+        padding: 22px 16px 32px;
+      }
+      .topbar,
+      .section-head,
+      .list-item {
+        align-items: stretch;
+        display: grid;
+      }
+      .actions {
+        justify-content: start;
+      }
+      .grid.cols-4,
+      .grid.cols-3,
+      .grid.cols-2,
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+      h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app" data-theme="light">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">IP</div>
+        <div>Insights Platform</div>
+      </div>
+      <div class="nav-group-title primary">Primary</div>
+      <button class="nav-button active" data-page="dashboard"><span>Dashboard</span><span class="nav-badge" id="nav-projects">0</span></button>
+      <button class="nav-button" data-page="history"><span>History</span><span class="nav-badge" id="nav-jobs">0</span></button>
+      <div class="nav-group-title data">Data</div>
+      <button class="nav-button" data-page="transcript"><span>Transcript</span><span></span></button>
+      <button class="nav-button" data-page="company"><span>Company Profile</span><span></span></button>
+      <button class="nav-button" data-page="social"><span>Social Media</span><span></span></button>
+      <button class="nav-button" data-page="news"><span>News & SEBI</span><span class="nav-badge" id="nav-news">0</span></button>
+      <button class="nav-button" data-page="deep"><span>Deep Research</span><span></span></button>
+      <div class="nav-group-title system">System</div>
+      <button class="nav-button" data-page="config"><span>Configurations</span><span></span></button>
+      <button class="nav-button" data-page="storage"><span>Storage</span><span></span></button>
+      <div class="sidebar-bottom">
+        <button class="theme-toggle" id="theme-button" type="button" aria-label="Toggle theme">
+          <span class="light">Light</span>
+          <span class="dark">Dark</span>
+        </button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow" id="page-eyebrow">Home</p>
+          <h1 id="page-title">Dashboard</h1>
+        </div>
+        <div class="actions">
+          <button class="button secondary" id="refresh-button">Refresh</button>
+          <button class="button" data-page-jump="deep">New Research</button>
+        </div>
+      </header>
+
+      <section class="panel active" id="dashboard">
+        <div class="grid cols-4">
+          <div class="card metric accent-blue">
+            <div>
+              <p class="eyebrow">Company Projects</p>
+              <strong id="project-count">0</strong>
+            </div>
+            <button class="button secondary compact" data-page-jump="history">History</button>
+          </div>
+          <div class="card metric accent-violet">
+            <div>
+              <p class="eyebrow">News Monitors</p>
+              <strong id="news-count">0</strong>
+            </div>
+            <button class="button secondary compact" data-page-jump="news">Open News</button>
+          </div>
+          <div class="card metric accent-green">
+            <div>
+              <p class="eyebrow">Backend</p>
+              <div class="status-line"><span class="dot" id="backend-dot"></span><span id="backend-status">Checking</span></div>
+            </div>
+            <button class="button secondary compact" data-page-jump="config">Configure</button>
+          </div>
+          <div class="card metric accent-coral">
+            <div>
+              <p class="eyebrow">RAG Index</p>
+              <strong id="rag-count">0</strong>
+            </div>
+            <button class="button secondary compact" data-page-jump="storage">Storage</button>
+          </div>
+        </div>
+
+        <div class="grid cols-2" style="margin-top: 18px;">
+          <div class="card">
+            <div class="section-head">
+              <h2>Latest Company Projects</h2>
+              <button class="button secondary compact" data-page-jump="history">All Projects</button>
+            </div>
+            <div class="list" id="latest-projects"></div>
+          </div>
+          <div class="card">
+            <div class="section-head">
+              <h2>Live News Queries</h2>
+              <button class="button secondary compact" data-page-jump="news">Manage</button>
+            </div>
+            <div class="list" id="latest-news"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="project-view">
+        <div class="card">
+          <pre class="code" id="project-view-output"></pre>
+        </div>
+      </section>
+
+      <section class="panel" id="transcript">
+        <div class="grid cols-2">
+          <div class="card">
+            <div class="section-head"><h2>Transcript Input</h2></div>
+            <div class="tabs">
+              <button class="tab active" data-transcript-mode="local">Local Path</button>
+              <button class="tab" data-transcript-mode="drive">Google Drive</button>
+              <button class="tab" data-transcript-mode="paste">Paste</button>
+            </div>
+            <form class="form" id="transcript-form">
+              <div class="form-grid">
+                <label>Project Name<input name="project_name" placeholder="Stockgro Research" required></label>
+                <label>Provider<select name="provider"><option>gemini</option><option>openai</option><option>claude</option></select></label>
+              </div>
+              <label class="transcript-mode local">Transcript Folder or File Path<input name="input_path" placeholder="/Users/.../transcript_input"></label>
+              <label class="transcript-mode drive" hidden>Google Drive Folder ID<input name="folder_id" placeholder="Drive folder id"></label>
+              <label class="transcript-mode paste" hidden>Paste Transcript<textarea name="paste_text" placeholder="Paste transcript content"></textarea></label>
+              <div class="drop-zone" id="drop-zone">Drop transcript files here to review names before processing</div>
+              <button class="button" type="submit">Run Transcript Pipeline</button>
+            </form>
+          </div>
+          <div class="signature">
+            <h2>Transcript Pipeline</h2>
+            <p class="muted">Local path and Drive folder ingestion are wired to backend jobs. Browser uploads and pasted text are staged in the interface until the upload endpoint is added.</p>
+            <pre class="code" id="transcript-result">No run yet.</pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="company">
+        <div class="card">
+          <div class="section-head"><h2>Company Profile</h2></div>
+          <form class="form" id="company-form">
+            <div class="form-grid">
+              <label>Company Name<input name="project_name" required placeholder="Groww"></label>
+              <label>Website<input name="domain" placeholder="groww.in"></label>
+              <label>Play Store URL or ID<input name="play_store"></label>
+              <label>App Store URL or ID<input name="app_store"></label>
+            </div>
+            <button class="button" type="submit">Run Company Research</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="panel" id="social">
+        <div class="card">
+          <div class="section-head"><h2>Social Media Intelligence</h2></div>
+          <form class="form" id="social-form">
+            <div class="form-grid">
+              <label>Project Name<input name="project_name" required></label>
+              <label>Provider<select name="provider"><option>gemini</option><option>openai</option><option>claude</option></select></label>
+              <label>Play Store URL or ID<input name="play_store"></label>
+              <label>Play Store Count<input name="play_store_count" type="number" min="1" value="100"></label>
+              <label>App Store URL or ID<input name="app_store"></label>
+              <label>App Store Count<input name="app_store_count" type="number" min="1" value="100"></label>
+              <label>Reddit Query<input name="reddit_query" placeholder="r/IndianStreetBets or app review"></label>
+              <label>Reddit Mode<select name="reddit_mode"><option>auto</option><option>subreddit</option><option>user</option><option>search</option><option>post</option></select></label>
+              <label>YouTube Query or URL<input name="youtube_query"></label>
+              <label>YouTube Mode<select name="youtube_mode"><option>auto</option><option>search</option><option>channel</option><option>video</option></select></label>
+            </div>
+            <button class="button" type="submit">Run Social Pipeline</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="panel" id="news">
+        <div class="grid cols-2">
+          <div class="card">
+            <div class="section-head"><h2>News Monitor</h2></div>
+            <form class="form" id="news-form">
+              <label>Name<input name="name" required placeholder="SEBI fintech watch"></label>
+              <label>Natural Language Query<textarea name="query" required placeholder="Track SEBI and RBI updates affecting wealthtech platforms"></textarea></label>
+              <div class="form-grid">
+                <label>Schedule Time<input name="schedule_time" value="20:00"></label>
+                <label>Timezone<input name="timezone" value="Asia/Kolkata"></label>
+              </div>
+              <button class="button" type="submit">Save News Query</button>
+            </form>
+          </div>
+          <div class="card">
+            <div class="section-head"><h2>Active Queries</h2></div>
+            <div class="list" id="news-list"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="deep">
+        <div class="signature dark">
+          <h2>Deep Research</h2>
+          <p class="muted">Combine company profile, transcripts, social conversations, and agent processing into one project run.</p>
+        </div>
+        <div class="card" style="margin-top: 16px;">
+          <form class="form" id="deep-form">
+            <div class="form-grid">
+              <label>Company or Topic<input name="company" required placeholder="Stockgro"></label>
+              <label>Website<input name="domain" placeholder="stockgro.club"></label>
+              <label>Drive Folder ID<input name="folder_id"></label>
+              <label>Upload Transcripts<input name="transcript_files" type="file" multiple accept=".txt,.md,.docx,.pdf,.csv,.tsv"></label>
+              <label>Play Store URL or ID<input name="play_store"></label>
+              <label>App Store URL or ID<input name="app_store"></label>
+              <label>Reddit Query<input name="reddit_query"></label>
+              <label>YouTube Query<input name="youtube_query"></label>
+            </div>
+            <div class="soft-band">
+              <div class="section-head">
+                <div>
+                  <h3>Transcript Selection</h3>
+                  <div class="muted">When Drive files are available, select all or choose specific files before running.</div>
+                </div>
+                <label class="mini-toggle"><input id="deep-select-all" type="checkbox" checked>Select all</label>
+              </div>
+              <div class="scroll-box" id="deep-file-list">
+                <label class="check-row"><input type="checkbox" checked>Use all files from Drive folder after fetch</label>
+                <label class="check-row"><input type="checkbox">Only uploaded files in this run</label>
+                <label class="check-row"><input type="checkbox">Skip transcripts for now</label>
+              </div>
+            </div>
+            <div class="actions">
+              <button class="button secondary" type="button" data-page-jump="config">Use Defaults</button>
+              <button class="button" type="submit">Start Deep Research</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="panel" id="config">
+        <div class="grid cols-2">
+          <div class="card">
+            <div class="section-head"><h2>Configurations</h2></div>
+            <form class="form" id="config-form">
+              <label class="check-row"><input id="use-defaults" name="use_defaults" type="checkbox" checked>Use these defaults when new research forms open</label>
+              <div class="form-grid">
+                <label>Default Provider<select name="provider"><option>gemini</option><option>openai</option><option>claude</option></select></label>
+                <label>Backend URL<input id="backend-url" name="backend_url" value=""></label>
+                <label>Play Store Review Count<input name="play_store_count" type="number" min="1" value="100"></label>
+                <label>App Store Review Count<input name="app_store_count" type="number" min="1" value="100"></label>
+                <label>Reddit Mode<select name="reddit_mode"><option>auto</option><option>subreddit</option><option>user</option><option>search</option><option>post</option></select></label>
+                <label>Reddit Count<input name="reddit_count" type="number" min="1" value="20"></label>
+                <label>YouTube Mode<select name="youtube_mode"><option>auto</option><option>search</option><option>channel</option><option>video</option></select></label>
+                <label>YouTube Count<input name="youtube_count" type="number" min="1" value="5"></label>
+                <label>Default Drive Folder ID<input name="drive_folder_id" placeholder="Optional"></label>
+                <label>Hugging Face Model Link<input name="huggingface_model" placeholder="Optional"></label>
+              </div>
+              <div class="toggle-grid">
+                <label class="check-row"><input name="auto_detect_store" type="checkbox" checked>Auto detect store inputs</label>
+                <label class="check-row"><input name="run_company_profile" type="checkbox" checked>Run company profile by default</label>
+                <label class="check-row"><input name="include_news" type="checkbox">Attach news monitor context</label>
+                <label class="check-row"><input name="grounded_copilot" type="checkbox" checked>Use grounded Copilot</label>
+              </div>
+              <div class="actions">
+                <button class="button" type="submit">Save Defaults</button>
+                <button class="button secondary" id="diagnose-button" type="button">Run Diagnosis</button>
+              </div>
+            </form>
+          </div>
+          <div class="card">
+            <div class="section-head"><h2>Diagnosis</h2></div>
+            <pre class="code" id="diagnosis-output">No diagnosis run yet.</pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="storage">
+        <div class="grid cols-2">
+          <div class="card">
+            <div class="section-head">
+              <h2>RAG Storage</h2>
+              <button class="button secondary compact" id="reindex-button">Reindex</button>
+            </div>
+            <pre class="code" id="rag-status-output">Loading.</pre>
+          </div>
+          <div class="card">
+            <div class="section-head"><h2>Google Drive</h2></div>
+            <pre class="code" id="drive-output">No drive folders loaded.</pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="history">
+        <div class="grid cols-2">
+          <div class="card">
+            <div class="section-head"><h2>Project History</h2></div>
+            <div class="list" id="history-projects"></div>
+          </div>
+          <div class="card">
+            <div class="section-head"><h2>Job Logs</h2></div>
+            <div class="list" id="job-list"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="copilot">
+      <div class="copilot-head">
+        <div class="copilot-title">
+          <p class="eyebrow">Insight</p>
+          <h2>Copilot</h2>
+        </div>
+        <div class="context-pill">Context:<strong id="copilot-context">Indexed evidence</strong></div>
+      </div>
+      <div class="chat-log" id="chat-log">
+        <div class="message">Ask across indexed project evidence. Answers include confidence and sources when available.</div>
+      </div>
+      <form class="chat-form" id="copilot-form">
+        <div class="composer">
+          <textarea id="copilot-input" placeholder="Ask Gemini, use @project to attach indexed evidence or @prompt to recall saved prompts"></textarea>
+          <div class="composer-actions">
+            <div class="inline-controls">
+              <button class="button secondary compact" id="context-toggle" type="button">Context</button>
+              <button class="button secondary compact" id="faq-toggle" type="button">FAQs</button>
+              <label class="mini-toggle"><input id="copilot-use-project" type="checkbox" checked>Project</label>
+              <label class="mini-toggle"><input id="copilot-use-rag" type="checkbox" checked>RAG</label>
+            </div>
+            <button class="button compact" type="submit">Send</button>
+          </div>
+        </div>
+        <div class="composer-drawers">
+          <div class="scroll-box" id="copilot-context-options" hidden>
+            <label class="check-row"><input id="copilot-current-project" type="checkbox" checked>Current project evidence</label>
+            <label class="check-row"><input id="copilot-recent-files" type="checkbox">Recent project files</label>
+            <label class="check-row"><input id="copilot-rules" type="checkbox" checked>Grounding rules</label>
+            <label>Project<select id="copilot-project"><option value="">Auto select</option></select></label>
+          </div>
+          <div class="faq" id="copilot-faq" hidden>
+            <button data-question="What are the strongest insights in this project?">Strongest insights</button>
+            <button data-question="What user problems are visible in the evidence?">User problems</button>
+            <button data-question="What should the team investigate next?">Next investigation</button>
+          </div>
+        </div>
+      </form>
+    </aside>
+  </div>
+  <div class="toast" id="toast"></div>
+
+  <script>
+    const state = {
+      page: "dashboard",
+      projects: [],
+      jobs: [],
+      monitors: [],
+      rag: null,
+      transcriptMode: "local",
+      apiBase: window.location.protocol === "file:" ? "http://127.0.0.1:8000" : "",
+      defaults: {},
+    };
+
+    const $ = (selector) => document.querySelector(selector);
+    const $$ = (selector) => Array.from(document.querySelectorAll(selector));
+
+    function showToast(message) {
+      const toast = $("#toast");
+      toast.textContent = message;
+      toast.classList.add("show");
+      window.setTimeout(() => toast.classList.remove("show"), 2200);
+    }
+
+    function setPage(page) {
+      state.page = page;
+      $$(".panel").forEach((panel) => panel.classList.toggle("active", panel.id === page));
+      $$(".nav-button").forEach((button) => button.classList.toggle("active", button.dataset.page === page));
+      const labels = {
+        dashboard: ["Home", "Dashboard"],
+        "project-view": ["Projects", "Project View"],
+        transcript: ["Data", "Transcript"],
+        company: ["Data", "Company Profile"],
+        social: ["Data", "Social Media"],
+        news: ["Data", "News & SEBI"],
+        deep: ["Data", "Deep Research"],
+        config: ["System", "Configurations"],
+        storage: ["System", "Storage"],
+        history: ["System", "History"],
+      };
+      $("#page-eyebrow").textContent = labels[page][0];
+      $("#page-title").textContent = labels[page][1];
+    }
+
+    async function api(path, options = {}) {
+      const response = await fetch(`${state.apiBase}${path}`, {
+        headers: { "Content-Type": "application/json", ...(options.headers || {}) },
+        ...options,
+      });
+      if (!response.ok) {
+        const detail = await response.text();
+        throw new Error(detail || response.statusText);
+      }
+      return response.json();
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;");
+    }
+
+    function pretty(value) {
+      return JSON.stringify(value, null, 2);
+    }
+
+    function formToObject(form) {
+      const data = new FormData(form);
+      const output = {};
+      for (const [key, value] of data.entries()) {
+        if (key === "transcript_files") continue;
+        output[key] = value;
+      }
+      form.querySelectorAll("input[type='checkbox']").forEach((input) => {
+        output[input.name || input.id] = input.checked;
+      });
+      return output;
+    }
+
+    function loadDefaults() {
+      const fallback = {
+        use_defaults: true,
+        provider: "gemini",
+        play_store_count: "100",
+        app_store_count: "100",
+        reddit_mode: "auto",
+        reddit_count: "20",
+        youtube_mode: "auto",
+        youtube_count: "5",
+        drive_folder_id: "",
+        auto_detect_store: true,
+        run_company_profile: true,
+        include_news: false,
+        grounded_copilot: true,
+      };
+      try {
+        state.defaults = { ...fallback, ...JSON.parse(localStorage.getItem("insights-defaults") || "{}") };
+      } catch {
+        state.defaults = fallback;
+      }
+      return state.defaults;
+    }
+
+    async function loadBackendDefaults() {
+      try {
+        const result = await api("/config/app");
+        if (result.values && Object.keys(result.values).length) {
+          state.defaults = { ...state.defaults, ...result.values };
+          localStorage.setItem("insights-defaults", JSON.stringify(state.defaults));
+        }
+      } catch {
+        // Local storage remains the offline fallback.
+      }
+    }
+
+    async function saveDefaults() {
+      const defaults = formToObject($("#config-form"));
+      state.defaults = defaults;
+      localStorage.setItem("insights-defaults", JSON.stringify(defaults));
+      try {
+        await api("/config/app", {
+          method: "POST",
+          body: JSON.stringify({ values: defaults }),
+        });
+      } catch {
+        showToast("Saved locally; backend config unavailable");
+        applyDefaultsToForms();
+        return;
+      }
+      applyDefaultsToForms();
+      showToast("Defaults saved");
+    }
+
+    function setIfExists(selector, value) {
+      const node = document.querySelector(selector);
+      if (node && value !== undefined && value !== null && value !== "") node.value = value;
+    }
+
+    function applyDefaultsToConfigForm() {
+      const defaults = state.defaults;
+      const form = $("#config-form");
+      Object.entries(defaults).forEach(([key, value]) => {
+        const field = form.elements[key] || document.getElementById(key);
+        if (!field) return;
+        if (field.type === "checkbox") field.checked = Boolean(value);
+        else field.value = value;
+      });
+    }
+
+    function applyDefaultsToForms() {
+      if (!state.defaults.use_defaults) return;
+      setIfExists("#backend-url", state.defaults.backend_url || window.location.origin);
+      setIfExists("#transcript-form [name='provider']", state.defaults.provider);
+      setIfExists("#transcript-form [name='folder_id']", state.defaults.drive_folder_id);
+      setIfExists("#social-form [name='provider']", state.defaults.provider);
+      setIfExists("#social-form [name='play_store_count']", state.defaults.play_store_count);
+      setIfExists("#social-form [name='app_store_count']", state.defaults.app_store_count);
+      setIfExists("#social-form [name='reddit_mode']", state.defaults.reddit_mode);
+      setIfExists("#social-form [name='youtube_mode']", state.defaults.youtube_mode);
+      setIfExists("#deep-form [name='folder_id']", state.defaults.drive_folder_id);
+    }
+
+    function renderList(target, items, renderItem, emptyText) {
+      const node = $(target);
+      node.innerHTML = items.length ? items.map(renderItem).join("") : `<div class="muted">${emptyText}</div>`;
+    }
+
+    function renderDashboard() {
+      $("#project-count").textContent = state.projects.length;
+      $("#news-count").textContent = state.monitors.length;
+      $("#rag-count").textContent = state.rag?.total_chunks || 0;
+      $("#nav-projects").textContent = state.projects.length;
+      $("#nav-news").textContent = state.monitors.length;
+      $("#nav-jobs").textContent = state.jobs.length;
+
+      renderList("#latest-projects", state.projects.slice(0, 5), (project) => `
+        <div class="list-item">
+          <div>
+            <div class="item-title">${escapeHtml(project.project_name)}</div>
+            <div class="status-line">${escapeHtml(project.domain || "No domain")} · ${escapeHtml(project.updated_at || "No date")}</div>
+          </div>
+          <button class="button secondary compact" data-project="${escapeHtml(project.project_name)}">Open</button>
+        </div>
+      `, "No projects yet.");
+
+      renderList("#latest-news", state.monitors.slice(0, 3), (monitor) => `
+        <div class="list-item query-card">
+          <div>
+            <div class="item-title">${escapeHtml(monitor.name)}</div>
+            <div class="status-line">${escapeHtml(monitor.schedule_time)} · ${escapeHtml(monitor.timezone)}</div>
+          </div>
+          <button class="button secondary compact" data-page-jump="news">View</button>
+        </div>
+      `, "No news queries yet.");
+
+      renderList("#history-projects", state.projects, (project) => `
+        <div class="list-item">
+          <div>
+            <div class="item-title">${escapeHtml(project.project_name)}</div>
+            <div class="status-line">${escapeHtml(project.domain || "No domain")} · ${escapeHtml(project.updated_at || "No date")}</div>
+          </div>
+          <button class="button secondary compact" data-project="${escapeHtml(project.project_name)}">Use</button>
+        </div>
+      `, "No projects found.");
+
+      renderList("#job-list", state.jobs.slice(0, 20), (job) => `
+        <div class="list-item">
+          <div>
+            <div class="item-title">${escapeHtml(job.kind || job.id)}</div>
+            <div class="status-line"><span class="dot ${job.status === "complete" ? "ok" : job.status === "failed" ? "bad" : "warn"}"></span>${escapeHtml(job.status)} · ${escapeHtml(job.updated_at || "")}</div>
+          </div>
+          <span class="muted">${escapeHtml((job.id || "").slice(0, 8))}</span>
+        </div>
+      `, "No jobs found.");
+
+      renderList("#news-list", state.monitors, (monitor) => `
+        <div class="list-item query-card">
+          <div>
+            <div class="item-title">${escapeHtml(monitor.name)}</div>
+            <div class="muted">${escapeHtml(monitor.query)}</div>
+            <div class="status-line">${escapeHtml(monitor.schedule_time)} · ${escapeHtml(monitor.sources?.join(", ") || "news")}</div>
+          </div>
+          <span class="nav-badge">${monitor.enabled ? "On" : "Off"}</span>
+        </div>
+      `, "No news monitors configured.");
+
+      const projectSelect = $("#copilot-project");
+      const currentValue = projectSelect.value;
+      projectSelect.innerHTML = `<option value="">Auto select</option>` + state.projects.map((project) => (
+        `<option value="${escapeHtml(project.project_name)}">${escapeHtml(project.project_name)}</option>`
+      )).join("");
+      projectSelect.value = currentValue;
+    }
+
+    async function renderProjectView(projectName) {
+      setPage("project-view");
+      const output = $("#project-view-output");
+      output.textContent = "Loading...";
+      try {
+        const project = await api(`/projects/${projectName}`);
+        output.textContent = pretty(project);
+      } catch (error) {
+        output.textContent = error.message;
+      }
+    }
+
+    async function refreshData() {
+      try {
+        const [health, projects, jobs, news, rag] = await Promise.all([
+          api("/health"),
+          api("/projects"),
+          api("/jobs"),
+          api("/news/monitors"),
+          api("/rag/status"),
+        ]);
+        state.projects = projects.projects || [];
+        state.jobs = jobs.jobs || [];
+        state.monitors = news.monitors || [];
+        state.rag = rag;
+        $("#backend-dot").className = "dot ok";
+        $("#backend-status").textContent = health.status || "ok";
+        $("#rag-status-output").textContent = pretty(rag);
+        renderDashboard();
+      } catch (error) {
+        $("#backend-dot").className = "dot bad";
+        $("#backend-status").textContent = "Offline";
+        showToast("Backend check failed");
+      }
+    }
+
+    function buildAgentPayload(formData, mode) {
+      const projectName = formData.get("project_name") || makeProjectName(formData.get("company"));
+      const payload = { project_name: projectName };
+      const domain = formData.get("domain");
+      if (domain) payload.domain = domain;
+      const playStore = formData.get("play_store");
+      if (playStore) payload.play_store = { link_or_id: playStore, reviews_count: Number(formData.get("play_store_count") || state.defaults.play_store_count || 100) };
+      const appStore = formData.get("app_store");
+      if (appStore) payload.app_store = { link_or_id: appStore, reviews_count: Number(formData.get("app_store_count") || state.defaults.app_store_count || 100) };
+      const redditQuery = formData.get("reddit_query");
+      if (redditQuery) payload.reddit = [{ input: redditQuery, mode: formData.get("reddit_mode") || state.defaults.reddit_mode || "auto", limit: Number(formData.get("reddit_count") || state.defaults.reddit_count || 20), category: "top" }];
+      const youtubeQuery = formData.get("youtube_query");
+      if (youtubeQuery) {
+        const youtubeMode = formData.get("youtube_mode") || state.defaults.youtube_mode || "auto";
+        const youtubePayload = { mode: youtubeMode === "auto" ? "search" : youtubeMode, count: Number(formData.get("youtube_count") || state.defaults.youtube_count || 5) };
+        if (youtubeMode === "video") youtubePayload.video_url = youtubeQuery;
+        else if (youtubeMode === "channel") youtubePayload.channel_url = youtubeQuery;
+        else youtubePayload.query = youtubeQuery;
+        payload.youtube = [youtubePayload];
+      }
+      const inputPath = formData.get("input_path");
+      if (inputPath) payload.transcripts = { input_path: inputPath };
+      if (mode === "company") payload.skip_company_profile = false;
+      if (mode !== "company" && state.defaults.run_company_profile === false) payload.skip_company_profile = true;
+      return payload;
+    }
+
+    function makeProjectName(value) {
+      const base = String(value || "Research").trim().replace(/\s+/g, " ");
+      const stamp = new Date().toISOString().slice(0, 10);
+      return `${base} ${stamp}`;
+    }
+
+    async function startPipeline(payload, provider = "gemini") {
+      const result = await api("/pipeline/run", {
+        method: "POST",
+        body: JSON.stringify({
+          project_name: payload.project_name,
+          provider,
+          start_from: "agent1",
+          agent1_payload: payload,
+        }),
+      });
+      showToast(`Job queued: ${result.job_id.slice(0, 8)}`);
+      await refreshData();
+      return result;
+    }
+
+    function appendMessage(content, type = "assistant", meta = "") {
+      const node = document.createElement("div");
+      node.className = `message ${type === "user" ? "user" : ""}`;
+      node.innerHTML = `${escapeHtml(content)}${meta ? `<small>${escapeHtml(meta)}</small>` : ""}`;
+      $("#chat-log").appendChild(node);
+      $("#chat-log").scrollTop = $("#chat-log").scrollHeight;
+    }
+
+    async function askCopilot(question) {
+      const selectedProject = $("#copilot-project").value || null;
+      const useProject = $("#copilot-use-project").checked && $("#copilot-current-project").checked;
+      const useRag = $("#copilot-use-rag").checked;
+      const projectName = useProject ? selectedProject : null;
+      appendMessage(question, "user", projectName || "Indexed evidence");
+      $("#copilot-input").value = "";
+      try {
+        const result = await api("/copilot/rag", {
+          method: "POST",
+          body: JSON.stringify({ question, project_name: projectName, limit: useRag ? 6 : 1, use_llm: true }),
+        });
+        const sourceMeta = `${result.grounding.confidence} confidence · ${result.sources.length} sources`;
+        appendMessage(result.answer, "assistant", sourceMeta);
+      } catch (error) {
+        appendMessage("Copilot could not answer from the backend right now.", "assistant", "Error");
+      }
+    }
+
+    async function runDiagnosis() {
+      const output = $("#diagnosis-output");
+      output.textContent = "Running.";
+      try {
+        const [health, projects, jobs, rag, news] = await Promise.all([
+          api("/health"),
+          api("/projects"),
+          api("/jobs"),
+          api("/rag/status"),
+          api("/news/monitors"),
+        ]);
+        output.textContent = pretty({ health, project_count: projects.projects.length, job_count: jobs.jobs.length, rag, news_count: news.monitors.length });
+      } catch (error) {
+        output.textContent = error.message;
+      }
+    }
+
+    function bindEvents() {
+      document.addEventListener("click", (event) => {
+        const pageButton = event.target.closest("[data-page], [data-page-jump]");
+        if (pageButton) setPage(pageButton.dataset.page || pageButton.dataset.pageJump);
+
+        const projectButton = event.target.closest("[data-project]");
+        if (projectButton) {
+          const projectName = projectButton.dataset.project;
+          if (projectButton.textContent === "Open") {
+            renderProjectView(projectName);
+          } else { // Assumes "Use" button
+            $("#copilot-project").value = projectName;
+            $("#copilot-context").textContent = projectName;
+            $("#copilot-use-project").checked = true;
+            $("#copilot-current-project").checked = true;
+            showToast("Copilot context updated");
+          }
+        }
+      });
+
+      $("#refresh-button").addEventListener("click", refreshData);
+      $("#theme-button").addEventListener("click", () => {
+        const app = $(".app");
+        const next = app.dataset.theme === "dark" ? "light" : "dark";
+        app.dataset.theme = next;
+        localStorage.setItem("insights-theme", next);
+      });
+
+      $("#config-form").addEventListener("submit", (event) => {
+        event.preventDefault();
+        saveDefaults();
+      });
+
+      $("#backend-url").addEventListener("change", (event) => {
+        state.apiBase = event.target.value.replace(/\/$/, "");
+        showToast("Backend URL updated");
+        refreshData();
+      });
+
+      $("#context-toggle").addEventListener("click", () => {
+        const panel = $("#copilot-context-options");
+        panel.hidden = !panel.hidden;
+      });
+
+      $("#faq-toggle").addEventListener("click", () => {
+        const panel = $("#copilot-faq");
+        panel.hidden = !panel.hidden;
+      });
+
+      $("#copilot-input").addEventListener("keydown", (event) => {
+        if (event.key === "Enter" && (event.metaKey || event.ctrlKey)) {
+          event.preventDefault();
+          $("#copilot-form").requestSubmit();
+        }
+      });
+
+      $$(".tab[data-transcript-mode]").forEach((tab) => {
+        tab.addEventListener("click", () => {
+          state.transcriptMode = tab.dataset.transcriptMode;
+          $$(".tab[data-transcript-mode]").forEach((item) => item.classList.toggle("active", item === tab));
+          $$(".transcript-mode").forEach((item) => item.hidden = !item.classList.contains(state.transcriptMode));
+        });
+      });
+
+      $("#drop-zone").addEventListener("dragover", (event) => event.preventDefault());
+      $("#drop-zone").addEventListener("drop", (event) => {
+        event.preventDefault();
+        const names = Array.from(event.dataTransfer.files).map((file) => file.name).join(", ");
+        $("#drop-zone").textContent = names || "No files detected";
+      });
+
+      $("#deep-form [name='transcript_files']").addEventListener("change", (event) => {
+        const files = Array.from(event.target.files || []);
+        if (!files.length) return;
+        $("#deep-file-list").innerHTML = files.map((file) => `
+          <label class="check-row"><input type="checkbox" checked>${escapeHtml(file.name)}</label>
+        `).join("");
+      });
+
+      $("#deep-select-all").addEventListener("change", (event) => {
+        $$("#deep-file-list input[type='checkbox']").forEach((input) => {
+          input.checked = event.target.checked;
+        });
+      });
+
+      $("#transcript-form").addEventListener("submit", async (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.currentTarget);
+        try {
+          let result;
+          if (state.transcriptMode === "drive") {
+            result = await api("/ingest/google-drive", {
+              method: "POST",
+              body: JSON.stringify({
+                project_name: formData.get("project_name"),
+                provider: formData.get("provider"),
+                folder_id: formData.get("folder_id"),
+                run_async: true,
+              }),
+            });
+          } else {
+            result = await api("/ingest/transcripts/local", {
+              method: "POST",
+              body: JSON.stringify({
+                project_name: formData.get("project_name"),
+                provider: formData.get("provider"),
+                input_path: formData.get("input_path"),
+                run_async: true,
+              }),
+            });
+          }
+          $("#transcript-result").textContent = pretty(result);
+          showToast("Transcript job queued");
+          await refreshData();
+        } catch (error) {
+          $("#transcript-result").textContent = error.message;
+        }
+      });
+
+      $("#company-form").addEventListener("submit", async (event) => {
+        event.preventDefault();
+        const payload = buildAgentPayload(new FormData(event.currentTarget), "company");
+        await startPipeline(payload);
+      });
+
+      $("#social-form").addEventListener("submit", async (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.currentTarget);
+        const payload = buildAgentPayload(formData, "social");
+        payload.skip_company_profile = true;
+        await startPipeline(payload, formData.get("provider"));
+      });
+
+      $("#deep-form").addEventListener("submit", async (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.currentTarget);
+        const payload = buildAgentPayload(formData, "deep");
+        payload.project_name = makeProjectName(formData.get("company"));
+        const folderId = formData.get("folder_id") || state.defaults.drive_folder_id;
+        if (folderId && !payload.transcripts) {
+          payload.google_drive = { folder_id: folderId, include_existing: true };
+        }
+        await startPipeline(payload);
+      });
+
+      $("#news-form").addEventListener("submit", async (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.currentTarget);
+        await api("/news/monitors", {
+          method: "POST",
+          body: JSON.stringify({
+            name: formData.get("name"),
+            query: formData.get("query"),
+            schedule_time: formData.get("schedule_time"),
+            timezone: formData.get("timezone"),
+            sources: ["news", "sebi", "rbi"],
+            enabled: true,
+          }),
+        });
+        showToast("News query saved");
+        await refreshData();
+      });
+
+      $("#diagnose-button").addEventListener("click", runDiagnosis);
+      $("#reindex-button").addEventListener("click", async () => {
+        $("#rag-status-output").textContent = "Reindexing.";
+        const result = await api("/rag/index", { method: "POST", body: JSON.stringify({}) });
+        $("#rag-status-output").textContent = pretty(result);
+        await refreshData();
+      });
+
+      $("#copilot-project").addEventListener("change", (event) => {
+        $("#copilot-context").textContent = event.target.value || "Indexed evidence";
+      });
+
+      $("#copilot-form").addEventListener("submit", async (event) => {
+        event.preventDefault();
+        const question = $("#copilot-input").value.trim();
+        if (question) await askCopilot(question);
+      });
+
+      $$(".faq button").forEach((button) => {
+        button.addEventListener("click", () => askCopilot(button.dataset.question));
+      });
+    }
+
+    async function init() {
+      const savedTheme = localStorage.getItem("insights-theme") || "light";
+      $(".app").dataset.theme = savedTheme;
+      loadDefaults();
+      await loadBackendDefaults();
+      applyDefaultsToConfigForm();
+      $("#backend-url").value = state.defaults.backend_url || (window.location.protocol === "file:" ? "http://127.0.0.1:8000" : window.location.origin);
+      state.apiBase = $("#backend-url").value.replace(/\/$/, "");
+      bindEvents();
+      applyDefaultsToForms();
+      await refreshData();
+      try {
+        $("#drive-output").textContent = pretty(await api("/config/drive"));
+      } catch (error) {
+        $("#drive-output").textContent = error.message;
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>
