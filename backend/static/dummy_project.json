@@ -1,0 +1,53 @@
+{
+  "project_name": "Groww",
+  "domain": "groww.in",
+  "ingestion_date": "2024-05-17T12:00:00Z",
+  "data_sources": {
+    "company_profile": {
+      "data": {
+        "company_name": "Groww",
+        "domain": "groww.in",
+        "playstore_link": "https://play.google.com/store/apps/details?id=com.nextbillion.groww",
+        "appstore_link": "https://apps.apple.com/in/app/groww-stocks-mutual-fund/id1434524388",
+        "youtube_official_channel": "https://www.youtube.com/channel/UCw5TLrz3qAD2q_n2dY73-hA",
+        "linkedin_company_page": "https://www.linkedin.com/company/groww.in/",
+        "year_founded": "2016",
+        "names_of_founders": ["Lalit Keshre", "Harsh Jain", "Neeraj Singh", "Ishan Bansal"],
+        "c-suite_officer": ["Lalit Keshre (CEO)"],
+        "employee_count": "1001-5000",
+        "exact_hq_location": "Bengaluru, Karnataka, India",
+        "locations_operating_in": ["India"],
+        "industry_and_segment": "Financial Technology (Fintech)",
+        "available_platforms": "Web & Mobile (both)",
+        "funding_raised": "$393M",
+        "funding_stage": "Series E",
+        "no_of_users": "40 Million+",
+        "annual_revenue": "Unable to verify",
+        "key_positioning": "Investing for everyone",
+        "revenue_model": "Brokerage fees, subscription services",
+        "pricing_tiers": ["Free account opening", "Brokerage fees on trades"],
+        "target_customer_segments": ["Millennials", "Gen Z", "First-time investors"],
+        "tech_stack_highlights": ["React", "Node.js", "Kotlin", "Swift"],
+        "milestones": ["Launched in 2016", "Crossed 10M users in 2021", "Raised $251M in Series E in 2021"],
+        "new_features_launched": ["Launched stocks in 2020", "Launched IPO applications in 2021"],
+        "recent_partnerships_and_integrations": [],
+        "competitors": [
+          {"name": "Zerodha", "domain": "zerodha.com"},
+          {"name": "Upstox", "domain": "upstox.com"}
+        ]
+      }
+    }
+  },
+  "agent2_output": {
+    "problems": [
+      {"description": "Users complain about slow customer support.", "user_type": "Retail Investor", "frequency": "Occasional", "source": "App Store Review", "date": "2024-05-15", "effect": ["User frustration"]},
+      {"description": "Occasional glitches during peak trading hours.", "user_type": "Day Trader", "frequency": "Rare", "source": "Reddit", "date": "2024-05-12", "effect": ["Potential financial loss"]}
+    ]
+  },
+  "agent3_output": {
+    "insights": [
+      {"insight": "Groww's user base is rapidly expanding, especially among young, first-time investors.", "sources": ["Company blog", "News articles"]},
+      {"insight": "The platform's simple UI is a key differentiator, but it may lack advanced features for pro traders.", "sources": ["Tech review sites", "User forums"]}
+    ]
+  }
+}
