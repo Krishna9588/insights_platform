@@ -123,8 +123,21 @@ class EnhancedCopilot:
         """
         # Create or get session
         if not session_id:
-            session_id = self.db.create_session(self.project_name)
-            log.info(f"Created new session {session_id}")
+            # Generate a brief title from the first question
+            title_prompt = f"Summarize this question in 2-4 words for a chat session title: {question}"
+            try:
+                title_response = call_llm(
+                    prompt=title_prompt,
+                    system_prompt="You are a helpful assistant. Output ONLY the short title.",
+                    provider=self.provider,
+                    json_mode=False
+                )
+                title = title_response.strip().replace('"', '')
+            except Exception:
+                title = "New Chat"
+                
+            session_id = self.db.create_session(self.project_name, title=title)
+            log.info(f"Created new session {session_id} with title {title}")
 
         # Get session messages (conversation history)
         messages = self.db.get_session_messages(session_id)
@@ -218,6 +231,7 @@ INSTRUCTIONS:
             messages = self.db.get_session_messages(session.id)
             result.append({
                 "session_id": session.id,
+                "title": getattr(session, 'title', "New Chat"),
                 "created_at": session.created_at,
                 "updated_at": session.updated_at,
                 "messages_count": len(messages),

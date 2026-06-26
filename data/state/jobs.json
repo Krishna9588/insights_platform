@@ -598,5 +598,62 @@
     "updated_at": "2026-06-25T18:55:28Z",
     "result": null,
     "error": "No db_document found for 'Mine'. Run Agent 1 first. Expected path: /Users/krishnabirla/PycharmProjects/insights/agents/database_mock/Mine/db_document.json"
+  },
+  "fd04e5a1-2958-4961-a8e0-c81ddca9a138": {
+    "id": "fd04e5a1-2958-4961-a8e0-c81ddca9a138",
+    "kind": "pipeline",
+    "status": "complete",
+    "payload": {
+      "project_name": "Cockroachlabs",
+      "provider": "gemini",
+      "domain": "https://www.cockroachlabs.com/",
+      "start_from": "agent1",
+      "only": "agent1",
+      "agent1_payload": {
+        "project_name": "Cockroachlabs",
+        "sources": [
+          "company"
+        ]
+      }
+    },
+    "created_at": "2026-06-26T07:16:00Z",
+    "updated_at": "2026-06-26T07:17:29Z",
+    "result": {
+      "project_name": "Cockroachlabs",
+      "domain": "https://www.cockroachlabs.com/",
+      "processing_status": {
+        "agent2_insights_extracted": false,
+        "agent3_synthesis_done": false,
+        "agent4_product_brief_done": false
+      },
+      "data_sources": [
+        "company_profile"
+      ],
+      "problem_count": 0,
+      "insight_count": 0,
+      "brief_count": 0
+    },
+    "error": null
+  },
+  "dd0e64b3-817b-483e-bf15-6d8af9403ba9": {
+    "id": "dd0e64b3-817b-483e-bf15-6d8af9403ba9",
+    "kind": "pipeline",
+    "status": "running",
+    "payload": {
+      "project_name": "ProPlus Data",
+      "provider": "gemini",
+      "domain": null,
+      "start_from": "agent1",
+      "only": null,
+      "agent1_payload": {
+        "project_name": "ProPlus Data",
+        "domain": "http://proplusdata.co/",
+        "skip_company_profile": false
+      }
+    },
+    "created_at": "2026-06-26T08:33:43Z",
+    "updated_at": "2026-06-26T08:33:43Z",
+    "result": null,
+    "error": null
   }
 }

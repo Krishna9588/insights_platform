@@ -1,15 +1,42 @@
 import os
 import json
+from pathlib import Path
 from dotenv import load_dotenv
 from typing import Optional, Dict, Any
+
+from agents.paths import CONFIG_FILE
 
 # Load environment variables
 load_dotenv()
 
-""" run this command
-    pip install openai anthropic google-genai python-dotenv
-"""
-
+def get_api_key(provider: str) -> Optional[str]:
+    # 1. Try to load from config.json
+    if CONFIG_FILE.exists():
+        try:
+            with open(CONFIG_FILE, "r", encoding="utf-8") as f:
+                config = json.load(f)
+                api_keys = config.get("api_keys", [])
+                # Return default key for provider
+                for key_entry in api_keys:
+                    if key_entry.get("provider") == provider and key_entry.get("isDefault"):
+                        return key_entry.get("key")
+                # Fallback to any key for provider
+                for key_entry in api_keys:
+                    if key_entry.get("provider") == provider:
+                        return key_entry.get("key")
+        except Exception:
+            pass
+    
+    # 2. Fallback to .env
+    if provider == "gemini":
+        return os.getenv("GEMINI_API_KEY")
+    elif provider == "openai":
+        return os.getenv("OPENAI_API_KEY")
+    elif provider == "claude":
+        return os.getenv("ANTHROPIC_API_KEY")
+    elif provider == "gemini_2":
+        return os.getenv("GEMINI_API_KEY")
+    return None
 
 # ==========================================
 # 1. INDIVIDUAL MODEL FUNCTIONS
@@ -17,7 +44,12 @@ load_dotenv()
 
 def call_openai(prompt: str, system_prompt: str = "", model: str = "gpt-4o") -> str:
     from openai import OpenAI
-    client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+    
+    api_key = get_api_key("openai")
+    if not api_key:
+        raise ValueError("OpenAI API key not found in config or .env")
+        
+    client = OpenAI(api_key=api_key)
 
     messages = []
     if system_prompt:
@@ -34,7 +66,12 @@ def call_openai(prompt: str, system_prompt: str = "", model: str = "gpt-4o") -> 
 
 def call_claude(prompt: str, system_prompt: str = "", model: str = "claude-3-5-sonnet-20240620") -> str:
     import anthropic
-    client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
+    
+    api_key = get_api_key("claude")
+    if not api_key:
+        raise ValueError("Anthropic API key not found in config or .env")
+        
+    client = anthropic.Anthropic(api_key=api_key)
 
     response = client.messages.create(
         model=model,
@@ -52,7 +89,11 @@ def call_gemini(prompt: str, system_prompt: str = "", model: str = "gemini-2.5-f
     from google import genai
     from google.genai import types
 
-    client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+    api_key = get_api_key("gemini")
+    if not api_key:
+        raise ValueError("Gemini API key not found in config or .env")
+
+    client = genai.Client(api_key=api_key)
 
     config = types.GenerateContentConfig(
         system_instruction=system_prompt,
@@ -66,11 +107,16 @@ def call_gemini(prompt: str, system_prompt: str = "", model: str = "gemini-2.5-f
     return response.text
 
 def call_gemini_2(prompt: str, system_prompt: str = "", model: str = "gemini-3-flash-preview") -> str:
-    import google.generativeai as genai
+    import google.genai as genai
+    
+    api_key = get_api_key("gemini_2") or get_api_key("gemini")
+    if not api_key:
+        raise ValueError("Gemini API key not found in config or .env")
+        
     prompt = system_prompt + "\n\n" + prompt
-    genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-    model = genai.GenerativeModel(model)
-    response = model.generate_content(prompt)
+    genai.configure(api_key=api_key)
+    model_obj = genai.GenerativeModel(model)
+    response = model_obj.generate_content(prompt)
 
     return response.text
 

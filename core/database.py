@@ -42,6 +42,7 @@ class ChatSession:
     """Conversation session for a project."""
     id: str
     project_name: str
+    title: str
     created_at: str
     updated_at: str
     messages_count: int = 0
@@ -100,12 +101,18 @@ class Database:
                 CREATE TABLE IF NOT EXISTS chat_sessions (
                     id TEXT PRIMARY KEY,
                     project_name TEXT NOT NULL,
+                    title TEXT DEFAULT 'New Chat',
                     created_at TEXT NOT NULL,
                     updated_at TEXT NOT NULL,
                     messages_count INTEGER DEFAULT 0,
                     is_active INTEGER DEFAULT 1
                 )
             """)
+            try:
+                conn.execute("ALTER TABLE chat_sessions ADD COLUMN title TEXT DEFAULT 'New Chat'")
+            except sqlite3.OperationalError:
+                pass # Column already exists
+            
             conn.execute("""
                 CREATE TABLE IF NOT EXISTS chat_messages (
                     id TEXT PRIMARY KEY,
@@ -158,17 +165,17 @@ class Database:
     # CHAT SESSIONS
     # ─────────────────────────────────────────────────────────────────────────
 
-    def create_session(self, project_name: str) -> str:
+    def create_session(self, project_name: str, title: str = "New Chat") -> str:
         """Create a new chat session. Returns session_id."""
         session_id = str(uuid.uuid4())
         now = datetime.utcnow().isoformat()
         with sqlite3.connect(self.db_path) as conn:
             conn.execute(
                 """
-                INSERT INTO chat_sessions (id, project_name, created_at, updated_at)
-                VALUES (?, ?, ?, ?)
+                INSERT INTO chat_sessions (id, project_name, title, created_at, updated_at)
+                VALUES (?, ?, ?, ?, ?)
                 """,
-                (session_id, project_name, now, now),
+                (session_id, project_name, title, now, now),
             )
             conn.commit()
         log.info(f"Created session {session_id} for project {project_name}")
@@ -186,6 +193,7 @@ class Database:
                 return ChatSession(
                     id=row["id"],
                     project_name=row["project_name"],
+                    title=row["title"],
                     created_at=row["created_at"],
                     updated_at=row["updated_at"],
                     messages_count=row["messages_count"],
@@ -209,6 +217,7 @@ class Database:
                 ChatSession(
                     id=row["id"],
                     project_name=row["project_name"],
+                    title=row["title"],
                     created_at=row["created_at"],
                     updated_at=row["updated_at"],
                     messages_count=row["messages_count"],

@@ -90,12 +90,41 @@ def chat_ask(
     try:
         copilot = create_copilot(project_name, provider)
         answer, session_id = copilot.ask(question, session_id)
+        # Get the latest title for the session
+        sessions = copilot.get_all_sessions()
+        title = "New Chat"
+        for s in sessions:
+            if s["session_id"] == session_id:
+                title = s["title"]
+                break
+                
         return {
             "session_id": session_id,
+            "title": title,
             "question": question,
             "answer": answer,
         }
     except FileNotFoundError as e:
         raise HTTPException(status_code=404, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@router.get("/chat/sessions")
+def get_chat_sessions(project_name: str) -> Dict[str, Any]:
+    """List all chat sessions for a project."""
+    try:
+        copilot = create_copilot(project_name)
+        sessions = copilot.get_all_sessions()
+        return {"sessions": sessions}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@router.get("/chat/history")
+def get_chat_history(project_name: str, session_id: str) -> Dict[str, Any]:
+    """Get message history for a specific chat session."""
+    try:
+        copilot = create_copilot(project_name)
+        history = copilot.get_session_history(session_id)
+        return {"history": history}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

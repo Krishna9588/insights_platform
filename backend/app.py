@@ -14,11 +14,10 @@ from fastapi.staticfiles import StaticFiles
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from agents.paths import ensure_all_dirs
-from backend.routes import chat, config, copilot, jobs, news, projects, rag, research, summaries
+from backend.routes import chat, config, copilot, jobs, news, projects, rag, research, summaries, logo
 from core.database import get_db
 from core.drive_config import get_drive_config
 from core.rag_service import get_rag_service
-
 
 STATIC_ROOT = Path(__file__).resolve().parent / "static"
 
@@ -30,7 +29,6 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
     get_db()
     get_drive_config()
     get_rag_service()
-    print("✓ Services initialized: Database, Drive Config, Local RAG")
     yield
 
 
@@ -57,6 +55,7 @@ for router in [
     chat.router,
     config.router,
     summaries.router,
+    logo.router,
 ]:
     app.include_router(router)
 
