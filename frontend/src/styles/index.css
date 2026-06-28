@@ -8,10 +8,10 @@
 /* ── DESIGN TOKENS ── */
 :root {
   /* Canvas & Surfaces */
-  --canvas: #f8f9fc;
-  --surface: rgba(255, 255, 255, 0.7);
-  --surface-soft: rgba(248, 250, 252, 0.8);
-  --surface-strong: rgba(226, 232, 240, 0.8);
+  --canvas: #f4f4f0; /* light beige/grey */
+  --surface: rgba(253, 253, 250, 0.8);
+  --surface-soft: rgba(245, 245, 240, 0.8);
+  --surface-strong: rgba(235, 235, 230, 0.8);
   --surface-dark: #0f172a;
   --surface-dark-el: #1e293b;
 
@@ -554,6 +554,11 @@ p {
   transition: transform 150ms ease-out, box-shadow 150ms ease-out;
 }
 
+@keyframes progress {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
 .card.hoverable:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
@@ -711,7 +716,7 @@ p {
 /* ── PROJECT CARD GRID (Collection page) ── */
 .project-card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 20px;
 }
 
@@ -869,7 +874,7 @@ label {
   font-weight: 600;
 }
 
-input,
+input:not([type="checkbox"]):not([type="radio"]),
 textarea,
 select {
   width: 100%;
@@ -1373,4 +1378,41 @@ select option {
   h1 {
     font-size: 26px;
   }
+}@keyframes indeterminate-progress {
+  0% { transform: translateX(-100%) scaleX(0.2); }
+  50% { transform: translateX(0%) scaleX(0.4); }
+  100% { transform: translateX(100%) scaleX(0.2); }
+}
+
+/* ── MARKDOWN STYLES ── */
+.markdown-body {
+  font-family: inherit;
+  line-height: 1.5;
+}
+.markdown-body p {
+  margin-bottom: 8px;
+}
+.markdown-body ul, .markdown-body ol {
+  padding-left: 20px;
+  margin-bottom: 8px;
+}
+.markdown-body li {
+  margin-bottom: 4px;
+}
+.markdown-body strong {
+  font-weight: 600;
+  color: var(--ink);
+}
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 {
+  margin-top: 12px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.markdown-body code {
+  background: var(--surface-strong);
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.9em;
 }

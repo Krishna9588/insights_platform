@@ -1,0 +1,156 @@
+{
+  "extraction_metadata": {
+    "source": "Apple App Store (iTunes API)",
+    "extracted_at": "2026-06-28T20:01:39.912454",
+    "extraction_time_seconds": 1.68,
+    "fields_extracted": 33,
+    "country": "in",
+    "reviews_distribution": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 2
+    },
+    "total_reviews_extracted": 5,
+    "status": "success"
+  },
+  "extracted_data": {
+    "metadata": {
+      "trackId": 1404871703,
+      "trackName": "Groww Stocks, Mutual Fund, IPO",
+      "bundleId": "com.nextbillion.groww",
+      "trackViewUrl": "https://apps.apple.com/in/app/groww-stocks-mutual-fund-ipo/id1404871703?uo=4",
+      "artistId": 1404871702,
+      "artistName": "Billionbrains Garage Ventures Private Limited",
+      "artistViewUrl": "https://apps.apple.com/in/developer/billionbrains-garage-ventures-private-limited/id1404871702?uo=4",
+      "sellerName": "Billionbrains Garage Ventures Private Limited",
+      "primaryGenreName": "Finance",
+      "primaryGenreId": 6015,
+      "genres": [
+        "Finance"
+      ],
+      "genreIds": [
+        "6015"
+      ],
+      "averageUserRating": 4.63764,
+      "userRatingCount": 175522,
+      "averageUserRatingForCurrentVersion": 4.63764,
+      "userRatingCountForCurrentVersion": 175522,
+      "price": 0.0,
+      "formattedPrice": "Free",
+      "currency": "INR",
+      "isVppDeviceBasedLicensingEnabled": true,
+      "version": "18.12.1",
+      "releaseNotes": "It’s time to say ‘RIP bugs’ because we gave those pesky bugs a proper send-off.\n\nWe dusted the corners, cleared the cobwebs, and even tossed in a little confetti for good measure.\n\nThe chakras of your app are now fully aligned.\n\nUpdate now and soak in the good vibes.\n\nNote: Updates roll out gradually.",
+      "releaseDate": "2018-08-03T11:22:59Z",
+      "currentVersionReleaseDate": "2026-06-28T02:39:50Z",
+      "description": "Groww is India's No.1 Stock Broker, trusted by 4 Crore+ Indians. Open a free demat account and start investing & trading.\n\n\nGroww is your one app to invest & trade in:\n\n• Stocks\n\n• Mutual Funds\n\n• Futures and Options Trading (F&O)\n\n• Gold and Silver\n\n• Margin Trading Facility (MTF)\n\n• Commodity Derivatives: Gold, Silver, Crude Oil, Natural Gas and more\n\n• Exchange Traded Funds (ETFs)\n\n• IPO\n\n• Bonds\n\n• API Trading\n\n• UPI Payments\n\n\nReasons why Indians love investing on Groww\n\n• Free demat account (Individual, HUF, Corporate)\n\n• 0 AMC & no hidden charges\n\n• 24*7 customer support\n\n\nStocks, ETFs, IPO, MTF & Intraday Trading\n\n• Open a free demat & trading account in minutes\n\n• Buy & Sell stocks listed on NSE & BSE stock exchanges\n\n• Boost trades with up to 5X leverage on Intraday Trading\n\n• Never miss any corporate actions like splits, dividends, bonus etc.\n\n• Buy up to 4X more stocks with MTF (Margin Trading Facility)\n\n• Explore fundamentals & financials of stocks like Angel One, 5Paisa C",
+      "shortDescription": "",
+      "minimumOsVersion": "15.1",
+      "fileSizeBytes": 197624832,
+      "contentAdvisoryRating": "4+",
+      "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/81/0b/54/810b5422-e19c-1af8-8815-23e7bb7cd356/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/60x60bb.jpg",
+      "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/81/0b/54/810b5422-e19c-1af8-8815-23e7bb7cd356/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.jpg",
+      "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/81/0b/54/810b5422-e19c-1af8-8815-23e7bb7cd356/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "screenshotUrls": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fd/0f/77/fd0f774f-6c1c-d2eb-7d4b-71bed556273b/98e50b85-c091-4025-b992-b31cbb32811c_ASO_CREATIVE-5_U00275.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/08/42/04/084204d4-8080-b500-6c19-c424325792a0/9c52b769-6f69-4292-bfb1-4a717488e6c6_2.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ef/a8/4e/efa84e4c-8487-64cc-38f6-c27b540c05f1/23a26a96-e6e1-402d-82e8-0bbac3de7bb3_3.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/06/3e/71/063e7102-581c-d299-9c49-507dff57f853/293eb768-9fb4-4d3d-92b4-0f9f4c625243_4.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d5/5f/ea/d55fea48-0db1-6f92-c35b-0d2d167c1cb6/83d808f7-a275-4bac-a1e1-817a385408a9_5.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5e/ae/5d/5eae5d81-f9ff-70e4-28c0-ed7388dee27a/94ef8be9-9aa3-4d53-9d5d-b2544f7dce1e_6.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/cc/23/58cc23ee-bcdf-11b3-98f6-2dea52eae664/efcc3c48-6f7a-4bbe-b19a-cc27b8666454_7.png/392x696bb.png"
+      ],
+      "ipadScreenshotUrls": [],
+      "kind": "software",
+      "trackCensoredName": "Groww Stocks, Mutual Fund, IPO",
+      "privacyViewUrl": null,
+      "supportUrl": null,
+      "websiteUrl": null
+    },
+    "reviews": [
+      {
+        "id": "14230877850",
+        "author": "Keerthikumar B K",
+        "rating": 3,
+        "title": "Watchlist are not saving in Alphabetical sorted order",
+        "content": "Watchlist are not saving in Alphabetical sorted order. \nEven though we tried to sort list of stocks in our watchlist it’s not saving that sorted order",
+        "date": "2026-06-26T18:39:25-07:00",
+        "version": "18.11.0"
+      },
+      {
+        "id": "14231044348",
+        "author": "Gera Mahesh",
+        "rating": 4,
+        "title": "Invest in Seconds",
+        "content": "Best in Indian investment app",
+        "date": "2026-06-26T19:39:36-07:00",
+        "version": "18.11.0"
+      },
+      {
+        "id": "14229502740",
+        "author": "Mahadev W",
+        "rating": 4,
+        "title": "Ok",
+        "content": "Good one",
+        "date": "2026-06-26T10:27:11-07:00",
+        "version": "18.11.0"
+      },
+      {
+        "id": "14231620868",
+        "author": "ammbesh",
+        "rating": 5,
+        "title": "Grow With Grow",
+        "content": "5 Stars",
+        "date": "2026-06-26T23:25:31-07:00",
+        "version": "18.11.0"
+      },
+      {
+        "id": "14231585816",
+        "author": "inam rawal",
+        "rating": 5,
+        "title": "Gujjar",
+        "content": "Excellent",
+        "date": "2026-06-26T23:11:15-07:00",
+        "version": "18.11.0"
+      }
+    ],
+    "review_analysis": {
+      "total_reviews": 5,
+      "average_rating": 4.2,
+      "rating_distribution": {
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 2,
+        "5": 2
+      },
+      "latest_review_date": "2026-06-26T18:39:25-07:00",
+      "oldest_review_date": "2026-06-26T23:11:15-07:00"
+    },
+    "reviews_metadata": {
+      "1": {
+        "requested": 2,
+        "fetched": 0
+      },
+      "2": {
+        "requested": 2,
+        "fetched": 0
+      },
+      "3": {
+        "requested": 2,
+        "fetched": 1
+      },
+      "4": {
+        "requested": 2,
+        "fetched": 2
+      },
+      "5": {
+        "requested": 2,
+        "fetched": 2
+      }
+    }
+  },
+  "analysis": null
+}

@@ -1,16 +1,14 @@
 {
-  "india-and-russia-new-deal": {
-    "id": "india-and-russia-new-deal",
-    "name": "India and Russia new deal",
-    "query": "India and Russia new deal",
+  "bhel": {
+    "id": "bhel",
+    "name": "BHEL",
+    "query": "What are the latest news about BHEL stock",
     "schedule_time": "20:00",
     "timezone": "Asia/Kolkata",
     "sources": [
-      "news",
-      "sebi",
-      "rbi"
+      "news"
     ],
     "enabled": true,
-    "updated_at": "2026-06-25T19:00:58Z"
+    "updated_at": "2026-06-28T15:45:27Z"
   }
 }

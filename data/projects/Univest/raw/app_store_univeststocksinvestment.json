@@ -1,0 +1,517 @@
+{
+  "extraction_metadata": {
+    "source": "Apple App Store (iTunes API)",
+    "extracted_at": "2026-06-28T21:13:49.620741",
+    "extraction_time_seconds": 2.85,
+    "fields_extracted": 32,
+    "country": "in",
+    "reviews_distribution": {
+      "1": 20,
+      "2": 20,
+      "3": 20,
+      "4": 20,
+      "5": 20
+    },
+    "total_reviews_extracted": 46,
+    "status": "success"
+  },
+  "extracted_data": {
+    "metadata": {
+      "trackId": 6443753518,
+      "trackName": "Univest - Stocks & Investment",
+      "bundleId": "com.univest.capp",
+      "trackViewUrl": "https://apps.apple.com/in/app/univest-stocks-investment/id6443753518?uo=4",
+      "artistId": 1649066898,
+      "artistName": "UNIVEST COMMUNICATION TECHNOLOGIES PRIVATE LIMITED",
+      "artistViewUrl": "https://apps.apple.com/in/developer/univest-communication-technologies-private-limited/id1649066898?uo=4",
+      "sellerName": "UNIVEST COMMUNICATION TECHNOLOGIES PRIVATE LIMITED",
+      "primaryGenreName": "Finance",
+      "primaryGenreId": 6015,
+      "genres": [
+        "Finance"
+      ],
+      "genreIds": [
+        "6015"
+      ],
+      "averageUserRating": 4.25507,
+      "userRatingCount": 4779,
+      "averageUserRatingForCurrentVersion": 4.25507,
+      "userRatingCountForCurrentVersion": 4779,
+      "price": 0.0,
+      "formattedPrice": "Free",
+      "currency": "INR",
+      "isVppDeviceBasedLicensingEnabled": true,
+      "version": "1.1.292+742",
+      "releaseNotes": "A fresh new Univest, built for a faster experience\n\nWhat's new:\n\nA. A brand new app header look for a faster - focussed access\nB. Reimagined Market's experience - easier to scan, easier to act on\nC. New Sector Performance widget - track which sectors are heating up or cooling off\nD. Smoother trial activation - Activating your free trial is now faster and clearer\n\nBundled with a lot of bug fixes and minor experience improvements",
+      "releaseDate": "2022-11-21T08:00:00Z",
+      "currentVersionReleaseDate": "2026-06-23T17:59:29Z",
+      "description": "Trusted by 50 lakh+ investors | SEBI-Registered Advisory\n\nLooking for a stock market advisory app that gives you real, research-backed trade ideas? Univest is India's fastest-growing investment app, combining AI stock recommendations with expert analysis from SEBI-registered research analysts.\n\nWhether you trade in stocks, F&O, or equity, Univest delivers personalized Buy, Sell, and Hold signals directly to your phone. No guesswork. No noise. Just clear, actionable trade ideas backed by data and professional research.\n\nWHAT MAKES UNIVEST DIFFERENT\n\nUnlike other trading apps, Univest is not a broker. It is a pure advisory platform. You get the recommendations, you stay in full control of your trades. Every recommendation comes from SEBI-registered analysts with transparent track records.\n\nKEY FEATURES\n\nStock Market Advisory\nGet daily trade ideas for intraday, short-term, and positional trading. Each recommendation includes entry price, target, and stop-loss. Backed by research from SEBI",
+      "shortDescription": "",
+      "minimumOsVersion": "16.0",
+      "fileSizeBytes": 124469248,
+      "contentAdvisoryRating": "12+",
+      "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5b/f3/26/5bf32667-cac6-0960-4302-8dbaf6a1697d/ProdIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/60x60bb.jpg",
+      "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5b/f3/26/5bf32667-cac6-0960-4302-8dbaf6a1697d/ProdIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.jpg",
+      "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5b/f3/26/5bf32667-cac6-0960-4302-8dbaf6a1697d/ProdIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "screenshotUrls": [],
+      "ipadScreenshotUrls": [],
+      "kind": "software",
+      "trackCensoredName": "Univest - Stocks & Investment",
+      "privacyViewUrl": null,
+      "supportUrl": null,
+      "websiteUrl": null
+    },
+    "reviews": [
+      {
+        "id": "14223307046",
+        "author": "Ap338",
+        "rating": 1,
+        "title": "Fraud app",
+        "content": "koi bhi install mat karna pehle 1 charge karte hai baad me 3000 ka auto debit karte hai koi notification nahi dete aur customer support wale bhi acche se baat nahi karte plz koi bhi aap mat lo 🙏",
+        "date": "2026-06-24T22:04:39-07:00",
+        "version": "1.1.292+742"
+      },
+      {
+        "id": "14211526968",
+        "author": "grv_r_c",
+        "rating": 1,
+        "title": "Big Talk No Show",
+        "content": "The way they promote is 1% of what they actually deliver in equity…. So called multi-baggers have crashed like hell. Take risk on ur appetite 😊",
+        "date": "2026-06-21T21:11:12-07:00",
+        "version": "1.1.284+734"
+      },
+      {
+        "id": "14203552845",
+        "author": "Manoj Khairnar",
+        "rating": 1,
+        "title": "Dont go for subscription unless you are expert",
+        "content": "I was very well treated until I bought annual subscription after which I was left alone. No support or guidance at all. I lost money in trades and subscription too. That is where I said “Don’t go for subscription unless you are expert”Might be this is good for experts to get insights on analytics but that comes for free on many other platforms.",
+        "date": "2026-06-19T19:23:12-07:00",
+        "version": "1.1.284+734"
+      },
+      {
+        "id": "14195726978",
+        "author": "Achanak_attack",
+        "rating": 1,
+        "title": "Deducted money after saying free trial",
+        "content": "Just after installing the app it said free trial with just ₹1 UPI mandate. But just after a day of starting free trial they deducted ₹3000. This is a scam. Also, the app is way cluttered to understand. Everything is scattered everywhere. Not recommended!",
+        "date": "2026-06-17T19:23:11-07:00",
+        "version": "1.1.284+734"
+      },
+      {
+        "id": "14189761514",
+        "author": "Pinaki Trehan",
+        "rating": 1,
+        "title": "Bogus",
+        "content": "People are lured to 5star reviews for small freebies. All reviews are being begged by the support staff.",
+        "date": "2026-06-16T07:49:05-07:00",
+        "version": "1.1.284+734"
+      },
+      {
+        "id": "14189262087",
+        "author": "Prabhu2954",
+        "rating": 1,
+        "title": "Total waste of Money and false commitment",
+        "content": "Very disappointing experience with Univest. They make big promises about profits, but my actual experience was completely different. I did not see meaningful profit, and it felt like they only care about taking subscription money.\n\nA lot of claims seem exaggerated and misleading. I would advise new users to be careful and do proper research before paying. Not worth the money in my experience.",
+        "date": "2026-06-16T05:15:48-07:00",
+        "version": "1.1.284+734"
+      },
+      {
+        "id": "14185980423",
+        "author": "Krishan jangid",
+        "rating": 1,
+        "title": "Fruad app",
+        "content": "Fraud app",
+        "date": "2026-06-15T08:14:42-07:00",
+        "version": "1.1.284+734"
+      },
+      {
+        "id": "14181909904",
+        "author": "Singh_Avtar",
+        "rating": 1,
+        "title": "Very overhyped app",
+        "content": "The focus of the company is on selling you more and more paid products rather than quality research. Don't fall for it. Plus they drive you crazy with the calls, you just login and within few mins they start calling you.",
+        "date": "2026-06-14T07:15:24-07:00",
+        "version": "1.1.284+734"
+      },
+      {
+        "id": "14180985261",
+        "author": "Abhishek880",
+        "rating": 1,
+        "title": "Fraud app",
+        "content": "All the positive reviews are fake n fraud dont fall for their fake marketing campaigns download only if u want to loose all ur money",
+        "date": "2026-06-14T01:38:49-07:00",
+        "version": "1.1.284+734"
+      },
+      {
+        "id": "14180860113",
+        "author": "Ronny02k",
+        "rating": 1,
+        "title": "App",
+        "content": "This is a terrible app; ever since I purchased the plan, I have been receiving constant calls—one after another—and even if I disconnect the call, messages and calls keep coming through on WhatsApp.",
+        "date": "2026-06-14T00:45:58-07:00",
+        "version": "1.1.284+734"
+      },
+      {
+        "id": "14176896546",
+        "author": "amit0706",
+        "rating": 1,
+        "title": "Univest",
+        "content": "worst app i found till now",
+        "date": "2026-06-13T00:33:12-07:00",
+        "version": "1.1.284+734"
+      },
+      {
+        "id": "14169423582",
+        "author": "SamantaSoumen",
+        "rating": 1,
+        "title": "Targets Rarely Achieved, Losses Hidden",
+        "content": "I am extremely disappointed with Univest. The app promotes short-term, mid-term, and long-term stock recommendations with specific targets and holding periods, but the reality is very different after purchasing the subscription.\n\nMany trades are closed much earlier than the stated target period, sometimes on the same day or within a few days, with just 1–2% profit. The advertised target is rarely achieved because profits are booked prematurely. \n\nOn the other hand, when a trade goes into loss, it is often left open for months or even hundreds of days. In some cases, additional buying is recommended, and eventually the trade is closed after 300–600 days with only 2–3% profit.\n\nAnother major issue is the lack of transparency. Winning trades are highlighted, but running loss-making trades are not properly showcased. This creates a misleading impression of overall performance and makes it difficult for subscribers to assess the actual success rate.\n\nThe app also constantly pushes Futures &",
+        "date": "2026-06-11T03:47:40-07:00",
+        "version": "1.1.284+734"
+      },
+      {
+        "id": "14161698115",
+        "author": "Anuraggggggggg",
+        "rating": 1,
+        "title": "I need the refund",
+        "content": "I felt like being scammed. I am asking for refund of my subscription fee but getting no reply via email. I did not use any feature of the subscription that got auto paid which is partly my fault but a getting a refund should be possible.",
+        "date": "2026-06-09T03:38:12-07:00",
+        "version": "1.1.284+734"
+      },
+      {
+        "id": "14161195746",
+        "author": "Big_Mistake_Elevate",
+        "rating": 1,
+        "title": "Very Bad",
+        "content": "Focused only on sell the plans one and another than again another. Of you have risk taking capacity of 3-5 lacs than only you invest with Univest in commodity and future. For commodity you have to download another app. You have to keep your funds in other app. For equity their most of the stocks doesn’t give return. For intraday they guide you as you invested they ask more fund than again more fund and than they informed you exit it. You won’t receive any call. They give update related your stocks and segments only on their app. So just buy and open the app and wait for their exit message. I had taken their gold membership. But now I left them.",
+        "date": "2026-06-08T23:52:18-07:00",
+        "version": "1.1.284+734"
+      },
+      {
+        "id": "14160967967",
+        "author": "Navitewatia22",
+        "rating": 1,
+        "title": "Fake site hai, logo ka bewkuf bana kr paisa loot rhe hai",
+        "content": "You're warning that *\"Univest App\" is a fake app* run by highly educated, very clever people who trap investors. *How they trap people:* 1. I have been connected with the app for 2 years 2. I took 3-4 trades on their advice - *all were losses* 3. Their method: They pick stocks that have _already risen_ 4-7% in a day/week 4. They then tell users to \"buy now for 4-5% potential\" 5. Example: Stock goes from ₹500 to ₹550, they give entry at ₹550 6. If you're lucky, it goes up 2-4% more and they make you exit for a tiny profit 7. But usually, you buy at the high and *it falls immediately* - then you're trapped for years 8. I am personally stuck in 3 of their stocks for 3 years now 9. They either move it to \"long term/medium term\" or make you exit at 1-1.5% instead of 5% 10. You can't track it all day, so you don't realize they're exiting early *My advice*: It's totally fraud, fake membership, fake people. Don't Invest.",
+        "date": "2026-06-08T22:06:38-07:00",
+        "version": "1.1.284+734"
+      },
+      {
+        "id": "14150282033",
+        "author": "Dupinder sidhu",
+        "rating": 1,
+        "title": "app is a scam and cannot be trusted",
+        "content": "The UNIVEST app is fraudulent and deceives people.”\n“The UNIVEST app is a scam and cannot be trusted",
+        "date": "2026-06-06T04:11:38-07:00",
+        "version": "1.1.284+734"
+      },
+      {
+        "id": "14222732253",
+        "author": "Noobtrader-11",
+        "rating": 2,
+        "title": "Fraud",
+        "content": "Showing incorrect information. Started by buying 2stocks they asvised. Both of them went negative. However their dashboard shows slight positive with more potential left",
+        "date": "2026-06-24T18:13:42-07:00",
+        "version": "1.1.292+742"
+      },
+      {
+        "id": "14192743277",
+        "author": "Ashwini Soni",
+        "rating": 2,
+        "title": "Profit se jyada loss",
+        "content": "Oprion trading shuru kiya h,jitne ka profit nhi hota usse jahin jyada ka to loss kra dete ho … Research utni better nhi h jitni honi chahiye. NOT SATISFIED. Plz IMPROVE, otherwise Jyada customers nahi aayenge.",
+        "date": "2026-06-17T02:24:58-07:00",
+        "version": "1.1.284+734"
+      },
+      {
+        "id": "14164917079",
+        "author": "Mohanhnkumar",
+        "rating": 2,
+        "title": "Trade Calls After the Move Has Already Happened",
+        "content": "By the time they post a trade on the app, the opportunity is often already gone and the stock has moved out of the ideal buying range. Yet, they continue to highlight the profits made on those trades.\nIt feels as though, instead of sharing actionable trades that users can enter, they are posting trades that would have been useful a few minutes earlier.\nI followed several of their trade calls closely and noticed that the entry prices, exit prices, and profit figures they publish often do not align with the actual timing of their posts.",
+        "date": "2026-06-09T22:53:31-07:00",
+        "version": "1.1.284+734"
+      },
+      {
+        "id": "14223493103",
+        "author": "Vikas_user",
+        "rating": 3,
+        "title": "Fed up of the sales calls and messages.",
+        "content": "I purchased one month stock subscription to try it. But really fed up of their sales calls and messages to buy/upgrade the plan. Daily two IVR calls even after denial and multiple messages in app to upgrade. I am doubtful that I will continue it considering the level of disturbance.",
+        "date": "2026-06-24T23:27:57-07:00",
+        "version": "1.1.292+742"
+      },
+      {
+        "id": "14227342505",
+        "author": "Ashutosh1289",
+        "rating": 4,
+        "title": "Good Recommendation",
+        "content": "This application provides timely and good stock recommendations.",
+        "date": "2026-06-25T22:26:35-07:00",
+        "version": "1.1.292+742"
+      },
+      {
+        "id": "14212537757",
+        "author": "Reddy_mangesh",
+        "rating": 4,
+        "title": "Very good for regular income",
+        "content": "This app is really good. You can comfortably generate around decent return monthly  I recommend it to everyone.”",
+        "date": "2026-06-22T04:43:27-07:00",
+        "version": "1.1.284+734"
+      },
+      {
+        "id": "14198193245",
+        "author": "thisisparas",
+        "rating": 4,
+        "title": "Great investment ideas",
+        "content": "A highly useful app for discovering helpful stock recommendations.",
+        "date": "2026-06-18T10:35:37-07:00",
+        "version": "1.1.284+734"
+      },
+      {
+        "id": "14177573161",
+        "author": "Raghav-06",
+        "rating": 4,
+        "title": "Refund",
+        "content": "They helped me with the refund process. I just wrote a email to them and the refund was processed",
+        "date": "2026-06-13T05:00:29-07:00",
+        "version": "1.1.284+734"
+      },
+      {
+        "id": "14169057929",
+        "author": "Hellosjja",
+        "rating": 4,
+        "title": "Good",
+        "content": "Looks good",
+        "date": "2026-06-11T01:09:38-07:00",
+        "version": "1.1.284+734"
+      },
+      {
+        "id": "14147185518",
+        "author": "Okfine07",
+        "rating": 4,
+        "title": "Seamless",
+        "content": "Amazing app for tracking stocks and market trends",
+        "date": "2026-06-05T08:28:22-07:00",
+        "version": "1.1.284+734"
+      },
+      {
+        "id": "14231756799",
+        "author": "Rajat Saxena’s",
+        "rating": 5,
+        "title": "Charges deducted wrongly",
+        "content": "I got the refund within timeline, thank you so much.",
+        "date": "2026-06-27T00:20:35-07:00",
+        "version": "1.1.292+742"
+      },
+      {
+        "id": "14231724730",
+        "author": "Jishnu Nikitha",
+        "rating": 5,
+        "title": "Perfect Companion",
+        "content": "Helpful content and a smooth user interface.",
+        "date": "2026-06-27T00:07:39-07:00",
+        "version": "1.1.292+742"
+      },
+      {
+        "id": "14231497230",
+        "author": "Lûçifër",
+        "rating": 5,
+        "title": "Refund Request",
+        "content": "I have accidentally purchased the membership and my money got debited for which i reached out to customer support and they have refunded the money back to me which is a way to build trust. Support topics do not include membership support which can be an area of enhancement and feasibility for customers.",
+        "date": "2026-06-26T22:35:04-07:00",
+        "version": "1.1.292+742"
+      },
+      {
+        "id": "14231357476",
+        "author": "Myrahappi",
+        "rating": 5,
+        "title": "Happy and positive",
+        "content": "They refunded my funds and approachable people",
+        "date": "2026-06-26T21:39:14-07:00",
+        "version": "1.1.292+742"
+      },
+      {
+        "id": "14228821684",
+        "author": "narhari_kumure",
+        "rating": 5,
+        "title": "Highly Useful",
+        "content": "Very convenient for checking market updates daily.",
+        "date": "2026-06-26T07:15:17-07:00",
+        "version": "1.1.292+742"
+      },
+      {
+        "id": "14228227630",
+        "author": "Nik Rathore",
+        "rating": 5,
+        "title": "Okay okay",
+        "content": "Univest is Beginner-friendly interface.Research-backed stock ideas with entry price, target, and stop-loss.\nPortfolio health analysis.\nEducational content for new investors.\nOne app for research and execution. I’d use Univest as a research and idea-generation tool, not as an autopilot investment service. But\nIf your goal is long-term investing (5–10 years), platforms focused on index investing or direct mutual funds may be more appropriate than frequent advisory calls. If your goal is active swing trading or F&O, Univest’s research features may provide more value.",
+        "date": "2026-06-26T04:22:32-07:00",
+        "version": "1.1.292+742"
+      },
+      {
+        "id": "14228217189",
+        "author": "Raghbendra",
+        "rating": 5,
+        "title": "User friendly",
+        "content": "Best trading app. It’s quite user friendly.",
+        "date": "2026-06-26T04:19:06-07:00",
+        "version": "1.1.292+742"
+      },
+      {
+        "id": "14228182710",
+        "author": "a21e",
+        "rating": 5,
+        "title": "User friendly",
+        "content": "This app is quite easy to track prices and read chart. Finally an app that doesn’t show show too many pop ups and confuse the experience.",
+        "date": "2026-06-26T04:07:36-07:00",
+        "version": "1.1.292+742"
+      },
+      {
+        "id": "14228166264",
+        "author": "sumeet wasal",
+        "rating": 5,
+        "title": "Great platform",
+        "content": "Very good app",
+        "date": "2026-06-26T04:02:05-07:00",
+        "version": "1.1.292+742"
+      },
+      {
+        "id": "14228163230",
+        "author": "Prateet Satyanarayana",
+        "rating": 5,
+        "title": "Wonderful Experience",
+        "content": "Fast updates and a seamless experience.",
+        "date": "2026-06-26T04:01:03-07:00",
+        "version": "1.1.292+742"
+      },
+      {
+        "id": "14228156348",
+        "author": "jaheel paramartha",
+        "rating": 5,
+        "title": "Easy Investing",
+        "content": "Helps simplify investment tracking and research.",
+        "date": "2026-06-26T03:58:43-07:00",
+        "version": "1.1.292+742"
+      },
+      {
+        "id": "14228137723",
+        "author": "Tanvi2406",
+        "rating": 5,
+        "title": "Good for Daily Investing",
+        "content": "Fast and reliable. Best for people who trade regularly.",
+        "date": "2026-06-26T03:52:23-07:00",
+        "version": "1.1.292+742"
+      },
+      {
+        "id": "14228075746",
+        "author": "Vikas@5251",
+        "rating": 5,
+        "title": "For refund",
+        "content": "Good support service",
+        "date": "2026-06-26T03:30:52-07:00",
+        "version": "1.1.292+742"
+      },
+      {
+        "id": "14227763336",
+        "author": "Anil sekhri @20",
+        "rating": 5,
+        "title": "Good application",
+        "content": "Good application",
+        "date": "2026-06-26T01:30:03-07:00",
+        "version": "1.1.292+742"
+      },
+      {
+        "id": "14224279842",
+        "author": "SUNIL@1154",
+        "rating": 5,
+        "title": "Good",
+        "content": "Good",
+        "date": "2026-06-25T04:47:08-07:00",
+        "version": "1.1.292+742"
+      },
+      {
+        "id": "14224234265",
+        "author": "Xyx no no no",
+        "rating": 5,
+        "title": "Good",
+        "content": "Good",
+        "date": "2026-06-25T04:32:03-07:00",
+        "version": "1.1.292+742"
+      },
+      {
+        "id": "14223463790",
+        "author": "1 humans",
+        "rating": 5,
+        "title": "Good app",
+        "content": "Good app running smoothly",
+        "date": "2026-06-24T23:14:48-07:00",
+        "version": "1.1.292+742"
+      },
+      {
+        "id": "14223441971",
+        "author": "Css@6446",
+        "rating": 5,
+        "title": "Good service",
+        "content": "Good service",
+        "date": "2026-06-24T23:05:00-07:00",
+        "version": "1.1.292+742"
+      },
+      {
+        "id": "14221311497",
+        "author": "Dhapa1234",
+        "rating": 5,
+        "title": "Univest Truly Cares About Its Users",
+        "content": "Univest is a great platform for beginners who are just starting their journey in the stock market. Good application",
+        "date": "2026-06-24T09:50:08-07:00",
+        "version": "1.1.292+742"
+      },
+      {
+        "id": "14221220282",
+        "author": "Cuff124",
+        "rating": 5,
+        "title": "Very good application",
+        "content": "Good application use benefit application good application helpful team",
+        "date": "2026-06-24T09:22:21-07:00",
+        "version": "1.1.292+742"
+      }
+    ],
+    "review_analysis": {
+      "total_reviews": 46,
+      "average_rating": 3.24,
+      "rating_distribution": {
+        "1": 16,
+        "2": 3,
+        "3": 1,
+        "4": 6,
+        "5": 20
+      },
+      "latest_review_date": "2026-06-24T22:04:39-07:00",
+      "oldest_review_date": "2026-06-24T09:22:21-07:00"
+    },
+    "reviews_metadata": {
+      "1": {
+        "requested": 20,
+        "fetched": 16
+      },
+      "2": {
+        "requested": 20,
+        "fetched": 3
+      },
+      "3": {
+        "requested": 20,
+        "fetched": 1
+      },
+      "4": {
+        "requested": 20,
+        "fetched": 6
+      },
+      "5": {
+        "requested": 20,
+        "fetched": 20
+      }
+    }
+  },
+  "analysis": null
+}

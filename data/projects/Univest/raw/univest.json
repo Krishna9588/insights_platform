@@ -1,0 +1,331 @@
+{
+    "company_name": "Univest",
+    "domain": "https://univest.in/",
+    "playstore_link": "https://play.google.com/store/apps/details?id=in.univest.app",
+    "appstore_link": "https://apps.apple.com/in/app/univest-stocks-investment/id1627042598",
+    "youtube_official_channel": "https://www.youtube.com/@Univest_In",
+    "linkedin_company_page": "Unable to verify",
+    "year_founded": "2022 - Gurugram, India",
+    "names_of_founders": [
+        "Pranit Arora",
+        "Avneet Dhamija",
+        "Vikash Agrawal"
+    ],
+    "c-suite_officer": [
+        "Pranit Arora - Co-founder & CEO",
+        "Gagan Singla - CEO",
+        "Avneet Dhamija - Co-founder & CPO",
+        "Vikash Agrawal - Co-founder & CTO",
+        "Umesh Kumar - Head Compliance"
+    ],
+    "employee_count": "134",
+    "exact_hq_location": "Unit No. 1, 2, & 3, Ground Floor, Unitech Commercial Tower-2, Block-B, Greenwoods City, Gurgaon Sector 45, Gurgaon, Sector -45, Haryana, India, 122003",
+    "locations_operating_in": [
+        "India"
+    ],
+    "industry_and_segment": "Wealthtech, Investment Technology, Stock Market Advisory, Brokerage for Retail Investors",
+    "available_platforms": "Web & Mobile (both)",
+    "funding_raised": "$11.975M",
+    "funding_stage": "Series A",
+    "no_of_users": "7.5M+",
+    "annual_revenue": "₹10 - ₹50 Cr as on Mar 31, 2025",
+    "key_positioning": "India's leading SEBI-registered advisory, trading & broking platform providing AI-powered stock recommendations, portfolio management, and timely trade execution for retail investors.",
+    "revenue_model": "Subscription-based research plans and brokerage services",
+    "pricing_tiers": [
+        "Equity-only research plan: ₹899/month",
+        "Equity-only research plan: ₹2,399 annually",
+        "Pro Super Plan (equity, futures, options): ₹6,999/year",
+        "Pro Black Plan (equity, futures, options, commodities): Unable to verify exact pricing",
+        "Brokerage: ₹18 per executed order (first 15 trades free upon Demat account opening)",
+        "Advisory plans: Starting at ₹6 per day (or ₹183 per month)",
+        "₹1 trial for new users",
+        "Pro Basket (equity cash)",
+        "Pro Commodity (MCX)",
+        "Super Loyalty (equity and F&O combined)",
+        "Pro Gold (premium equity)",
+        "Mutual Fund Advisory",
+        "Brokerage Plan (zero brokerage)"
+    ],
+    "target_customer_segments": [
+        "Retail Investors",
+        "Beginner Stock Traders",
+        "Experienced F&O Traders",
+        "Commodity Traders",
+        "Mutual Fund Investors"
+    ],
+    "tech_stack_highlights": [
+        "Artificial Intelligence (AI)",
+        "Advanced Algorithms"
+    ],
+    "milestones": [
+        "Company founded: 2022",
+        "Seed funding ($1.5M): March 2023",
+        "Started monetizing operations: March 2023",
+        "Cash flow positive: August 2023",
+        "Series A funding ($10M): December 2024",
+        "Over 3 million sign-ups and 150,000 paying subscribers: December 2024",
+        "Exited P2P investment space: December 2024",
+        "Reached 7.5M+ investors: 2026"
+    ],
+    "new_features_launched": [
+        "AI-powered stock recommendations",
+        "Integrated brokerage services",
+        "Mutual fund guidance",
+        "Algo trading access",
+        "Real-time market data (Nifty, Sensex, sector insights)",
+        "SEBI Registered analyst-backed stock picks"
+    ],
+    "recent_partnerships_and_integrations": [
+        {
+            "partner": "Trinity Media Group",
+            "type": "Investment",
+            "description": "Led a $1.5 million Seed round of funding.",
+            "source": "https://www.entrepreneur.com/en-india/news-and-trends/univest-raises-15-million-in-seed-funding-round/447294",
+            "date": "2023-03-17"
+        },
+        {
+            "partner": "Harbhajan Singh",
+            "type": "Strategic Partnership",
+            "description": "Collaborated for India's 1st investment platform enabling right investments with timely exits.",
+            "source": "https://tracxn.com/d/companies/univest.in",
+            "date": "2023-07-18"
+        },
+        {
+            "partner": "Bertelsmann India Investments (BII)",
+            "type": "Investment",
+            "description": "Led a $10 million Series A funding round.",
+            "source": "https://economictimes.indiatimes.com/tech/funding/wealthtech-platform-univest-raises-10-million-in-series-a-round-from-bertelsmann-india/articleshow/106225433.cms",
+            "date": "2024-12-23"
+        }
+    ],
+    "competitors": [
+        {
+            "name": "Seeking Alpha",
+            "domain": "seekingalpha.com"
+        },
+        {
+            "name": "The Motley Fool",
+            "domain": "fool.com"
+        },
+        {
+            "name": "TipRanks",
+            "domain": "tipranks.com"
+        },
+        {
+            "name": "Scripbox Advisors",
+            "domain": "scripbox.com"
+        }
+    ],
+    "regulatory_and_legal_issues": [
+        {
+            "issue": "Multiple users have sent complaints to RBI (Reserve Bank of India) regarding defaults and inconsistent payouts in the 'Univest Elite' P2P investment product.",
+            "jurisdiction": "India",
+            "status": "Under Investigation",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzhUYwTKLrSmM6XEhXmPn7raI4zqxhA9gM6MWn8J8gejBgv-BV7X3_otkzlRf2OVX6sf-HUUjm6-JxlszOMicU1d1NPqmt5HfWSuR2NW_OEuSYDtlR3nHZ-S74QotU9vDazvbNzaYPUSIkOM7VK2aZUetgoZgIDUKtseL51O9KcoPV559smXf00DRGsaEvpdEtUYneUTcALvimU3N2EkwXok62aPGKOltLHCrdLA==",
+            "date": "2025-05-28",
+            "effect": [
+                "Potential regulatory scrutiny and reputational damage due to investor protection concerns and lack of transparency regarding the investment product."
+            ]
+        }
+    ],
+    "market_sentiment": {
+        "overall": "Mixed",
+        "analyst_view": "Unable to verify analyst views specifically for Univest (univest.in) as most analyst reports found refer to the US-based Univest Financial Corporation (UVSP).",
+        "user_community_view": "User sentiment is largely negative on platforms like Reddit, with strong complaints about significant losses, alleged unethical practices, misleading performance claims, and poor customer service. However, some users report positive experiences and success with stock recommendations.",
+        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbrJ0rAKeR_RKC9ucEoMzJm0MBiL8xyCN5gWkfXhdYnmfoqPnVJ7srJzcb-gMcECNxPfdBIULvq4XB9Rmdf1obEmvXIfbJka0sg-jZQ9vUGGLcJwK9s_fX1_2lNmYgft-Fj_0sa4tvLCznn9N7wbyGgHF4Wuj9cGd7nZMNVjEAmjaKlzyvSkYPz1uSUuUkDFe5lPFY1c9jsbbzTC0pKkqxd54=, https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVVx_XYP622GAsI8pn-ljxPDntwLVS1Mbf6EHRyymuP0qWoFqbi52jgWZNMI0_w6stTocGJl3oQV_nd2cQTHVW_iqmh3aTHs2OZ4tuV-i2GF9deI02B1JBGGeE3_lP9P9zmaF_fSuuXiITXHFf1kOsuPd74YquGmW6zIn4KfVYOHe2hB5eldBJ-v_8jKIxADDgZRlR55b-fYXOvNix9hWDw=",
+        "date": "Recent"
+    },
+    "current_problems_struggling_with": [
+        {
+            "description": "Misleading advertised win rates and 'cooking' numbers by posting selective positive results while hiding significant losses on less visible channels.",
+            "user_type": "Retail Investors, Beginner Stock Traders",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbrJ0rAKeR_RKC9ucEoMzJm0MBiL8xyCN5gWkfXhdYnmfoqPnVJ7srJzcb-gMcECNxPfdBIULvq4XB9Rmdf1obEmvXIfbJka0sg-jZQ9vUGGLcJwK9s_fX1_2lNmYgft-Fj_0sa4tvLCznn9N7wbyGgHF4Wuj9cGd7nZMNVjEAmjaKlzyvSkYPz1uSUuUkDFe5lPFY1c9jsbbzTC0pKkqxd54=",
+            "date": "2025-07-07",
+            "effect": [
+                "Users lose trust and make uninformed trading decisions based on skewed performance data."
+            ]
+        },
+        {
+            "description": "Allegations of unethical practices in F&O trading, such as changing stop-loss orders after they are hit and carrying forward losing trades, leading to substantial user losses.",
+            "user_type": "Experienced F&O Traders",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwV3Ic3mRwNyR-19ApceStqqgtcL1vmXu1MLQHW9pMBm99bbQtHVvMCiKe93gmcgdHQbkp2ruTWV0UOvU1VsqhthgRQLrVrayzJWIUERdNkuwUJ7OfLBrBdhx2luEZjIs6DLay5CtiHqjvj-qK1ii2dwuipDzhzH0QGOW2SffPQsGvrm7X44_SuVJu79_J2qdZSdkSgn8=",
+            "date": "2026-02-16",
+            "effect": [
+                "Users incur significant financial losses and express doubts about the platform's integrity."
+            ]
+        },
+        {
+            "description": "Lack of adequate risk management, with many trades having no stop-loss or inappropriate averaging of losing positions, leading to large drawdowns and capital lock-in.",
+            "user_type": "Retail Investors, Beginner Stock Traders",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFzLKKphqfl2z04mEnGIy1qLyrZcBSZ6QpoZr3Qs0TybA5jcwBuOQWBRJQ6va4OnqSdgoAU7MB-SvFx5HJSNmDsrP_6owbuVBtCgjUJublY1PHQfAs4-w2evo5WtLKQuuTrTMCb2c4D5sNLASBYMLVyV9tsJKA02yfhY1-Zbh1ZHCutoZigUsOenlyVAUZFUI8UzCidD945yNcmk_fzIghEAogTsLdRtZU=",
+            "date": "2026-06-01",
+            "effect": [
+                "Investors face substantial portfolio declines and struggle with liquidity due to capital tied up in underperforming assets."
+            ]
+        },
+        {
+            "description": "Defaults and inconsistent payouts for the 'Univest Elite' P2P investment product, resulting in locked principal amounts and a lack of clear communication from the company.",
+            "user_type": "Mutual Fund Investors",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzhUYwTKLrSmM6XEhXmPn7raI4zqxhA9gM6MWn8J8gejBgv-BV7X3_otkzlRf2OVX6sf-HUUjm6-JxlszOMicU1d1NPqmt5HfWSuR2NW_OEuSYDtlR3nHZ-S74QotU9vDazvbNzaYPUSIkOM7VK2aZUetgoZgIDUKtseL51O9KcoPV559smXf00DRGsaEvpdEtUYneUTcALvimU3N2EkwXok62aPGKOltLHCrdLA==",
+            "date": "2025-05-28",
+            "effect": [
+                "Investors experience financial uncertainty and loss of confidence in the platform's 'low-risk, high-yield' offerings."
+            ]
+        },
+        {
+            "description": "Sub-optimal UI/UX on the 'Elite' home page, with confusing information architecture, inconsistent interaction patterns, and poor content hierarchy impacting user experience.",
+            "user_type": "All Users",
+            "frequency": "Occasional",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZCg0Up25aEWLsgvJfnmInYBbdhRcA5PcC5F5ITT6cJYGrVf1PIHR0u7RPCHzB7_JoJVgAkvzH6ZdzMcnucpyONyCJHw7R0MZOOQbEkLaCQ7pU0c9MsZ6IYMXwi1xQD8og3jfHJ3f61UT3hBn5BRU1KQqDCXuNVWya4iSELWkvJVF86j2PfZVI8uBXN7osWqWZEgoj6SVoKjVPlC54x5JIDHbUEl75KtZgXyhu7afnSBCQ",
+            "date": "2024-08-13",
+            "effect": [
+                "Users face difficulty navigating the platform and understanding investment options, potentially leading to lower conversion rates."
+            ]
+        },
+        {
+            "description": "Customer support issues, including unresponsiveness to complaints regarding unethical practices and frustrating experiences with refund requests related to auto-renewals.",
+            "user_type": "All Users",
+            "frequency": "Occasional",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbrJ0rAKeR_RKC9ucEoMzJm0MBiL8xyCN5gWkfXhdYnmfoqPnVJ7srJzcb-gMcECNxPfdBIULvq4XB9Rmdf1obEmvXIfbJka0sg-jZQ9vUGGLcJwK9s_fX1_2lNmYgft-Fj_0sa4tvLCznn9N7wbyGgHF4Wuj9cGd7nZMNVjEAmjaKlzyvSkYPz1uSUuUkDFe5lPFY1c9jsbbzTC0pKkqxd54=",
+            "date": "2025-07-07",
+            "effect": [
+                "Users feel unheard and unsupported, exacerbating negative sentiment and increasing churn risk."
+            ]
+        }
+    ],
+    "user_complaints": [
+        {
+            "issue": "Recommendations in F&O and Options segments often lead to significant losses, contrary to advertised claims.",
+            "user_type": "Experienced F&O Traders",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbrJ0rAKeR_RKC9ucEoMzJm0MBiL8xyCN5gWkfXhdYnmfoqPnVJ7srJzcb-gMcECNxPfdBIULvq4XB9Rmdf1obEmvXIfbJka0sg-jZQ9vUGGLcJwK9s_fX1_2lNmYgft-Fj_0sa4tvLCznn9N7wbyGgHF4Wuj9cGd7nZMNVjEAmjaKlzyvSkYPz1uSUuUkDFe5lPFY1c9jsbbzTC0pKkqxd54=",
+            "date": "2025-07-07",
+            "effect": [
+                "Users experience substantial financial losses and feel misled by the platform's promises of profit."
+            ]
+        },
+        {
+            "issue": "Allegations of unethical trading practices, including changing stop-loss points and carrying forward losing trades, leading to unexpected and large losses.",
+            "user_type": "Experienced F&O Traders",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwV3Ic3mRwNyR-19ApceStqqgtcL1vmXu1MLQHW9pMBm99bbQtHVvMCiKe93gmcgdHQbkp2ruTWV0UOvU1VsqhthgRQLrVrayzJWIUERdNkuwUJ7OfLBrBdhx2luEZjIs6DLay5CtiHqjvj-qK1ii2dwuipDzhzH0QGOW2SffPQsGvrm7X44_SuVJu79_J2qdZSdkSgn8=",
+            "date": "2026-02-16",
+            "effect": [
+                "Users feel cheated and lose trust in the advisory services, questioning the platform's ethical standards."
+            ]
+        },
+        {
+            "issue": "Inconsistent payouts and defaults on the 'Univest Elite' P2P investment product, with users' principal locked and little transparency or assistance.",
+            "user_type": "Mutual Fund Investors",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzhUYwTKLrSmM6XEhXmPn7raI4zqxhA9gM6MWn8J8gejBgv-BV7X3_otkzlRf2OVX6sf-HUUjm6-JxlszOMicU1d1NPqmt5HfWSuR2NW_OEuSYDtlR3nHZ-S74QotU9vDazvbNzaYPUSIkOM7VK2aZUetgoZgIDUKtseL51O9KcoPV559smXf00DRGsaEvpdEtUYneUTcALvimU3N2EkwXok62aPGKOltLHCrdLA==",
+            "date": "2025-05-28",
+            "effect": [
+                "Investors face financial distress, inability to access their funds, and express strong dissatisfaction with communication."
+            ]
+        },
+        {
+            "issue": "Unclear auto-renewal processes for subscriptions, leading to unexpected charges and difficulties in obtaining refunds from customer support.",
+            "user_type": "All Users",
+            "frequency": "Occasional",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHHCvNazP2lYnI3GvgFK8EEL_ECLKOYO7UEUyeg0v6GnTH98YbjURk2FsmcKdLgDYhOZ0QxCqjeKggBbC3bL13vSDwYPJPN1THhLFTBEoXZ8EP_kEcVZJ8BPNkIrtkmlS00pGzHbGQG7dvzTS_R410AQx7TqZ3XNxB6=",
+            "date": "2026-06-25",
+            "effect": [
+                "Users feel frustrated by unexpected costs and a lack of transparency in billing, leading to negative app reviews."
+            ]
+        },
+        {
+            "issue": "Poor customer service, with reports of unhelpful responses and a general lack of concern when users raise issues related to trading losses or unethical practices.",
+            "user_type": "All Users",
+            "frequency": "Occasional",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbrJ0rAKeR_RKC9ucEoMzJm0MBiL8xyCN5gWkfXhdYnmfoqPnVJ7srJzcb-gMcECNxPfdBIULvq4XB9Rmdf1obEmvXIfbJka0sg-jZQ9vUGGLcJwK9s_fX1_2lNmYgft-Fj_0sa4tvLCznn9N7wbyGgHF4Wuj9cGd7nZMNVjEAmjaKlzyvSkYPz1uSUuUkDFe5lPFY1c9jsbbzTC0pKkqxd54=",
+            "date": "2025-07-07",
+            "effect": [
+                "Users feel abandoned and distrustful of the platform, leading to public negative feedback and calls for regulatory action."
+            ]
+        },
+        {
+            "issue": "Challenges with the mobile app's user interface, particularly inconsistent navigation and confusing information presentation on investment product pages.",
+            "user_type": "All Users",
+            "frequency": "Occasional",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZCg0Up25aEWLsgvJfnmInYBbdhRcA5PcC5F5ITT6cJYGrVf1PIHR0u7RPCHzB7_JoJVgAkvzH6ZdzMcnucpyONyCJHw7R0MZOOQbEkLaCQ7pU0c9MsZ6IYMXwi1xQD8og3jfHJ3f61UT3hBn5BRU1KQqDCXuNVWya4iSELWkvJVF86j2PfZVI8uBXN7osWqWZEgoj6SVoKjVPlC54x5JIDHbUEl75KtZgXyhu7afnSBCQ",
+            "date": "2024-08-13",
+            "effect": [
+                "Users experience frustration and difficulty in using the app to manage their investments or find relevant information."
+            ]
+        }
+    ],
+    "other_crucial_details": [
+        "Univest (univest.in) was founded in 2022.",
+        "For FY24, Univest reported approximately ₹9 Cr in Operating Income and ₹9 Cr in Net Loss, indicating it is currently operating at a loss despite significant funding.",
+        "The company's P2P lending product 'Univest Elite' has faced issues with defaults and inconsistent payouts, leading to user complaints and RBI involvement."
+    ],
+    "differentiators": [
+        {
+            "feature": "AI-powered stock recommendations and timely trade alerts across multiple channels (WhatsApp, push notifications, Telegram).",
+            "user_type": "Retail Investors, Beginner Stock Traders",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGcTHf-Le8BjHFT2AZhwlSexar-mURrtOQwkrPLkb1FlrJUV3nK17FJrJFtea46eqf_0AMZvO1xmYQwkuUomeCcJ-h9Ch_69sEul55QilKGF5XXViO6qlWpFegReb7vFjRFnNPG8zD6j7MXM27mjV8ke-ji_jGVsCOJIh_Eb57ZfeFvHyP9kjtpylOz-wxev7FH2s8VWefPs_4MXEwNbgau",
+            "date": "2023-03-17",
+            "effect": [
+                "Provides users with data-driven insights and immediate execution opportunities, aiming to maximize gains and minimize losses."
+            ]
+        },
+        {
+            "feature": "Integrated platform offering advisory services, stock screening, and brokerage capabilities in one application.",
+            "user_type": "All Users",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVVx_XYP622GAsI8pn-ljxPDntwLVS1Mbf6EHRyymuP0qWoFqbi52jgWZNMI0_w6stTocGJl3oQV_nd2cQTHVW_iqmh3aTHs2OZ4tuV-i2GF9deI02B1JBGGeE3_lP9zmaF_fSuuXiITXHFf1kOsuPd74YquGmW6zIn4KfVYOHe2hB5eldBJ-v_8jKIxADDgZRlR55b-fYXOvNix9hWDw=",
+            "date": "2025-08-22",
+            "effect": [
+                "Streamlines the investment process, eliminating the need for multiple apps for research, recommendations, and trading."
+            ]
+        },
+        {
+            "feature": "Offering 'Univest Elite' with low-risk, high-yield investment plans (up to 12% p.a.) secured through partnerships with regulated NBFC-P2P platforms.",
+            "user_type": "Mutual Fund Investors",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGcTHf-Le8BjHFT2AZhwlSexar-mURrtOQwkrPLkb1FlrJUV3nK17FJrJFtea46eqf_0AMZvO1xmYQwkuUomeCcJ-h9Ch_69sEul55QilKGF5XXViO6qlWpFegReb7vFjRFnNPG8zD6j7MXM27mjV8ke-ji_jGVsCOJIh_Eb57ZfeFvHyP9kjtpylOz-wxev7FH2s8VWefPs_4MXEwNbgau",
+            "date": "2023-03-17",
+            "effect": [
+                "Provides an alternative investment avenue for users seeking stable returns with perceived lower risk, diversifying their portfolio options."
+            ]
+        }
+    ],
+    "strategic_moves": [
+        {
+            "move": "Secured $1.5 million in Seed funding led by US-based Trinity Media Group to strengthen financial product distribution and scale talent.",
+            "user_type": "N/A",
+            "frequency": "Rare",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGcTHf-Le8BjHFT2AZhwlSexar-mURrtOQwkrPLkb1FlrJUV3nK17FJrJFtea46eqf_0AMZvO1xmYQwkuUomeCcJ-h9Ch_69sEul55QilKGF5XXViO6qlWpFegReb7vFjRFnNPG8zD6j7MXM27mjV8ke-ji_jGVsCOJIh_Eb57ZfeFvHyP9kjtpylOz-wxev7FH2s8VWefPs_4MXEwNbgau",
+            "date": "2023-03-17",
+            "effect": [
+                "Enabled the company to expand its offerings and grow its team, supporting broader market reach."
+            ]
+        },
+        {
+            "move": "Raised $10 million in a Series A funding round led by Bertelsmann India Investments (BII) to develop a stock market superapp.",
+            "user_type": "N/A",
+            "frequency": "Rare",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGFa_ZDMZFoWsbrQuDjFn3JUConIjmMMdvAEylo4D6m8qjpFxjISZ33gLznq_4BeuZ9nIlHHDTXukLNRaoU6wWcH6gI5Y7ZsfE_dklvq3CeIsRURm2TgcNwBAOSuKCReolLBLoAYYocA6b1YyXO0NQc7fOxhdcgasG6axFcUJW4aX-BbOBAV7oinGOG5_-2IwdJZm07Bi59b79EeJBD06r3lohQW7mf1AerSVIuI4R5K-66OXXOXen-5Bcjk53J",
+            "date": "Recent",
+            "effect": [
+                "Provided capital for significant product development, aiming to enhance the platform's features and user experience."
+            ]
+        },
+        {
+            "move": "Partnered with Faircent to introduce 'Univest Elite', offering low-risk, high-yield investment products, diversifying its investment portfolio options.",
+            "user_type": "Mutual Fund Investors",
+            "frequency": "Rare",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGcTHf-Le8BjHFT2AZhwlSexar-mURrtOQwkrPLkb1FlrJUV3nK17FJrJFtea46eqf_0AMZvO1xmYQwkuUomeCcJ-h9Ch_69sEul55QilKGF5XXViO6qlWpFegReb7vFjRFnNPG8zD6j7MXM27mjV8ke-ji_jGVsCOJIh_Eb57ZfeFvHyP9kjtpylOz-wxev7FH2s8VWefPs_4MXEwNbgau",
+            "date": "2023-03-17",
+            "effect": [
+                "Expanded the range of investment products available to users, targeting those interested in alternative fixed-return options."
+            ]
+        }
+    ]
+}

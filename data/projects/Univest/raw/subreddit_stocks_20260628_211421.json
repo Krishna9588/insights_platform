@@ -1,0 +1,13 @@
+{
+  "type": "subreddit",
+  "subreddit_info": {
+    "name": "stocks"
+  },
+  "posts": [],
+  "stats": {
+    "posts_extracted": 0,
+    "total_comments": 0,
+    "category": "new"
+  },
+  "scraped_at": "2026-06-28T21:14:21.048716"
+}

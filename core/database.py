@@ -208,10 +208,10 @@ class Database:
             rows = conn.execute(
                 """
                 SELECT * FROM chat_sessions 
-                WHERE project_name = ? 
+                WHERE project_name LIKE ? 
                 ORDER BY updated_at DESC
                 """,
-                (project_name,),
+                (f"%{project_name}%",),
             ).fetchall()
             return [
                 ChatSession(

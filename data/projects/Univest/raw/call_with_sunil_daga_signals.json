@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "source_file": "Call with Sunil Daga.txt",
+    "source_type": "Internal",
+    "entity": "Call With Sunil Daga",
+    "meeting_type": "Product Discussion",
+    "file_date": "2026-06-28",
+    "processed_at": "2026-06-28T15:45:21.508350+00:00",
+    "classifier_used": "hybrid",
+    "total_signals": 1
+  },
+  "signals": [
+    {
+      "signal_id": "CWSD_001",
+      "signal_type": "Trend",
+      "confidence": 0.95,
+      "content": "Pratik Munot, Akshay Nahar, and Sunil discussed the concept of Stockly, a platform intended to bridge the gaps between genuine stock market advisory from SEBI-registered research analysts (RAs) and one-click execution via linked broker accounts. Pratik Munot explained Stockly's goal, which included exploring revenue models such as subscription or pay-per-tip, while Sunil and Akshay Nahar agreed that competitors include platforms like WhatsApp and Telegram, which are used for sharing tips. Sunil advised focusing on quality over quantity and positioning Stockly as a premium, mid-to-long-term investment platform, noting that the fundamental problems for most retail investors are the lack of portfolio review and uninformed buying based on tips. The discussion concluded by exploring a potential B2B-to-B2C model, charging RAs or users for advice, and noting that specific targeting (traders vs. long-term investors) is challenging, with FO targeting requiring significant automation tools. Recommends focusing on mid-to-long term investors vs FNO community Requires significant automation tools for short-term traders Sustainable business model over quick wins Position Stockly as premium investment platform Focus quality over quantity approach Target customers paying 40-50K annually (like Ashwins 60K subscription) Portfolio review service discussion People want portfolio reviews but massive undertaking (4-5K stocks in market) Advisors already busy with other priorities Pricing challenges for individual reviews Wife launching mass premium wealth protection product Combines mutual funds, wealth management, lending Evaluated Stockgro for funding but didnt invest Surprised by their 100 crore user numbers (validated as accurate) Didnt recommend to PE firm due to large check size requirements (minimum 1 crore) Positive on market gap for genuine advice Suggested exploring commodities (gold, silver, copper) Avoid information overload - differentiate from existing players",
+      "time_range": null,
+      "turn_index": 0
+    }
+  ]
+}

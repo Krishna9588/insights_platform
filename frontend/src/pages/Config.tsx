@@ -1,17 +1,19 @@
 import { useEffect, useState } from 'react';
 import { useStore } from '@/store';
 import type { ApiKeyEntry } from '@/store';
-import { getHealth, getAppConfig, saveAppConfig } from '@/api';
+import { getHealth, getAppConfig, saveAppConfig, getKeyStatus } from '@/api';
+import BackButton from '@/components/layout/BackButton';
 
-// Provider catalog — name, color, placeholder pattern
-const PROVIDERS: { id: string; label: string; color: string; placeholder: string; docs: string }[] = [
-  { id: 'gemini',       label: 'Google Gemini',  color: '#4285F4', placeholder: 'AIzaSy...',                          docs: 'https://aistudio.google.com/apikey' },
-  { id: 'openai',       label: 'OpenAI',          color: '#10A37F', placeholder: 'sk-...',                              docs: 'https://platform.openai.com/api-keys' },
-  { id: 'huggingface',  label: 'HuggingFace',     color: '#FF9D00', placeholder: 'hf_...',                             docs: 'https://huggingface.co/settings/tokens' },
-  { id: 'apify',        label: 'Apify',           color: '#1DB954', placeholder: 'apify_api_...',                      docs: 'https://console.apify.com/account/integrations' },
-  { id: 'serper',       label: 'Serper (Google)', color: '#EA4335', placeholder: 'serper_...',                         docs: 'https://serper.dev/api-key' },
-  { id: 'youtube',      label: 'YouTube Data API', color: '#FF0000', placeholder: 'AIzaSy... (Google Cloud project)', docs: 'https://console.cloud.google.com/apis' },
-  { id: 'reddit',       label: 'Reddit API',      color: '#FF4500', placeholder: 'client_id:client_secret',           docs: 'https://www.reddit.com/prefs/apps' },
+// Provider catalog — name, color, placeholder pattern, logo
+const LOGO_TOKEN = 'pk_Tw38O-4_RNinmXOwNIgagQ';
+const PROVIDERS: { id: string; label: string; color: string; placeholder: string; docs: string; logo: string }[] = [
+  { id: 'gemini',       label: 'Google Gemini',   color: '#4285F4', placeholder: 'AIzaSy...',                         docs: 'https://aistudio.google.com/apikey',                  logo: `https://img.logo.dev/google.com?token=${LOGO_TOKEN}&size=32` },
+  { id: 'openai',       label: 'OpenAI',           color: '#10A37F', placeholder: 'sk-...',                             docs: 'https://platform.openai.com/api-keys',                logo: `https://img.logo.dev/openai.com?token=${LOGO_TOKEN}&size=32` },
+  { id: 'huggingface',  label: 'HuggingFace',      color: '#FF9D00', placeholder: 'hf_...',                            docs: 'https://huggingface.co/settings/tokens',              logo: `https://img.logo.dev/huggingface.co?token=${LOGO_TOKEN}&size=32` },
+  { id: 'apify',        label: 'Apify',            color: '#1DB954', placeholder: 'apify_api_...',                     docs: 'https://console.apify.com/account/integrations',      logo: `https://img.logo.dev/apify.com?token=${LOGO_TOKEN}&size=32` },
+  { id: 'serper',       label: 'Serper (Google)',  color: '#EA4335', placeholder: 'serper_...',                        docs: 'https://serper.dev/api-key',                          logo: `https://img.logo.dev/serper.dev?token=${LOGO_TOKEN}&size=32` },
+  { id: 'youtube',      label: 'YouTube Data API', color: '#FF0000', placeholder: 'AIzaSy... (Google Cloud project)', docs: 'https://console.cloud.google.com/apis',               logo: `https://img.logo.dev/youtube.com?token=${LOGO_TOKEN}&size=32` },
+  { id: 'reddit',       label: 'Reddit API',       color: '#FF4500', placeholder: 'client_id:client_secret',          docs: 'https://www.reddit.com/prefs/apps',                   logo: `https://img.logo.dev/reddit.com?token=${LOGO_TOKEN}&size=32` },
 ];
 
 function maskKey(key: string) {
@@ -36,6 +38,7 @@ function ApiProviderCard({
   color,
   placeholder,
   docs,
+  logo,
   keys,
   onAdd,
   onRemove,
@@ -46,6 +49,7 @@ function ApiProviderCard({
   color: string;
   placeholder: string;
   docs: string;
+  logo: string;
   keys: ApiKeyEntry[];
   onAdd: (name: string, key: string, provider: string, isDefault: boolean) => void;
   onRemove: (id: string) => void;
@@ -75,7 +79,7 @@ function ApiProviderCard({
         onClick={() => setExpanded((e) => !e)}
       >
         <div className="api-key-card-title">
-          <div style={{ width: 10, height: 10, borderRadius: '50%', background: color, flexShrink: 0 }} />
+          <img src={logo} alt={label} style={{ width: 24, height: 24, borderRadius: 4, objectFit: 'contain', background: '#fff' }} onError={(e) => { e.currentTarget.style.display = 'none'; }} />
           {label}
           {keys.length > 0 && (
             <span style={{
@@ -201,10 +205,13 @@ function ApiProviderCard({
 }
 
 export default function Config() {
-  const { apiKeys, addApiKey, removeApiKey, setApiKeys, pipelineDefaults, setPipelineDefaults, showToast } = useStore();
+  const { apiKeys, addApiKey, removeApiKey, setApiKeys, pipelineDefaults, setPipelineDefaults, showToast, setGoogleDriveConfig } = useStore();
   const [health, setHealth] = useState<{ status: string; ok: boolean } | null>(null);
   const [healthLoading, setHealthLoading] = useState(false);
   const [configLoaded, setConfigLoaded] = useState(false);
+  const [testDriveId, setTestDriveId] = useState('');
+  const [testDriveLoading, setTestDriveLoading] = useState(false);
+  const [driveFileCount, setDriveFileCount] = useState<number | null>(null);
 
   // Clipboard copy utility
   const copyToClipboard = (text: string) => {
@@ -223,6 +230,25 @@ export default function Config() {
     }
   };
 
+  const handleTestDrive = async () => {
+    if (!testDriveId.trim()) {
+      showToast('Please enter a Folder ID to test');
+      return;
+    }
+    setTestDriveLoading(true);
+    try {
+      const { testDriveConnection } = await import('@/api');
+      const res: any = await testDriveConnection(testDriveId.trim());
+      setDriveFileCount(res.file_count || 0);
+      showToast(res.message || 'Drive connection successful!');
+    } catch (err: any) {
+      setDriveFileCount(null);
+      showToast('Drive connection failed: ' + (err.response?.data?.detail || err.message));
+    } finally {
+      setTestDriveLoading(false);
+    }
+  };
+
   const loadConfig = async () => {
     try {
       const r = await getAppConfig() as { values: Record<string, unknown> };
@@ -235,6 +261,10 @@ export default function Config() {
       if (v.pipeline_defaults) {
         setPipelineDefaults(v.pipeline_defaults as typeof pipelineDefaults);
       }
+      if (v.google_drive) {
+        setGoogleDriveConfig(v.google_drive as { defaultFolderId: string });
+        setTestDriveId((v.google_drive as { defaultFolderId: string }).defaultFolderId || '');
+      }
       setConfigLoaded(true);
     } catch {
       setConfigLoaded(true);
@@ -246,7 +276,9 @@ export default function Config() {
       await saveAppConfig({
         api_keys: apiKeys,
         pipeline_defaults: pipelineDefaults,
+        google_drive: { defaultFolderId: testDriveId },
       });
+      setGoogleDriveConfig({ defaultFolderId: testDriveId });
       showToast('Configuration saved');
     } catch {
       showToast('Failed to save — is backend running?');
@@ -269,29 +301,30 @@ export default function Config() {
   }, []);
 
   return (
+    <>
     <div>
       <header className="topbar">
         <div>
           <p className="eyebrow">System</p>
           <h1>Configurations</h1>
         </div>
-        <div className="actions">
+        <div className="actions" style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
           <button className="button secondary" onClick={checkHealth} disabled={healthLoading}>
-            {healthLoading ? <span className="spinner dark" /> : 'Check Backend'}
+            {healthLoading ? <span className="spinner dark" /> : 'Check Status'}
           </button>
+
+          {health && (
+            <div style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 13, color: health.ok ? 'var(--success)' : 'var(--danger)' }}>
+              <div className={`dot ${health.ok ? 'ok' : 'bad'}`} />
+              <span>Backend: {health.status}</span>
+            </div>
+          )}
+
           <button className="button" onClick={saveConfig}>
-            Save All Settings
+            Save
           </button>
         </div>
       </header>
-
-      {/* Backend Health Banner */}
-      {health && (
-        <div className={`health-banner ${health.ok ? 'ok' : 'error'}`}>
-          <div className={`dot ${health.ok ? 'ok' : 'bad'}`} style={{ width: 10, height: 10 }} />
-          <span><strong>Backend:</strong> {health.status}</span>
-        </div>
-      )}
 
       <div style={{ display: 'grid', gap: 24 }}>
 
@@ -309,11 +342,22 @@ export default function Config() {
           <div className={`settings-panel`} style={{ opacity: pipelineDefaults.enabled ? 1 : 0.5 }}>
             <div className="form-grid">
               <label>
-                Default LLM Provider
+                Global Model (Pipeline & Deep Research)
                 <select
                   value={pipelineDefaults.provider}
                   onChange={(e) => setPipelineDefaults({ provider: e.target.value })}
-                  disabled={!pipelineDefaults.enabled}
+                >
+                  <option value="gemini">Google Gemini</option>
+                  <option value="gemini_2">Gemini 2.0</option>
+                  <option value="openai">OpenAI GPT-4</option>
+                  <option value="huggingface">HuggingFace</option>
+                </select>
+              </label>
+              <label>
+                Chat Model (Copilot)
+                <select
+                  value={useStore((s: any) => s.chatProvider)}
+                  onChange={(e) => useStore.getState().setChatProvider(e.target.value)}
                 >
                   <option value="gemini">Google Gemini</option>
                   <option value="gemini_2">Gemini 2.0</option>
@@ -365,12 +409,6 @@ export default function Config() {
             </p>
           </div>
 
-          <div className="soft-band" style={{ marginBottom: 16, fontSize: 13 }}>
-            🔒 Keys are masked by default. Click 👁 to reveal. For security, store your real keys
-            in the backend <code>.env</code> file — this UI is for quick testing and reference.
-            For production, use environment variables on your server.
-          </div>
-
           <div style={{ display: 'grid', gap: 10 }}>
             {PROVIDERS.map((p) => (
               <ApiProviderCard
@@ -380,6 +418,7 @@ export default function Config() {
                 color={p.color}
                 placeholder={p.placeholder}
                 docs={p.docs}
+                logo={p.logo}
                 keys={apiKeys.filter((k) => k.provider === p.id)}
                 onAdd={(name, key, provider, isDefault) =>
                   addApiKey({ name, key, provider, isDefault })
@@ -401,11 +440,34 @@ export default function Config() {
             </label>
             <label>
               Default Folder ID
-              <input placeholder="Paste a Google Drive folder ID" />
+              <input 
+                placeholder="Paste a Google Drive folder ID" 
+                value={testDriveId} 
+                onChange={(e) => { setTestDriveId(e.target.value); setDriveFileCount(null); }} 
+              />
             </label>
-            <div style={{ display: 'flex', gap: 8 }}>
-              <button className="button secondary compact">Test Connection</button>
-              <button className="button compact">Save Drive Config</button>
+            <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
+              <button 
+                className="button secondary compact" 
+                onClick={handleTestDrive}
+                disabled={testDriveLoading}
+              >
+                {testDriveLoading ? 'Testing...' : 'Test Connection'}
+              </button>
+              <button className="button compact" onClick={saveConfig}>Save Drive</button>
+              {driveFileCount !== null && (
+                <span style={{ 
+                  color: 'var(--success)', 
+                  border: '1px solid var(--success)', 
+                  padding: '4px 10px', 
+                  borderRadius: 6, 
+                  fontSize: 13,
+                  fontWeight: 500,
+                  whiteSpace: 'nowrap'
+                }}>
+                  {driveFileCount} files found — connection successful
+                </span>
+              )}
             </div>
           </div>
         </div>
@@ -413,11 +475,13 @@ export default function Config() {
         {/* ── Save reminder ── */}
         <div className="soft-band" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12 }}>
           <span className="muted" style={{ fontSize: 13 }}>
-            Changes are saved to the backend config file when you click <strong>Save All Settings</strong>.
+            Changes are saved to the backend config file when you click <strong>Save</strong>.
           </span>
-          <button className="button" onClick={saveConfig}>Save All Settings</button>
+          <button className="button" onClick={saveConfig}>Save</button>
         </div>
       </div>
     </div>
+    <BackButton fallback="dashboard" />
+    </>
   );
 }

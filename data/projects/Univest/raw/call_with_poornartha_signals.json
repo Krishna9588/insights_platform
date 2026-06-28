@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "source_file": "Call with Poornartha.txt",
+    "source_type": "Internal",
+    "entity": "Call With Poornartha",
+    "meeting_type": "Internal Meeting",
+    "file_date": "2026-06-28",
+    "processed_at": "2026-06-28T15:44:37.272514+00:00",
+    "classifier_used": "hf_api",
+    "total_signals": 1
+  },
+  "signals": [
+    {
+      "signal_id": "CWP_001",
+      "signal_type": "Feature",
+      "confidence": 0.4066,
+      "content": "Date : April 1 Purnartha Platform Overview Broker-agnostic execution: user selects their own broker (e.g., Zerodha, ICICI Direct) Clicking Execute redirects to the selected brokers platform with order pre-filled Virtual account provided alongside real brokerage account Tracks Purnarthas recommendations vs. actual returns in real time Useful when existing personal holdings differ from recommended portfolio Covers both stocks and mutual funds (full-solution offering) Built entirely in-house; no third-party tech backend is Innosis, MD is ex-IBM Portfolio Rebalancing Logic Lump sum: initial buy quarterly portfolio review and rebalancing SIP: monthly rebalancing with each SIP installment Lump sum SIP: both mechanisms apply Ad-hoc top-ups (e.g., buying on dips): user initiates request Purnartha re-issues recommendation user executes Pricing AUM-based (yearly): 2.5 of AUM GST; minimum 20L investment Roughly 50K GST 59Kyear at minimum Fixed fee (3-year): 1.2L total including GST, for any AUM amount More cost-effective above a certain corpus size (e.g., 5Cr at 2.5 AUM becomes expensive) Complimentary service: existing portfolio analysis (equity) Purnartha suggests what to keepexit",
+      "time_range": null,
+      "turn_index": 0
+    }
+  ]
+}

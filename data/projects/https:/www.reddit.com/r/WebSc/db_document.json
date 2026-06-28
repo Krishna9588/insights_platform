@@ -1,0 +1,27 @@
+{
+    "project_name": "https://www.reddit.com/r/WebSc",
+    "domain": null,
+    "ingestion_date": "2026-06-27T17:25:51.946177",
+    "data_sources": {
+        "reddit": {
+            "reddit_0": {
+                "type": "search",
+                "query": "https://www.reddit.com/r/WebScrapingInsider/",
+                "posts": [],
+                "stats": {
+                    "posts_extracted": 0,
+                    "total_comments": 0
+                },
+                "scraped_at": "2026-06-27T17:25:51.943796"
+            }
+        }
+    },
+    "processing_status": {
+        "agent2_insights_extracted": false,
+        "agent3_synthesis_done": false,
+        "agent4_product_brief_done": false
+    },
+    "agent2_output": {},
+    "agent3_output": {},
+    "agent4_output": {}
+}

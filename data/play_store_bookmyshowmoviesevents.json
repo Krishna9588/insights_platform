@@ -1,0 +1,888 @@
+{
+  "extraction_metadata": {
+    "source": "Google Play Store",
+    "extracted_at": "2026-06-27T16:59:35.424103",
+    "extraction_time_seconds": 6.13,
+    "fields_extracted": 23,
+    "country": "in",
+    "language": "en",
+    "reviews_distribution": {
+      "1": 20,
+      "2": 20,
+      "3": 20,
+      "4": 20,
+      "5": 20
+    },
+    "total_reviews_extracted": 100,
+    "status": "success"
+  },
+  "extracted_data": {
+    "metadata": {
+      "appId": "com.bt.bms",
+      "title": "BookMyShow | Movies & Events",
+      "url": "https://play.google.com/store/apps/details?id=com.bt.bms&hl=en&gl=in",
+      "developer": "Bigtree Entertainment Pvt. Ltd.",
+      "developerId": "Bigtree+Entertainment+Pvt.+Ltd.",
+      "category": null,
+      "genre": "Entertainment",
+      "genreId": "ENTERTAINMENT",
+      "content_rating": "Rated for 12+",
+      "score": 4.6539235,
+      "ratings": 3928614,
+      "reviews": 337686,
+      "installs": "100,000,000+",
+      "installs_min": 100000000,
+      "installs_max": 1000000000,
+      "free": true,
+      "price": 0.0,
+      "currency": "INR",
+      "iap": false,
+      "iap_price_range": null,
+      "version": "18.2.2",
+      "description": "Your access to all things entertainment is here!\r\n\r\nFrom epic concerts and the latest blockbusters to thrilling sports, theatre, and everything LIVE, it’s all on BookMyShow. And if you live for unforgettable experiences, this app deserves a front-row spot on your phone!\r\n\r\nNo matter what mood you’re in, there’s something for everyone. Whether you’re looking for the most amazing big-screen experience for the latest releases, or you want to step out with the gang for the most happening gigs in town, we’ve got it all. Oh, and did we mention that there are plenty of things to do for quality family time, too? From amusement parks to fun activities for kids of all ages, BookMyShow truly has it ALL.\r\n\r\nThis year looks LIT with entertainment, thanks to upcoming Indian blockbusters like Toxic, Drishyam 3, Cocktail 2 as well as Hollywood releases like Mortal Kombat II, Star Wars: The Mandalorian and Grogu, Masters of the Universe, and many more! Enjoy these movies on the big screen and make the most of this experience by booking the BestSeller Seats on the BookMyShow app. You can also get exciting offers from numerous banks and wallets.\r\n\r\nBookMyShow also brings you the biggest live events and sports experiences across India. Catch the thrilling action of the TATA IPL with tickets to matches featuring Mumbai Indians, Kolkata Knight Riders, Gujarat Titans, and Lucknow Super Giants. Music lovers can look forward to spectacular concerts like Elrow, Anyma presents Aeden, Klangkuenstler Presents Outworld, and comedy shows like Inventions by Biswa Kalyan Rath. There’s also something for theatre enthusiasts in the form of the world-famous Broadway show Cats. Browse a wide range of concerts, sports events, and LIVE experiences in your city and stay entertained all year round.\r\n\r\nThat’s not all! Discover world-class entertainment and blockbuster releases like The Super Mario Galaxy Movie, Marty Supreme on BookMyShow Stream - where you don’t need any subscription and can rent/buy a title whenever you want.\r\n\r\nIn other words, BookMyShow is a comprehensive online platform that allows users to discover, explore, and book tickets for a wide range of entertainment events. With its user-friendly interface, extensive event database, personalised recommendations, and secure ticketing services, BookMyShow remains the preferred choice for entertainment enthusiasts seeking seamless and memorable experiences.\r\n\r\nAt BookMyShow, we take our users' privacy seriously.\r\n• Storage: We save some data locally to avoid making a lot of network calls.\r\n• Your Location: We use the location data to show you venues around you. No data is saved on our servers.\r\n• Your Social Information: We only need to read your contacts when you need to pick someone from the contacts to share the booking details. We don't save any of this data on our servers, ever.\r\n• Your application’s information & Logs: We use this to gather the information that helps us fix issues that you may experience with our app. We do not save any of this information.\r\n• Your Accounts: We require this to be able to send Push Notifications. Don’t worry, we never spam.\r\n• Your Contacts: We need access to your contacts so that you can invite your friends to chat or join you after you've booked your tickets. We ask for your contact permission for a bunch of features like chat, sharing tickets with friends. Your information will be kept confidential.\r\n• Read and Receive SMS: We need this permission to enable our app to read your One-Time-Password SMS and automatically enter the code while completing the payment. Your privacy will be respected, and no information will be saved.\r\n\r\nDownload our app for FREE and book tickets on the go. Entertainment is at your fingertips.\r\n\r\nFor more entertainment, follow us on social media!\r\n\r\nNeed help? Head to the Help Centre page on our mobile application, and we are sure you’d find answers to any queries that may cross your mind.",
+      "summary": "Your access to all things entertainment is here!\r\n\r\nFrom epic concerts and the latest blockbusters to thrilling sports, theatre, and everything LIVE, it’s all on BookMyShow. And if you live for unforg",
+      "released": "Apr 26, 2011",
+      "extraction_country": "in",
+      "extraction_language": "en",
+      "extracted_at": "2026-06-27T16:59:38.880417"
+    },
+    "reviews": [
+      {
+        "id": "bbbf0b32-6410-4ce7-8222-bf6269da38a2",
+        "rating": 1,
+        "title": "",
+        "content": "This app is a complete mess. Shows tickets as available, but when you try to book, nothing goes through. Total waste of time. Third grade performance. Not reliable at all. I am not impressed. Uninstalling it right away. Even IRCTC works better than this. You seriously need to hire skilled engineers and fix your system. It clearly cannot handle the load. Scale your infrastructure properly instead of frustrating users.",
+        "date": "2026-03-19T12:42:45",
+        "helpful_count": 0
+      },
+      {
+        "id": "04457f65-6de4-4fbf-9c95-4393d2c4c8cd",
+        "rating": 1,
+        "title": "",
+        "content": "I had a very disappointing experience with this app. I had booked a Holi event specifically because it mentioned pool facilities, and the ticket price was higher for that reason. However, at the last moment the venue was changed and there was no pool facility available. When I requested a refund due to this major change, it was denied and the support team was uncooperative. This felt extremely misleading and unprofessional. Overall, a very poor experience.",
+        "date": "2026-03-13T22:27:41",
+        "helpful_count": 0
+      },
+      {
+        "id": "39cc1fd3-0a7b-4163-802e-08a1e28b4267",
+        "rating": 1,
+        "title": "",
+        "content": "There is no proper cancellation procedure. I wanted to cancel a movie which I booked prior due to some other plans that day, and they told me they'd only refund 75% of the amount I paid. I still agreed to that, but after confirmation of the refund payment method, it showed \"something went wrong, please try again later.\" For two days straight, it showed like that, and I tried contacting customer service, but they weren't helpful at all. They said they'd raised the complaint, but nothing happened.",
+        "date": "2026-04-21T17:31:04",
+        "helpful_count": 0
+      },
+      {
+        "id": "7419f559-60ba-4e6a-9963-dbfcadb1f3f0",
+        "rating": 1,
+        "title": "",
+        "content": "They need a competitor. Clearly they are cashing in as much as possible. I will permanently switch as soon as I have another option. Most of the offers are dupe. I have an ICICI debit and credit card and have never been able to avail corresponding offer. Some or the other error will keep popping up. Convenience fees is a ridiculous amount. Refund on cancellation is a joke. To summarize, it's a horrible customer experience that we are forced to Go through because of lack of an alternate.",
+        "date": "2024-11-08T21:37:09",
+        "helpful_count": 0
+      },
+      {
+        "id": "497687cd-ec42-4c0a-a120-64d7d4d7d88c",
+        "rating": 1,
+        "title": "",
+        "content": "I have bought 2 movies, I have downloaded the movies but it has no audio. I have complained about it on twitter and helpdesk email. But the issue is still not resolved. I have provided video evidence of my grievances too. But the situation is still the same. Worst. I have shared every information (my device, am I streaiming it etc) at least 20 times to support team over email and twitter. But no positive response from them.",
+        "date": "2022-05-12T13:55:43",
+        "helpful_count": 0
+      },
+      {
+        "id": "5204c3b6-f150-4615-a3fc-0ef94e0e735c",
+        "rating": 1,
+        "title": "",
+        "content": "Misleading Club Membership BookMyShow misleads users into buying Club memberships and then denies access to the benefits. I paid for a membership that allows multiple discount redemptions but could use it only once. Now the app asks me to purchase the same membership again. Customer support and emails only give excuses and delays, despite a promised 3-day resolution. Even after charging high convenience fees, they fail to honor paid services. Very disappointing experience.",
+        "date": "2026-01-14T01:58:40",
+        "helpful_count": 0
+      },
+      {
+        "id": "5829adbf-da12-4c39-afab-1686e8c1157c",
+        "rating": 1,
+        "title": "",
+        "content": "Nowadays, if we use a buy one get one offer, the booking fails, and it takes 4-7 days to get a refund. In the meantime, we lose the offer. It's a very pathetic game BookMyShow is playing. Even as a superstar user, I didn't get any response to my support message in 2 hours, even though they claim to provide priority support and resolve all issues within 1 hour.",
+        "date": "2024-06-27T13:08:27",
+        "helpful_count": 0
+      },
+      {
+        "id": "3a51f48a-9b37-4c8e-a0e2-34d72631e6e7",
+        "rating": 1,
+        "title": "",
+        "content": "Not a good app. Will extort money from you with exorbitant internet handling fees, not to mention the poor user interface. Transactions may go through without your ticket getting booked .Customer Service , feedback and refund correspondence thereafter is of much inconvenience, as well. Save yourself the trouble and don't use it, unless you really require it.",
+        "date": "2020-03-08T22:13:21",
+        "helpful_count": 0
+      },
+      {
+        "id": "cbf9f731-f749-49fc-8850-418cb96743c2",
+        "rating": 1,
+        "title": "",
+        "content": "Would have given a lower rating if it was possible. Useless payment processing services. Advertise Amazon Pay cashback in bold on their app but when you pay through Amazon Pay, there is always an issue; for instance payment gets through but the tickets are not confirmed. I have lost Rs 1,500 because of BookMyShow. Even their customer care is a shame - takes 15 minutes to even get through. They do not call back even if you select the option of call back. They take ages to reply to emails.",
+        "date": "2019-04-21T20:15:08",
+        "helpful_count": 0
+      },
+      {
+        "id": "1bfed330-200a-4feb-8893-c8f6ddfa928a",
+        "rating": 1,
+        "title": "",
+        "content": "Worst experience. I got confirmed tickets and the same tickets were sold to other people. Looks like my movie was cancelled and bookmyshow didn't even bother to inform me. I went all the way to watch the movie and had a bad incident when someone else came to me saying its his seat. And there is no way to call support. The chat support in the app is useless. They respond after an hour and the response won't even show any notifications on the phone. Disappointing service.",
+        "date": "2022-05-10T21:02:38",
+        "helpful_count": 0
+      },
+      {
+        "id": "f280f39c-0ffb-41e5-ae51-3bc09503f3d9",
+        "rating": 1,
+        "title": "",
+        "content": "Have been trying to book a ticket using promo code, the payment is successful every time but tickets are not booked. Waiting for 15 minutes in the app for any resolution but no reply from the associate on the other side. What a cheap way to get avoid people from booking at a lower price. If you guys are so concerned, why to even introduce promo codes. At least stay honest with your work. By the time the issue is resolved, tickets will be booked. Strictly cheap and unprofessional.",
+        "date": "2023-02-05T12:09:06",
+        "helpful_count": 0
+      },
+      {
+        "id": "ee2c6e04-da79-4a46-93a0-1c420b930b81",
+        "rating": 1,
+        "title": "",
+        "content": "I was denied to enter the venue for a show being informed that the show is cancelled due to heavy rains and requests. My issue is not resolved and my money isn't refunded or the show is not rescheduled. I would not suggest anyone to go for this app as they barely care once you've made the payment. There is no way to reach out for your concerns. No proper service after bookings. They simply ignore.",
+        "date": "2024-08-02T22:30:26",
+        "helpful_count": 0
+      },
+      {
+        "id": "0eb3b594-17a7-4cc8-afc9-4ba25a32211b",
+        "rating": 1,
+        "title": "",
+        "content": "This app was working fine for me until a failed transaction occured and they didn't return the money.. I couldn't connect with customer care.. I doubt they have any... When I lost money one more time due to transaction failure.. I thought I will get my money back because it was mentioned \" Transaction failed amount will be credited in 7-10 days.. But it didn't happen.. So I decided to stop using bms.. And switched to paytm, I encounter failed transactions there also,But they returned money fast.",
+        "date": "2021-12-18T00:18:08",
+        "helpful_count": 0
+      },
+      {
+        "id": "d78b9a01-5872-4074-86ac-bb1d9ad02caf",
+        "rating": 1,
+        "title": "",
+        "content": "For the last few weeks I have hardly been able to get into the app itself. Every time I try, it says cannot connect with the servers at the moment try later. I have updated it countless number of times. It is not my internet's problem as other apps are working quite well and quite fast if I might add. Come on guys...the basic thing is availability",
+        "date": "2018-10-25T17:04:55",
+        "helpful_count": 0
+      },
+      {
+        "id": "0d875bcd-5ca3-495b-b609-25877b775c71",
+        "rating": 1,
+        "title": "",
+        "content": "Worst app everrrrr!!!! Aap with such big name should give the option to cancel or modify the time of the movie show..... i mean why dont they give the option to modify the time??? Yesterday i booked the ticket and for some unavoidable reasons i wanted to change the timing but i did not get the option, which is so ridiculous!!! I tried reaching out for help but there is no live person to help their customers. They only have chat bots that responds to everything saying thank you, FRUSTRATING!!",
+        "date": "2024-11-13T14:20:35",
+        "helpful_count": 0
+      },
+      {
+        "id": "67fa5c7b-d471-4f4a-8c4b-24213aa9a58c",
+        "rating": 1,
+        "title": "",
+        "content": "Disappointedly, I encountered an error while attempting to book a Coldplay ticket. Despite selecting a seating section, the app prevented me from choosing seats. Subsequently, when I tried to opt for the standing section, the app displayed an error message indicating that the ticket limit had been reached and advised me to try again later. Needless to say, I was utterly dejected.",
+        "date": "2024-09-26T22:20:44",
+        "helpful_count": 0
+      },
+      {
+        "id": "f1cca4db-553a-4bd4-ae7d-c0f6aaba5954",
+        "rating": 1,
+        "title": "",
+        "content": "I wanted to book tickets for Coldplay and it has signed me out for some reason and is now showing that it's unable to connect to server. For me as a software developer, if the app is not able to handle the load then what's the use? Either find a better platform for hosting the tickets. It's so disappointing. And now they are definitely gonna sell the tickets at high price. Also I gave 1 star because for movies I haven't had such an experience.",
+        "date": "2024-09-22T12:17:43",
+        "helpful_count": 0
+      },
+      {
+        "id": "5fa101ea-62d9-4167-829a-1669cfac2ba2",
+        "rating": 1,
+        "title": "",
+        "content": "I was really let down by the bookmyshow. I mistakenly purchased a cricket ticket for about 17,000. Since the ticket's location was incorrect and it was 2000 kilometres away from my house, I was looking for assistance to cancel it, but BookMyShow was not very helpful. They don't know how to handle their consumers and provide incredibly poor service.",
+        "date": "2023-11-19T13:09:17",
+        "helpful_count": 0
+      },
+      {
+        "id": "a359cf2f-4b0a-4f4b-80d2-3c6fa28d1be3",
+        "rating": 1,
+        "title": "",
+        "content": "Remove the \"rate now\". Make it for those who have purchased tickets. Just like other e-commerce platform. Otherwise people who have personal agenda with the movie is spamming, giving wrong rating. It is misleading. Please make the rating system available for those who have purchased ticket, just like Flipkart and amazon does, after buying a product, then only a customer can give review.",
+        "date": "2023-02-07T19:25:09",
+        "helpful_count": 0
+      },
+      {
+        "id": "a5f36999-259c-48b0-90ac-cb56a5c2f598",
+        "rating": 1,
+        "title": "",
+        "content": "Hardly the coupon code can be redeemed. If once applied you've to be so fast like a robot otherwise the session expires lmao. why do they even keep this kind of offer if one cannot use it! Moreover they've money payment problem. the app suddenly closes will you're typing your card number for no reason and then comes your session expiry! When you again do it they say you already used this code where as i didn't even buy the tickets!",
+        "date": "2019-05-15T09:13:57",
+        "helpful_count": 0
+      },
+      {
+        "id": "03a6905d-4c19-4360-a22a-d442eec2b64a",
+        "rating": 2,
+        "title": "",
+        "content": "Offers are working very rarely. A lot of credit cards will not be applicable also. If somehow you got the offer and applied also they will not allow you to complete the transaction on the first attempt and again if you retry with the same credit card they won't allow. And if you try without applying any offers they will smoothly allow you to complete the transaction.",
+        "date": "2026-04-03T12:19:58",
+        "helpful_count": 0
+      },
+      {
+        "id": "d0532d1f-fbe9-4273-8600-07cfad9c6abe",
+        "rating": 2,
+        "title": "",
+        "content": "I would like to inform you of the shortcomings of your online ticket booking platform 'bookmyshow'. Any user with an account currently has the option to rate any movie. But in the current scenario, this is due to the excessive adoration of certain individuals and institutions, and the ratings of many films are going down. Therefore, it is requested that the system be changed to the type of rating only for certified buyers.",
+        "date": "2020-01-17T08:24:00",
+        "helpful_count": 0
+      },
+      {
+        "id": "d0bc1c5e-776e-4dc3-976c-eac894b68f67",
+        "rating": 2,
+        "title": "",
+        "content": "the 1+1 offer has lately started mis functioning, I'm talking about icoci coral debit card offer, it shows to be available but when I press apply, the pop up comes- there was a technical error, please try again. I keep trying the eventually the quota runs out and another pop up comes- to try again at certain time as quota got exhausted. The offer was available, but due to delay of technical error the quota gets exhausted. It is highly frustrating for movie buffs like me who bought the card.",
+        "date": "2019-03-09T09:16:43",
+        "helpful_count": 0
+      },
+      {
+        "id": "7ec613a4-fdc9-4ee3-9c82-1500b01b19bd",
+        "rating": 2,
+        "title": "",
+        "content": "I’ve been using BookMyShow for a while, but recently the experience with credit card offers (especially BOGO) has become extremely frustrating. Whenever I try to apply an offer, the app correctly detects my card, applies the discount, and lets me proceed to payment. Even OTP verification goes through without any issue. But right after that, the transaction fails. The same card works perfectly fine if I remove the offer and make a normal payment. Better use district or any other app for booking",
+        "date": "2026-04-24T15:11:37",
+        "helpful_count": 0
+      },
+      {
+        "id": "5fc85ace-90c4-40f8-9b3a-29383055e0af",
+        "rating": 2,
+        "title": "",
+        "content": "Do not buy movies for streaming on this app. Very bad casting experience. Also the downloaded films get stuck while playing on device. Customer service is horrible for stream library. It is good for booking cinema or event tickets. But their streaming platform is terrible.",
+        "date": "2026-05-11T12:00:13",
+        "helpful_count": 0
+      },
+      {
+        "id": "fd46a4b6-88e7-4ae2-9dab-8e55f26ae2dc",
+        "rating": 2,
+        "title": "",
+        "content": "This App is Showing Glitch while booking the tickets of Movie Online at book my show app so at end it's showing Server down in the UPI Payments at Online Transaction that's why this app is too Ridiculous , means while booking the tickets the owner has not online payment but with the help of third party we can use the upi ID and book the tickets then also at the end the feature of upi transaction is not working that is not visible it's showing error so what's the problem by this app?",
+        "date": "2026-04-30T23:15:59",
+        "helpful_count": 0
+      },
+      {
+        "id": "4c52a6e5-c6ff-4a2a-8e62-01758227f6da",
+        "rating": 2,
+        "title": "",
+        "content": "The app is really good for booking movies and events tickets, searching the nearby happenings etc. But the main issue is with their cinema reviews and ratings. THE RATINGS ARE NOT AT ALL GENUINE. THEY KEEP ONLY THE Highest RATINGS AND DELETE THE CRITIC COMMENTS.",
+        "date": "2026-04-26T17:46:17",
+        "helpful_count": 0
+      },
+      {
+        "id": "ae80b1c5-e88f-4ca4-bfc4-25fcf2d1cadf",
+        "rating": 2,
+        "title": "",
+        "content": "The app has removed filtering options for language selection. Please fix it. I hope you are not expecting us to browse your entire gallery to find the movie that we are interested in.",
+        "date": "2026-05-22T10:16:53",
+        "helpful_count": 0
+      },
+      {
+        "id": "c2cda92d-f6ec-4ec5-a9e2-7191b40eb5b6",
+        "rating": 2,
+        "title": "",
+        "content": "Very poor and never working offers. For non applicable offer types it immediately shows message, and for applicable cards it alwwys shows some error and you never got any offer at all.",
+        "date": "2026-05-16T11:12:19",
+        "helpful_count": 0
+      },
+      {
+        "id": "a30f996e-7add-428c-a92e-78f15248c249",
+        "rating": 2,
+        "title": "",
+        "content": "Payment experience with Credit card is really bad , incase tickets are not booked there isn't instant payment reversal.",
+        "date": "2026-04-17T09:40:34",
+        "helpful_count": 0
+      },
+      {
+        "id": "fd72f53d-a03b-4a88-b9e9-07e4b5201970",
+        "rating": 2,
+        "title": "",
+        "content": "why this app xant work with VPN? I get it that booking tickets using VPN is not allowed, but you can't even browse anything, this is top level bs.",
+        "date": "2026-05-21T12:56:16",
+        "helpful_count": 0
+      },
+      {
+        "id": "5b26e136-157e-4932-87a7-2e185f46d978",
+        "rating": 2,
+        "title": "",
+        "content": "The app is only good for movies. not good for booking events, there is no way to rate and review events. I recently booked a watercolour learning class and the class was an absolute waste of money. And people will keep wasting money like this because there's no review to give on this app.",
+        "date": "2026-02-23T07:12:11",
+        "helpful_count": 0
+      },
+      {
+        "id": "d6eab5c4-eee4-4da1-a13c-61cda5b30a03",
+        "rating": 2,
+        "title": "",
+        "content": "conveyance charges are too much. Most credit card offers are not honoring. better to book directly from Theatre",
+        "date": "2026-06-07T13:03:14",
+        "helpful_count": 0
+      },
+      {
+        "id": "e67d8f7a-a3dc-4ee0-9925-c2860f8c563c",
+        "rating": 2,
+        "title": "",
+        "content": "The app is good but if compared with the district app your app doesn't have many offers for movie tickets booking and also if we want to apply for a card offer every time we need to enter the full card number again the worst thing",
+        "date": "2026-03-22T00:17:09",
+        "helpful_count": 0
+      },
+      {
+        "id": "ddcf94ae-4d0f-4f5b-8229-6d7d111d89fe",
+        "rating": 2,
+        "title": "",
+        "content": "Show got cancelled and refund was initiated, but there was very late/poor communication. I had already travelled to the theatre and wasted time and money. Ticket refund alone is not enough. Please inform users earlier and improve customer experience.",
+        "date": "2026-02-06T19:23:05",
+        "helpful_count": 0
+      },
+      {
+        "id": "e786ad9d-0bcb-49b9-b513-fea58118469c",
+        "rating": 2,
+        "title": "",
+        "content": "Payment deducted and ticket not booked. Why refund takes such a long time?",
+        "date": "2026-05-06T18:01:24",
+        "helpful_count": 0
+      },
+      {
+        "id": "a8e42872-e7d8-4c8b-8b35-026dab39d687",
+        "rating": 2,
+        "title": "",
+        "content": "I booked 4 tickets on BookMyShow for the 7 PM show at Salem Divyam Cinemas. The booking went till the payment page and the payment was also completed. But I didn’t receive any ticket confirmation message or email. However, when I checked again in BookMyShow, my tickets are showing as booked.",
+        "date": "2026-03-22T14:15:52",
+        "helpful_count": 0
+      },
+      {
+        "id": "f3ba5f9d-0c49-4560-a2bf-ce8ae4f4a56b",
+        "rating": 2,
+        "title": "",
+        "content": "I was about to rate the movie of o'romeo on BookMyShow after watching the show on Sunday but after completion of the show when I was about to rate the movie , the rating option suddenly disappeared on the app and on carefully observation it was written,\"ratings and reviews disabled as per court order\"",
+        "date": "2026-02-17T20:13:16",
+        "helpful_count": 0
+      },
+      {
+        "id": "ee5f7bc0-105b-4e2a-a2b2-732f9d225e42",
+        "rating": 2,
+        "title": "",
+        "content": "overall smooth experience for ticket booking. seat map usually correct for the theatre venues. very high convenience fees with little extra benefits. Membership advantage is not attractive. charging offers redemption fees over and above the convenience charges is annoying.",
+        "date": "2026-03-22T07:33:25",
+        "helpful_count": 0
+      },
+      {
+        "id": "4426f8e0-1dbc-4110-9a29-e2121aac17bc",
+        "rating": 2,
+        "title": "",
+        "content": "I have booked tickets for #dhurandhar2 Telugu on 13 th March, unfortunately the show got cancelled, it's showing the transaction is being already refunded but not done yet. The same thing happened on 19th March. Two shows have to be sorted, please resolve the issue @bookmyshow",
+        "date": "2026-03-20T21:48:15",
+        "helpful_count": 0
+      },
+      {
+        "id": "852dc667-9758-4505-9876-8791af17b895",
+        "rating": 3,
+        "title": "",
+        "content": "BookMyShow is useful, but it’s difficult to find kids’ movies. There is no option to filter by certification (U, U/A, 13+, 18+). As a parent, I need U-rated movies for my kids (below 10 years), but I end up searching through 20–30 movies in my city to find the right ones. Please add a filter by rating/certification or highlight U-rated movies. This will save time for parents and make the app much more family-friendly.",
+        "date": "2025-09-13T11:22:48",
+        "helpful_count": 0
+      },
+      {
+        "id": "de10926f-7055-451d-8a50-517b1e2089ac",
+        "rating": 3,
+        "title": "",
+        "content": "well to be honest, the app serves its purpose, works well. But that online booking fee charged by all apps is a pain in the ass. AND I FEEL BMS USED TO HAVE GOOD WALLET OFFERS, OCCASIONAL 50% OFF AND BUY 1 GET 1 FREE, ETC, 2 YEARS AGO. NOW LITERALLY NOTHING. ONLY OFFERS WITH CREDIT CARDS. DISAPPOINTING. Now I know you'll say you still have some 50+ offers, bla bla, I know I know, but I'm comparing you to how you were before. Overall, app works well, just a few slightly glitches here and there.",
+        "date": "2019-07-20T18:34:55",
+        "helpful_count": 0
+      },
+      {
+        "id": "00ec8ae4-61b6-47d7-a797-563e3350428b",
+        "rating": 3,
+        "title": "",
+        "content": "i am using this app since 2019. now mistakenly proceed tickets with wrong language while Booking movie tickets. and after that there is no option for modify your ticket. and the only option is cancellation and that too with less amount. i booked tickets with Gift voucher and now status is showing refunded but still there is no voucher showing and not on mail and on SMS. my concern is...if I just have issue with the movie language. then why I would suffer from such a loss and cancellation process",
+        "date": "2026-05-02T02:02:56",
+        "helpful_count": 0
+      },
+      {
+        "id": "fd3a5976-f74c-4ade-96a0-f9e2b2694d2f",
+        "rating": 3,
+        "title": "",
+        "content": "The BookMyShow app is fantastic but I am facing an issue with BookMyShow: when I play a movie trailer in full screen, it opens in YouTube. After watching, there’s no option to return directly to BookMyShow. A “Back to BookMyShow” button should be available so I can continue ticket booking smoothly. Without it, I must close and restart the app, which is inconvenient and disrupts the booking process. If I am missing something then please guide me.",
+        "date": "2026-05-12T22:21:07",
+        "helpful_count": 0
+      },
+      {
+        "id": "b1726ae9-2a43-4682-84c8-79a956819d3e",
+        "rating": 3,
+        "title": "",
+        "content": "Credit card payment did not see work. I tried atleast 5 times. Convenience charges are too high.",
+        "date": "2026-06-16T13:42:19",
+        "helpful_count": 0
+      },
+      {
+        "id": "4536197e-2ccb-411e-b6cc-6a2881bb4756",
+        "rating": 3,
+        "title": "",
+        "content": "While in the movies section if you click on a theatre it will not redirect to the theatre. no dark mode bottom bar is not good",
+        "date": "2026-06-20T14:46:33",
+        "helpful_count": 0
+      },
+      {
+        "id": "88a6ce39-7362-4cdd-97fe-3c4317948cb4",
+        "rating": 3,
+        "title": "",
+        "content": "No attractive offers, GST is getting out of hand, feels like they have stopped tryiing to improve themselves, features are missing like prime seats being highlighted, and all",
+        "date": "2026-06-12T02:15:25",
+        "helpful_count": 0
+      },
+      {
+        "id": "fa2a0ed4-ed81-4766-ad30-767168eb8999",
+        "rating": 3,
+        "title": "",
+        "content": "If we book through the mobile application, we should get an extra discount from it. We should get it for booking to watch new movies etc.",
+        "date": "2026-05-24T13:24:08",
+        "helpful_count": 0
+      },
+      {
+        "id": "3e4f10ac-6fd6-429c-8a19-466450cddaef",
+        "rating": 3,
+        "title": "",
+        "content": "App is good, but promoting fake products. giving some offer or discount coupon is better than promoting fake or non usable brands. 🙏",
+        "date": "2026-05-16T09:34:14",
+        "helpful_count": 0
+      },
+      {
+        "id": "e73199e3-204b-4150-aa06-90fba7585f50",
+        "rating": 3,
+        "title": "",
+        "content": "good app,but mention if there will be subtitles added as well or no.as it is easier for the audience",
+        "date": "2026-06-09T16:57:21",
+        "helpful_count": 0
+      },
+      {
+        "id": "66d93524-2f50-47fa-ba22-2e2da57f2244",
+        "rating": 3,
+        "title": "",
+        "content": "A good initiative by the team who developed this app. This app is helpful to book all kind of tickets at one platform but their platform fees is bit higher. But it will give you a headache while booking cricket matches ticket and it looks like there is something fishy (fraudulent things) going on because within few minutes cricket matches tickets gets vanished and the prices is also so high than the promised price.",
+        "date": "2026-02-05T17:20:00",
+        "helpful_count": 0
+      },
+      {
+        "id": "178ab3ee-79b4-432d-944e-6e9ab2773c2f",
+        "rating": 3,
+        "title": "",
+        "content": "Credit card offers are never applied while actual payment. Bookmyshow \" payment offers\" seems only a gimic. It either asks to Try another time. or Try after some time. or Wait while on going transaction is completed or classic is Office is not applied on this card!",
+        "date": "2026-03-19T19:44:12",
+        "helpful_count": 0
+      },
+      {
+        "id": "b8c2181a-b213-436f-b285-44d265dff895",
+        "rating": 3,
+        "title": "",
+        "content": "Very convenient in making bookings however the customer care doesn't operate that well. I was struggling to get a booking cancelled. The queue in the call was not progressing beyond a certain point.",
+        "date": "2026-03-29T10:06:57",
+        "helpful_count": 0
+      },
+      {
+        "id": "3ae237c5-aeeb-48a2-82f9-032712c9fdd0",
+        "rating": 3,
+        "title": "",
+        "content": "App would not take any of my credit cards. Kept saying something was not ok. went to the site on the laptop and booked and everything worked with the same card and was able to purchase the tickets to the show.",
+        "date": "2026-03-25T10:08:22",
+        "helpful_count": 0
+      },
+      {
+        "id": "c593c9e4-a73a-405e-ae79-ed69c3692906",
+        "rating": 3,
+        "title": "",
+        "content": "I was debited but app said payment declined and that if debited I would get my money back after about 7 days.",
+        "date": "2026-05-31T08:14:22",
+        "helpful_count": 0
+      },
+      {
+        "id": "a707b4aa-933c-4ada-b7b3-cf6d63655148",
+        "rating": 3,
+        "title": "",
+        "content": "couldn't handle heavy user interface and crashes",
+        "date": "2026-06-15T12:12:03",
+        "helpful_count": 0
+      },
+      {
+        "id": "2bbefc76-3f65-4815-8f84-9c9d0fdd7f49",
+        "rating": 3,
+        "title": "",
+        "content": "most of the time the app is unable to locate the location.. please fix it.",
+        "date": "2026-06-18T12:55:27",
+        "helpful_count": 0
+      },
+      {
+        "id": "29f1b31d-beff-4bec-a273-fa4e55d2e52f",
+        "rating": 3,
+        "title": "",
+        "content": "very good app ticket booking very easy",
+        "date": "2026-06-14T11:36:20",
+        "helpful_count": 0
+      },
+      {
+        "id": "0e79f793-7dad-448e-9182-2b3e61e64607",
+        "rating": 3,
+        "title": "",
+        "content": "Written advertising for the process of ticket booking",
+        "date": "2026-06-06T20:54:08",
+        "helpful_count": 0
+      },
+      {
+        "id": "5ffc81a6-be8c-4ed7-90ef-be0cbc4d1ba6",
+        "rating": 3,
+        "title": "",
+        "content": "tried with my debit card and the payment didn't go through. After that I couldn't get the seats of my choice",
+        "date": "2026-06-03T17:14:26",
+        "helpful_count": 0
+      },
+      {
+        "id": "b2aaa443-f514-48b2-a6e9-61bae4a3ffed",
+        "rating": 4,
+        "title": "",
+        "content": "Okay it works, but there are a handful of problems with it. First, the app says No Internet Connection sometimes or just keeps on loading, even though I have a super fast connection. Second, I have seen people getting charged for the tickets and the tickets don't get issued to them, the page just goes on loading and loading after the payment is completed. Interface can be improved. It's not bad but can get better. Please add a dark mode. If you can fix all the above, it's really worth 5 ⭐",
+        "date": "2022-04-17T06:07:03",
+        "helpful_count": 0
+      },
+      {
+        "id": "4ffd9563-89ee-4d31-92f8-50ce1adc59bf",
+        "rating": 4,
+        "title": "",
+        "content": "Please include some features for pre-ordering foods. I had ordered a snack for the movie a week before, so I went to get it right away, but they told me to get a receipt from the counter. It took me 10 minutes in line to get the bills and another 5 minutes to get the food.  I'm not sure why I paid in advance to recive service in last and what's d use of BMS, even if i took direct it would be easier. Rest of the experience was awesome. Still look in to this area.",
+        "date": "2022-11-13T19:55:06",
+        "helpful_count": 0
+      },
+      {
+        "id": "24878501-413a-491a-a639-5022816b1ed7",
+        "rating": 4,
+        "title": "",
+        "content": "Reducing one star, as even after using this app for so long period and doing transactions every week on an average, there is no discounts or offers provided to me. All I have to do is depend on card or wallet payment offers. To keep your customer base, please give some exclusive discounts to people who are using your app for so long.",
+        "date": "2018-09-30T13:25:41",
+        "helpful_count": 0
+      },
+      {
+        "id": "89b72e25-4f18-4a60-b0ad-e508784dfa46",
+        "rating": 4,
+        "title": "",
+        "content": "BookMyShow makes movie nights so much easier! I love the interactive seat layout and how fast the booking process is. No more standing in long queues—I just show my QR code at the cinema and walk right in. The 'Movie Pass' has also saved me a ton of money this year!",
+        "date": "2026-05-01T08:11:59",
+        "helpful_count": 0
+      },
+      {
+        "id": "57636a2d-727c-48ef-99e5-d5b12cc0a9ec",
+        "rating": 4,
+        "title": "",
+        "content": "Works really well overall across event types! One feature request is to add an option for a calendar blocker for the booking.",
+        "date": "2026-06-18T20:06:58",
+        "helpful_count": 0
+      },
+      {
+        "id": "07d01420-f7ac-43ef-a86f-0e8711b451f1",
+        "rating": 4,
+        "title": "",
+        "content": "it's a very good app to book tickets but I don't know why the hell is it not opening faster... although I have a very good internet but it takes a lot of time to open .. plz fix this problem",
+        "date": "2026-06-19T22:28:13",
+        "helpful_count": 0
+      },
+      {
+        "id": "0da12fd3-cf70-435f-a641-c8fc04f1908d",
+        "rating": 4,
+        "title": "",
+        "content": "Otherwise all good, please add an information to understand screen sizes. don't want to be sitting in theatres with screen sizes just a little more than a home screen.",
+        "date": "2026-04-15T13:27:32",
+        "helpful_count": 0
+      },
+      {
+        "id": "50cad902-9a6f-4fea-ae98-35d7dcae50a0",
+        "rating": 4,
+        "title": "",
+        "content": "BookMyShow is nice application it allows to apply vouchers which will frequently reduce the price of ticket,it's interface is smooth compared to other applications.",
+        "date": "2026-05-24T18:55:00",
+        "helpful_count": 0
+      },
+      {
+        "id": "d226a82b-0005-4a27-a9b7-86ce70f4223f",
+        "rating": 4,
+        "title": "",
+        "content": "Please remove the 'Browse by Cinemas' option when I am browsing the Movie section. Please place it somewhere below. It is a constant irritant when I am browsing and I can't even remove it.",
+        "date": "2026-05-22T10:37:38",
+        "helpful_count": 0
+      },
+      {
+        "id": "4bed7cd1-db8b-473d-8cfb-64f4026df83d",
+        "rating": 4,
+        "title": "",
+        "content": "the show was amazing! only thing is that venue was quiet closed and claustrophobic. Though they had air conditions it was very sweaty and no air circulation at all.",
+        "date": "2026-05-18T06:26:21",
+        "helpful_count": 0
+      },
+      {
+        "id": "acd61af2-a496-438f-88ed-b08b462e934c",
+        "rating": 4,
+        "title": "",
+        "content": "There is no facility to change seating option. Once clicked the sears are blocked & do not Show again. A BAD APPLICATION SOFTWARE FAULT.",
+        "date": "2026-05-10T09:56:39",
+        "helpful_count": 0
+      },
+      {
+        "id": "0c662f7b-7ea9-4dec-b75c-2d6b88ef34a4",
+        "rating": 4,
+        "title": "",
+        "content": "good app but need to be able to make a watch list for movies that im interested in. please add this feature",
+        "date": "2026-04-30T02:05:21",
+        "helpful_count": 0
+      },
+      {
+        "id": "8e273141-0e52-477c-b9a8-4c6c367b77df",
+        "rating": 4,
+        "title": "",
+        "content": "Nice app as u can see here movie updates and live shows it's a nice app",
+        "date": "2026-06-20T21:57:20",
+        "helpful_count": 0
+      },
+      {
+        "id": "78e354b0-2a17-475d-aa4a-14a0924c6385",
+        "rating": 4,
+        "title": "",
+        "content": "it reliable and works fast for booking any show and movies near by me , really helpful.",
+        "date": "2026-06-12T22:29:27",
+        "helpful_count": 0
+      },
+      {
+        "id": "d2f06c40-5950-4841-8f3e-997e57c32db0",
+        "rating": 4,
+        "title": "",
+        "content": "BookMyShow is a convenient and user-friendly app for booking movie tickets, events, and shows quickly. The interface is smooth, making navigation simple for users. It provides multiple payment options and real-time seat selection. Notifications and offers enhance the experience. Overall, it saves time and ensures a hassle-free entertainment booking process for everyone.",
+        "date": "2026-03-23T09:08:22",
+        "helpful_count": 0
+      },
+      {
+        "id": "f00615d1-521d-4d1c-8c9f-333d965c660a",
+        "rating": 4,
+        "title": "",
+        "content": "unable to book tickets when using web chrome, please make the perfection 🙏🙏",
+        "date": "2026-06-17T10:46:03",
+        "helpful_count": 0
+      },
+      {
+        "id": "d5fe797f-573d-4dc0-9469-a5f6f3e7cf2d",
+        "rating": 4,
+        "title": "",
+        "content": "amazing app very easily to booking tickets",
+        "date": "2026-06-22T00:33:12",
+        "helpful_count": 0
+      },
+      {
+        "id": "61d045e3-71ee-47d4-90ca-367e888879cc",
+        "rating": 4,
+        "title": "",
+        "content": "You need to Add More offers and btw no other issues with the application it is perfect nd sometimes for streams it have some bugs keeps loading over all i can give 4 star",
+        "date": "2026-04-11T19:24:45",
+        "helpful_count": 0
+      },
+      {
+        "id": "41394273-7161-4926-9c3f-09893ec050c4",
+        "rating": 4,
+        "title": "",
+        "content": "Overall a good app and user-friendly but convenient fess are very high",
+        "date": "2026-04-16T19:10:56",
+        "helpful_count": 0
+      },
+      {
+        "id": "bab07fad-5bf4-444a-ab4f-a1b5c8a10011",
+        "rating": 4,
+        "title": "",
+        "content": "good foe booking😘 and it is the only good and easy booking app. We will be always using this app for booking",
+        "date": "2026-05-25T15:44:38",
+        "helpful_count": 0
+      },
+      {
+        "id": "de51bf39-b3f7-45fc-97c0-38a9dd312e4e",
+        "rating": 5,
+        "title": "",
+        "content": "BookMyShow is undoubtedly one of the best and most convenient platforms for booking movie tickets. It completely eliminates the need to stand in long queues at theater box offices, allowing you to secure your preferred seats in just a few clicks. The real-time interactive seat layout makes it incredibly easy to choose exactly where you want to sit, whether you prefer the back rows or the comfort of executive lounges.",
+        "date": "2026-05-29T16:25:41",
+        "helpful_count": 0
+      },
+      {
+        "id": "8242b55c-c6c5-42bc-ad80-e888305d1b0b",
+        "rating": 5,
+        "title": "",
+        "content": "It seems to be a recent trend that some movies (likely big budget ones) don't carry their ratings in the app, especially when they are not received well by the critics/audience. On the other hand, when they're received well, then the ratings seem to be displayed. If this is the case, users won't be able to decide whether to watch the movie when the ratings are hidden. The app simply stops helping the user. The treatment should be the same for all movies. Why is there a difference?",
+        "date": "2026-06-08T00:09:53",
+        "helpful_count": 0
+      },
+      {
+        "id": "6c1ac444-f0e8-49ce-ae7e-eb36c601d61a",
+        "rating": 5,
+        "title": "",
+        "content": "The only website I know available for movie/events ticket booking in India. Good app and website, easy navigation, user interface, payment options, no bugs, detailed information, affordable booking charges, theatre/seat selection, customer service, qr ticket & invoice, booking experience. Overall, best experience for booking tickets.",
+        "date": "2026-05-11T14:30:37",
+        "helpful_count": 0
+      },
+      {
+        "id": "fefebd49-5ea2-4a40-84f5-92896847291b",
+        "rating": 5,
+        "title": "",
+        "content": "The cinematography, the perfectly fleshed out characters including the supporting cast, and the locales, all serve to tell a warm and entertaining story on the sensitive topic of gender identity. My favourite comedienne was the lady who played Vishakha 's mother! It was definitely worth watching Baapya on the big screen!",
+        "date": "2026-06-01T17:56:21",
+        "helpful_count": 0
+      },
+      {
+        "id": "73ea8643-3114-453e-98c9-8f646c2ede92",
+        "rating": 5,
+        "title": "",
+        "content": "I literally love it we can book any shows,movies etc. we can easily book any tickets without any restriction and we can easily book any tickets basically I really love this app",
+        "date": "2026-05-28T22:07:45",
+        "helpful_count": 0
+      },
+      {
+        "id": "6a361372-c044-4515-b336-a0fd0c4b5e66",
+        "rating": 5,
+        "title": "",
+        "content": "As usual BookMyShow is very much a user-friendly platform for all kinds of entertainment related bookings.",
+        "date": "2026-05-28T16:29:41",
+        "helpful_count": 0
+      },
+      {
+        "id": "8f0e011a-f45e-4829-9893-d2d51aec11c4",
+        "rating": 5,
+        "title": "",
+        "content": "Overall, a smooth and helpful experience. Definitely recommended for anyone looking to explore movies and entertainment easily!",
+        "date": "2026-04-23T18:14:56",
+        "helpful_count": 0
+      },
+      {
+        "id": "f681d1f9-357f-44ac-8001-0f7582b9a75f",
+        "rating": 5,
+        "title": "",
+        "content": "Booking tickets through this platform was an absolutely seamless and effortless experience. The interface is highly intuitive, making seat selection quick and hassle-free from start to finish. I highly recommend it to anyone looking for a top-notch, stress-free cinema reservation journey! 8 people found this helpful",
+        "date": "2026-04-15T19:12:25",
+        "helpful_count": 0
+      },
+      {
+        "id": "c59e9630-95b4-4bf1-8e27-71211228dde8",
+        "rating": 5,
+        "title": "",
+        "content": "best app for booking, I will buy tickets for 2 person and just click it and buy at the time tickets very good app developer",
+        "date": "2026-06-19T23:24:17",
+        "helpful_count": 0
+      },
+      {
+        "id": "c213d878-c5b7-4b67-bcb4-3839b5b0a340",
+        "rating": 5,
+        "title": "",
+        "content": "BookMyShow is such a huge platform for entertainment and enjoyment.",
+        "date": "2026-06-23T08:56:59",
+        "helpful_count": 0
+      },
+      {
+        "id": "54834df1-81ba-4d38-bc87-f3e743708ef2",
+        "rating": 5,
+        "title": "",
+        "content": "booked ticket in this app ,unfortunately the show was canceled on 14th. in counter they told that they ill refund my amt in 5 to 7 days ,still not yet credited. i want my money back else I ill take legal actions.",
+        "date": "2026-05-21T18:01:25",
+        "helpful_count": 0
+      },
+      {
+        "id": "00d3360a-ab09-4755-9b00-4c31e890782b",
+        "rating": 5,
+        "title": "",
+        "content": "excellent movie. Each character is portrayed so well. I watched it twice. Humour is so natural. loved the Konkan settings. simple folks and their innocence.",
+        "date": "2026-06-22T13:04:54",
+        "helpful_count": 0
+      },
+      {
+        "id": "02679dc9-4e39-4848-9eda-498af9004c30",
+        "rating": 5,
+        "title": "",
+        "content": "Very nice and entertaining movie a family movie very good cast and everyone will enjoy it.. Kudos to the team",
+        "date": "2026-05-31T19:53:47",
+        "helpful_count": 0
+      },
+      {
+        "id": "07b2081d-2a1a-4525-a73a-6c6699e86391",
+        "rating": 5,
+        "title": "",
+        "content": "User- friendly booking experience for movies and other events. Good variety.",
+        "date": "2026-06-03T08:17:07",
+        "helpful_count": 0
+      },
+      {
+        "id": "11ef76ba-db2b-4b6f-aefb-6865945c6686",
+        "rating": 5,
+        "title": "",
+        "content": "no star ,but what to do it's an absolutely freaking bad app I have ever seen the BMS cash option is like useless, like who wants their money to be in the BMS and just use that within two years!!!just freakin two years !!we have to finish useing it, and you have to finish within 2 years and worst customer service ever.",
+        "date": "2026-05-05T09:42:09",
+        "helpful_count": 0
+      },
+      {
+        "id": "9c3c333d-d8a8-41f8-ad0b-88b9a2067572",
+        "rating": 5,
+        "title": "",
+        "content": "Well this app is amazing 👌 It's very easy and convenient to book tickets for movie shows.",
+        "date": "2026-05-01T10:42:42",
+        "helpful_count": 0
+      },
+      {
+        "id": "5a319916-5f10-4c8f-a3c8-397b79c44627",
+        "rating": 5,
+        "title": "",
+        "content": "Booking tickets through this platform was an absolutely seamless and effortless experience. The interface is highly intuitive, making seat selection quick and hassle-free from start to finish. I highly recommend it to anyone looking for a top-notch, stress-free cinema reservation journey!",
+        "date": "2026-03-04T14:08:12",
+        "helpful_count": 0
+      },
+      {
+        "id": "1dd8c1c9-b8f4-4262-ac1d-74c1beb15ea8",
+        "rating": 5,
+        "title": "",
+        "content": "I feel the book myshow app has started lagging behind and never opens quickly, please look into",
+        "date": "2026-06-20T19:09:01",
+        "helpful_count": 0
+      },
+      {
+        "id": "77358ff1-40cf-4247-916c-b2b7ed744988",
+        "rating": 5,
+        "title": "",
+        "content": "very easy booking through book my show for movies n entertainment programs",
+        "date": "2026-06-23T13:28:21",
+        "helpful_count": 0
+      },
+      {
+        "id": "533b7f7f-8449-4947-afb1-8eff9eb85c2f",
+        "rating": 5,
+        "title": "",
+        "content": "Good platform to book movies as per our conveinent time 😀",
+        "date": "2026-06-21T11:01:10",
+        "helpful_count": 0
+      }
+    ],
+    "review_analysis": {
+      "total_reviews": 100,
+      "average_rating": 3.0,
+      "rating_distribution": {
+        "1": 20,
+        "2": 20,
+        "3": 20,
+        "4": 20,
+        "5": 20
+      }
+    },
+    "reviews_metadata": {
+      "1": {
+        "requested": 20,
+        "fetched": 20
+      },
+      "2": {
+        "requested": 20,
+        "fetched": 20
+      },
+      "3": {
+        "requested": 20,
+        "fetched": 20
+      },
+      "4": {
+        "requested": 20,
+        "fetched": 20
+      },
+      "5": {
+        "requested": 20,
+        "fetched": 20
+      }
+    }
+  },
+  "analysis": null,
+  "analysis_status": "skipped",
+  "analysis_provider": null
+}

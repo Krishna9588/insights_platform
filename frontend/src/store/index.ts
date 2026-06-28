@@ -19,7 +19,11 @@ export interface PipelineDefaults {
   only: string;
 }
 
-interface Toast { message: string; visible: boolean; }
+interface Toast { 
+  message: string; 
+  visible: boolean; 
+  action?: { label: string, onClick: () => void };
+}
 
 interface AppStore {
   // Theme
@@ -29,7 +33,9 @@ interface AppStore {
 
   // Active page
   activePage: string;
+  pageHistory: string[];
   setActivePage: (page: string) => void;
+  goBack: (fallback?: string) => void;
 
   // Projects
   projects: Project[];
@@ -74,7 +80,11 @@ interface AppStore {
 
   // Toast
   toast: Toast;
-  showToast: (message: string, durationMs?: number) => void;
+  showToast: (message: string, durationMs?: number, action?: { label: string, onClick: () => void }) => void;
+
+  // Google Drive
+  googleDriveConfig: { defaultFolderId: string };
+  setGoogleDriveConfig: (config: { defaultFolderId: string }) => void;
 }
 
 const DEFAULT_PIPELINE: PipelineDefaults = {
@@ -96,7 +106,16 @@ export const useStore = create<AppStore>((set, get) => ({
 
   // Page
   activePage: 'dashboard',
-  setActivePage: (page) => set({ activePage: page }),
+  pageHistory: [],
+  setActivePage: (page) => set((s) => ({
+    activePage: page,
+    pageHistory: s.activePage !== page ? [...s.pageHistory.slice(-9), s.activePage] : s.pageHistory,
+  })),
+  goBack: (fallback = 'collection') => set((s) => {
+    const history = [...s.pageHistory];
+    const prev = history.pop();
+    return { activePage: prev ?? fallback, pageHistory: history };
+  }),
 
   // Projects
   projects: [],
@@ -166,8 +185,12 @@ export const useStore = create<AppStore>((set, get) => ({
 
   // Toast
   toast: { message: '', visible: false },
-  showToast: (message, durationMs = 2800) => {
-    set({ toast: { message, visible: true } });
+  showToast: (message, durationMs = 2800, action) => {
+    set({ toast: { message, visible: true, action } });
     setTimeout(() => set({ toast: { message: '', visible: false } }), durationMs);
   },
+
+  // Google Drive
+  googleDriveConfig: { defaultFolderId: '' },
+  setGoogleDriveConfig: (config) => set({ googleDriveConfig: config }),
 }));

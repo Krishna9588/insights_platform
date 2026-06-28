@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "source_file": "Call with Shashank Agarwal.txt",
+    "source_type": "Internal",
+    "entity": "Call With Shashank Agarwal",
+    "meeting_type": "Product Discussion",
+    "file_date": "2026-06-28",
+    "processed_at": "2026-06-28T15:46:40.873087+00:00",
+    "classifier_used": "hf_api",
+    "total_signals": 4
+  },
+  "signals": [
+    {
+      "signal_id": "CWSA_001",
+      "signal_type": "Feature",
+      "confidence": 0.4922,
+      "content": "- Shashank Agarwal, Research Analyst (SEBI registered) - Education: Calcutta University (Accounts Finance), Delhi Institute of Management (Masters in Finance) - Experience: ISEC Securities (equity advisory), Mutilal Oswal, Angel One - Built Angel Ones customer onboarding platform and transaction execution system - Developed entire tech stack using Python - Current role: Wealth management (not stock picking) - Focus on mutual funds, bonds, CDs, PMS, AIF products - Avoids direct buysell calls due to client leverage risks",
+      "time_range": null,
+      "turn_index": 0
+    },
+    {
+      "signal_id": "CWSA_002",
+      "signal_type": "Feature",
+      "confidence": 0.6005,
+      "content": "- Positive reception to advisory-to-execution platform idea - Addresses gap between WhatsAppTelegram recommendations and actual trading - Provides tracking and credibility vs unauthorized channels - Suggested categorization approach: - Different customer segments for each timeframe - Revenue model validation: Platform fees advisor subscription model viable",
+      "time_range": null,
+      "turn_index": 1
+    },
+    {
+      "signal_id": "CWSA_003",
+      "signal_type": "Feature",
+      "confidence": 0.5224,
+      "content": "- Strong retail investor growth: 5 crore demat accounts in India post-COVID - Key challenges identified: - 90 of FO traders lose money - Platform credibility at risk if recommendations fail - Need for proper research basis vs speculation - Diversification opportunities beyond stocks: - Bonds, commodities, small case integration - Different products for different investor segments (retail vs HNI)",
+      "time_range": null,
+      "turn_index": 2
+    },
+    {
+      "signal_id": "CWSA_004",
+      "signal_type": "Feature",
+      "confidence": 0.49,
+      "content": "- Terminal integration approach recommended over website-only - Real-time signals with buyselltargetstop-loss - API integration with existing broker platforms - Pluginwidget model for seamless execution - Existing solutions reference: - Motilal Oswals trade guide signals (15,000year subscription) - Value Research, Morning Star for stock recommendations - Revenue streams: Subscription model (monthlyquarterlyyearly) transaction-based fees",
+      "time_range": null,
+      "turn_index": 3
+    }
+  ]
+}

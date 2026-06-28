@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useStore } from '@/store';
 import { getJobs } from '@/api';
 import type { Job } from '@/types/api';
+import BackButton from '@/components/layout/BackButton';
 
 const STATUS_DOT: Record<Job['status'], string> = {
   queued: 'warn',
@@ -32,6 +33,7 @@ export default function History() {
   const filtered = filter === 'all' ? jobs : jobs.filter((j) => j.status === filter);
 
   return (
+    <>
     <div>
       <header className="topbar">
         <div>
@@ -39,6 +41,16 @@ export default function History() {
           <h1>Research History</h1>
         </div>
         <div className="actions">
+          <button className="button danger secondary" onClick={async () => {
+            setLoading(true);
+            try {
+              import('@/api').then(m => m.clearJobs()).then(() => load());
+            } catch (err) {
+              console.error(err);
+            }
+          }} disabled={loading}>
+            Clean Logs
+          </button>
           <button className="button secondary" onClick={load} disabled={loading}>
             {loading ? <span className="spinner" style={{ width: 14, height: 14 }} /> : 'Refresh'}
           </button>
@@ -107,5 +119,7 @@ export default function History() {
         </div>
       )}
     </div>
+    <BackButton fallback="dashboard" />
+    </>
   );
 }

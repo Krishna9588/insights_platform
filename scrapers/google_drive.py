@@ -60,15 +60,21 @@ class GoogleDriveScraper:
 
         self.base_url = "https://www.googleapis.com/drive/v3/files"
 
-    def extract_id(self, url):
-        """Extracts the folder or file ID from a standard public Google Drive URL."""
-        match = re.search(r'folders/([a-zA-Z0-9_-]+)', url)
+    def extract_id(self, url_or_id):
+        """Extracts the folder or file ID from a standard public Google Drive URL, or returns it if it's already an ID."""
+        url_or_id = url_or_id.strip()
+        
+        # If it looks like a direct ID (alphanumeric + underscore + hyphen, usually ~33 chars)
+        if re.match(r'^[a-zA-Z0-9_-]{20,40}$', url_or_id):
+            return url_or_id
+            
+        match = re.search(r'folders/([a-zA-Z0-9_-]+)', url_or_id)
         if match: return match.group(1)
 
-        match = re.search(r'id=([a-zA-Z0-9_-]+)', url)
+        match = re.search(r'id=([a-zA-Z0-9_-]+)', url_or_id)
         if match: return match.group(1)
 
-        raise ValueError("Invalid Google Drive URL. Please ensure it is a valid folder link.")
+        raise ValueError("Invalid Google Drive URL or ID. Please ensure it is a valid folder link or ID.")
 
     def list_files(self, folder_id):
         """
@@ -80,7 +86,11 @@ class GoogleDriveScraper:
             'key': self.api_key
         }
 
-        response = requests.get(self.base_url, params=params)
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+        }
+
+        response = requests.get(self.base_url, params=params, headers=headers, timeout=10)
 
         if response.status_code != 200:
             raise Exception(
@@ -112,25 +122,34 @@ class GoogleDriveScraper:
         """
         os.makedirs(save_directory, exist_ok=True)
 
+        import gdown
+        
         if 'application/vnd.google-apps' in mime_type:
             export_mime = 'text/plain' if 'document' in mime_type else 'text/csv'
-            params = {'alt': 'media', 'mimeType': export_mime, 'key': self.api_key}
+            params = {'mimeType': export_mime, 'key': self.api_key}
             url = f"{self.base_url}/{file_id}/export"
             if 'document' in mime_type:
                 file_name = f"{file_name}.txt"
+            elif 'spreadsheet' in mime_type:
+                file_name = f"{file_name}.csv"
+                
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+            }
+            response = requests.get(url, params=params, headers=headers, stream=True)
+            if response.status_code != 200:
+                raise Exception(f"Failed to download file {file_name}. Error: {response.text}")
+                
+            file_path = os.path.join(save_directory, file_name)
+            with open(file_path, 'wb') as f:
+                for chunk in response.iter_content(chunk_size=8192):
+                    f.write(chunk)
         else:
-            params = {'alt': 'media', 'key': self.api_key}
-            url = f"{self.base_url}/{file_id}"
-
-        response = requests.get(url, params=params, stream=True)
-
-        if response.status_code != 200:
-            raise Exception(f"Failed to download file {file_name}. Error: {response.text}")
-
-        file_path = os.path.join(save_directory, file_name)
-        with open(file_path, 'wb') as f:
-            for chunk in response.iter_content(chunk_size=8192):
-                f.write(chunk)
+            file_path = os.path.join(save_directory, file_name)
+            # Use gdown to bypass Google Drive's CAPTCHA and virus scan screens for media files
+            output = gdown.download(id=file_id, output=file_path, quiet=True)
+            if not output:
+                raise Exception(f"Failed to download file {file_name} via gdown.")
 
         print(f"File downloaded successfully to: {file_path}")
         return file_path
@@ -149,20 +168,22 @@ def get_file_type(mime_type):
         return 'File'
 
 
-def google_drive(save_directory: str = "google_download"):
+def google_drive(save_directory: str = "google_download", urls: list = None, interactive: bool = True):
     """
-    Interactively prompts for Google Drive URLs, lets the user select and download files.
+    Interactively prompts for Google Drive URLs (or uses provided ones), lets the user select and download files.
     Returns a list of local paths to the downloaded files.
     """
     scraper = GoogleDriveScraper()
 
-    urls = []
-    print("Enter Google Drive folder URLs (one per line, press Enter on an empty line to finish):")
-    while True:
-        url = input()
-        if not url:
-            break
-        urls.append(url)
+    if urls is None:
+        urls = []
+        if interactive:
+            print("Enter Google Drive folder URLs (one per line, press Enter on an empty line to finish):")
+            while True:
+                url = input()
+                if not url:
+                    break
+                urls.append(url)
 
     if not urls:
         print("No URLs provided.")
@@ -193,20 +214,23 @@ def google_drive(save_directory: str = "google_download"):
     print("---------------------------------\n")
 
     selected_indices = []
-    while True:
-        choice_str = input("Enter the numbers of the items to process (e.g., 1 3 5), or 'a' for all: ")
-        if choice_str.lower() == 'a':
-            selected_indices = range(len(all_files))
-            break
-        try:
-            cleaned_str = choice_str.replace(',', ' ')
-            selected_indices = [int(i) - 1 for i in cleaned_str.split()]
-            if all(0 <= i < len(all_files) for i in selected_indices):
+    if interactive:
+        while True:
+            choice_str = input("Enter the numbers of the items to process (e.g., 1 3 5), or 'a' for all: ")
+            if choice_str.lower() == 'a':
+                selected_indices = range(len(all_files))
                 break
-            else:
-                print("Invalid number. Please select valid items from the list.")
-        except ValueError:
-            print("Invalid input. Please enter numbers separated by spaces.")
+            try:
+                cleaned_str = choice_str.replace(',', ' ')
+                selected_indices = [int(i) - 1 for i in cleaned_str.split()]
+                if all(0 <= i < len(all_files) for i in selected_indices):
+                    break
+                else:
+                    print("Invalid number. Please select valid items from the list.")
+            except ValueError:
+                print("Invalid input. Please enter numbers separated by spaces.")
+    else:
+        selected_indices = range(len(all_files))
 
     expanded_files = []
     needs_refinement = False
@@ -267,21 +291,24 @@ def google_drive(save_directory: str = "google_download"):
 
     downloaded_file_paths = []
     
-    choice_str = input("Enter file numbers to download (e.g., 1 3 5), or 'a' for all: ")
+    if interactive:
+        choice_str = input("Enter file numbers to download (e.g., 1 3 5), or 'a' for all: ")
 
-    files_to_download_now = []
-    try:
-        if choice_str.lower() == 'a':
-            files_to_download_now = final_list_for_selection
-        else:
-            cleaned_str = choice_str.replace(',', ' ')
-            final_indices = [int(i) - 1 for i in cleaned_str.split()]
-            if all(0 <= i < len(final_list_for_selection) for i in final_indices):
-                files_to_download_now = [final_list_for_selection[i] for i in final_indices]
+        files_to_download_now = []
+        try:
+            if choice_str.lower() == 'a':
+                files_to_download_now = final_list_for_selection
             else:
-                print("Invalid number. Proceeding with an empty selection.")
-    except ValueError:
-        print("Invalid input. Proceeding with an empty selection.")
+                cleaned_str = choice_str.replace(',', ' ')
+                final_indices = [int(i) - 1 for i in cleaned_str.split()]
+                if all(0 <= i < len(final_list_for_selection) for i in final_indices):
+                    files_to_download_now = [final_list_for_selection[i] for i in final_indices]
+                else:
+                    print("Invalid number. Proceeding with an empty selection.")
+        except ValueError:
+            print("Invalid input. Proceeding with an empty selection.")
+    else:
+        files_to_download_now = final_list_for_selection
 
     if not files_to_download_now:
         print("No files selected for download.")
@@ -314,3 +341,27 @@ if __name__ == "__main__":
     load_dotenv()
 
     google_drive()
+
+def fetch_google_drive_list(url_or_id: str) -> list:
+    """
+    API for backend: Returns a flat list of all files inside a Google Drive folder recursively.
+    Each item is a dict with 'id', 'name', 'mimeType', and 'display_name'.
+    """
+    scraper = GoogleDriveScraper()
+    folder_id = scraper.extract_id(url_or_id)
+    return scraper.get_all_files_recursive(folder_id)
+
+def download_google_drive_files(files_metadata: list, save_directory: str) -> list:
+    """
+    API for backend: Downloads a specific list of files given their metadata.
+    files_metadata should be a list of dicts with 'id', 'name', and 'mimeType'.
+    """
+    scraper = GoogleDriveScraper()
+    downloaded_paths = []
+    for f in files_metadata:
+        try:
+            path = scraper.download_file(f['id'], f.get('display_name', f['name']).replace('/', '_'), f['mimeType'], save_directory)
+            downloaded_paths.append(path)
+        except Exception as e:
+            print(f"Error downloading {f['name']}: {e}")
+    return downloaded_paths

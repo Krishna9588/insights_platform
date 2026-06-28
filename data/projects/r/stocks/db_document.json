@@ -1,0 +1,21 @@
+{
+    "project_name": "r/stocks",
+    "domain": null,
+    "ingestion_date": "2026-06-27T16:56:38.243600",
+    "data_sources": {
+        "reddit": {
+            "reddit_0": {
+                "error": "Failed to fetch subreddit posts",
+                "type": "subreddit"
+            }
+        }
+    },
+    "processing_status": {
+        "agent2_insights_extracted": false,
+        "agent3_synthesis_done": false,
+        "agent4_product_brief_done": false
+    },
+    "agent2_output": {},
+    "agent3_output": {},
+    "agent4_output": {}
+}

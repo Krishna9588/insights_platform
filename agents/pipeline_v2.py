@@ -21,7 +21,7 @@ import json
 import asyncio
 import argparse
 import logging
-from typing import Optional
+from typing import Optional, Union
 
 try:
     from agents.paths import project_db_path
@@ -73,8 +73,9 @@ def run_pipeline(
     project_name  : str,
     provider      : str = "gemini",
     start_from    : str = "agent1",
-    only          : Optional[str] = None,
+    only          : Optional[Union[str, list]] = None,
     agent1_payload: Optional[dict] = None,
+    is_cancelled  = None,
 ) -> dict:
     """
     Run the full pipeline or resume from a specific agent.
@@ -83,8 +84,9 @@ def run_pipeline(
         project_name:    e.g. "Groww"
         provider:        LLM provider for agents 2/3/4
         start_from:      Resume from this agent
-        only:            Run only this one agent
+        only:            Run only this one agent (or list of agents)
         agent1_payload:  Full payload dict for Agent 1
+        is_cancelled:    Optional callable that returns True if the pipeline should abort.
 
     Returns:
         Final db_document dict.
@@ -95,14 +97,23 @@ def run_pipeline(
     log.info(f"  From     : {only or start_from}")
     log.info("=" * 55)
 
-    agents_to_run = [only] if only else ORDER[ORDER.index(start_from):]
+    if isinstance(only, list):
+        agents_to_run = only
+    else:
+        agents_to_run = [only] if only else ORDER[ORDER.index(start_from):]
 
     for agent_name in agents_to_run:
-        log.info(f"\n-- Running {agent_name.upper()} --")
+        if is_cancelled and is_cancelled():
+            log.warning("Pipeline cancelled by user.")
+            break
+            
+        log.info(f"\n[{agent_name.upper()}] Starting...")
+        
         try:
             if agent_name == "agent1":
                 if not agent1_payload:
-                    raise ValueError("agent1_payload required when running Agent 1")
+                    log.warning("Skipping agent1 (no payload provided)")
+                    continue
                 _run_agent1(agent1_payload)
             elif agent_name == "agent2":
                 _run_agent2(project_name, provider)
@@ -110,9 +121,11 @@ def run_pipeline(
                 _run_agent3(project_name, provider)
             elif agent_name == "agent4":
                 _run_agent4(project_name, provider)
-            log.info(f"-- {agent_name.upper()} done --")
+            
+            log.info(f"[{agent_name.upper()}] Done.")
+            
         except Exception as e:
-            log.error(f"Pipeline stopped at {agent_name}: {e}")
+            log.error(f"[{agent_name.upper()}] Failed: {e}")
             raise
 
     doc_path = project_db_path(project_name)

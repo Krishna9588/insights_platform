@@ -18,6 +18,7 @@ export default defineConfig({
       '/jobs': { target: 'http://localhost:8000', changeOrigin: true },
       '/news': { target: 'http://localhost:8000', changeOrigin: true },
       '/rag': { target: 'http://localhost:8000', changeOrigin: true },
+      '/chat': { target: 'http://localhost:8000', changeOrigin: true },
       '/sessions': { target: 'http://localhost:8000', changeOrigin: true },
       '/summaries': { target: 'http://localhost:8000', changeOrigin: true },
       '/ingest': { target: 'http://localhost:8000', changeOrigin: true },

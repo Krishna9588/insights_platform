@@ -467,7 +467,7 @@ def app_store(
             logger.info("Running HF analysis...")
 
         try:
-            from analyzer import analyzer as run_analyzer
+            from scrapers.analyzer import analyzer as run_analyzer
 
             analysis_result = run_analyzer(
                 data=extracted_data,

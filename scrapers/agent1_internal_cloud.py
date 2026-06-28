@@ -109,7 +109,7 @@ MIN_CONTENT_LENGTH: int = 40
 # CONSTANTS
 # ─────────────────────────────────────────────────────────────────────────────
 
-SUPPORTED_EXTENSIONS = {".txt", ".md", ".json", ".csv", ".xlsx", ".xls", ".docx"}
+SUPPORTED_EXTENSIONS = {".txt", ".md", ".json", ".csv", ".xlsx", ".xls", ".docx", ".pdf"}
 
 # HF API endpoints — tried in order, first success wins.
 # All confirmed alive (return 403 with wrong token, not 404).
@@ -347,6 +347,26 @@ def _read_docx(path: Path) -> List[Dict]:
     return turns
 
 
+def _read_pdf(path: Path) -> List[Dict]:
+    log.info("  Format: PDF (.pdf)")
+    try: import PyPDF2
+    except ImportError:
+        raise ImportError("pip install PyPDF2")
+    
+    turns = []
+    idx = 0
+    with path.open(mode="rb") as f:
+        reader = PyPDF2.PdfReader(f)
+        for page in reader.pages:
+            text = page.extract_text()
+            if text:
+                text = re.sub(r"\s{2,}", " ", text.replace("\n", " ")).strip()
+                if len(text) >= MIN_CONTENT_LENGTH:
+                    turns.append({"index": idx, "text": text, "time_range": None, "speaker": None})
+                    idx += 1
+    return turns
+
+
 def _read_any_format(path: Path) -> List[Dict]:
     ext = path.suffix.lower()
     if   ext == ".json":           return _read_json(path)
@@ -354,6 +374,7 @@ def _read_any_format(path: Path) -> List[Dict]:
     elif ext == ".csv":            return _read_csv(path)
     elif ext in (".xlsx", ".xls"): return _read_excel(path)
     elif ext == ".docx":           return _read_docx(path)
+    elif ext == ".pdf":            return _read_pdf(path)
     raise ValueError(f"Unsupported: '{ext}'")
 
 
@@ -714,14 +735,40 @@ class _Processor:
 def agent1_internal_drive(
         output_dir: str = "./signals",
         hf_token: str = HF_TOKEN,
+        files_metadata: list = None,
 ) -> Union[InternalResult, List[InternalResult], None]:
     """
-    Processes files selected interactively from Google Drive.
+    Processes files selected from Google Drive.
+    files_metadata should be a list of dicts with 'id', 'name', 'mimeType'.
     """
-    log.info("Starting Google Drive file selection...")
+    from scrapers.google_drive import download_google_drive_files
+    import os
 
-    # The google_drive function now returns a list of local file paths
-    downloaded_files = google_drive(save_directory=output_dir)
+    log.info("Starting Google Drive file download...")
+
+    if not files_metadata:
+        log.warning("No files provided for Google Drive download.")
+        return None
+
+    # Filter out unsupported files to prevent hanging on huge audio/video files
+    filtered_metadata = []
+    for f in files_metadata:
+        name = f.get('name', '')
+        mime = f.get('mimeType', '')
+        ext = os.path.splitext(name)[1].lower()
+        if 'application/vnd.google-apps' in mime:
+            if 'document' in mime or 'spreadsheet' in mime:
+                filtered_metadata.append(f)
+        elif ext in SUPPORTED_EXTENSIONS:
+            filtered_metadata.append(f)
+        else:
+            log.info(f"Skipping download of unsupported file: {name}")
+
+    if not filtered_metadata:
+        log.warning("No supported files found after filtering.")
+        return None
+
+    downloaded_files = download_google_drive_files(filtered_metadata, save_directory=output_dir)
 
     if not downloaded_files:
         log.warning("No files were downloaded from Google Drive. Exiting.")

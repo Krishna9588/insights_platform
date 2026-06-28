@@ -17,7 +17,7 @@ const NAV = [
       { key: 'company', label: 'Company Profile' },
       { key: 'transcript', label: 'Transcript' },
       { key: 'social', label: 'Social Media' },
-      { key: 'news', label: 'News & SEBI', badge: 'news' },
+      { key: 'news', label: 'News', badge: 'news' },
     ],
   },
   {
@@ -49,9 +49,10 @@ export default function Sidebar() {
 
   return (
     <aside className="sidebar">
-      <div className="brand">
-        <div className="brand-mark">IP</div>
-        <div>Insights Platform</div>
+      <div className="brand" style={{ display: 'flex', alignItems: 'center', padding: '8px 4px', marginBottom: 16 }}>
+        <h1 style={{ margin: 0, fontSize: '20px', fontWeight: 800, letterSpacing: '-0.03em', background: 'linear-gradient(135deg, #fff 0%, #a1a1aa 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+          Founder Intelligence
+        </h1>
       </div>
 
       {NAV.map(({ group, cls, items }) => (

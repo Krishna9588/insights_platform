@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useStore } from '@/store';
-import { getHealth, getProjects, getJobs, getNewsMonitors } from '@/api';
+import { ProjectLogo } from '@/components/ProjectLogo';
+import { getHealth, getProjects, getJobs, getNewsMonitors, cancelJob } from '@/api';
+
 
 export default function Dashboard() {
   const { projects, jobs, monitors, setProjects, setJobs, setMonitors, setActivePage, showToast } = useStore();
@@ -30,6 +32,16 @@ export default function Dashboard() {
 
   useEffect(() => { load(); }, []);
 
+  const handleCancelJob = async (id: string) => {
+    try {
+      await cancelJob(id);
+      showToast('Job cancelled successfully.');
+      load(); // Refresh the list
+    } catch (e: any) {
+      showToast(e.response?.data?.detail || 'Failed to cancel job');
+    }
+  };
+
   const runningJobs = jobs.filter((j) => j.status === 'running').length;
   const completedJobs = jobs.filter((j) => j.status === 'complete').length;
 
@@ -56,44 +68,38 @@ export default function Dashboard() {
 
       {/* KPI Grid */}
       <div className="grid cols-4">
-        <div className="card hoverable metric accent-blue">
+        <div 
+          className="card hoverable metric accent-blue" 
+          onClick={() => setActivePage('collection')} 
+          style={{ cursor: 'pointer', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}
+        >
           <div>
-            <p className="eyebrow">Company Projects</p>
+            <p className="eyebrow">Projects</p>
             <strong>{projects.length}</strong>
           </div>
-          <button
-            className="button secondary compact"
-            onClick={() => setActivePage('history')}
-          >
-            History
-          </button>
         </div>
 
-        <div className="card hoverable metric accent-violet">
+        <div 
+          className="card hoverable metric accent-violet"
+          onClick={() => setActivePage('news')} 
+          style={{ cursor: 'pointer', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}
+        >
           <div>
             <p className="eyebrow">News Monitors</p>
             <strong>{monitors.length}</strong>
           </div>
-          <button
-            className="button secondary compact"
-            onClick={() => setActivePage('news')}
-          >
-            Open News
-          </button>
         </div>
 
-        <div className="card hoverable metric accent-green">
+        <div className="card hoverable metric accent-green" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
           <div>
             <p className="eyebrow">Backend</p>
-            <strong style={{ fontSize: 20 }}>{health}</strong>
-          </div>
-          <div className="status-line">
-            <div className={`dot ${health === 'ok' || health === 'healthy' ? 'ok' : 'bad'}`} />
-            <span>API Status</span>
+            <strong style={{ fontSize: 20 }}>
+              {health === 'ok' ? 'Connected' : health}
+            </strong>
           </div>
         </div>
 
-        <div className="card hoverable metric accent-coral">
+        <div className="card hoverable metric accent-coral" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
           <div>
             <p className="eyebrow">Jobs Running</p>
             <strong>{runningJobs}</strong>
@@ -133,13 +139,16 @@ export default function Dashboard() {
 
               return (
                 <div className="list-item" key={name}>
-                  <div>
-                    <div className="item-title">{name}</div>
-                    <div className="status-line">
-                      {hasBrief && <><div className="dot ok" /><span>Brief ready</span></>}
-                      {hasInsights && !hasBrief && <><div className="dot warn" /><span>Insights ready</span></>}
-                      {!hasInsights && !hasBrief && <><div className="dot" /><span>No insights yet</span></>}
-                      {pp.updated_at && <span>· {new Date(String(pp.updated_at)).toLocaleDateString()}</span>}
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                    <ProjectLogo name={name} domain={pp.domain as string} size={32} />
+                    <div>
+                      <div className="item-title">{name}</div>
+                      <div className="status-line">
+                        {hasBrief && <><div className="dot ok" /><span>Brief ready</span></>}
+                        {hasInsights && !hasBrief && <><div className="dot warn" /><span>Insights ready</span></>}
+                        {!hasInsights && !hasBrief && <><div className="dot" /><span>No insights yet</span></>}
+                        {pp.updated_at && <span>· {new Date(String(pp.updated_at)).toLocaleDateString()}</span>}
+                      </div>
                     </div>
                   </div>
                   <div style={{ display: 'flex', gap: 8 }}>
@@ -159,7 +168,7 @@ export default function Dashboard() {
                         showToast(`Copilot set to: ${name}`);
                       }}
                     >
-                      Ask Copilot
+                      Ask Copilot <img src="/send.png" alt="Send" style={{ width: 14, height: 14, marginLeft: 6 }} />
                     </button>
                   </div>
                 </div>
@@ -182,19 +191,28 @@ export default function Dashboard() {
             {jobs.filter((j) => j.status === 'running' || j.status === 'queued').map((j) => (
               <div className="list-item" key={j.id}>
                 <div>
-                  <div className="item-title">{j.project_name}</div>
+                  <div className="item-title">{j.project_name || j.payload?.project_name || 'Unknown Project'}</div>
                   <div className="status-line">
                     <div className="dot live" style={{ animation: 'pulse 1.5s ease infinite' }} />
-                    <span>{j.status}</span>
-                    {j.started_at && <span>· Started {new Date(j.started_at).toLocaleTimeString()}</span>}
+                    <span style={{ textTransform: 'capitalize' }}>Status: {j.status}</span>
+                    {j.kind && <span style={{ textTransform: 'capitalize', color: 'var(--accent-blue)' }}>· Ongoing Process: {j.kind.replace(/_/g, ' ')}</span>}
+                    {(j.started_at || j.created_at) && <span>· Started {new Date(j.started_at || j.created_at).toLocaleTimeString()}</span>}
                   </div>
                 </div>
-                <div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
                   {j.progress !== undefined && (
                     <div className="progress-bar" style={{ width: 120 }}>
                       <div className="progress-bar-fill" style={{ width: `${j.progress}%` }} />
                     </div>
                   )}
+                  <button 
+                    className="button secondary compact" 
+                    style={{ padding: '4px 8px', color: 'var(--text-negative)', borderColor: 'transparent', background: 'transparent' }}
+                    onClick={() => handleCancelJob(j.id)}
+                    title="Cancel Job"
+                  >
+                    ✕
+                  </button>
                 </div>
               </div>
             ))}

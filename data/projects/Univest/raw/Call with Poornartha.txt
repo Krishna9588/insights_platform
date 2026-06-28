@@ -1,0 +1,20 @@
+﻿Date : April 1
+Purnartha Platform Overview
+* Broker-agnostic execution: user selects their own broker (e.g., Zerodha, ICICI Direct)
+   * Clicking “Execute” redirects to the selected broker’s platform with order pre-filled
+* Virtual account provided alongside real brokerage account
+   * Tracks Purnartha’s recommendations vs. actual returns in real time
+   * Useful when existing personal holdings differ from recommended portfolio
+* Covers both stocks and mutual funds (full-solution offering)
+* Built entirely in-house; no third-party tech — backend is Innosis, MD is ex-IBM
+Portfolio & Rebalancing Logic
+* Lump sum: initial buy + quarterly portfolio review and rebalancing
+* SIP: monthly rebalancing with each SIP installment
+* Lump sum + SIP: both mechanisms apply
+* Ad-hoc top-ups (e.g., buying on dips): user initiates request → Purnartha re-issues recommendation → user executes
+Pricing
+* AUM-based (yearly): 2.5% of AUM + GST; minimum ₹20L investment
+   * Roughly ₹50K + GST = ~₹59K/year at minimum
+* Fixed fee (3-year): ₹1.2L total including GST, for any AUM amount
+   * More cost-effective above a certain corpus size (e.g., ₹5Cr at 2.5% AUM becomes expensive)
+* Complimentary service: existing portfolio analysis (equity) — Purnartha suggests what to keep/exit

@@ -9,34 +9,46 @@ from agents.paths import CONFIG_FILE
 # Load environment variables
 load_dotenv()
 
-def get_api_key(provider: str) -> Optional[str]:
+def get_api_key_list(provider: str) -> list[str]:
+    keys = []
     # 1. Try to load from config.json
     if CONFIG_FILE.exists():
         try:
             with open(CONFIG_FILE, "r", encoding="utf-8") as f:
                 config = json.load(f)
                 api_keys = config.get("api_keys", [])
-                # Return default key for provider
+                # Add default key first
                 for key_entry in api_keys:
                     if key_entry.get("provider") == provider and key_entry.get("isDefault"):
-                        return key_entry.get("key")
-                # Fallback to any key for provider
+                        keys.append(key_entry.get("key"))
+                # Add fallback keys
                 for key_entry in api_keys:
-                    if key_entry.get("provider") == provider:
-                        return key_entry.get("key")
+                    if key_entry.get("provider") == provider and not key_entry.get("isDefault"):
+                        if key_entry.get("key") not in keys:
+                            keys.append(key_entry.get("key"))
         except Exception:
             pass
     
     # 2. Fallback to .env
-    if provider == "gemini":
-        return os.getenv("GEMINI_API_KEY")
+    if provider in ("gemini", "gemini_2"):
+        for env_var in ["GEMINI_API_KEY", "GEMINI_API_KEY_0", "GEMINI_API_KEY_1", "GEMINI_API_KEY_2", "GEMINI_API_KEY_3"]:
+            val = os.getenv(env_var)
+            if val and val not in keys:
+                keys.append(val)
     elif provider == "openai":
-        return os.getenv("OPENAI_API_KEY")
+        val = os.getenv("OPENAI_API_KEY")
+        if val and val not in keys:
+            keys.append(val)
     elif provider == "claude":
-        return os.getenv("ANTHROPIC_API_KEY")
-    elif provider == "gemini_2":
-        return os.getenv("GEMINI_API_KEY")
-    return None
+        val = os.getenv("ANTHROPIC_API_KEY")
+        if val and val not in keys:
+            keys.append(val)
+            
+    return keys
+
+def get_api_key(provider: str) -> Optional[str]:
+    keys = get_api_key_list(provider)
+    return keys[0] if keys else None
 
 # ==========================================
 # 1. INDIVIDUAL MODEL FUNCTIONS
@@ -88,37 +100,63 @@ def call_claude(prompt: str, system_prompt: str = "", model: str = "claude-3-5-s
 def call_gemini(prompt: str, system_prompt: str = "", model: str = "gemini-2.5-flash") -> str:
     from google import genai
     from google.genai import types
+    from google.genai.errors import APIError
 
-    api_key = get_api_key("gemini")
-    if not api_key:
+    api_keys = get_api_key_list("gemini")
+    if not api_keys:
         raise ValueError("Gemini API key not found in config or .env")
 
-    client = genai.Client(api_key=api_key)
+    last_error = None
+    for api_key in api_keys:
+        try:
+            client = genai.Client(api_key=api_key)
+            config = types.GenerateContentConfig(
+                system_instruction=system_prompt,
+            )
+            response = client.models.generate_content(
+                model=model,
+                contents=prompt,
+                config=config
+            )
+            return response.text
+        except APIError as e:
+            print(f"Gemini API Error: {e} - trying next key...")
+            last_error = e
+            continue
+        except Exception as e:
+            print(f"Unexpected error: {e} - trying next key...")
+            last_error = e
+            continue
 
-    config = types.GenerateContentConfig(
-        system_instruction=system_prompt,
-    )
-
-    response = client.models.generate_content(
-        model=model,
-        contents=prompt,
-        config=config
-    )
-    return response.text
+    raise ValueError(f"All Gemini API keys failed. Last error: {last_error}")
 
 def call_gemini_2(prompt: str, system_prompt: str = "", model: str = "gemini-3-flash-preview") -> str:
     import google.genai as genai
+    from google.genai.errors import APIError
     
-    api_key = get_api_key("gemini_2") or get_api_key("gemini")
-    if not api_key:
+    api_keys = get_api_key_list("gemini_2") or get_api_key_list("gemini")
+    if not api_keys:
         raise ValueError("Gemini API key not found in config or .env")
         
     prompt = system_prompt + "\n\n" + prompt
-    genai.configure(api_key=api_key)
-    model_obj = genai.GenerativeModel(model)
-    response = model_obj.generate_content(prompt)
-
-    return response.text
+    last_error = None
+    
+    for api_key in api_keys:
+        try:
+            genai.configure(api_key=api_key)
+            model_obj = genai.GenerativeModel(model)
+            response = model_obj.generate_content(prompt)
+            return response.text
+        except APIError as e:
+            print(f"Gemini API Error: {e} - trying next key...")
+            last_error = e
+            continue
+        except Exception as e:
+            print(f"Unexpected error: {e} - trying next key...")
+            last_error = e
+            continue
+            
+    raise ValueError(f"All Gemini API keys failed. Last error: {last_error}")
 
 # ==========================================
 # 2. MAIN UNIFIED FUNCTION
