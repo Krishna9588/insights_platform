@@ -1,0 +1,366 @@
+{
+  "metadata": {
+    "source_file": "PrimoDato_Sales_Playbook.docx",
+    "source_type": "Internal",
+    "entity": "Primodato Sales Playbook",
+    "meeting_type": "Sales Call",
+    "file_date": "2026-07-11",
+    "processed_at": "2026-07-11T06:43:25.873316+00:00",
+    "classifier_used": "hf_api",
+    "total_signals": 44
+  },
+  "signals": [
+    {
+      "signal_id": "PSP_001",
+      "signal_type": "Feature",
+      "confidence": 0.42,
+      "content": "PRIMODATO AI-Powered B2B Buyer Intelligence",
+      "time_range": null,
+      "turn_index": 0
+    },
+    {
+      "signal_id": "PSP_002",
+      "signal_type": "Feature",
+      "confidence": 0.4126,
+      "content": "1.1 The 30-Second Elevator Pitch \"PrimoDato is an AI-powered B2B buyer intelligence platform that helps revenue teams find and prioritize companies that actually match their ideal customer profile. Instead of paying for a bloated contact database full of data you'll never use, PrimoDato lets you search 5 million companies by industry, technology stack, and buying signals and you only pay when you reveal a company you actually want to pursue. Teams using PrimoDato build sharper prospect lists in minutes, not days.\"",
+      "time_range": null,
+      "turn_index": 1
+    },
+    {
+      "signal_id": "PSP_003",
+      "signal_type": "Feature",
+      "confidence": 0.5256,
+      "content": "1.2 The 2-Minute Sales Pitch Opening Set the Scene \"Let me ask you something. How much time does your sales team spend every week trying to figure out which companies are actually worth calling? For most teams, the answer is: too much. They're working off stale contact lists, guessing which prospects use technologies that matter, and getting burned by bad data bounced emails, wrong titles, dead phone numbers.\"",
+      "time_range": null,
+      "turn_index": 2
+    },
+    {
+      "signal_id": "PSP_004",
+      "signal_type": "Insight",
+      "confidence": 0.2805,
+      "content": "The Problem \"Platforms like ZoomInfo and Apollo are broad by design they try to cover every company, every contact, every industry. But broad means shallow. You pay for millions of records, and most of them are irrelevant to your ICP. On top of that, the data quality degrades fast.\"",
+      "time_range": null,
+      "turn_index": 3
+    },
+    {
+      "signal_id": "PSP_005",
+      "signal_type": "Feature",
+      "confidence": 0.5799,
+      "content": "PrimoDato's Solution \"PrimoDato takes a different approach. We're built for technographic prospecting. That means you start from your exact vertical say, Hospitality Travel, or SaaS Technology and then layer on the technologies your ideal customers are running. If you sell a competing tool to Opera PMS, we show you every hotel group running Opera, in your target region, at the right size, before you even pick up the phone.\"",
+      "time_range": null,
+      "turn_index": 4
+    },
+    {
+      "signal_id": "PSP_006",
+      "signal_type": "Feature",
+      "confidence": 0.8183,
+      "content": "Why It's Better \"Our credit model means you browse unlimited search results for free. You only spend a credit five credits, to be precise when you unlock a company's full profile. That means no wasted spend, no overpaying for data you'll never touch.\"",
+      "time_range": null,
+      "turn_index": 5
+    },
+    {
+      "signal_id": "PSP_007",
+      "signal_type": "Feature",
+      "confidence": 0.5139,
+      "content": "The Close \"With 5 million companies, 2,000 tracked technologies, and 147 searchable industries, PrimoDato is the sharpest tool for teams who want precision over volume. You can start with 200 free credits today no credit card required. What does your current prospecting stack look like?\"",
+      "time_range": null,
+      "turn_index": 6
+    },
+    {
+      "signal_id": "PSP_008",
+      "signal_type": "Feature",
+      "confidence": 0.4158,
+      "content": "PrimoDato solves a fundamental sales problem: most revenue teams are either flying blind on technographic data, or they're overpaying for platforms that cover everything shallowly. PrimoDato delivers precision buyer intelligence the right companies, with the right signals, at a price that scales with actual usage.",
+      "time_range": null,
+      "turn_index": 7
+    },
+    {
+      "signal_id": "PSP_009",
+      "signal_type": "Complaint",
+      "confidence": 0.419,
+      "content": "Section 3: Customer Pain Points Solutions",
+      "time_range": null,
+      "turn_index": 8
+    },
+    {
+      "signal_id": "PSP_010",
+      "signal_type": "Complaint",
+      "confidence": 0.6451,
+      "content": "3.1 The 6 Critical Pain Points Pain Point 1: Bad Data Is Costing You Revenue Customer Problem Sales reps spend 2030 of their week verifying and cleaning data. Bounced emails, wrong phone numbers, and outdated titles are endemic in legacy B2B databases. Every bad record costs rep time and destroys outreach credibility.",
+      "time_range": null,
+      "turn_index": 9
+    },
+    {
+      "signal_id": "PSP_011",
+      "signal_type": "Feature",
+      "confidence": 0.4335,
+      "content": "PrimoDato Solution Every company profile shows a last-verified date. Technographic data is refreshed weekly from live sources. Firmographic data is refreshed monthly. Before you reveal a record, you already know how fresh it is.",
+      "time_range": null,
+      "turn_index": 10
+    },
+    {
+      "signal_id": "PSP_012",
+      "signal_type": "Trend",
+      "confidence": 0.5582,
+      "content": "Business Benefit One customer (Baseloop's Growth Lead) saw reply rates jump 34 in the first month after switching to PrimoDato-sourced contacts.",
+      "time_range": null,
+      "turn_index": 11
+    },
+    {
+      "signal_id": "PSP_013",
+      "signal_type": "Feature",
+      "confidence": 0.3998,
+      "content": "Pain Point 2: Paying for Data You Never Use Customer Problem ZoomInfo and similar platforms lock teams into annual contracts with access to millions of records. In practice, most teams use a fraction of what they pay for but the price stays the same whether you use 500 records or 500,000.",
+      "time_range": null,
+      "turn_index": 12
+    },
+    {
+      "signal_id": "PSP_014",
+      "signal_type": "Feature",
+      "confidence": 0.4936,
+      "content": "PrimoDato Solution PrimoDato's credit model decouples browsing from buying. Search results are always free. You spend 5 credits only when you reveal a company's full profile, contacts, and enriched data.",
+      "time_range": null,
+      "turn_index": 13
+    },
+    {
+      "signal_id": "PSP_015",
+      "signal_type": "Insight",
+      "confidence": 0.427,
+      "content": "Business Benefit Small teams can start at 49month (1,000 credits 200 full reveals). Enterprise teams get volume pricing. No wasted spend on irrelevant records.",
+      "time_range": null,
+      "turn_index": 14
+    },
+    {
+      "signal_id": "PSP_016",
+      "signal_type": "Complaint",
+      "confidence": 0.9151,
+      "content": "Pain Point 3: No Technographic Context Customer Problem If you sell a CRM, a hospitality tech tool, or a cloud security solution, knowing that your prospect uses a competing or complementary product is the single most valuable signal for prioritization. Most databases don't surface this.",
+      "time_range": null,
+      "turn_index": 15
+    },
+    {
+      "signal_id": "PSP_017",
+      "signal_type": "Feature",
+      "confidence": 0.3061,
+      "content": "PrimoDato Solution PrimoDato tracks 2,000 technologies across CRM, cloud infrastructure, eCommerce, analytics, PMS, and operations tooling. Filter any company search by specific technology categories or products.",
+      "time_range": null,
+      "turn_index": 16
+    },
+    {
+      "signal_id": "PSP_018",
+      "signal_type": "Feature",
+      "confidence": 0.3666,
+      "content": "Business Benefit \"PrimoDato's technographic filters changed how we prospect entirely. We can now target companies running specific tools in their stack, so we avoid cold outreach to accounts that will never convert.\" Aisha Patel, Head of Sales, Sproutly",
+      "time_range": null,
+      "turn_index": 17
+    },
+    {
+      "signal_id": "PSP_019",
+      "signal_type": "Feature",
+      "confidence": 0.6409,
+      "content": "Pain Point 4: ICP Is a Job Title, Not a Signal Customer Problem Legacy platforms define ICP as a set of demographic filters: company size, industry, title. But this misses the most actionable signals what tools is the company running? Are they expanding? Are they a competitor's customer?",
+      "time_range": null,
+      "turn_index": 18
+    },
+    {
+      "signal_id": "PSP_020",
+      "signal_type": "Feature",
+      "confidence": 0.3408,
+      "content": "PrimoDato Solution ICP scoring in PrimoDato goes beyond firmographics. Custom dataset services score accounts by technographic fit, stack category relevance, geographic footprint, ownership type, and growth stage all matched to your exact GTM criteria.",
+      "time_range": null,
+      "turn_index": 19
+    },
+    {
+      "signal_id": "PSP_021",
+      "signal_type": "Insight",
+      "confidence": 0.4092,
+      "content": "Business Benefit ABM teams get a prioritized list organized by fit and relevance, not just raw volume. The result is better conversion rates and shorter sales cycles.",
+      "time_range": null,
+      "turn_index": 20
+    },
+    {
+      "signal_id": "PSP_022",
+      "signal_type": "Complaint",
+      "confidence": 0.6215,
+      "content": "Pain Point 5: Generic Tools Stay Shallow on Your Vertical Customer Problem If you sell into Hospitality, Real Estate, Healthcare Life Sciences, or Entertainment, you know the pain: generic platforms don't understand sector-specific tech stacks. You get company names but not the signal that tells you whether they use Opera PMS or Cloudbeds, Mews or SiteMinder.",
+      "time_range": null,
+      "turn_index": 21
+    },
+    {
+      "signal_id": "PSP_023",
+      "signal_type": "Feature",
+      "confidence": 0.3848,
+      "content": "PrimoDato Solution PrimoDato is specifically stronger in sectors where generic tools stay shallow with 147 searchable industries, 60 featured verticals, and dedicated coverage for Hospitality (210K active companies), Real Estate, Healthcare, and more.",
+      "time_range": null,
+      "turn_index": 22
+    },
+    {
+      "signal_id": "PSP_024",
+      "signal_type": "Insight",
+      "confidence": 0.6,
+      "content": "Business Benefit Your reps go into calls knowing the technology landscape of the account they're targeting. The pitch is vertical-specific from the first touch.",
+      "time_range": null,
+      "turn_index": 23
+    },
+    {
+      "signal_id": "PSP_025",
+      "signal_type": "Complaint",
+      "confidence": 0.9252,
+      "content": "Pain Point 6: Slow Time-to-List Customer Problem Building a targeted prospect list for a new vertical or territory can take a week of research, data cleaning, and enrichment. By the time the list is ready, the market signal may have shifted.",
+      "time_range": null,
+      "turn_index": 24
+    },
+    {
+      "signal_id": "PSP_026",
+      "signal_type": "Feature",
+      "confidence": 0.4908,
+      "content": "PrimoDato Solution PrimoDato's clean search UX filter by industry, tech stack, country, revenue band, employee headcount lets reps go from zero to a targeted prospect list in under 25 minutes. Business Benefit",
+      "time_range": null,
+      "turn_index": 25
+    },
+    {
+      "signal_id": "PSP_027",
+      "signal_type": "Complaint",
+      "confidence": 0.4173,
+      "content": "\"I went from zero to a list of 30 highly qualified accounts in under 25 minutes. For a two-person sales team, that kind of speed is not a nice to have it is everything.\" Marcus Lin, Founder CEO, Trellis Labs",
+      "time_range": null,
+      "turn_index": 26
+    },
+    {
+      "signal_id": "PSP_028",
+      "signal_type": "Insight",
+      "confidence": 0.7028,
+      "content": "5.1 Technographic Intelligence What it is Technographic intelligence means PrimoDato tracks which software products and technology categories each company in the database uses. This covers CRM platforms, cloud infrastructure (AWS, Azure, Google Cloud), property management systems, eCommerce tools, analytics platforms, ERP systems, cybersecurity products, and much more 2,000 tracked technologies in total.",
+      "time_range": null,
+      "turn_index": 27
+    },
+    {
+      "signal_id": "PSP_029",
+      "signal_type": "Feature",
+      "confidence": 0.3597,
+      "content": "How it works Data is gathered from live sources and refreshed weekly. Every technology detection comes with a confidence score. Users can filter their company search by specific technology products (e.g., \"companies using Opera PMS\") or by stack category (e.g., \"companies using a cloud CRM\"). The result is a list of companies pre-qualified by the technology signal most relevant to the seller's pitch.",
+      "time_range": null,
+      "turn_index": 28
+    },
+    {
+      "signal_id": "PSP_030",
+      "signal_type": "Feature",
+      "confidence": 0.3705,
+      "content": "Why it matters Technographic data is the single highest-value signal for B2B sales because it tells you what a company has already bought and what adjacent needs they're likely to have. A company running Salesforce CRM is a very different buyer than one running spreadsheets. A hotel group on Opera PMS has different integration needs than one on Mews.",
+      "time_range": null,
+      "turn_index": 29
+    },
+    {
+      "signal_id": "PSP_031",
+      "signal_type": "Feature",
+      "confidence": 0.6176,
+      "content": "5.2 Custom Datasets What it is Beyond the self-serve platform, PrimoDato offers a managed custom data service where the PrimoDato team builds a bespoke account intelligence dataset around your exact ICP your industries, your target technologies, your geographies, and your GTM criteria.",
+      "time_range": null,
+      "turn_index": 30
+    },
+    {
+      "signal_id": "PSP_032",
+      "signal_type": "Insight",
+      "confidence": 0.5554,
+      "content": "What you get Technographic intent signals accounts running technologies relevant to your pitch Firmographic filters industry, headcount band, revenue, ownership type, growth stage User and non-user lists identify current users, likely non-users, competitor-installed accounts, and whitespace opportunities",
+      "time_range": null,
+      "turn_index": 31
+    },
+    {
+      "signal_id": "PSP_033",
+      "signal_type": "Feature",
+      "confidence": 0.5192,
+      "content": "Country and region-specific datasets scoped to your exact territories 150 industries supported with custom scoping CRM-ready delivery format (CSV or aligned to your field structure) Key differentiator",
+      "time_range": null,
+      "turn_index": 32
+    },
+    {
+      "signal_id": "PSP_034",
+      "signal_type": "Feature",
+      "confidence": 0.3338,
+      "content": "Every custom project goes through human validation, signal scoring, and edge-case review before delivery. You receive a production-ready dataset, not a noisy field dump you have to clean yourself.",
+      "time_range": null,
+      "turn_index": 33
+    },
+    {
+      "signal_id": "PSP_035",
+      "signal_type": "Feature",
+      "confidence": 0.6248,
+      "content": "5.3 ICP Scoring Firmographic Filters What it is ICP (Ideal Customer Profile) scoring in PrimoDato goes beyond simple demographic filters. The system organizes datasets around fit, relevance, and practical campaign use combining technographic signals with firmographic attributes to produce a ranked, prioritized account list rather than a flat export.",
+      "time_range": null,
+      "turn_index": 34
+    },
+    {
+      "signal_id": "PSP_036",
+      "signal_type": "Feature",
+      "confidence": 0.4137,
+      "content": "Firmographic filters available Industry (147 searchable categories, 60 featured verticals) Employee headcount bands Revenue range Ownership type (private, public, non-profit, government) Growth stage",
+      "time_range": null,
+      "turn_index": 35
+    },
+    {
+      "signal_id": "PSP_037",
+      "signal_type": "Feature",
+      "confidence": 0.3365,
+      "content": "Operating footprint (multi-location, single-site, enterprise) How ICP scoring works in custom services For custom dataset projects, PrimoDato's team applies GTM-specific scoring: accounts are ranked by how closely they match your stated ICP, with technographic fit weighted alongside firmographic attributes. You receive a tiered list (Tier 1 Tier 2 Tier 3) so your ABM or outbound team knows exactly where to start.",
+      "time_range": null,
+      "turn_index": 36
+    },
+    {
+      "signal_id": "PSP_038",
+      "signal_type": "Feature",
+      "confidence": 0.6285,
+      "content": "5.4 AI Research Assistant (Early Access) What it is The upcoming AI Research Assistant lets users ask business questions in plain English no SQL, no complex filter logic required. The assistant surfaces relevant companies, technologies, growth signals, and account summaries in a conversational interface.",
+      "time_range": null,
+      "turn_index": 37
+    },
+    {
+      "signal_id": "PSP_039",
+      "signal_type": "Insight",
+      "confidence": 0.8991,
+      "content": "Key capabilities Natural Language Search \"Show me mid-size SaaS companies in Germany using Salesforce\" AI Company Insights Quick summaries, growth signals, and technology analysis on any account Smart Recommendations Discover relevant prospects and partnership opportunities automatically",
+      "time_range": null,
+      "turn_index": 38
+    },
+    {
+      "signal_id": "PSP_040",
+      "signal_type": "Feature",
+      "confidence": 0.9235,
+      "content": "Status Early access is available by request at primodato.com. This feature is expected to reduce account research time by 6070 for reps preparing for calls.",
+      "time_range": null,
+      "turn_index": 39
+    },
+    {
+      "signal_id": "PSP_041",
+      "signal_type": "Feature",
+      "confidence": 0.2944,
+      "content": "PrimoDato's ROI case is built on three pillars: lower data cost, less time wasted, and higher conversion rates from better targeting.",
+      "time_range": null,
+      "turn_index": 41
+    },
+    {
+      "signal_id": "PSP_042",
+      "signal_type": "Insight",
+      "confidence": 0.3859,
+      "content": "Keep this section handy for calls and demos.",
+      "time_range": null,
+      "turn_index": 42
+    },
+    {
+      "signal_id": "PSP_043",
+      "signal_type": "Feature",
+      "confidence": 0.3666,
+      "content": "Ready to build your sharpest pipeline yet? Start free today. 200 credits. No credit card required. primodato.comsignup salesprimodato.com",
+      "time_range": null,
+      "turn_index": 43
+    },
+    {
+      "signal_id": "PSP_044",
+      "signal_type": "Insight",
+      "confidence": 0.3122,
+      "content": "2026 PrimoDato, Inc. All rights reserved. This document is confidential and intended for sales team use only.",
+      "time_range": null,
+      "turn_index": 44
+    }
+  ]
+}

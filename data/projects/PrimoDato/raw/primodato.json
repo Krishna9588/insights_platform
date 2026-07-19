@@ -1,0 +1,266 @@
+{
+    "company_name": "PrimoDato",
+    "domain": "https://primodato.com/",
+    "playstore_link": "Unable to verify",
+    "appstore_link": "Unable to verify",
+    "youtube_official_channel": "Unable to verify",
+    "linkedin_company_page": "Unable to verify",
+    "year_founded": "Unable to verify",
+    "names_of_founders": [
+        "Unable to verify"
+    ],
+    "c-suite_officer": [
+        "Unable to verify"
+    ],
+    "employee_count": "Unable to verify",
+    "exact_hq_location": "Wilmington, Delaware, USA",
+    "locations_operating_in": [
+        "US",
+        "EU",
+        "India"
+    ],
+    "industry_and_segment": "B2B Buyer Intelligence Platform, AI-Powered Sales Intelligence, Technographic Prospecting",
+    "available_platforms": "Web",
+    "funding_raised": "Unable to verify",
+    "funding_stage": "Unable to verify",
+    "no_of_users": "Unable to verify",
+    "annual_revenue": "Unable to verify",
+    "key_positioning": "AI-powered B2B buyer intelligence platform focused on precision over volume, combining technographic analysis, machine learning enrichment, and real-time market signals to help B2B sales and marketing teams find, qualify, and reach best-fit accounts. Pay only for what you reveal.",
+    "revenue_model": "Credit-based pricing model where users pay credits to reveal company profiles and contact details. Subscription plans offer recurring monthly credits, and one-time top-up credits are available and do not expire.",
+    "pricing_tiers": [
+        "Free: $0/month – 200 signup credits, basic exports, saved lists.",
+        "Starter: $49/month – 1,000 monthly credits, unlimited saved searches, CSV export history.",
+        "Pro: $99/month – 2,500 monthly credits, unlimited saved searches, CSV export history, priority support.",
+        "Growth: $199/month – 5,000 monthly credits + 500 bonus credits, priority support, advanced activity analytics, CSV export history.",
+        "Scale: $499/month – 15,000 monthly credits + 1,000 bonus credits, priority support, advanced activity analytics, dedicated account manager.",
+        "Max: $999/month – 20,000 monthly credits + 5,000 bonus credits, priority support, advanced activity analytics, dedicated account manager.",
+        "Enterprise: Custom – Custom volume, dedicated support, account-based onboarding, custom integrations."
+    ],
+    "target_customer_segments": [
+        "B2B Sales Teams",
+        "Marketing Teams",
+        "Revenue Operations (RevOps)",
+        "Account-Based Marketing (ABM) Teams",
+        "Go-to-Market (GTM) Teams"
+    ],
+    "tech_stack_highlights": [
+        "AI and Machine Learning (ML) enrichment for firmographic and technographic data.",
+        "Public Web Intelligence Layer for continuous crawling, indexing, and analysis of public company data.",
+        "Semantic Search & Retrieval using vector search for instant company profile retrieval.",
+        "Real-Time Processing Pipelines for continuous data point processing.",
+        "Node.js/TypeScript SDK for API access.",
+        "Python SDK for API access.",
+        "Ruby SDK for API access.",
+        "API for programmatic access to company search, reveal, and export workflows."
+    ],
+    "milestones": [],
+    "new_features_launched": [
+        "Natural Language Business Intelligence (Coming Soon) – Conversational AI assistant for natural language interaction with business intelligence."
+    ],
+    "recent_partnerships_and_integrations": [],
+    "competitors": [
+        {
+            "name": "ZoomInfo",
+            "domain": "zoominfo.com"
+        },
+        {
+            "name": "Bombora",
+            "domain": "bombora.com"
+        },
+        {
+            "name": "6sense",
+            "domain": "6sense.com"
+        },
+        {
+            "name": "BuiltWith",
+            "domain": "builtwith.com"
+        }
+    ],
+    "market_sentiment": {
+        "overall": "Unable to verify",
+        "analyst_view": "Unable to verify",
+        "user_community_view": "Unable to verify",
+        "source": "Unable to verify",
+        "date": "Unable to verify"
+    },
+    "differentiators": [
+        {
+            "feature": "Precision over volume pricing model, allowing users to pay only for revealed company profiles and contact details, avoiding wasted spend on unused data.",
+            "user_type": "B2B Sales and Marketing Teams",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHHOAEBN3eT5QDmBo35LQZoDo8404vt45Igpb4fKGXY6_hxYZAgaCVf1jkjdZKS5vxaKrw8mlpuYypt-LDOE7QPS0UFhI-927AK1MLr4WDUFLtTW1lJvw==, https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHm8QIlYBtd_yIfjn_keu1vzodK-DH_hhZ7YYMp8bNzTq-8GclWMdtZWoUK443YAbir3CN38vw4nExRmbPR7g-9iT3DSbjROWcUgr6AgDXKgOo=",
+            "date": "Recent",
+            "effect": [
+                "Reduces unnecessary expenditure on large, often unused, data subscriptions.",
+                "Provides access to precise company intelligence rather than a massive contact database."
+            ]
+        },
+        {
+            "feature": "Niche-deep coverage in specific verticals like Hospitality, Healthcare, Real Estate, Travel, and Entertainment, where generic tools offer shallow data.",
+            "user_type": "B2B Sales and Marketing Teams",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHHOAEBN3eT5QDmBo35LQZoDo8404vt45Igpb4fKGXY6_hxYZAgaCVf1jkjdZKS5vxaKrw8mlpuYypt-LDOE7QPS0UFhI-927AK1MLr4WDUFLtTW1lJvw==, https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHm8QIlYBtd_yIfjn_keu1vzodK-DH_hhZ7YYMp8bNzTq-8GclWMdtZWoUK443YAbir3CN38vw4nExRmbPR7g-9iT3DSbjROWcUgr6AgDXKgOo=",
+            "date": "Recent",
+            "effect": [
+                "Enables targeting companies running specific tools in their stack, improving conversion rates.",
+                "Offers deeper insights and real-time enrichment tailored to vertical needs."
+            ]
+        },
+        {
+            "feature": "AI-powered buyer intelligence combining technographic analysis, machine learning enrichment, and human-verified accuracy for better targeting.",
+            "user_type": "B2B Sales and Marketing Teams",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHHOAEBN3eT5QDmBo35LQZoDo8404vt45Igpb4fKGXY6_hxYZAgaCVf1jkjdZKS5vxaKrw8mlpuYypt-LDOE7QPS0UFhI-927AK1MLr4WDUFLtTW1lJvw==",
+            "date": "Recent",
+            "effect": [
+                "Helps teams find, qualify, and reach best-fit accounts with confidence.",
+                "Provides AI-assisted insights that are actionable and precise."
+            ]
+        }
+    ],
+    "current_problems_struggling_with": [
+        {
+            "description": "Unable to verify",
+            "user_type": "Unable to verify",
+            "frequency": "Unable to verify",
+            "source": "Unable to verify",
+            "date": "Unable to verify",
+            "effect": [
+                "Unable to verify"
+            ]
+        },
+        {
+            "description": "Unable to verify",
+            "user_type": "Unable to verify",
+            "frequency": "Unable to verify",
+            "source": "Unable to verify",
+            "date": "Unable to verify",
+            "effect": [
+                "Unable to verify"
+            ]
+        },
+        {
+            "description": "Unable to verify",
+            "user_type": "Unable to verify",
+            "frequency": "Unable to verify",
+            "source": "Unable to verify",
+            "date": "Unable to verify",
+            "effect": [
+                "Unable to verify"
+            ]
+        },
+        {
+            "description": "Unable to verify",
+            "user_type": "Unable to verify",
+            "frequency": "Unable to verify",
+            "source": "Unable to verify",
+            "date": "Unable to verify",
+            "effect": [
+                "Unable to verify"
+            ]
+        },
+        {
+            "description": "Unable to verify",
+            "user_type": "Unable to verify",
+            "frequency": "Unable to verify",
+            "source": "Unable to verify",
+            "date": "Unable to verify",
+            "effect": [
+                "Unable to verify"
+            ]
+        }
+    ],
+    "regulatory_and_legal_issues": [],
+    "other_crucial_details": [
+        "PrimoDato was founded by revenue operations professionals aiming to solve frustration with expensive, underutilized data subscriptions.",
+        "The company's team is distributed across the US, EU, and India.",
+        "Their mission is to provide AI-powered buyer intelligence to all B2B sales and marketing teams, not exclusively enterprises with large budgets."
+    ],
+    "strategic_moves": [
+        {
+            "move": "Development and upcoming launch of 'Natural Language Business Intelligence' or 'AI Research Assistant' for conversational AI interaction with business data.",
+            "user_type": "B2B Sales and Marketing Teams",
+            "frequency": "Occasional",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHm8QIlYBtd_yIfjn_keu1vzodK-DH_hhZ7YYMp8bNzTq-8GclWMdtZWoUK443YAbir3CN38vw4nExRmbPR7g-9iT3DSbjROWcUgr6AgDXKgOo=",
+            "date": "Recent",
+            "effect": [
+                "Enables faster discovery of companies, technologies, and insights using plain English.",
+                "Offers AI company insights and smart recommendations for prospecting."
+            ]
+        },
+        {
+            "move": "Strategic focus on providing deep data coverage and tailored solutions for specific vertical workflows, notably Hospitality, Real Estate, Travel, and Entertainment.",
+            "user_type": "Company Leadership, Product Development",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHHOAEBN3eT5QDmBo35LQZoDo8404vt45Igpb4fKGXY6_hxYZAgaCVf1jkjdZKS5vxaKrw8mlpuYypt-LDOE7QPS0UFhI-927AK1MLr4WDUFLtTW1lJvw==, https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHm8QIlYBtd_yIfjn_keu1vzodK-DH_hhZ7YYMp8bNzTq-8GclWMdtZWoUK443YAbir3CN38vw4nExRmbPR7g-9iT3DSbjROWcUgr6AgDXKgOo=",
+            "date": "Recent",
+            "effect": [
+                "Allows PrimoDato to serve niche markets effectively where competitors are too broad.",
+                "Attracts teams seeking specialized technographic prospecting capabilities."
+            ]
+        },
+        {
+            "move": "Actively seeking partnerships for CRM integrations, reseller agreements, data licensing, and API white-label inquiries.",
+            "user_type": "Business Development, Partners",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFOCBxSxth40JjOQavBHfvS6VyOIJtWXHccYPUG3S1WBKhCyEsQEJMqh6QnWfRjHDmnWRsjicvlAFjEUjtbFgFpTHYpwYJHXKzjuY3u8vbH6_eATQRoxzCV",
+            "date": "Recent",
+            "effect": [
+                "Expands market reach and integration capabilities for users.",
+                "Potentially creates new revenue streams and strengthens ecosystem presence."
+            ]
+        }
+    ],
+    "user_complaints": [
+        {
+            "issue": "Unable to verify",
+            "user_type": "Unable to verify",
+            "frequency": "Unable to verify",
+            "source": "Unable to verify",
+            "date": "Unable to verify",
+            "effect": [
+                "Unable to verify"
+            ]
+        },
+        {
+            "issue": "Unable to verify",
+            "user_type": "Unable to verify",
+            "frequency": "Unable to verify",
+            "source": "Unable to verify",
+            "date": "Unable to verify",
+            "effect": [
+                "Unable to verify"
+            ]
+        },
+        {
+            "issue": "Unable to verify",
+            "user_type": "Unable to verify",
+            "frequency": "Unable to verify",
+            "source": "Unable to verify",
+            "date": "Unable to verify",
+            "effect": [
+                "Unable to verify"
+            ]
+        },
+        {
+            "issue": "Unable to verify",
+            "user_type": "Unable to verify",
+            "frequency": "Unable to verify",
+            "source": "Unable to verify",
+            "date": "Unable to verify",
+            "effect": [
+                "Unable to verify"
+            ]
+        },
+        {
+            "issue": "Unable to verify",
+            "user_type": "Unable to verify",
+            "frequency": "Unable to verify",
+            "source": "Unable to verify",
+            "date": "Unable to verify",
+            "effect": [
+                "Unable to verify"
+            ]
+        }
+    ]
+}
