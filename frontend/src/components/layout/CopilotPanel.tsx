@@ -76,7 +76,7 @@ export default function CopilotPanel() {
     try {
       const res = await askChat({
         question: q,
-        project_name: chatProject,
+        project_name: chatProject ?? '',
         provider: chatProvider,
         session_id: chatSessionId,
       });
