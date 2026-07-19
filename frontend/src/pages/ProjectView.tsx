@@ -219,7 +219,7 @@ export default function ProjectView() {
                 // Update local data state with the new requested data
                 setData((prev: any) => ({
                   ...prev,
-                  requested_data: res.data.requested_data
+                  requested_data: res.requested_data
                 }));
                 // Switch to the Requested Data tab automatically
                 setActiveTab('Requested Data');

@@ -22,10 +22,12 @@ export interface Job {
   status: 'queued' | 'running' | 'complete' | 'failed';
   progress?: number;
   started_at?: string;
+  created_at?: string;
   completed_at?: string;
   result_summary?: string;
   error?: string;
   kind?: string;
+  payload?: Record<string, unknown>;
 }
 
 export interface ChatMessage {

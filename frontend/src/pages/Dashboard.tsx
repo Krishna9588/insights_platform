@@ -136,6 +136,7 @@ export default function Dashboard() {
               const status = (pp.processing_status as Record<string, boolean>) ?? {};
               const hasBrief = status.agent4_product_brief_done;
               const hasInsights = status.agent2_insights_extracted;
+              const updatedAt: string | null = pp.updated_at ? String(pp.updated_at) : null;
 
               return (
                 <div className="list-item" key={name}>
@@ -147,7 +148,7 @@ export default function Dashboard() {
                         {hasBrief && <><div className="dot ok" /><span>Brief ready</span></>}
                         {hasInsights && !hasBrief && <><div className="dot warn" /><span>Insights ready</span></>}
                         {!hasInsights && !hasBrief && <><div className="dot" /><span>No insights yet</span></>}
-                        {pp.updated_at && <span>· {new Date(String(pp.updated_at)).toLocaleDateString()}</span>}
+                        {updatedAt && <span>· {new Date(updatedAt).toLocaleDateString()}</span>}
                       </div>
                     </div>
                   </div>
@@ -191,12 +192,12 @@ export default function Dashboard() {
             {jobs.filter((j) => j.status === 'running' || j.status === 'queued').map((j) => (
               <div className="list-item" key={j.id}>
                 <div>
-                  <div className="item-title">{j.project_name || j.payload?.project_name || 'Unknown Project'}</div>
+                  <div className="item-title">{j.project_name || String(j.payload?.project_name ?? '') || 'Unknown Project'}</div>
                   <div className="status-line">
                     <div className="dot live" style={{ animation: 'pulse 1.5s ease infinite' }} />
                     <span style={{ textTransform: 'capitalize' }}>Status: {j.status}</span>
                     {j.kind && <span style={{ textTransform: 'capitalize', color: 'var(--accent-blue)' }}>· Ongoing Process: {j.kind.replace(/_/g, ' ')}</span>}
-                    {(j.started_at || j.created_at) && <span>· Started {new Date(j.started_at || j.created_at).toLocaleTimeString()}</span>}
+                    {(j.started_at || j.created_at) && <span>· Started {new Date((j.started_at || j.created_at)!).toLocaleTimeString()}</span>}
                   </div>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
