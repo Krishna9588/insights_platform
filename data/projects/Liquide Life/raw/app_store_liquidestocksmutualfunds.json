@@ -1,0 +1,102 @@
+{
+  "extraction_metadata": {
+    "source": "Apple App Store (iTunes API)",
+    "extracted_at": "2026-06-28T13:46:38.873113",
+    "extraction_time_seconds": 1.62,
+    "fields_extracted": 33,
+    "country": "in",
+    "reviews_distribution": {
+      "1": 20,
+      "2": 20,
+      "3": 20,
+      "4": 20,
+      "5": 20
+    },
+    "total_reviews_extracted": 0,
+    "status": "success"
+  },
+  "extracted_data": {
+    "metadata": {
+      "trackId": 1624726081,
+      "trackName": "Liquide- Stocks & Mutual Funds",
+      "bundleId": "life.liquide.app",
+      "trackViewUrl": "https://apps.apple.com/in/app/liquide-stocks-mutual-funds/id1624726081?uo=4",
+      "artistId": 1624726083,
+      "artistName": "Liquide Solutions Private Limited",
+      "artistViewUrl": "https://apps.apple.com/in/developer/liquide-solutions-private-limited/id1624726083?uo=4",
+      "sellerName": "Liquide Solutions Private Limited",
+      "primaryGenreName": "Finance",
+      "primaryGenreId": 6015,
+      "genres": [
+        "Finance"
+      ],
+      "genreIds": [
+        "6015"
+      ],
+      "averageUserRating": 4.84375,
+      "userRatingCount": 18003,
+      "averageUserRatingForCurrentVersion": 4.84375,
+      "userRatingCountForCurrentVersion": 18003,
+      "price": 0.0,
+      "formattedPrice": "Free",
+      "currency": "INR",
+      "isVppDeviceBasedLicensingEnabled": true,
+      "version": "1.4.9",
+      "releaseNotes": "This update brings UI improvements, resolves multiple bugs including notification navigation issues, and includes library upgrades for better performance and overall app stability.",
+      "releaseDate": "2022-06-28T07:00:00Z",
+      "currentVersionReleaseDate": "2026-03-20T06:31:30Z",
+      "description": "Welcome to Liquide, your trusted partner in stock market and mutual fund investing!\nAs India’s premier SEBI-registered Research Analyst, we bring you a cutting-edge financial advisory experience like no other. With curated stock market tools, Liquide is your personal stock investment guide and advisor, right at your fingertips.\n\nKey Features:\n1. Stock Trade Recommendations\nWhether you're looking for short-term opportunities or long-term strategies, our stock advisor provides recommendations to align with your investment objectives. Whether you're experienced or just starting, we ensure the best support for your journey.\n2. F&O Recommendations \nElevate your trading experience with Futures and Options (F&O), integrated seamlessly within the app. Gain access to advanced F&O strategies and stay ahead with timely insights to help you navigate the market.\n3. Portfolio Health Analysis \nOur portfolio health analysis helps you assess your portfolio's overall strength, highlights areas of concer",
+      "shortDescription": "",
+      "minimumOsVersion": "15.1",
+      "fileSizeBytes": 102691840,
+      "contentAdvisoryRating": "4+",
+      "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/88/fc/6d/88fc6df5-99ff-fc15-6ed4-c642f9445ecb/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
+      "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/88/fc/6d/88fc6df5-99ff-fc15-6ed4-c642f9445ecb/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/100x100bb.jpg",
+      "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/88/fc/6d/88fc6df5-99ff-fc15-6ed4-c642f9445ecb/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "screenshotUrls": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/88/5c/50/885c50e7-b305-7225-00e8-34fe20fdf600/7c1320b2-83b2-4527-bebf-92cc71ef88c7_4.7___U0026_5.5___U002801_U0029.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/48/e1/c1/48e1c129-d091-3d79-c8a1-e34f23e5211a/3e5e49f3-93e3-4e00-9fd8-e2a46cdc156c_4.7___U0026_5.5___U002802_U0029.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/27/9d/da/279dda9f-feeb-e33c-2916-8482c9201942/8749e3a7-beef-45b8-910a-2e5ce27a8c53_4.7___U0026_5.5___U002804_U0029.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9a/2e/51/9a2e5182-7e64-fb44-84b6-64753a756831/8ed4c431-528d-481b-a463-53e3d21df8d8_4.7___U0026_5.5___U002808_U0029.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/61/73/4b/61734bda-4321-93aa-77ba-5eb1033f7529/5ef72d8a-0a48-491f-af49-555daca426cd_4.7___U0026_5.5___U002807_U0029.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9e/ab/cc/9eabcc8a-1682-83d4-27f4-25eea010c982/e4d35065-72c4-47ee-9c26-7b60dee16b36_4.7___U0026_5.5___U002809_U0029.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/46/5d/bd/465dbdef-4781-a52f-1b55-f785e09954ec/14f39e15-8b63-4305-bb4e-2e0d62e1a9c2_4.7___U0026_5.5___U002806_U0029.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2d/70/4b/2d704bfb-bdf4-9c43-8f2f-7ac971b31f79/d8124721-f81e-4052-b25c-54ac4a167895_4.7___U0026_5.5___U002805_U0029.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/07/96/26/07962681-9873-a9fd-f974-c359b92fe1d7/7d62869c-1132-4f55-b1f4-007bb046cda4_4.7___U0026_5.5___U002810_U0029.png/392x696bb.png"
+      ],
+      "ipadScreenshotUrls": [],
+      "kind": "software",
+      "trackCensoredName": "Liquide- Stocks & Mutual Funds",
+      "privacyViewUrl": null,
+      "supportUrl": null,
+      "websiteUrl": null
+    },
+    "reviews": [],
+    "review_analysis": {
+      "error": "No reviews"
+    },
+    "reviews_metadata": {
+      "1": {
+        "requested": 20,
+        "fetched": 0
+      },
+      "2": {
+        "requested": 20,
+        "fetched": 0
+      },
+      "3": {
+        "requested": 20,
+        "fetched": 0
+      },
+      "4": {
+        "requested": 20,
+        "fetched": 0
+      },
+      "5": {
+        "requested": 20,
+        "fetched": 0
+      }
+    }
+  },
+  "analysis": null
+}

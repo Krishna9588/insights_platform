@@ -1019,7 +1019,7 @@ class PlayStoreAPIClient:
         Returns:
             analyzer() result dict with status, analysis, provider_used, etc.
         """
-        from analyzer import analyzer
+        from scrapers.analyzer import analyzer
 
         # ── Build a compact but complete payload for the analyzer ─────────────
         # We trim reviews to the 30 most helpful (by helpful_count) to stay

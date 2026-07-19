@@ -1,0 +1,905 @@
+{
+  "extraction_metadata": {
+    "source": "Google Play Store",
+    "extracted_at": "2026-07-11T12:00:29.840649",
+    "extraction_time_seconds": 5.74,
+    "fields_extracted": 23,
+    "country": "in",
+    "language": "en",
+    "reviews_distribution": {
+      "1": 20,
+      "2": 20,
+      "3": 20,
+      "4": 20,
+      "5": 20
+    },
+    "total_reviews_extracted": 100,
+    "status": "success"
+  },
+  "extracted_data": {
+    "metadata": {
+      "appId": "digital.allen.study",
+      "title": "ALLEN - JEE, NEET, Class 6-10",
+      "url": "https://play.google.com/store/apps/details?id=digital.allen.study&hl=en&gl=in",
+      "developer": "ALLEN CAREER INSTITUTE PRIVATE LIMITED",
+      "developerId": "ALLEN+CAREER+INSTITUTE+PRIVATE+LIMITED",
+      "category": null,
+      "genre": "Education",
+      "genreId": "EDUCATION",
+      "content_rating": "Rated for 3+",
+      "score": 4.555949,
+      "ratings": 41301,
+      "reviews": 11184,
+      "installs": "5,000,000+",
+      "installs_min": 5000000,
+      "installs_max": 50000000,
+      "free": true,
+      "price": 0.0,
+      "currency": "INR",
+      "iap": false,
+      "iap_price_range": null,
+      "version": "6.10.0",
+      "description": "🚀 ALLEN App – Your Ranker-Level Learning Partner\r\nBuilt on 35 years of ALLEN’s legacy of excellence, the ALLEN App now goes beyond coaching halls — putting ranker-level education in every student’s pocket at a price that makes top preparation truly accessible.\r\n\r\nWhether you dream of IIT, NEET, Olympiads, or board success, ALLEN gives you the legacy, AI-powered tools, and question archives trusted by thousands of toppers — now available anytime, anywhere.\r\n\r\n🌟 Why Students Choose the ALLEN App\r\n1. Ranker-Level Education – ALLEN brings its proven system within reach of every serious aspirant. Learn smarter without worrying about challenges.\r\n\r\n2. PYQ & Exam Archives – Access 1 lakh+ chapter-wise previous year questions with solutions across JEE Main, JEE Advanced, NEET, Olympiads, BITSAT, CETs, and more. Train with the exact questions that shaped toppers.\r\n\r\n3. LIVE & Recorded Classes – From India’s top faculties with structured study plans that cover every concept deeply.\r\n\r\n4. AI-Powered Study Companion – Personalised schedules, adaptive quizzes, and 24×7 instant doubt resolution (AI + expert faculty) keep you on track.\r\n\r\n5. Massive Question Bank – 2 lakh+ practice questions, mock tests, and detailed analyses to help you master every topic step by step.\r\n\r\n6. Smart Revision Tools – Flashcards, interactive notes, and Improvement Booklets built from your mistakes — so you only focus where it matters.\r\n\r\n📚 One App, Every Exam\r\n- Boards & Foundation (Classes 6–10) – Build strong fundamentals.\r\n- JEE / NEET – Crack India’s toughest exams with ALLEN’s proven system.\r\n- Olympiads & BITSAT – Train with advanced archives and boosters.\r\n- State & National Exams – CETs, NDA, NTSE, KVPY, and more.\r\n\r\n🏆 Why Trust ALLEN?\r\n- 46 out of the Top 100 ranks in competitive exams are ALLEN students.\r\n- Every 5th IITian is an ALLEN student.\r\n- 146+ medals won in international Olympiads.\r\n- Consistent 5% average score improvement with ALLEN’s ecosystem.\r\n\r\n👉 ALLEN is no longer just a classroom. It’s your personal AI mentor, question archive, practice partner, and ranker community — all in one app.\r\n🎯 Download the ALLEN App today. Start your affordable, AI-powered journey to the top.",
+      "summary": "🚀 ALLEN App – Your Ranker-Level Learning Partner\r\nBuilt on 35 years of ALLEN’s legacy of excellence, the ALLEN App now goes beyond coaching halls — putting ranker-level education in every student’s po",
+      "released": "Dec 15, 2023",
+      "extraction_country": "in",
+      "extraction_language": "en",
+      "extracted_at": "2026-07-11T12:00:31.452914"
+    },
+    "reviews": [
+      {
+        "id": "b1d301e2-f538-4f1f-ba5b-361d4ca90d0f",
+        "rating": 1,
+        "title": "",
+        "content": "I keep having login issues. Randomly, there is a 'something went wrong, please try again' error, no matter what login method I use. Form ID, email ID, or Phone Number. And this all happens unexpectedly, and my app also begins to show the something went wrong error sometimes if im logged in and nothing loads. I am lagging behind a lot in my classes because of this because all homework gets uploaded here. Please get it fixed.",
+        "date": "2026-05-29T06:06:57",
+        "helpful_count": 0
+      },
+      {
+        "id": "979f07ea-233e-4a1b-866f-07376c53f3b5",
+        "rating": 1,
+        "title": "",
+        "content": "very teribal experience. everyday a new update come and we are forced to do. sometime their app freeze. app has too much bug ,even when I search my doubts on Google and found some solution on doubtnut It automatically get transferred to this app which is not necessary. nothing is good in this app. my phone is iqoo neo pro and i have done too much gaming and other multitasking and they don't lag but when I open ALLEN app it start lagging and gittering",
+        "date": "2026-06-22T12:54:57",
+        "helpful_count": 0
+      },
+      {
+        "id": "b0a53ed5-9eb3-4c93-9fd5-5715b8392c73",
+        "rating": 1,
+        "title": "",
+        "content": "Allen will be charging a high amount for the courses, and put you in random courses. I asked them initially about the batch, they said all batches are the same. Now I came to know that my friends kid and my kid are out in different course itself, and when I called them, they told, they will check and confirm. post that they are receiving the call. It's useless to pay some hefty amount for the courses, where nothing is getting clear. I tried calling many times, but no response. please be aware.",
+        "date": "2026-06-15T15:19:22",
+        "helpful_count": 0
+      },
+      {
+        "id": "335aba44-38b9-4e57-b33c-d3a37d94fc0a",
+        "rating": 1,
+        "title": "",
+        "content": "I give one star , because I have downloaded this app because I got wonderful video explanations when I searched for physics solution in Google . I thought I would be able to learn more through these video explanations and gain knowledge in physics but when I searched in the app in the search bar , it gives me a text type explanation . I tried many times but I was not fulfilled with my expectation . so please work on it that organisation releases the videos in the app available in Google Allen",
+        "date": "2026-06-03T19:45:50",
+        "helpful_count": 0
+      },
+      {
+        "id": "5e8397b9-0284-4f2f-90fa-49338ff691bb",
+        "rating": 1,
+        "title": "",
+        "content": "cz it has no use in study. it doesn't have the syllabus properly and the teachers teaches boringly . I use to get sleep cz it is so boring app i have ever seen and the teachers also don't teaches perfectly they just do line by line in English and serioly it is so boring to study with Allen",
+        "date": "2026-06-29T19:19:40",
+        "helpful_count": 0
+      },
+      {
+        "id": "5ff1973a-6c28-45f7-bdcf-f9f173c87ffc",
+        "rating": 1,
+        "title": "",
+        "content": "I have purchased olympiad rank booster recorded course class 9th for my son on 31th march 2026. Before purchasing course they have promised to provide latest course as per new ncert. Then First they upload old recorded course video after calling and mailing many many times. while ncert course had already changed in very first week of March and curriculum have already uploaded on website. very worst service of Allen online. I recommend not be trapped in false promises of Allen online",
+        "date": "2026-06-26T17:53:44",
+        "helpful_count": 0
+      },
+      {
+        "id": "ad5ada40-5833-481b-8071-35fb3dee683d",
+        "rating": 1,
+        "title": "",
+        "content": "Dear Allen team , I am facing many problems after the module bar code has been removed from the doubts section in the app it was really convenient for many of our doubts but now I need to take a screenshot for every of my doubt questions on laptop and you can feel that what happens when you do the same job many times a day really annoying ,may be sometimes it may not respond to that code but majorly it was working , I request you to please 🥺 give that feature back",
+        "date": "2026-06-19T22:44:45",
+        "helpful_count": 0
+      },
+      {
+        "id": "9884d9ce-3d35-4534-abd3-a3a964bb06bc",
+        "rating": 1,
+        "title": "",
+        "content": "The app is not user friendly. There ai for doubt support is too slow and and not well optimised . The app lags in live classes whether you have the best internet and device it does not matter. There is no rewind in live classes so that if you miss up something you can rewind and watch at 2x and come to live . There is also no proper schedule.",
+        "date": "2026-04-18T10:48:24",
+        "helpful_count": 0
+      },
+      {
+        "id": "928728e0-c3c2-4f9e-a17c-e647a0248905",
+        "rating": 1,
+        "title": "",
+        "content": "It very good and innovative app ,which helps us to understand better. But it call for admission in Allen but we don't want I like but as well as I don't like .😉😀",
+        "date": "2026-06-30T19:51:32",
+        "helpful_count": 0
+      },
+      {
+        "id": "59f02eed-7c2d-4ae1-8873-b5597adbdea3",
+        "rating": 1,
+        "title": "",
+        "content": "login issue when try to open in laptop. its saying its install but no open button directly . also if i open the app i cannt change forgot password . the link is not opening at all",
+        "date": "2026-06-26T22:13:57",
+        "helpful_count": 0
+      },
+      {
+        "id": "a0cbfeea-5642-4b5c-ae88-5efb260aed1d",
+        "rating": 1,
+        "title": "",
+        "content": "there is a problem in the app I am not able to login in the app it says that no internet connection. But obviously all other apps are working properly so there is no problem in the wifi. Seriously Jee advanced is on 17th and the app is not working properly",
+        "date": "2026-05-08T13:16:52",
+        "helpful_count": 0
+      },
+      {
+        "id": "bd61448f-f9d8-4513-9721-e8ef3a6c4630",
+        "rating": 1,
+        "title": "",
+        "content": "Bad. Absolutely worst down to the last minute detail. It is so much laggy that it takes atleast 2 minute to open home page then to open a test it takes much more time and many times does not even show result. Kindly resolve these problems for future.",
+        "date": "2026-04-14T23:54:42",
+        "helpful_count": 0
+      },
+      {
+        "id": "b8937fc9-427e-44b2-99ad-2a899d838c6d",
+        "rating": 1,
+        "title": "",
+        "content": "Very Bad UI. gets stuck in one date 3 or 4 days later and shows the wrong classes for the day. I missed many classes because of this glitch, Please Fix it.",
+        "date": "2026-05-29T18:31:10",
+        "helpful_count": 0
+      },
+      {
+        "id": "9800d441-35f7-49f6-9e5a-a4d61baa88eb",
+        "rating": 1,
+        "title": "",
+        "content": "Horrible experience with online app support. Uncommunicative mentor. Despite multiple request they are not changing the mentor. No professional approach at all. I'm doubtful wheather will go for second year of this service.",
+        "date": "2026-06-10T16:54:13",
+        "helpful_count": 0
+      },
+      {
+        "id": "7c022c06-0666-411c-89bf-6fd1785b392a",
+        "rating": 1,
+        "title": "",
+        "content": "“The Allen app is the worst app when it comes to showing the schedule of daily lectures. And if I want to attempt a test in this app just for practice, it always gives me the wrong answers and even the wrong questions.",
+        "date": "2026-06-29T18:10:21",
+        "helpful_count": 0
+      },
+      {
+        "id": "2d6850b9-5964-4d69-899b-fe6861e138eb",
+        "rating": 1,
+        "title": "",
+        "content": "absolutely incompatible with macOS...files conveyed through the notification centre cannot be downloaded...and in the online mode, the video appears sideways and cannot be fixed.",
+        "date": "2026-05-21T18:14:53",
+        "helpful_count": 0
+      },
+      {
+        "id": "b886e54f-308b-48cc-8108-64c26843babc",
+        "rating": 1,
+        "title": "",
+        "content": "We have admitted our daughter to Allen Udaipur, they have deposited total fee at the time of the admission and they assured that their education is top class and students are selected for Neet and Jee . but they were false at their statement as their study levels are so poor, faculty was not competent to prepare students for these Competitive exams. so poor service is provided at Udaipur Allen.",
+        "date": "2026-06-14T10:55:36",
+        "helpful_count": 0
+      },
+      {
+        "id": "cd384017-df1d-4477-83c7-bf2b6b57ffc5",
+        "rating": 1,
+        "title": "",
+        "content": "I cannot access some of my last test results in my Major Test Series Offline test, it is not showing at all, please look upon the issue. Also check my emails and please reply them faster.",
+        "date": "2026-04-14T16:30:40",
+        "helpful_count": 0
+      },
+      {
+        "id": "2c5e4635-cf3d-49b4-ac49-3c87fbd17734",
+        "rating": 1,
+        "title": "",
+        "content": "many times it is just showing no internet connection many times it's just browsing and rolling round and round and round to resolve internet connection I put my phone on aeroplane mode infinite times but no this app is not logging in",
+        "date": "2026-05-20T16:50:45",
+        "helpful_count": 0
+      },
+      {
+        "id": "924786e7-bb1e-40d3-abd9-b13dbf4e6f66",
+        "rating": 1,
+        "title": "",
+        "content": "In the internal test they are not giving marks for correct answer. The system is showing different options in place of options that I have marked.",
+        "date": "2026-06-08T14:18:35",
+        "helpful_count": 0
+      },
+      {
+        "id": "fcf59516-6cc2-4d64-befa-714c2340609f",
+        "rating": 2,
+        "title": "",
+        "content": "This is to get quick resolution of my query The flashcard feature on the Allen app is very useful for quick revision. However, I would like to suggest a few improvements: 1. There should be an option to preview all the flashcards. 2. The cards should be in an open format, allowing any chapter to be quickly skimmed if needed. 3. The preview may be organized as follows: i) Select a chapter. ii) Different topics should be arranged in separate sets of flashcards, rather than all at once",
+        "date": "2024-12-15T22:24:06",
+        "helpful_count": 0
+      },
+      {
+        "id": "20205bd2-acf1-4570-84fd-c43b49290453",
+        "rating": 2,
+        "title": "",
+        "content": "I am an allen student . This app is really a burden to use. The crashes have become so frequent that it feels like it takes more time figuring out issues rather than actually studying .It's very very bad to spend 39 mins doing tough questions and the app suddenly crashes so that your test disappears into thin air.sometimes 1 hour of hardwork goes into vain.I request to be heard , and I expect that it will be resolved as early as possible. I have run it on three different devices but still tough",
+        "date": "2025-10-21T14:51:09",
+        "helpful_count": 0
+      },
+      {
+        "id": "737dd289-adb8-4735-a07d-bd16e0c6bc43",
+        "rating": 2,
+        "title": "",
+        "content": "i would give it 5 stars , because everything is good but the no. of crashes in a single day is sooo much it crashes many a times and if we close it and make it run in the background and afterwards if we open it even after 2 sec then also it will open from the starting. it is good for learning but when seeing a video it lags to much and crashes so many times that's why I have given it 2 stars .",
+        "date": "2026-06-17T12:39:12",
+        "helpful_count": 0
+      },
+      {
+        "id": "49da131a-454c-457f-afb0-841e6b16ba4f",
+        "rating": 2,
+        "title": "",
+        "content": "EDIT: It became normal overtime but again now after the recent update, it became worse again. In the doubt section whenever I try to type something I can't see what am I typing. it seems as if the screen is zoomed and some features become inaccessible since they drop in the corner. Many times if I open a section it just loads and goes nowhere. My internet connection seems really fine, and my OS IS UP TO DATE, allen always replies to problems as please update your OS to latest version. FIXITASAP",
+        "date": "2026-04-24T09:53:11",
+        "helpful_count": 0
+      },
+      {
+        "id": "f86469e9-50b9-4108-8dc3-138f372b9760",
+        "rating": 2,
+        "title": "",
+        "content": "everything was good , test was good , all lec , modules are provided , nowadays they removed an imp section of doubt counter ( module ques by code ) , and i have bought self study pro course but the problem is they provide a faculty for doubt solving and i have to wait too much for it , that was an imp asset to me ...... I hope they add it soon",
+        "date": "2026-06-21T12:30:30",
+        "helpful_count": 0
+      },
+      {
+        "id": "d4f44559-5d3b-43fd-a7f0-69888d227154",
+        "rating": 2,
+        "title": "",
+        "content": "very bad experience most of the things in the app are not available like the homework section and mentor section. If you have downloaded a study material then even after clicking 50 times it will not open . Only your luck decides whether it will open or not . this started happening just after the update. Now the section where you get all your study materials the subject section is missing. it is not showing",
+        "date": "2026-05-26T10:14:01",
+        "helpful_count": 0
+      },
+      {
+        "id": "eb7e85b6-d26a-4bc2-822b-211633f6821f",
+        "rating": 2,
+        "title": "",
+        "content": "The improvement book feature is so much lagging and some time screen gets no options or sometimes no question on screen and after 20 30 continuous questions the app does not show further questions although there are many more.",
+        "date": "2026-06-16T00:07:25",
+        "helpful_count": 0
+      },
+      {
+        "id": "b65f4285-5921-4276-b235-f7abe2e358cc",
+        "rating": 2,
+        "title": "",
+        "content": "the dpps are inaccessible for class 10 course and recorded lectures aren't showing up neither the report the issue section is working nor the homework section or I'm unable to access previous lectures , dpps ,notes and the video quality or resolution is by default too high making it difficult for the class to run smoothly",
+        "date": "2026-04-21T20:37:53",
+        "helpful_count": 0
+      },
+      {
+        "id": "6132851f-c539-43ad-96dd-eea56497df1c",
+        "rating": 2,
+        "title": "",
+        "content": "the recent update has suddenly made it unable to open the allen app. whenever i click it, it just closes back. earlier i didnt have this issue when i hadnt updated. please fix the bug",
+        "date": "2026-04-14T21:01:13",
+        "helpful_count": 0
+      },
+      {
+        "id": "b1288a88-d6f4-4737-969f-f4eef060a06d",
+        "rating": 2,
+        "title": "",
+        "content": "They push lot of ads/notifications like admission, tallentex etc even 8f you are already an allen student.",
+        "date": "2026-07-04T18:38:09",
+        "helpful_count": 0
+      },
+      {
+        "id": "b8ae6184-53b6-44c5-8ae4-67edfb0b9219",
+        "rating": 2,
+        "title": "",
+        "content": "This app makes the app downgrade from previous versions. It now doesn't show centre ranks. It isn't showing specific part in Chemistry and Biology like IOC, OC, PC and Botany and Zoology respectively. After offline attempted test sometimes app says you were absent in the test. So many flaws compare to older version. This new app just feels good with modern UI bt lacks easy to use interface and have random glitches. Hope so it will be restored to original upto some extent.",
+        "date": "2026-03-09T13:20:56",
+        "helpful_count": 0
+      },
+      {
+        "id": "24b28f32-bc43-42fc-aa9f-3492d851124f",
+        "rating": 2,
+        "title": "",
+        "content": "it is very good app for learning and understanding maths ,science and English",
+        "date": "2026-05-08T21:27:48",
+        "helpful_count": 0
+      },
+      {
+        "id": "8e25cc8d-3493-40cf-8a24-4cca05b8952a",
+        "rating": 2,
+        "title": "",
+        "content": "in class 11th jee some lectures of chapters are mixed, not in sequence for example Kinematics.",
+        "date": "2026-06-28T11:59:26",
+        "helpful_count": 0
+      },
+      {
+        "id": "0179f3d0-8d96-4b5b-bb41-5de7788934cb",
+        "rating": 2,
+        "title": "",
+        "content": "one year ago there are 5 years of free previous year paper of jee advanced are available but now there is no jee advanced",
+        "date": "2026-04-29T09:36:22",
+        "helpful_count": 0
+      },
+      {
+        "id": "daccea95-985f-432a-a2e0-e993556e41f0",
+        "rating": 2,
+        "title": "",
+        "content": "GIVE THE FEATURE OF BOOKMARK !!! WHY THE APP HAS NOT EVEN THIS BASIC FEATURE.",
+        "date": "2026-04-20T10:55:49",
+        "helpful_count": 0
+      },
+      {
+        "id": "280f141c-4664-48a3-8e73-78182e0cc224",
+        "rating": 2,
+        "title": "",
+        "content": "Very nice app and helpfull but I personally didn't like the video lectures also the doubts are not properly solved by the Ai Soo if you are not in Allen offline coaching don't download this appp",
+        "date": "2026-04-08T16:44:38",
+        "helpful_count": 0
+      },
+      {
+        "id": "d427d74b-97c3-4eab-b2b9-c318e14f709d",
+        "rating": 2,
+        "title": "",
+        "content": "my previous issue was solved but I have a new issue the improvement book comes with a feature of reattempt it is a cool features but it have a problem that you can't skip a question and come back later to attempt the question plz do something for this and if you can also add a timer it will be very beneficial",
+        "date": "2026-03-15T19:05:43",
+        "helpful_count": 0
+      },
+      {
+        "id": "360a7c06-ac20-4e9c-87c8-954a2caab119",
+        "rating": 2,
+        "title": "",
+        "content": "there is a bot in the app which says it will clear our doubts, it also says that type the code of the question in your module we will answer the question but everything is nil nothing works, but exams are good 👍 Allen exams are for the people who wants twisted questions and tough questions not for beginners and they provide revision notes half of them have mistakes only so for exams prefer this app otherwise a big minus, I am Allen student actually offline classes are good compared to online.",
+        "date": "2026-06-13T21:10:40",
+        "helpful_count": 0
+      },
+      {
+        "id": "3e4f6e16-cee6-416d-be66-6adcf1578cda",
+        "rating": 2,
+        "title": "",
+        "content": "It's frustrating to use like few minutes ago it's working nicely and later it just shut down. And it's getting more often that the video lectures are not showing and because of frequent updates it's getting confusing to use. I kindly request the developer team to not change things more often as it is tiring and wastage of time to just figuring out where is the lecture.",
+        "date": "2025-10-29T01:36:22",
+        "helpful_count": 0
+      },
+      {
+        "id": "f35ff409-0293-4149-aae0-cef4dca46150",
+        "rating": 2,
+        "title": "",
+        "content": "as an offline enrolled student, I'm disappointed that among the 7 Full syllabus online test provided for neet, all 5 of them are just same, why to display 7 test then? just 3 of them are literally different rest all are same, same exact questions, it's funny that even the sequence of questions hasn't been changed, it's horrible and the tests are of 3 hour 20 mins and still has section A and B, like please keep the tests upto date atleast",
+        "date": "2026-02-08T15:40:46",
+        "helpful_count": 0
+      },
+      {
+        "id": "9185d697-5947-4f3b-8462-b5500c75c03e",
+        "rating": 3,
+        "title": "",
+        "content": "The app is wonderful. But the problem occurred when after the update, the study planner disappeared. As I was already behind in my class due to my late admission, I used to watch the old recordings. But now the disappearance caused me to do double work. Kindly solve the problem.",
+        "date": "2026-06-23T21:21:18",
+        "helpful_count": 0
+      },
+      {
+        "id": "ff8bbf89-77f7-4771-a235-513eb7622ae5",
+        "rating": 3,
+        "title": "",
+        "content": "after previous review the ui has been improved greatly but there is one major problem, in study section I can't see the PDFs of module solution exercise or races ( I am in jee mains+advance) . It is visible for few chapters but rest nothing. I urge the management too look into it asap since it's very handy for and saves time instead of browsing the internet.",
+        "date": "2026-07-01T23:19:48",
+        "helpful_count": 0
+      },
+      {
+        "id": "bd39cb1d-322a-42b6-9b92-7ae463700b8f",
+        "rating": 3,
+        "title": "",
+        "content": "Unbelievable and best of best experience with allen but I wanna share that the application saying always that no internet connection or messages related to internet but there is no any issue from my side so, please kindly solve that and I am facing this problem from many days and I am not able to study with my free video lectures that are given for 3 months with asat registration. (after registering for ASAT it gives you 3 months free study material).",
+        "date": "2026-05-10T23:14:55",
+        "helpful_count": 0
+      },
+      {
+        "id": "5fc5fa71-32cb-4382-a819-021f73b9df80",
+        "rating": 3,
+        "title": "",
+        "content": "I had recently started using this app and had given the written test but when I click on upload the images it remained on 0.I have no idea why it's happening but it automatically submits then and no image gets uploaded which is quite unfortunate as a student who had completed the test completely too. If your handwriting is in cursive will the uploading be effected ? Please fix this issue fast..",
+        "date": "2026-05-18T19:03:33",
+        "helpful_count": 0
+      },
+      {
+        "id": "70ae646a-f24e-4a08-86b7-df5893cf3f3c",
+        "rating": 3,
+        "title": "",
+        "content": "I have been facing frequent problems while using the app 1. it doesn't show the correct class schedule and most of the time the correct faculty name isn't mentioned in their subject Tomorrow is my chemical class but when I click on it it shows my maths teachers name 2. it doesn't show the upcoming test instead of the it kept showing the previous test which are already conducted as upcoming test 3. it doesn't show the custom practice for social science subjects I hope allen will fix this .",
+        "date": "2026-04-29T21:43:42",
+        "helpful_count": 0
+      },
+      {
+        "id": "f26d9e90-68db-490f-a0d8-71308a8213c8",
+        "rating": 3,
+        "title": "",
+        "content": "the app is good but servers aren't i don't know why I am trying to login from last week and I can't login I ve tried every single method but no solution even website isn't working i have a vivo u10 mobile and a 4g Airtel sim pls respond allen",
+        "date": "2026-07-01T10:06:39",
+        "helpful_count": 0
+      },
+      {
+        "id": "c3460300-8805-42d4-8b10-1da17a10f4c5",
+        "rating": 3,
+        "title": "",
+        "content": "App is average, and do not buy their test series as they will strictly ask for youy personal info like 10th marksheet, your exam application number and other credentials before you could view your result analysis, I'm struggling with it rn as after buying their test series at a price of ₹3000 now I'm unable to view the result analysis on the app, which makes their test series absolutely useless at this point.",
+        "date": "2026-04-20T20:46:55",
+        "helpful_count": 0
+      },
+      {
+        "id": "d277de67-a81c-4eb1-a12f-b3ec6bc25a2b",
+        "rating": 3,
+        "title": "",
+        "content": "App is good all essential features are available, a suggestion from me is that add some fluid and smooth animation to make the app more lively and let user have a better experience also it feels laggy sometimes (probably because of no animation) and make the UI more simpler and easier , features are Very good btw",
+        "date": "2026-06-15T18:20:13",
+        "helpful_count": 0
+      },
+      {
+        "id": "d6a7ca34-ea01-42bc-a6e3-26b260b23dae",
+        "rating": 3,
+        "title": "",
+        "content": "I am Ipsita.I found Allen Digital really very helpful to me.It helped to watch the lectures,go through notes, practice Allen's important questions, reviewing pyqs.. Truly,it is excellent!!",
+        "date": "2026-05-07T15:32:03",
+        "helpful_count": 0
+      },
+      {
+        "id": "a3d46406-f44e-4635-b377-ec2102058163",
+        "rating": 3,
+        "title": "",
+        "content": "This app deserve 5 star rating but here's the biggest issue I'm facing 😭 please please help me I can't practice my test mistake cause in this app the home navigation buttons on screen are in the way of selecting the correct answer which is also showing below on screen . please fix this issue as soon as possible I want to analyse my mistake of test of major test series 😭😭",
+        "date": "2026-04-19T09:30:55",
+        "helpful_count": 0
+      },
+      {
+        "id": "0877f66b-411a-49a2-a691-dbc82f7a959d",
+        "rating": 3,
+        "title": "",
+        "content": "All Allen books should also be available in this app so that we can read them from home without carrying too many books at home.",
+        "date": "2026-07-03T22:23:01",
+        "helpful_count": 0
+      },
+      {
+        "id": "a8249709-1265-44e0-9458-8342a99183d6",
+        "rating": 3,
+        "title": "",
+        "content": "best platform for study jee but the issue is very hard for state board student cause they don't teach from basic",
+        "date": "2026-06-13T16:39:49",
+        "helpful_count": 0
+      },
+      {
+        "id": "1cf76a20-9b52-4999-bdf0-90229f469d02",
+        "rating": 3,
+        "title": "",
+        "content": "i am a neet aspirant i have problem with the feature Custom Practice whenever i complete any chapter i give a custom test but the problem is in every test i give there is repetition of questions altest 3-5 times which is irritating and very few questions is new kindly see this matter",
+        "date": "2026-05-07T10:45:10",
+        "helpful_count": 0
+      },
+      {
+        "id": "ebf0c69e-61aa-4613-a726-24f259cb2414",
+        "rating": 3,
+        "title": "",
+        "content": "With each new update new problems arise lectures aren't opening in this new update by saying the internet connection is bad even though there is network",
+        "date": "2026-05-08T19:18:17",
+        "helpful_count": 0
+      },
+      {
+        "id": "7b515c71-dd72-4cb5-9691-b087f6f6bd45",
+        "rating": 3,
+        "title": "",
+        "content": "It is helping my child to score great marks and in understanding things properly.",
+        "date": "2026-04-14T10:41:58",
+        "helpful_count": 0
+      },
+      {
+        "id": "82802c16-accf-40b4-8efa-2a2edcdd1a27",
+        "rating": 3,
+        "title": "",
+        "content": "why app is not working properly in redmi pad 2 pro. i try with my best but don't work properly. Request to upgrade the the app or suggest me solution.",
+        "date": "2026-05-06T20:48:04",
+        "helpful_count": 0
+      },
+      {
+        "id": "0439070a-9b0f-4125-b736-b3ef84d37135",
+        "rating": 3,
+        "title": "",
+        "content": "it was great but the custom practice was not working and allie ai sometimes gave me the wrong results to me but so far everything was good",
+        "date": "2026-07-10T06:19:07",
+        "helpful_count": 0
+      },
+      {
+        "id": "b4b0b944-d934-4c70-9e60-928488bea260",
+        "rating": 3,
+        "title": "",
+        "content": "there is much better than other platforms because it is provided in free mock test and many questions for revision and formula of all chapter I am very glad to use this app. thank you the many topper belongs to this institute because the material of the allen is very useful according to exam my preparation is very weak and am not giving any mock test before the exam because the mock test is highly expensive so I could not afford it thanks for the giving the chance for speaking thank yo",
+        "date": "2026-03-16T13:16:05",
+        "helpful_count": 0
+      },
+      {
+        "id": "34dcf1b9-da1d-4e19-bbc5-e6ab2a5810b4",
+        "rating": 3,
+        "title": "",
+        "content": "When I am feeling the form to check my test marks , I suddenly touched any other photo and I get uploaded instead of my marksheet , and cannot remove or change the photo, I have mistakenly submitted wrong document",
+        "date": "2026-03-13T17:51:00",
+        "helpful_count": 0
+      },
+      {
+        "id": "5d3994b4-a349-403e-bfd1-f1e649fc8970",
+        "rating": 3,
+        "title": "",
+        "content": "Why can't I select more than 4 chapters in custom practice. if I quit a custom practice midway, don't submit. just save it for later. and the subtopic no longer show in the new ui.",
+        "date": "2026-03-09T23:34:09",
+        "helpful_count": 0
+      },
+      {
+        "id": "e6ebcd8a-1f86-4e34-a803-211a300921ef",
+        "rating": 4,
+        "title": "",
+        "content": "Good app but there is a small problem that when you enter the question's codes under the \"search module solutions\" section, it displays an error that \"invalid code or missing solution\" even when the code is right, because I can't utilise the app even when I am an enrolled student. Requested to fix this issue soon. Regards",
+        "date": "2026-04-20T16:29:25",
+        "helpful_count": 0
+      },
+      {
+        "id": "f779ff79-e721-49bf-b8e4-78c8020233c5",
+        "rating": 4,
+        "title": "",
+        "content": "It's obviously a good app for students studying at allen, but there is a problem with audio. it get cracked sometime and sometimes no voice come. Resolve that issue asap to create a better studying environment",
+        "date": "2026-06-12T15:17:48",
+        "helpful_count": 0
+      },
+      {
+        "id": "f111f09f-1933-440c-80da-c86fc1ee58c2",
+        "rating": 4,
+        "title": "",
+        "content": "I like this app too much. This help in study very well. There is many recorded videos and tests to attain which helps in improve academic performance.",
+        "date": "2026-06-15T10:41:16",
+        "helpful_count": 0
+      },
+      {
+        "id": "5a9f4e7b-15a8-49a7-80f0-c3497cca3f73",
+        "rating": 4,
+        "title": "",
+        "content": "everything about the app is really great, but the fact that concept videos are updated only and only when the chapter is started in the coaching....so can you please change that....and add the concept videos of the 3-4 upcoming chapters beforehand? it would be such a great help!!!!!",
+        "date": "2026-05-19T12:36:22",
+        "helpful_count": 0
+      },
+      {
+        "id": "61c1c0c6-3094-440e-8dde-5e5c3f36c335",
+        "rating": 4,
+        "title": "",
+        "content": "Notice board on the app. I need to see some notices which are older than 10 days, but still a lot of scrolling because of many messages a day. But thats not the problem. Problem is- all that scrolling to open a few notices (because i need to find a test schedule) and after closing a notice the notice board resets to todays notices(top of the notice board). Its really frustrating doing the scrolling again and again. I hope you understand this problem.",
+        "date": "2026-05-20T09:01:16",
+        "helpful_count": 0
+      },
+      {
+        "id": "6b749a57-aa88-4a3c-9b1b-68ae51704e79",
+        "rating": 4,
+        "title": "",
+        "content": "The app is great for test analysis and giving mock tests for many exams , as I'm a offline JEE enrolled student everything was fine ,but the only problem I encountered was when I attempted JEE ADVANCED mocks the matrix match section sucks , theres no option for zoom it like the real test and one can't even see a word for the match list, it should be improved. Also I have given my jee mains reports in offline and in app too 2-3 times of both sessions still it asks for jee main scorecard again😑",
+        "date": "2026-05-14T09:14:25",
+        "helpful_count": 0
+      },
+      {
+        "id": "e096a9d1-1aec-40c0-8f38-de5f852438fc",
+        "rating": 4,
+        "title": "",
+        "content": "Everything is good , all features are awesome. It's very good for quick revision and learning but allie takes so much time to response and even the number of questions per chat is also limited",
+        "date": "2026-05-29T19:14:07",
+        "helpful_count": 0
+      },
+      {
+        "id": "4c49b7ec-39cf-4cbf-b9f4-408ac91a8001",
+        "rating": 4,
+        "title": "",
+        "content": "why is the app's brightness so much and does not match with the system's default brightness, how should I adjust the brightness on the app!!! The brightness is more than my phones maximum brightness, so irritatingggggg!!!!!! the update resolved this issue, thank u!",
+        "date": "2026-04-20T20:04:42",
+        "helpful_count": 0
+      },
+      {
+        "id": "940f55a0-1b9e-4e97-99df-412e2d878ede",
+        "rating": 4,
+        "title": "",
+        "content": "Great app and user friendly UI and the best part custom practice 🔥 , but the reason I gave 4 star is that during the custom practice when screen is rotated all the answers are erased .... please fix that .",
+        "date": "2026-04-14T08:17:52",
+        "helpful_count": 0
+      },
+      {
+        "id": "7b9e60f7-8398-4709-8a9d-2fad044be595",
+        "rating": 4,
+        "title": "",
+        "content": "This App is amazing with all features working except one which is its Allie the smart search doubt solver AI its not working properly as even after scanning the pic and telling the topic names it still cant help me out i want ALLEN to work on this and make it as efficient as Chat gpt or Google Gemini. Thank you",
+        "date": "2026-04-30T11:12:49",
+        "helpful_count": 0
+      },
+      {
+        "id": "3257d84c-b39f-4f6c-90ea-cd991fcf5940",
+        "rating": 4,
+        "title": "",
+        "content": "good experiences with ALLEN and facilities are there and scholarships also there and free courses of 6 to 10 classes ....😊😊😊 but story eureka allen easy and best way to learn of 10 class boards but about 9 class..???😅😅",
+        "date": "2026-05-17T09:52:18",
+        "helpful_count": 0
+      },
+      {
+        "id": "94d8b22d-01e0-4503-abef-9313198034fa",
+        "rating": 4,
+        "title": "",
+        "content": "one suggestion, have a function where is students, can answer other people's doubts if we are sure. this makes it a lot easier, and it takes less time",
+        "date": "2026-05-12T14:59:17",
+        "helpful_count": 0
+      },
+      {
+        "id": "2c8797e0-5285-4c0e-8f2c-ed528eb8f90e",
+        "rating": 4,
+        "title": "",
+        "content": "cool actions and UI, easy to keep track if you missed something, but the notifications are silent, please fix that",
+        "date": "2026-04-20T19:20:43",
+        "helpful_count": 0
+      },
+      {
+        "id": "b72a9972-adb3-496c-8627-018fe5eb8e08",
+        "rating": 4,
+        "title": "",
+        "content": "It is a great study platform with various interesting features But in class the problems like audio or video lagging",
+        "date": "2026-06-20T18:51:22",
+        "helpful_count": 0
+      },
+      {
+        "id": "6d3b09d8-4e98-48f7-b7c5-e21811dbe1fa",
+        "rating": 4,
+        "title": "",
+        "content": "very efficient and nice app for jee prep but only if you have any subscription or else in free version it is very trash",
+        "date": "2026-06-15T21:13:55",
+        "helpful_count": 0
+      },
+      {
+        "id": "2359e1e9-10ff-42fc-a359-f97627ebd9ad",
+        "rating": 4,
+        "title": "",
+        "content": "Fast to use and clear , but please fix the AI doubt bot by allowing to access the question with help of question code.",
+        "date": "2026-06-19T22:04:38",
+        "helpful_count": 0
+      },
+      {
+        "id": "1481a7c4-91a0-4037-90cc-467345b7148e",
+        "rating": 4,
+        "title": "",
+        "content": "Fabulous app. Kindly resolve: notification's doesn't open directly, need to open app 1st and check the notification",
+        "date": "2026-04-21T21:06:27",
+        "helpful_count": 0
+      },
+      {
+        "id": "9c88709c-2cfe-4351-bce6-7c1806aa6063",
+        "rating": 4,
+        "title": "",
+        "content": "it's a good app but I feel that the allen focus app could ne on iOS and the polls in classes are being resetting itself if the app exits.",
+        "date": "2026-05-31T13:17:00",
+        "helpful_count": 0
+      },
+      {
+        "id": "8cf7ee49-4699-4ac3-99b4-230bf6d50e15",
+        "rating": 4,
+        "title": "",
+        "content": "It is good app for study but there is issue in custom practice that many questions get repeated and few question per chapter but it is good amd easy to use",
+        "date": "2026-05-16T13:23:23",
+        "helpful_count": 0
+      },
+      {
+        "id": "b918786d-6e90-45d4-b0d3-c5c433bae50a",
+        "rating": 4,
+        "title": "",
+        "content": "good features except when u type the module code for solution sometimes it says invalid code even though i have updated new module given at my centre",
+        "date": "2026-04-23T18:05:46",
+        "helpful_count": 0
+      },
+      {
+        "id": "eeaa1ebc-1bbb-4d66-987f-21820cf12111",
+        "rating": 5,
+        "title": "",
+        "content": "The ALLEN App is one of the best learning apps for JEE and NEET preparation. The live and recorded classes are excellent, the study material is well-organized, and the test analysis helps identify weak areas. The AI-powered features, previous year questions, and doubt-solving support make studying much more effective. The app is smooth, easy to use, and keeps me motivated throughout my preparation. Highly recommended for every serious aspirant!",
+        "date": "2026-07-03T23:35:35",
+        "helpful_count": 0
+      },
+      {
+        "id": "6ea0757d-4a76-4650-8ede-a46d874e1910",
+        "rating": 5,
+        "title": "",
+        "content": "My experience at Allen has been truly rewarding. The faculty explains even the toughest concepts with such clarity that learning feels easy and enjoyable. The regular tests, DPPs, and doubt-clearing sessions kept me consistent and confident throughout my preparation. Beyond academics, the constant motivation and support during stressful times made a real difference. Grateful to be part of Allen — highly recommend it to anyone serious about their exam goals",
+        "date": "2026-07-02T20:32:44",
+        "helpful_count": 0
+      },
+      {
+        "id": "1293934d-5482-4f29-91b4-ee20e93ace9e",
+        "rating": 5,
+        "title": "",
+        "content": "\"I highly recommend the ALLEN app for anyone aiming for top scores! It’s an excellent platform for serious exam preparation. The quality of the content and the way it helps you track your progress make it a must-have tool if you're aiming for 100/100. It really provides that extra edge needed to excel!\"",
+        "date": "2026-06-20T11:37:01",
+        "helpful_count": 0
+      },
+      {
+        "id": "ab665c8d-8332-4adc-9e5f-d1df63630d3e",
+        "rating": 5,
+        "title": "",
+        "content": "Recently when i try to login , it always shows \"please check your internet connection\" although my internet connection is working very well , rest all apps work on the same internet, but when i try to login , it always has this issue , i think its a bug , i request team allen plz help me on this problem as i am an enrolled student. Also i have tried deleting and reinstalling the app several times but it never worked. (thank-you team allen for fixing this , editing my review to five stars 🤩)",
+        "date": "2026-05-13T16:26:12",
+        "helpful_count": 0
+      },
+      {
+        "id": "1ea66081-440b-4b1d-8aaf-e460eab1b831",
+        "rating": 5,
+        "title": "",
+        "content": "I had a good learning experience at ALLEN. The teachers are supportive, explain concepts clearly, and help students stay motivated throughout preparation. The study materials and tests are very useful for improving understanding and confidence. The environment is disciplined and focused, which helps students stay consistent in their studies. Overall, it is a great institute for serious learners preparing for competitive exams.",
+        "date": "2026-05-29T20:23:35",
+        "helpful_count": 0
+      },
+      {
+        "id": "85b58bab-bd85-4ab3-afba-aee640d58c38",
+        "rating": 5,
+        "title": "",
+        "content": "the classes are incredibly good and they give us chance to Express our doubt and give answer as a student I could say that the practice questions and the homeworks even after the trial classes was incredibly good. the question format and the way they teach with different activities is wonderful. I enjoyed a lot of the online classes. the teacher here teachers incredibly nice and they will go to different activities and with any possible ways to explain you the questions and the topics.",
+        "date": "2026-05-26T20:17:54",
+        "helpful_count": 0
+      },
+      {
+        "id": "30793a54-338b-4a0f-81ca-43e161ddf1fb",
+        "rating": 5,
+        "title": "",
+        "content": "The allen app is excellent for exams, The live lecture and video are high quality, and study material are well organized. The custom practice test help lot with revision the only minor issue is that the pdf viewer can something be a bit laggy but overall it is must have for any allen student",
+        "date": "2026-07-04T21:39:21",
+        "helpful_count": 0
+      },
+      {
+        "id": "23638ff3-39a7-473d-80d8-fa80b2a70786",
+        "rating": 5,
+        "title": "",
+        "content": "loveeee it, it helps me a lot along with my offline allen classes. online animated lectures, minor and major tests, improvement book, doubt solving, custom practice and many more. U also get to see ur rank in the test within your campus and center/city, which motivates me a lot.",
+        "date": "2026-05-08T18:23:50",
+        "helpful_count": 0
+      },
+      {
+        "id": "ee92a625-4599-4813-a03f-642eeb9e8ba0",
+        "rating": 5,
+        "title": "",
+        "content": "Iam a student of Allen offline classroom , the custom practice mode helps me a lot in my Jee prepration. The quick revision notes and flash cards are quite impressive. But I have a suggestion for Allen - To kindly provide the video lessons of every chapters they provide to the free users .. in the study zone because it will help me a lot during my revision .",
+        "date": "2026-05-21T18:40:06",
+        "helpful_count": 0
+      },
+      {
+        "id": "2eeb8d09-538c-4163-8bf0-b1953bd87331",
+        "rating": 5,
+        "title": "",
+        "content": "I am Dipakshi Bharali, a Class 7 student, and I have been using the ALLEN Digital app for my studies. Overall, my experience has been quite good. The app is very helpful for understanding concepts clearly. The teachers explain topics in a simple and easy way, which makes learning more interesting. The video lectures are easy to follow, and the study material is also very useful.Thank you for this wonderful experience Team Allen I strongly suggest this app!!!",
+        "date": "2026-05-03T19:45:46",
+        "helpful_count": 0
+      },
+      {
+        "id": "e2dca097-ce70-499e-8228-2b13dc6d431b",
+        "rating": 5,
+        "title": "",
+        "content": "Everything in the app is good but I want another feature to extend the speed to 3x as few lectures are very slow even after applying 2x... It would be better if 3x option is given.....",
+        "date": "2026-06-15T18:44:57",
+        "helpful_count": 0
+      },
+      {
+        "id": "12ea2e60-5f28-46b4-a910-fb3b524c353b",
+        "rating": 5,
+        "title": "",
+        "content": "Best app for preparing competitive exam. Obviously it's not free but it will give you quality study material, teachers and help you to practice questions in specific chapter by conducting ai generated exams!",
+        "date": "2026-07-03T11:52:45",
+        "helpful_count": 0
+      },
+      {
+        "id": "1813da03-7ef3-4d4d-87b8-533ec90b4d86",
+        "rating": 5,
+        "title": "",
+        "content": "I am an allen student. Whenever i open the app it showns Network not connected while my mobile is already connected to wifi and all other apps are smootly working except allen app. firstly i thought there is something happened in my phone setting but after that i reset my phone and still facing the same issue.",
+        "date": "2026-05-13T13:35:28",
+        "helpful_count": 0
+      },
+      {
+        "id": "4f1973e2-175b-4e55-b33d-be27af92562a",
+        "rating": 5,
+        "title": "",
+        "content": "it's amazing. it's has lots of features that's helps the students also in offline classes faculties are too good. they can helps to students academic ground also they have all time as a guidence, they are motivate us . really Allen's is the best platform to grow.",
+        "date": "2026-05-26T22:31:36",
+        "helpful_count": 0
+      },
+      {
+        "id": "5c0f2467-d8d6-47e1-ba9b-a20b8eef12cf",
+        "rating": 5,
+        "title": "",
+        "content": "Allen is very good i have purchased a batch also and their studies and modules are good and and there are lot of problems happening ver day but mentors have there solutions and if you are finding batch for class 10 so must checkout the course \"Class 10 NCERT all subjects \"once again thank you ALLEN.",
+        "date": "2026-04-18T16:54:26",
+        "helpful_count": 0
+      },
+      {
+        "id": "f769920e-becf-462a-92b8-cd8dd23651bb",
+        "rating": 5,
+        "title": "",
+        "content": "Very helpful learning app. Easy-to-understand classes, good study material, and a smooth user experience. Highly recommended for students.",
+        "date": "2026-06-15T17:47:25",
+        "helpful_count": 0
+      },
+      {
+        "id": "506e4099-20e7-4a00-971c-46e6074fcd8b",
+        "rating": 5,
+        "title": "",
+        "content": "this app is so good actually allen is too good to study i recommend everyone to take batch of allen it is available from class 6th to 12 jee neet iit and all boards are also available cbse icse ncert and so on and im an icse student so I chose icse course",
+        "date": "2026-06-24T20:43:08",
+        "helpful_count": 0
+      },
+      {
+        "id": "676edbe3-3a2d-4ccd-84f6-63d5f017ccd0",
+        "rating": 5,
+        "title": "",
+        "content": "very good for my children but problem is that ,it asks for many updates,and after my son gives minor test exam after one day it shows that you missed the test and does not shows the test result",
+        "date": "2026-06-28T22:35:13",
+        "helpful_count": 0
+      },
+      {
+        "id": "b83f6a9e-d936-49d5-8e00-1908126d4390",
+        "rating": 5,
+        "title": "",
+        "content": "so good for the studies explain is maybe in the high qualitya hi English but not that fine because it is the high level English it's so correct for me and it's too",
+        "date": "2026-06-28T16:11:13",
+        "helpful_count": 0
+      },
+      {
+        "id": "ae581301-b09b-442e-9b74-eb4b1f071e3c",
+        "rating": 5,
+        "title": "",
+        "content": "bro this app is so good and I loved it it helps us to clear our concept I started it from today and I always use this app firstly I thought that it would be no use but now I think that it's too good for us and you 💝 will get many quizzes and also free videos for the chapters thank you allen for helping the students ❤️❤️",
+        "date": "2026-06-12T10:40:54",
+        "helpful_count": 0
+      }
+    ],
+    "review_analysis": {
+      "total_reviews": 100,
+      "average_rating": 3.0,
+      "rating_distribution": {
+        "1": 20,
+        "2": 20,
+        "3": 20,
+        "4": 20,
+        "5": 20
+      }
+    },
+    "reviews_metadata": {
+      "1": {
+        "requested": 20,
+        "fetched": 20
+      },
+      "2": {
+        "requested": 20,
+        "fetched": 20
+      },
+      "3": {
+        "requested": 20,
+        "fetched": 20
+      },
+      "4": {
+        "requested": 20,
+        "fetched": 20
+      },
+      "5": {
+        "requested": 20,
+        "fetched": 20
+      }
+    }
+  },
+  "analysis": {
+    "summary": "ALLEN - JEE, NEET, Class 6-10 is an educational app developed by ALLEN CAREER INSTITUTE PRIVATE LIMITED. It is designed to help students prepare for competitive exams like JEE and NEET, as well as for classes 6-10. The app has a high rating of 4.56 based on over 41,000 ratings and has been installed by more than 5 million users. However, the review analysis shows a more mixed reception, with an average rating of 3.0 from 100 reviews, and several users reporting significant issues with login, performance, and frequent updates.",
+    "permissions_risk": "Medium",
+    "strengths": [
+      "High user base and positive overall rating",
+      "Designed to help with competitive exam preparation",
+      "Free to download and use",
+      "Regular updates to improve content and features",
+      "Comprehensive coverage of subjects for classes 6-10"
+    ],
+    "concerns": [
+      "Frequent login issues reported by users",
+      "Performance problems and app crashes",
+      "Forced updates causing frustration",
+      "Automatic redirection to the app from other sources",
+      "High cost of courses and forced enrollment in random courses"
+    ]
+  },
+  "analysis_status": "success",
+  "analysis_provider": null
+}

@@ -234,51 +234,41 @@ def _transcript_via_library(video_id: str) -> Optional[str]:
 
 def _transcript_via_ytdlp(video_id: str) -> Optional[str]:
     try:
-        import requests as _req
-        import requests.packages.urllib3 as _u3
-        _u3.disable_warnings()
-        session = _req.Session();
-        session.verify = False
-
-        from youtube_transcript_api import YouTubeTranscriptApi
-        api = YouTubeTranscriptApi(http_client=session)
-        transcript_list = api.list(video_id)
-
-        preferred = None
-
-        # STAGE 1: Try to find any English track (Manual or Auto)
-        try:
-            preferred = transcript_list.find_transcript(['en', 'en-IN', 'en-US', 'en-GB'])
-        except Exception:
-            pass
-
-        # STAGE 2: Try to translate whatever is available to English
-        if not preferred:
-            try:
-                # We look for the first available track and ask for translation
-                first = list(transcript_list)[0]
-                preferred = first.translate('en')
-            except Exception:
-                pass
-
-        # STAGE 3: If translation is blocked by YT, just grab the native Hindi (or other) text
-        # This prevents "No transcript found" and gives you the raw content
-        if not preferred:
-            try:
-                # Specifically targeting 'hi' for your use case, or just index [0]
-                preferred = transcript_list.find_transcript(['hi', 'hi-IN'])
-                print(
-                    f"  [TRANSCRIPT] Translation blocked. Fetching raw native track ('{preferred.language_code}') instead.")
-            except Exception:
-                # Final fallback: just grab the first thing that exists
-                preferred = list(transcript_list)[0]
-
-        fetched = preferred.fetch()
-        text_parts = [s['text'].strip() for s in fetched if s['text'].strip()]
-        return " ".join(text_parts)
-
+        import subprocess
+        import glob
+        
+        url = f"https://www.youtube.com/watch?v={video_id}"
+        out_tmp = f"youtube_data/{video_id}_sub"
+        cmd = [
+            "yt-dlp",
+            "--write-auto-subs",
+            "--write-subs",
+            "--sub-langs", "en",
+            "--skip-download",
+            "-o", out_tmp,
+            url
+        ]
+        subprocess.run(cmd, capture_output=True, timeout=45)
+        
+        vtt_files = glob.glob(f"{out_tmp}*.vtt")
+        if vtt_files:
+            vtt_file = vtt_files[0]
+            with open(vtt_file, "r", encoding="utf-8") as f:
+                content = f.read()
+            os.remove(vtt_file)
+            
+            lines = content.split('\n')
+            text_parts = []
+            for line in lines:
+                if '-->' in line or line.startswith('WEBVTT') or line.startswith('Kind:') or line.startswith('Language:') or not line.strip() or re.match(r'^\d{2}:\d{2}:\d{2}', line):
+                    continue
+                clean_line = re.sub(r'<[^>]+>', '', line).strip()
+                if clean_line and (not text_parts or clean_line != text_parts[-1]):
+                    text_parts.append(clean_line)
+            return " ".join(text_parts)
+        return None
     except Exception as e:
-        print(f"  [WARN] transcript-api failed: {e}")
+        print(f"  [WARN] yt-dlp failed: {e}")
         return None
 
 def get_transcript(video_id: str) -> Optional[str]:

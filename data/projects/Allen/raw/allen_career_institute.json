@@ -1,0 +1,362 @@
+{
+    "company_name": "Allen Career Institute",
+    "domain": "https://allen.in/",
+    "playstore_link": "https://play.google.com/store/apps/details?id=com.allen.digital",
+    "appstore_link": "https://apps.apple.com/in/app/allen-neet-jee-class-6-12/id1535728827",
+    "youtube_official_channel": "https://www.youtube.com/@ALLENCareerInstitute",
+    "linkedin_company_page": "https://www.linkedin.com/company/allencareerinstitute",
+    "year_founded": "1988 — Kota, Rajasthan, India",
+    "names_of_founders": [
+        "Rajesh Maheshwari",
+        "Govind Maheshwari",
+        "Naveen Maheshwari",
+        "Brajesh Maheshwari"
+    ],
+    "c-suite_officer": [
+        "Nitin Kukreja - CEO",
+        "Rakesh Ranjan - CEO, Digital Arm",
+        "Rajesh Maheshwari - Founder Director",
+        "Govind Maheshwari - Co-Owner & Director",
+        "Naveen Maheshwari - Co-Owner & Director"
+    ],
+    "employee_count": "12,785 (as of December 2025)",
+    "exact_hq_location": "Sankalp, CP-6, Indra Vihar, Kota, Rajasthan, India 324005",
+    "locations_operating_in": [
+        "India (multiple cities including Kota, Delhi, Mumbai, Bengaluru, Jaipur)",
+        "Middle East (UAE, Saudi Arabia, Oman, Qatar, Kuwait, Bahrain)"
+    ],
+    "industry_and_segment": "EdTech, Competitive Exam Preparation (Engineering, Medical, Olympiads), Professional Development Services",
+    "available_platforms": "Web & Mobile (both)",
+    "funding_raised": "$600M",
+    "funding_stage": "Series D (Private Equity)",
+    "no_of_users": "Over 3 million students till date; 300,000+ annual learners",
+    "annual_revenue": "₹3,300 crore (US$374.9 million) for FY25",
+    "key_positioning": "Premier coaching institute known for its result-oriented 'Kota System' pedagogy and hybrid (phygital) learning model for competitive entrance exams.",
+    "revenue_model": "Fee-based classroom programs, subscription-based online courses, specialized high-ticket offerings (e.g., NEET-PG, international admissions), distance learning kits, test series, and franchise fees.",
+    "pricing_tiers": [
+        "Classroom Programs: ₹1,20,000-₹3,00,000+ per student per year (e.g., Flagship JEE/NEET programs)",
+        "Online IIT-JEE Coaching (Class XII passed, 2023-24): ₹99,999",
+        "Offline IIT-JEE Coaching (Class XII passed, 2023-24): ₹1,59,000",
+        "Online Pre-Medical NEET (UG) Coaching (Class XII passed, 2023-24): ₹95,999",
+        "Offline Pre-Medical NEET (UG) Coaching (Class XII passed, 2023-24): ₹1,36,000"
+    ],
+    "target_customer_segments": [
+        "High-school and pre-university students preparing for competitive engineering and medical entrance exams",
+        "Parents funding premium coaching",
+        "Early-age learners (Class 6-10) for foundational programs",
+        "Working professionals seeking postgraduate medical qualifications",
+        "Indian diaspora in the GCC"
+    ],
+    "tech_stack_highlights": [
+        "AI-powered tools (personalized study schedules, instant doubt resolution)",
+        "Cloudflare",
+        "jQuery CDN",
+        "Font Awesome",
+        "DataTables",
+        "Google Maps",
+        "HSTS",
+        "Google Tag Manager",
+        "YouTube (integration)"
+    ],
+    "milestones": [
+        "1988: Founded by Rajesh Maheshwari in Kota, Rajasthan with 8 students.",
+        "May 2022: Received $600M investment from Bodhi Tree Systems, valuing the company near $1.2 billion.",
+        "April 2023: Launched 11 new classroom centers in Delhi-NCR.",
+        "2023: Acquired problem-solving platform Doubtnut for $10M.",
+        "Sep 2025: Rakesh Ranjan appointed CEO of Allen's Digital Arm.",
+        "April 2026: Launched ALLEN SHARP 2026.",
+        "April/May 2026: Began discussions for an Initial Public Offering (IPO)."
+    ],
+    "new_features_launched": [
+        "Launched ALLEN SHARP 2026 (Apr 2026)",
+        "Aggressive expansion of Allen Digital platform (2024-2025)",
+        "Introduced Allen NExT for NEET-PG/INI-CET preparation",
+        "Launched Allen Global for international university preparation",
+        "Integration of AI-driven analytics and personalized learning paths"
+    ],
+    "recent_partnerships_and_integrations": [
+        {
+            "partner": "Doubtnut",
+            "type": "Acquisition",
+            "description": "Acquired the problem-solving platform to extend curriculum to Doubtnut's 32 million student base.",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHg7-H0ZlfSMtpK--zMLuwr58NpxGBfmpsBSmpJ83uFpecR4VDMN_CXWFgC_Mb2GGq_3CXuV3OmG4i23GsyFwYNQ03YQygwNDkzbD8MmvPKOchVapgKjM9m91v1QmOMuhyP6lz1P6aeK5S-_X3feOV9tezJZF-ECMQD3QTHbsIliA==",
+            "date": "2023"
+        },
+        {
+            "partner": "Bodhi Tree Systems",
+            "type": "Investment",
+            "description": "Strategic investment of $600M, accelerating leap into digital-first education and geographic expansion.",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_KPhJvNBoDJcRi2GZiIwPeMCecFD7jdqk0vjlYATeA9Bz0UCV4cInpOxVaTGpddXo35OnoSGBoY-js48sdimxUrwi1ZcICPnpesjFi_C_uKotdmfnqzOdndPhoveP6D2rsMk0K9ugRGoVi_6ciDp2EcNvjf8y-00hw2aa3iBlHpSrbODby0UKaNkMPSZmtLsPzQwYQPGOMmMJUSQSxH8=",
+            "date": "2022-05-01"
+        },
+        {
+            "partner": "Various schools (Allen ACE)",
+            "type": "Strategic Partnership",
+            "description": "B2B2C school partnerships to expand into Tier 3-4 cities, driving 15% year-on-year increase in student reach.",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTmpACEUORanEYjE_-pUo9NMxA4VuoQ4rhiB3WZSuuYDNxd8f10GbpgPxz2_xBHwklOBRlfG7yMvewhYnlKYUsfpqP0thv5i1IAzYBNFAVup9PxvNnoyUQdHA6CWUEz6qbJwSyXoEolSQLGfwKlyzDB6YdwOIAVS_iL98QzsRZ-rZVycRC0M2l5gr2l4bMdZ4vqVyBkcgAxwihgcPtajT8128UtXA=",
+            "date": "Recent"
+        }
+    ],
+    "competitors": [
+        {
+            "name": "Aakash Educational Services",
+            "domain": "https://www.aakash.ac.in/"
+        },
+        {
+            "name": "Resonance Eduventures",
+            "domain": "https://www.resonance.ac.in/"
+        },
+        {
+            "name": "FIITJEE",
+            "domain": "https://www.fiitjee.com/"
+        },
+        {
+            "name": "Physics Wallah",
+            "domain": "https://www.pw.live/"
+        }
+    ],
+    "market_sentiment": {
+        "overall": "Mixed",
+        "analyst_view": "Analysts consider Allen a strong, profitable brand with robust financials, driven by its legacy and scaling digital arm. However, there are concerns regarding the sharp FY25 profit decline due to scaling costs and traditional model pressures.",
+        "user_community_view": "Unable to verify",
+        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE28UXCSd-HrJv8IKNTfunMsNrKoQoH1DuyOthunvGIO9wclnrfezhoO7za9xCqji0vCQMLBj5NixaaKaE4iZBb6CJ9b_qEi-kM5VmPwZAbbLTO9GgoApSpyY-X2km7vSTef5FKg-fy7jMBvvJRGF4iaspLa7DyrGuaZBz6osjvQw966vXyty8PRCgYrHdYkUS451ZWw40hpNWddPQ5omo=",
+        "date": "Recent"
+    },
+    "differentiators": [
+        {
+            "feature": "Result-oriented 'Kota System' pedagogy and strong brand equity built over 35+ years.",
+            "user_type": "Students, Parents",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH2uefKSKdl7wQILDB5gK8RyU2DGbq62djQ96Fo5cJwVjCyGd_rahCs9vsDpFuNhqalfoup7f7ZQGIg2jsjdx6d6MjcX1XfB3CIM0eMsOymW2l8O0dZG2WPBV-D75jOAm2auxA8Z2AdvLieJxgAD6Z34pLrXXZZHO72qul41zpP6M5mlttuUr6aFKsLklbWJfEEoGAT1njcLkf9Vz911P4ndb9sBYwHo9NLeSjmkG6fPGKYxEMsaYEsVhUynG8kgNNlsj8C0BbELStA_Q==",
+            "date": "2026-05-21",
+            "effect": [
+                "Attracts top students and preserves high success outcomes in competitive exams."
+            ]
+        },
+        {
+            "feature": "Hybrid (phygital) learning model combines robust physical centers with a rapidly scaling digital platform.",
+            "user_type": "Students, Parents",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKfIoTNYHriXtU3mrzOQSZBLgvAP8Q_J8347dgZCDT9nPHKxKQrVjFxYZFHd-4fXhEECPjbTdLZPl4tV5fxbsfyiqLy8gFbcbh847aH_gNgpzHz6IGieORKUnti26el_Ul0Q2ziwfHpgTJ8b_V0GqinrudaQnJrQJB-SsmYZHnuN8i80P1xg==",
+            "date": "2023-11-24",
+            "effect": [
+                "Offers flexibility and accessibility to quality education for broader demographics."
+            ]
+        },
+        {
+            "feature": "Integration of AI analytics for real-time student performance mapping, personalized learning paths, and doubt resolution.",
+            "user_type": "Students, Educators",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE28UXCSd-HrJv8IKNTfunMsNrKoQoH1DuyOthunvGIO9wclnrfezhoO7za9xCqji0vCQMLBj5NixaaKaE4iZBb6CJ9b_qEi-kM5VmPwZAbbLTO9GgoApSpyY-X2km7vSTef5FKg-fy7jMBvvJRGF4iaspLa7DyrGuaZBz6osjvQw966vXyty8PRCgYrHdYkUS451ZWw40hpNWddPQ5omo=",
+            "date": "2026-03-20",
+            "effect": [
+                "Improves learning outcomes and reduces concept-level weaknesses effectively."
+            ]
+        },
+        {
+            "feature": "Extensive alumni network (2.8M+) and proprietary 30-year student performance data.",
+            "user_type": "Company Management, Educators",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjb4PtwhEwwBuFpjlqnHlxH4j_AfRIsGTApjMoDRBk6SpsFEUc8hsOxzg_3L6pllRhJAc4CNs_U67Lfxcd7I4d0LbmGjtQn4zKluE0m9GF-E1ih1QvOzGmsBTBuu9uiPS4mrt-HrNKH92FiViDXsOLjhaKAIy3cL9PhOpbwMue5G-JNN_6Ge50_lNjub1jK_XC4K7eg0DLOcsMCJIu3u-xmw==",
+            "date": "2026-03-20",
+            "effect": [
+                "Enables predictive interventions and refined pedagogical approaches."
+            ]
+        }
+    ],
+    "current_problems_struggling_with": [
+        {
+            "description": "Allen Career Institute's net profit plummeted by 70% to ₹41 crore in FY25, a sharp decline from ₹136 crore the previous year, despite steady revenue.",
+            "user_type": "Company Management, Investors",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEEGXV98mowvSkIgx6gyYcI0dvOjHMHGJ0enSyEnlxYpYxTVx_PvY-1RTSaJsL0oq256SChjkK_xsJJ9bdRYbAIEjTK4Tn2wc3N7iDGqUwpw-LNFAM1NNiYQFPDqzyLLeBMrE3jmnXEdwzw9VUwevpupPstPqfpyMGCiYGxWHAA-DkhEDJ0xOAH6sna9qVtqCBJ-RU7DmlcHNIGkWGOt2_6lW-PFGa_vn39MmGPsx9yJms-l1ptz8e8cssKzA8tkz4=",
+            "date": "2025-10-21",
+            "effect": [
+                "Reduced capital for investment; investor concern."
+            ]
+        },
+        {
+            "description": "Scaling the test prep business requires heavy upfront investments in real estate, faculty, and operations, leading to linearly increasing costs while revenue often lags.",
+            "user_type": "Company Management",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEEGXV98mowvSkIgx6gyYcI0dvOjHMHGJ0enSyEnlxYpYxTVx_PvY-1RTSaJsL0oq256SChjkK_xsJJ9bdRYbAIEjTK4Tn2wc3N7iDGqUwpw-LNFAM1NNiYQFPDqzyLLeBMrE3jmnXEdwzw9VUwevpupPstPqfpyMGCiYGxWHAA-DkhEDJ0xOAH6sna9qVtqCBJ-RU7DmlcHNIGkWGOt2_6lW-PFGa_vn39MmGPsx9yJms-l1ptz8e8cssKzA8tkz4=",
+            "date": "2025-10-21",
+            "effect": [
+                "Squeezed profit margins and operational challenges."
+            ]
+        },
+        {
+            "description": "The traditional Kota-based coaching model faces pressure due to rising student well-being concerns and a shift in preferences towards hybrid and online learning.",
+            "user_type": "Students, Parents, Company Management",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEEGXV98mowvSkIgx6gyYcI0dvOjHMHGJ0enSyEnlxYpYxTVx_PvY-1RTSaJsL0oq256SChjkK_xsJJ9bdRYbAIEjTK4Tn2wc3N7iDGqUwpw-LNFAM1NNiYQFPDqzyLLeBMrE3jmnXEdwzw9VUwevpupPstPqfpyMGCiYGxWHAA-DkhEDJ0xOAH6sna9qVtqCBJ-RU7DmlcHNIGkWGOt2_6lW-PFGa_vn39MmGPsx9yJms-l1ptz8e8cssKzA8tkz4=",
+            "date": "2025-10-21",
+            "effect": [
+                "Decreased enrollment in traditional programs, need for adaptation."
+            ]
+        },
+        {
+            "description": "Facing structural risks from regulatory shifts in entrance exams, which threaten the traditional high-intensity coaching model.",
+            "user_type": "Company Management",
+            "frequency": "Occasional",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjb4PtwhEwwBuFpjlqnHlxH4j_AfRIsGTApjMoDRBk6SpsFEUc8hsOxzg_3L6pllRhJAc4CNs_U67Lfxcd7I4d0LbmGjtQn4zKluE0m9GF-E1ih1QvOzGmsBTBuu9uiPS4mrt-HrNKH92FiViDXsOLjhaKAIy3cL9PhOpbwMue5G-JNN_6Ge50_lNjub1jK_XC4K7eg0DLOcsMCJIu3u-xmw==",
+            "date": "2026-03-20",
+            "effect": [
+                "Increased compliance costs and operational redesign needs."
+            ]
+        },
+        {
+            "description": "Competition from scalable low-cost digital-native rivals challenges Allen's market share and profitability.",
+            "user_type": "Company Management",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjb4PtwhEwwBuFpjlqnHlxH4j_AfRIsGTApjMoDRBk6SpsFEUc8hsOxzg_3L6pllRhJAc4CNs_U67Lfxcd7I4d0LbmGjtQn4zKluE0m9GF-E1ih1QvOzGmsBTBuu9uiPS4mrt-HrNKH92FiViDXsOLjhaKAIy3cL9PhOpbwMue5G-JNN_6Ge50_lNjub1jK_XC4K7eg0DLOcsMCJIu3u-xmw==",
+            "date": "2026-03-20",
+            "effect": [
+                "Pressure on pricing and need for differentiated offerings."
+            ]
+        },
+        {
+            "description": "The company remains caught between a slowing legacy classroom business and growth bets (digital, new verticals) that are still in their infancy.",
+            "user_type": "Company Management, Investors",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHGIG5XOHLQZG8TnAUIYgepE9qA05Dm7hJvwS4o6mTx5AxAa-jjAyz2nm3MGnwmEDo0S-im2NO9g-loGahAibHK51bL_vp8scrFt--4EyIKE5WUg_YvhY4J5V3vfwKgg75d9D01PbFgkmhvhgQgXBsLRrP8OmpmO6DMKjXj5NHvLemTwERrGFK6j59mfOBhi2KjgFkQn35eCrTXSOVesDU=",
+            "date": "2026-06-14",
+            "effect": [
+                "Uncertainty in revenue growth and investor confidence."
+            ]
+        }
+    ],
+    "regulatory_and_legal_issues": [
+        {
+            "issue": "India's 2024-25 coaching guidelines imposing age limits for enrollment and mandatory mental-health infrastructure.",
+            "jurisdiction": "India",
+            "status": "Active",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjb4PtwhEwwBuFpjlqnHlxH4j_AfRIsGTApjMoDRBk6SpsFEUc8hsOxzg_3L6pllRhJAc4CNs_U67Lfxcd7I4d0LbmGjtQn4zKluE0m9GF-E1ih1QvOzGmsBTBuu9uiPS4mrt-HrNKH92FiViDXsOLjhaKAIy3cL9PhOpbwMue5G-JNN_6Ge50_lNjub1jK_XC4K7eg0DLOcsMCJIu3u-xmw==",
+            "date": "2026-03-20",
+            "effect": [
+                "Requires operational redesigns, increased compliance costs, and potential short-term margin pressure."
+            ]
+        },
+        {
+            "issue": "Increased government scrutiny and calls for mental health support due to student suicides in Kota.",
+            "jurisdiction": "India",
+            "status": "Active",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEEGXV98mowvSkIgx6gyYcI0dvOjHMHGJ0enSyEnlxYpYxTVx_PvY-1RTSaJsL0oq256SChjkK_xsJJ9bdRYbAIEjTK4Tn2wc3N7iDGqUwpw-LNFAM1NNiYQFPDqzyLLeBMrE3jmnXEdwzw9VUwevpupPstPqfpyMGCiYGxWHAA-DkhEDJ0xOAH6sna9qVtqCBJ-RU7DmlcHNIGkWGOt2_6lW-PFGa_vn39MmGPsx9yJms-l1ptz8e8cssKzA8tkz4=",
+            "date": "2025-10-21",
+            "effect": [
+                "Reputational risk and pressure to implement robust student well-being programs."
+            ]
+        }
+    ],
+    "other_crucial_details": [
+        "Allen's valuation crossed $1.2 billion (around ₹10,000 crore+) by May 2026, with FY24 revenue of ₹3,244.7 Cr.",
+        "Bodhi Tree Systems invested $600 million in 2022 for an estimated 36-40% stake, valuing Allen at approximately $1.2 billion.",
+        "The company has approximately 12,785 employees worldwide as of December 2025, showing a slight year-over-year decline.",
+        "Allen launched 'Sanishth', an Emotional Well-being Centre, to address student mental health concerns in the competitive environment.",
+        "Reported in late 2024 that Allen was in talks to acquire Unacademy for around $800 million."
+    ],
+    "strategic_moves": [
+        {
+            "move": "Aggressive expansion of Allen Digital platform in 2024-2025, now contributing about 25% of new enrollments.",
+            "user_type": "Students, Company Management",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmKM7aMiYa_ORvYvwO-gKR7PA22GeatgPWAyt7Pk8FoLqBrNEme3s5VZUixhMdf6SJjnFqzsR72Tfe5W5HyDwAnnfpIfVfAvWwE-BMx8f868UfERcVrxhoam8z4ms1vcog-f3SXfaq9QiPKuoNvuZ5ryp4AsrcujwC_Hs6nrfwx_z6YFIbf3peYV_JgmtwZ8SdoUoB_vgR-JHDONF64hg1PzT1H9A=",
+            "date": "2026-03-18",
+            "effect": [
+                "Broadens reach, captures demand in Tier-2/3 cities, and diversifies revenue streams."
+            ]
+        },
+        {
+            "move": "Geographic diversification with accelerated center openings in South India (Bengaluru, Hyderabad) and Tier-2/3 cities, plus GCC expansion.",
+            "user_type": "Students, Parents, Company Management",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE28UXCSd-HrJv8IKNTfunMsNrKoQoH1DuyOthunvGIO9wclnrfezhoO7za9xCqji0vCQMLBj5NixaaKaE4iZBb6CJ9b_qEi-kM5VmPwZAbbLTO9GgoApSpyY-X2km7vSTef5FKg-fy7jMBvvJRGF4iaspLa7DyrGuaZBz6osjvQw966vXyty8PRCgYrHdYkUS451ZWw40hpNWddPQ5omo=",
+            "date": "2026-03-20",
+            "effect": [
+                "Deconcentrates risk, increases market share, and monetizes Indian diaspora."
+            ]
+        },
+        {
+            "move": "Launched Allen Global for international university preparation and Allen NExT for NEET-PG/INI-CET to extend product lines.",
+            "user_type": "Students, Working Professionals",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE28UXCSd-HrJv8IKNTfunMsNrKoQoH1DuyOthunvGIO9wclnrfezhoO7za9xCqji0vCQMLBj5NixaaKaE4iZBb6CJ9b_qEi-kM5VmPwZAbbLTO9GgoApSpyY-X2km7vSTef5FKg-fy7jMBvvJRGF4iaspLa7DyrGuaZBz6osjvQw966vXyty8PRCgYrHdYkUS451ZWw40hpNWddPQ5omo=",
+            "date": "2026-03-20",
+            "effect": [
+                "Broadens revenue streams and targets higher average revenue per user (ARPU) cohorts."
+            ]
+        },
+        {
+            "move": "Acquisition of Doubtnut in late 2023/early 2024 to bolster digital capabilities and user base.",
+            "user_type": "Company Management",
+            "frequency": "Rare",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEHuw44H51I6hmoLzjdqwkZ8keDj4Sgf0LSrqsVaHawSwT17Pgt0dl3VX9RbvgrvY-TV2VG41qReA8q62ghyLqhnff8YZDHZAnVb_rher0NVx6a3PKujbLn3-jiveTmstvuh7F9jPCga24gK91YM3eDf-s9OPc5UPqv8fdaC8BCU7yhk3RvYjaBMdj1RmRZAw==",
+            "date": "2026-03-17",
+            "effect": [
+                "Expanded digital user base by ~32 million and enhanced AI-driven doubt-solving features."
+            ]
+        },
+        {
+            "move": "Reportedly exploring an Initial Public Offering (IPO) in India to expand market reach and enhance brand visibility.",
+            "user_type": "Company Management, Investors",
+            "frequency": "Occasional",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHvBVFGMjVOuTWRQzqTMFdeSI_7JFkwJDnr_2zEwT7htOqgU_rx-viJB9YrIHhROj70PHLSLSaJS2rgKF6Y8CN2Qom0ysGYI0nPbljBUaYDG0RLFzr5fae-21GxooEzaVBEogsj8dFmHu81DS4iUfbK9rCUhVHJ2V07be_zfHMf70Jjox_JHTFdITbwj50Jl9YjX46Sa6MSYlEv9GRa9hQeGWA8KsBAfrADQ_KHvRvTK0Vj",
+            "date": "2026-05-29",
+            "effect": [
+                "Provides capital for further expansion and increases investor interest in the edtech sector."
+            ]
+        }
+    ],
+    "user_complaints": [
+        {
+            "issue": "High fees for traditional classroom programs",
+            "user_type": "Students, Parents",
+            "frequency": "Occasional",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEEGXV98mowvSkIgx6gyYcI0dvOjHMHGJ0enSyEnlxYpYxTVx_PvY-1RTSaJsL0oq256SChjkK_xsJJ9bdRYbAIEjTK4Tn2wc3N7iDGqUwpw-LNFAM1NNiYQFPDqzyLLeBMrE3jmnXEdwzw9VUwevpupPstPqfpyMGCiYGxWHAA-DkhEDJ0xOAH6sna9qVtqCBJ-RU7DmlcHNIGkWGOt2_6lW-PFGa_vn39MmGPsx9yJms-l1ptz8e8cssKzA8tkz4=",
+            "date": "2025-10-21",
+            "effect": [
+                "Perceived lower value for money, especially with profit decline."
+            ]
+        },
+        {
+            "issue": "Intense pressure and mental stress in competitive environment",
+            "user_type": "Students",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE-j0lRaOKIY8RVlbYFkYTiMhOGzNPyaU7CUYbZe03N5PnmTSJen7YqDsn7szPW7d_Yjqmze_JqN3AsQom3NPvRJZtq1iEVIAHuh2zKDM9NyiCuw5FORnsodIlltv_uzTG0uNXaD8-ypHBnLgCBkRyOmab6DdHrxC8=",
+            "date": "2026-04-18",
+            "effect": [
+                "Negative impact on student well-being and academic focus."
+            ]
+        },
+        {
+            "issue": "Lack of flexibility in traditional learning models before digital expansion",
+            "user_type": "Students, Parents",
+            "frequency": "Occasional",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEEGXV98mowvSkIgx6gyYcI0dvOjHMHGJ0enSyEnlxYpYxTVx_PvY-1RTSaJsL0oq256SChjkK_xsJJ9bdRYbAIEjTK4Tn2wc3N7iDGqUwpw-LNFAM1NNiYQFPDqzyLLeBMrE3jmnXEdwzw9VUwevpupPstPqfpyMGCiYGxWHAA-DkhEDJ0xOAH6sna9qVtqCBJ-RU7DmlcHNIGkWGOt2_6lW-PFGa_vn39MmGPsx9yJms-l1ptz8e8cssKzA8tkz4=",
+            "date": "2025-10-21",
+            "effect": [
+                "Inconvenience for students preferring remote or blended learning."
+            ]
+        },
+        {
+            "issue": "Requirement to relocate to Kota for perceived best coaching quality",
+            "user_type": "Students, Parents",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjb4PtwhEwwBuFpjlqnHlxH4j_AfRIsGTApjMoDRBk6SpsFEUc8hsOxzg_3L6pllRhJAc4CNs_U67Lfxcd7I4d0LbmGjtQn4zKluE0m9GF-E1ih1QvOzGmsBTBuu9uiPS4mrt-HrNKH92FiViDXsOLjhaKAIy3cL9PhOpbwMue5G-JNN_6Ge50_lNjub1jK_XC4K7eg0DLOcsMCJIu3u-xmw==",
+            "date": "2026-03-20",
+            "effect": [
+                "Significant financial and social burden on students and families."
+            ]
+        },
+        {
+            "issue": "Inadequate personalized attention in large classroom settings (historical)",
+            "user_type": "Students",
+            "frequency": "Occasional",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE28UXCSd-HrJv8IKNTfunMsNrKoQoH1DuyOthunvGIO9wclnrfezhoO7za9xCqji0vCQMLBj5NixaaKaE4iZBb6CJ9b_qEi-kM5VmPwZAbbLTO9GgoApSpyY-X2km7vSTef5FKg-fy7jMBvvJRGF4iaspLa7DyrGuaZBz6osjvQw966vXyty8PRCgYrHdYkUS451ZWw40hpNWddPQ5omo=",
+            "date": "2026-03-20",
+            "effect": [
+                "Slower progress and concept-level weaknesses for some students."
+            ]
+        }
+    ]
+}

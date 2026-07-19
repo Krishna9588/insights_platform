@@ -1,17 +1,21 @@
 {
-  "use_defaults": true,
-  "provider": "gemini",
-  "backend_url": "http://127.0.0.1:8000/",
-  "play_store_count": "100",
-  "app_store_count": "100",
-  "reddit_mode": "auto",
-  "reddit_count": "20",
-  "youtube_mode": "auto",
-  "youtube_count": "5",
-  "drive_folder_id": "",
-  "huggingface_model": "",
-  "auto_detect_store": true,
-  "run_company_profile": true,
-  "grounded_copilot": true,
-  "include_news": false
+  "api_keys": [
+    {
+      "id": "83af1129-b005-47a8-92ac-17f865ed6af2",
+      "name": "Key 1",
+      "key": "",
+      "provider": "gemini",
+      "isDefault": true,
+      "createdAt": "2026-06-26T16:50:26.719Z"
+    }
+  ],
+  "pipeline_defaults": {
+    "enabled": true,
+    "provider": "gemini",
+    "start_from": "agent1",
+    "only": ""
+  },
+  "google_drive": {
+    "defaultFolderId": "https://drive.google.com/drive/folders/1bEds1t0tfck5QqyvPKq9US-SSPLoueid?usp=sharing"
+  }
 }

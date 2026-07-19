@@ -1,0 +1,145 @@
+{
+  "extraction_metadata": {
+    "source": "Google Play Store",
+    "extracted_at": "2026-06-27T07:53:54.729428",
+    "extraction_time_seconds": 1.74,
+    "fields_extracted": 22,
+    "country": "in",
+    "language": "en",
+    "reviews_distribution": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "total_reviews_extracted": 5,
+    "status": "success"
+  },
+  "extracted_data": {
+    "metadata": {
+      "appId": "com.amazon.mShop.android.shopping",
+      "title": "Amazon Shopping",
+      "url": "https://play.google.com/store/apps/details?id=com.amazon.mShop.android.shopping&hl=en&gl=in",
+      "developer": "Amazon Mobile LLC",
+      "developerId": "Amazon+Mobile+LLC",
+      "category": null,
+      "genre": "Shopping",
+      "genreId": "SHOPPING",
+      "content_rating": "Rated for 3+",
+      "score": 4.566948,
+      "ratings": 4595194,
+      "reviews": 1412,
+      "installs": "1,000,000,000+",
+      "installs_min": 1000000000,
+      "installs_max": 10000000000,
+      "free": true,
+      "price": 0.0,
+      "currency": "INR",
+      "iap": false,
+      "iap_price_range": null,
+      "version": "32.12.4.100",
+      "description": "<h2><b>Product Features</b></h2>\r\nAmazon Shopping offers app-only benefits to help make shopping on Amazon faster and easier than shopping on your desktop.\r\n\r\n<h2><b>Never miss a delivery</b></h2>\r\nGet real-time tracking and delivery notifications so you know where your package is and when it arrives. \r\n\r\n<h2><b>Know exactly what you’re purchasing</b></h2>\r\nFull 360° product view lets you see items from every angle. “View in you room” makes sure it fits by using your phone’s camera and VR so you can see it in your space. \r\n\r\n<h2><b>We’ll notify you when items go on sale</b></h2>\r\nJust tap the heart icon to save items to Your Lists and we’ll alert you of price drops so you don’t miss a deal. \r\n\r\n<h2><b>Never forget your password</b></h2>\r\nSave time by staying securely signed in. If you prefer to sign out, use facial or fingerprint identification to sign back in. \r\n\r\n<h2><b>Connect with us when it works best for you</b></h2>\r\nLive chat support is open 24 hours, 7 days a week. Once you’ve started a chat, it stays that way for 24 hours so you don’t have to start your support session from the beginning. \r\n\r\n<h2><b>We’ll find that item for you</b></h2>\r\nNot sure of an item’s brand or where to buy it? Just tap the scan icon in the search bar, take a picture of the item or its barcode, and we’ll find it for you.\r\n\r\n<h2><b>Product Description</b></h2>\r\nBrowse, search, view product details, read reviews, and purchase millions of products. We deliver to 100+ countries in as quickly as 3-5 days. Whether you’re buying gifts, reading reviews, tracking orders, scanning products, or just shopping, Amazon Shopping app offers more benefits than shopping on Amazon via your desktop.   \r\n\r\n<h2><b>Important Note Regarding Permissions</b></h2>\r\nPlease note that the Amazon Shopping app requires access to the following services to operate properly:\r\n* <b>Contacts:</b> Allows you to send Amazon gift cards to your contacts or invitation to install the Amazon app.\r\n* <b>Camera:</b> Allows the Amazon app to access your camera on the device. You can use your camera to find products by scanning the cover or its barcode, to add gift cards and credit cards, or to add pictures in the product reviews.\r\n* <b>Flashlight:</b> Allows the Amazon app to turn on the flashlight. You can use the flashlight to find products with the camera feature even in low-light or dark conditions.\r\n* <b>Microphone:</b> Allows the Amazon app to access your microphone to use your voice to search and interact with your Assistant.\r\n* <b>Location:</b> Allows the Amazon app to access your location to help you discover local offers and select addresses fast.\r\n* <b>Account:</b> Allows you to share products on Amazon with your friends and families through Facebook or other social networks.\r\n* <b>Phone:</b> Allows the Amazon app to pre-populate the Amazon Customer Service number on your phone’s keypad.\r\n* <b>Storage:</b> Allows the Amazon app to store your preferences so that some features can load and run faster on the device.\r\n* <b>Wi-Fi:</b> This permissions is used when setting up either a Dash Button or Dash Wand using the Amazon Shopping app.\r\n\r\nThe Amazon App for Tablets is available on Google Play. Search for \"Amazon Tablet\" to install the app and begin shopping.\r\n\r\nFor customers located within the European Union, United Kingdom, Brazil, or Turkey: By using this app, you agree to Amazon’s Conditions of Use applicable for your country. Please also see the applicable Privacy Notice, Cookies Notice and Interest-Based Ads Notice for your country. Links to these terms and notices can be found in the footer of your local Amazon homepage.\r\n\r\nFor all other customers: By using this app, you agree to the applicable Amazon Conditions of Use (e.g. www.amazon.com/conditionsofuse) and Privacy Notice (e.g. www.amazon.com/privacy) for your country. Links to these terms and notices can be found in the footer of your local Amazon homepage.",
+      "summary": "<h2><b>Product Features</b></h2>\r\nAmazon Shopping offers app-only benefits to help make shopping on Amazon faster and easier than shopping on your desktop.\r\n\r\n<h2><b>Never miss a delivery</b></h2>\r\nGe",
+      "released": null,
+      "extraction_country": "in",
+      "extraction_language": "en",
+      "extracted_at": "2026-06-27T07:53:55.282593"
+    },
+    "reviews": [
+      {
+        "id": "842b90de-0062-4dd7-9712-ae023cd32090",
+        "rating": 1,
+        "title": "",
+        "content": "Amazon has become un-human when it comes to customer service. I can't uncheck using my digital Amazon gift card as payment of prime membership. I was saving that for something else. Amazon is about to lose me as a customer since I can't talk to an actual person about this! They don't give out numbers no more to call to resolve things. I hate that you have to choose the very limited options about your complaint.",
+        "date": "2026-02-18T09:25:22",
+        "helpful_count": 0
+      },
+      {
+        "id": "93ab33ea-2585-42ef-99dc-bc4bedbc0520",
+        "rating": 2,
+        "title": "",
+        "content": "The app just shows the same products over and over again, and constantly \"freezes up,\" except it... doesn't, it just won't let me select half the options of a product. Like it seriously, right now it will only let me select half the pattern options for a dress I'm looking at, and no, the other options aren't sold out it just won't load them. But it will the other half. I'm so annoyed that a billion dollar company can't make an app that will let me look at WHAT THEY'RE SELLING.",
+        "date": "2026-04-12T07:37:07",
+        "helpful_count": 0
+      },
+      {
+        "id": "d12a6619-4b0c-4ea8-95d4-edfb42cf9f9a",
+        "rating": 3,
+        "title": "",
+        "content": "I have had this app for a very long time. usually issues are resolved super quickly and painlessly (with missing packages) and packages are delivered quickly. I'd give it 5 stars for that. I'm a long time member. my biggest issue is that its near IMPOSSIBLE to contact a seller if you need something. Amazon could make this an easier process.",
+        "date": "2026-04-09T00:18:12",
+        "helpful_count": 0
+      },
+      {
+        "id": "3cb30154-2365-4f34-b065-ddc1f514c896",
+        "rating": 4,
+        "title": "",
+        "content": "The app is fine. It's just that on a regular basis, I delete everybody's data on my devices. There should be an acknowledgement button that'll stop the \"someone logged into your account\" warning from popping up every time I open the app. Yes, these are my devices, so is my personal information, and I don't have a problem with having to start fresh.",
+        "date": "2026-06-18T16:47:11",
+        "helpful_count": 0
+      },
+      {
+        "id": "0b5f8228-5c53-49b1-acf1-a10a5abac5f5",
+        "rating": 5,
+        "title": "",
+        "content": "Really easy to use, and there's a fantastic choice of products. You can pretty much always find a bargain, whatever you're looking for. Delivery is usually very quick and reliable, and the no quibble returns process is brilliant. I don't have transport, so Amazon is a real lifeline for me, and I use it pretty much daily!",
+        "date": "2026-02-18T22:02:39",
+        "helpful_count": 0
+      }
+    ],
+    "review_analysis": {
+      "total_reviews": 5,
+      "average_rating": 3.0,
+      "rating_distribution": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1
+      }
+    },
+    "reviews_metadata": {
+      "1": {
+        "requested": 1,
+        "fetched": 1
+      },
+      "2": {
+        "requested": 1,
+        "fetched": 1
+      },
+      "3": {
+        "requested": 1,
+        "fetched": 1
+      },
+      "4": {
+        "requested": 1,
+        "fetched": 1
+      },
+      "5": {
+        "requested": 1,
+        "fetched": 1
+      }
+    }
+  },
+  "analysis": {
+    "summary": "Amazon Shopping is a popular shopping app developed by Amazon Mobile LLC. It has been installed over a billion times and has a high user rating of 4.57 based on over 4.5 million ratings. The app is free and does not offer in-app purchases. However, recent reviews highlight issues with customer service and app functionality.",
+    "permissions_risk": "Medium",
+    "strengths": [
+      "High user rating and large install base",
+      "Free to download and use",
+      "Quick and efficient resolution of issues in the past",
+      "Wide range of products available",
+      "User-friendly interface for most users"
+    ],
+    "concerns": [
+      "Customer service issues, particularly with digital gift card usage",
+      "App functionality problems, such as freezing and limited product options",
+      "Lack of direct customer support options (e.g., phone numbers)",
+      "Some users report frustration with the app's performance",
+      "Limited options for resolving complaints within the app"
+    ]
+  },
+  "analysis_status": "success",
+  "analysis_provider": null
+}

@@ -5,7 +5,7 @@ from typing import Any, Dict, Optional
 from fastapi import APIRouter, HTTPException
 
 from agents.agent5_copilot import ask_copilot
-from backend.schemas import CopilotRequest, GroundedCopilotRequest
+from backend.schemas import CopilotRequest, GroundedCopilotRequest, ChatAskRequest
 from backend.services import answer_with_rag
 from core.copilot_service import create_copilot
 from core.database import get_db
@@ -80,22 +80,74 @@ def list_copilot_questions(project_name: Optional[str] = None, limit: int = 100)
 
 
 @router.post("/chat/ask")
-def chat_ask(
-    project_name: str,
-    question: str,
-    session_id: Optional[str] = None,
-    provider: str = "gemini",
-) -> Dict[str, Any]:
+def chat_ask(req: ChatAskRequest) -> Dict[str, Any]:
     """Ask a question in a chat session with persistent memory."""
     try:
-        copilot = create_copilot(project_name, provider)
-        answer, session_id = copilot.ask(question, session_id)
+        copilot = create_copilot(req.project_name, req.provider)
+        answer, session_id = copilot.ask(req.question, req.session_id)
+        # Get the latest title for the session
+        sessions = copilot.get_all_sessions()
+        title = "New Chat"
+        for s in sessions:
+            if s["session_id"] == session_id:
+                title = s["title"]
+                break
+                
         return {
             "session_id": session_id,
-            "question": question,
+            "title": title,
+            "question": req.question,
             "answer": answer,
         }
     except FileNotFoundError as e:
         raise HTTPException(status_code=404, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@router.get("/chat/sessions")
+def get_chat_sessions(project_name: str) -> Dict[str, Any]:
+    """List all chat sessions for a project."""
+    try:
+        copilot = create_copilot(project_name)
+        sessions = copilot.get_all_sessions()
+        return {"sessions": sessions}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@router.get("/chat/history")
+def get_chat_history(project_name: str, session_id: str) -> Dict[str, Any]:
+    """Get message history for a specific chat session."""
+    try:
+        copilot = create_copilot(project_name)
+        history = copilot.get_session_history(session_id)
+        return {"history": history}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@router.get("/chat/history/all")
+def get_all_chat_history(project_name: str) -> Dict[str, Any]:
+    """Get message history for all chat sessions of a project, sorted by most recent."""
+    try:
+        copilot = create_copilot(project_name)
+        sessions = copilot.get_all_sessions()
+        all_history = []
+        for session in sessions:
+            history = copilot.get_session_history(session["session_id"])
+            # Format into query/result pairs
+            pairs = []
+            for i in range(0, len(history) - 1, 2):
+                if history[i]["role"] == "user" and history[i+1]["role"] == "assistant":
+                    pairs.append({
+                        "session_id": session["session_id"],
+                        "title": session["title"],
+                        "timestamp": history[i].get("timestamp") or session.get("updated_at"),
+                        "question": history[i]["content"],
+                        "answer": history[i+1]["content"]
+                    })
+            all_history.extend(pairs)
+        
+        # Sort by timestamp descending
+        all_history.sort(key=lambda x: x["timestamp"] or "", reverse=True)
+        return {"history": all_history}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

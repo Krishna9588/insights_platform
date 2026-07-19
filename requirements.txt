@@ -55,3 +55,6 @@ pytest-asyncio
 
 # MCP (Model Context Protocol)
 mcp
+gdown==6.1.0
+PySocks==1.7.1
+PyPDF2==3.0.1

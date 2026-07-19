@@ -3,9 +3,9 @@ from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 AGENTS_ROOT = Path(__file__).resolve().parent
-DB_ROOT = AGENTS_ROOT / "database_mock"
-STATE_ROOT = PROJECT_ROOT / "data" / "state"
 DATA_ROOT = PROJECT_ROOT / "data"
+DB_ROOT = DATA_ROOT / "projects"
+STATE_ROOT = DATA_ROOT / "state"
 TRANSCRIPT_ROOT = PROJECT_ROOT / "transcript_input"
 
 # Chat & Session Storage

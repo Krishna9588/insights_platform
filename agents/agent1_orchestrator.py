@@ -319,40 +319,82 @@ async def orchestrate_agent_1(payload: Dict[str, Any]) -> str:
             youtube_cfg = [youtube_cfg]
         task_map.update(_build_youtube_tasks(youtube_cfg))
 
+    # ── News ─────────────────────────────────────────────────────
+    if "news" in payload:
+        news_cfg = payload["news"]
+        if isinstance(news_cfg, dict):
+            news_cfg = [news_cfg]
+        try:
+            from scrapers.google_news import scrape_google_news
+            for i, cfg in enumerate(news_cfg):
+                q = cfg.get("query")
+                if not q: continue
+                task_key = f"news_{i}" if len(news_cfg) > 1 else "news"
+                log.info(f"Task: {task_key} (Google News) query={q}")
+                task_map[task_key] = run_scraper_safe(
+                    scrape_google_news,
+                    query=q,
+                    num_results=cfg.get("count", 15),
+                    output_dir=raw_dir_str
+                )
+        except ImportError:
+            log.warning("scrapers.google_news not found — skipping News")
+
     # ── Internal Transcripts (Local, or Google Drive) ────────────
     if "transcripts" in payload:
         ts_data    = payload.get("transcripts", {})
-        input_path = (ts_data.get("input_path") or "").strip()
+        input_paths = [p.strip() for p in (ts_data.get("input_path") or "").split(",") if p.strip()]
 
-        if not input_path:
+        if not input_paths:
             log.warning("Transcript 'input_path' is empty, skipping.")
         else:
             try:
                 from scrapers.agent1_internal_cloud import agent1_internal, agent1_internal_batch, agent1_internal_drive
 
-                if input_path.lower() == 'drive':
-                    log.info("Task: internal_transcripts (Google Drive)")
-                    task_map["internal_transcripts"] = run_scraper_safe(
-                        agent1_internal_drive,
-                        output_dir=raw_dir_str
-                    )
-                elif os.path.exists(input_path):
-                    if os.path.isdir(input_path):
-                        log.info(f"Task: internal_transcripts (batch) path={input_path}")
-                        task_map["internal_transcripts"] = run_scraper_safe(
-                            agent1_internal_batch,
-                            input_dir=input_path,
+                for i, input_path in enumerate(input_paths):
+                    task_key = f"internal_transcripts_{i}" if len(input_paths) > 1 else "internal_transcripts"
+                    if input_path.lower() == 'drive':
+                        log.info(f"Task: {task_key} (Google Drive)")
+                        task_map[task_key] = run_scraper_safe(
+                            agent1_internal_drive,
                             output_dir=raw_dir_str,
+                            folder_id=ts_data.get("folder_id")
                         )
+                    elif input_path.lower() == 'combined':
+                        log.info(f"Task: {task_key} (Combined Drive + Local)")
+                        local_paths = ts_data.get("local_paths", [])
+                        drive_metadata = ts_data.get("drive_metadata", [])
+                        
+                        if drive_metadata:
+                            task_map[f"{task_key}_drive"] = run_scraper_safe(
+                                agent1_internal_drive,
+                                output_dir=raw_dir_str,
+                                files_metadata=drive_metadata
+                            )
+                        
+                        if local_paths:
+                            task_map[f"{task_key}_local"] = run_scraper_safe(
+                                agent1_internal,
+                                input_path=local_paths,
+                                output_dir=raw_dir_str
+                            )
+                    elif os.path.exists(input_path):
+                        if os.path.isdir(input_path):
+                            log.info(f"Task: {task_key} (batch) path={input_path}")
+                            task_map[task_key] = run_scraper_safe(
+                                agent1_internal_batch,
+                                input_dir=input_path,
+                                output_dir=raw_dir_str,
+                            )
+                        else:
+                            log.info(f"Task: {task_key} (single) path={input_path}")
+                            task_map[task_key] = run_scraper_safe(
+                                agent1_internal,
+                                input_path=input_path,
+                                output_dir=raw_dir_str,
+                            )
                     else:
-                        log.info(f"Task: internal_transcripts (single) path={input_path}")
-                        task_map["internal_transcripts"] = run_scraper_safe(
-                            agent1_internal,
-                            input_path=input_path,
-                            output_dir=raw_dir_str,
-                        )
-                else:
-                    log.warning(f"Transcript path not found: {input_path!r}")
+                        log.warning(f"Transcript path not found: {input_path!r}")
 
             except ImportError as e:
                 log.error(f"Failed to import transcript processor: {e}")

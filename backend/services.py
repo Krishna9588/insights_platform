@@ -55,6 +55,7 @@ def create_job(kind: str, payload: Dict[str, Any]) -> str:
         jobs = read_json(JOBS_PATH, {})
         jobs[job_id] = {
             "id": job_id,
+            "project_name": payload.get("project_name", payload.get("name", "Unknown Project")),
             "kind": kind,
             "status": "queued",
             "payload": payload,
@@ -79,11 +80,27 @@ def update_job(job_id: str, **fields: Any) -> None:
 
 async def run_job(job_id: str, fn, *args, **kwargs) -> None:
     update_job(job_id, status="running")
+    
+    def is_cancelled():
+        with JOBS_LOCK:
+            jobs = read_json(JOBS_PATH, {})
+            return jobs.get(job_id, {}).get("status") in ["failed", "cancelled"]
+            
     try:
+        import inspect
+        sig = inspect.signature(fn)
+        if "is_cancelled" in sig.parameters:
+            kwargs["is_cancelled"] = is_cancelled
+            
         if inspect.iscoroutinefunction(fn):
             result = await fn(*args, **kwargs)
         else:
             result = await asyncio.to_thread(fn, *args, **kwargs)
+            
+        # If the job was cancelled during execution, don't overwrite it with complete
+        if is_cancelled():
+            return
+            
         if isinstance(result, dict) and result.get("project_name"):
             try:
                 get_rag_service().index_project(result["project_name"])
@@ -91,7 +108,8 @@ async def run_job(job_id: str, fn, *args, **kwargs) -> None:
                 result.setdefault("warnings", []).append(f"RAG indexing failed: {rag_exc}")
         update_job(job_id, status="complete", result=summarize_result(result))
     except Exception as exc:
-        update_job(job_id, status="failed", error=str(exc))
+        if not is_cancelled():
+            update_job(job_id, status="failed", error=str(exc))
 
 
 def summarize_result(result: Any) -> Any:

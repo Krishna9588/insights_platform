@@ -40,6 +40,19 @@ class CopilotRequest(BaseModel):
     history: list[dict] = Field(default_factory=list)
 
 
+class ChatAskRequest(BaseModel):
+    project_name: str
+    question: str
+    session_id: Optional[str] = None
+    provider: str = "gemini"
+
+
+class RequestedDataRequest(BaseModel):
+    project_name: str
+    query: str
+    provider: str = "gemini"
+
+
 class NewsMonitorRequest(BaseModel):
     name: str
     query: str
@@ -82,3 +95,6 @@ class GroundedCopilotRequest(BaseModel):
 
 class AppConfigRequest(BaseModel):
     values: Dict[str, Any] = Field(default_factory=dict)
+
+class GoogleDriveListRequest(BaseModel):
+    url_or_id: str

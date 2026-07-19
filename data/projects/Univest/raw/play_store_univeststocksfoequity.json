@@ -1,0 +1,905 @@
+{
+  "extraction_metadata": {
+    "source": "Google Play Store",
+    "extracted_at": "2026-06-28T21:13:49.620628",
+    "extraction_time_seconds": 6.63,
+    "fields_extracted": 23,
+    "country": "in",
+    "language": "en",
+    "reviews_distribution": {
+      "1": 20,
+      "2": 20,
+      "3": 20,
+      "4": 20,
+      "5": 20
+    },
+    "total_reviews_extracted": 100,
+    "status": "success"
+  },
+  "extracted_data": {
+    "metadata": {
+      "appId": "com.univest.capp",
+      "title": "Univest: Stocks, F&O, Equity",
+      "url": "https://play.google.com/store/apps/details?id=com.univest.capp&hl=en&gl=in",
+      "developer": "Univest Communication Technologies Pvt Ltd",
+      "developerId": "5058911894603586295",
+      "category": null,
+      "genre": "Finance",
+      "genreId": "FINANCE",
+      "content_rating": "Rated for 3+",
+      "score": 4.5701017,
+      "ratings": 43687,
+      "reviews": 27932,
+      "installs": "10,000,000+",
+      "installs_min": 10000000,
+      "installs_max": 100000000,
+      "free": true,
+      "price": 0.0,
+      "currency": "INR",
+      "iap": false,
+      "iap_price_range": null,
+      "version": "Varies with device",
+      "description": "Simplify your investment journey with Univest, an all-in-one stock market platform for every investor. It provides high-quality stock market recommendations to over  <b>30 lac users backed by the research of its SEBI-registered research analysts </b>. Univest brings a solution to all your investing needs at the convenience of your palm. It is your on-the-go stock market partner for a seamless investing experience. \r\n\r\nWhether you are a futures trader, an options or commodities trader, or an investor for the long term, Univest caters to all your requirements. So, download and register on the Univest app and avail yourself of a seven-day free trial and receive five share market tips for free. \r\n\r\n<b>Key takeaways about Univest:</b>\r\n\r\n<b>Quality stock market tips</b>\r\nWhether it is long-term wealth creation or income generation in the short term, Univest has you covered through short, medium and long-term stock market tips for investing in equity, futures, options and commodities. Users also receive a detailed report along with a stock tip that helps them in making an investment decision.\r\n\r\n<b>Stock market recommendations with minimised risk</b>\r\nRisk is an unavoidable element of stock market investing, but it can always be controlled. Thus, to assist its users in investing safely in the share market, the research analysts of Univest give stock market suggestions that have high upside potential with good risk to reward ratio. \r\n\r\n<b>Stock market tips through low-cost subscription plans </b>\r\nWe understand the financial capabilities of Indian investors very well. Therefore, to offer our services to every investor, Univest provides stock market suggestions to its users at affordable prices, <b>which are as low as Rs. 183 per month</b>. Also, the subscription plans are curated to meet the varied needs of the investors, thus making them accessible to everyone. \r\n\r\n<b>Stock market recommendations by experienced research analysts</b>\r\nUnivest has a team of SEBI-registered research analysts who <b>collectively have 75+ years of experience in stock market research and trading<b>. These analysts constantly work round the clock to maintain accuracy and transparency in the stock market recommendations provided to the users. \r\n\r\n<b>Stock market suggestions for timely exit </b>\r\nExiting a bad investment at the right time is as important as taking an entry in the right one. Therefore, Univest assists you in taking a timely exit from your bad investments so that you can decrease or avoid any potential losses. \r\n\r\n<b>Portfolio tracker </b>\r\nUnivest's portfolio tracker provides you with a “Buy - Sell - Hold” rating on your investments for near and long term view to maintain a healthy portfolio and lets you avoid the hassle of regularly checking the performance of your investments. \r\n\r\n<b>Effective and fast communication </b>\r\nInvesting in the share market is all about the right timing. Thus, to assist you in making the right call at the right time, Univest provides timely trade alerts through WhatsApp, push notifications and Telegram channel. By providing users with timely trade alerts, Univest increases its users potential gains while simultaneously curtailing their losses. \r\n\r\n<b>Stock market mentor  </b>\r\nUnivest focuses on making its users well-informed decision makers in the share market. It offers high-quality, informative content through blogs, articles, webinars and other research tools. Now, you can learn about share market investing at your convenience with our regular updates and analysis on various developments in the share market.\r\n\r\n<b>Univest's Subsidiary is :  Uniresearch India Pvt Ltd, a SEBI-reg. research analyst (INH000013776)</b>\r\nDisclaimer: Investment in the securities market are subject to market risks. Read all the related documents carefully before investing.\r\n\r\nhttps://stocks.univest.in/privacy-policy\r\n\r\nAddress: Ground floor, UNITECH COMMERCIAL TOWER, 2, Arya Samaj Rd, Block B, Greenwood City, Sector 45, Gurugram, Haryana 122003</b></b>",
+      "summary": "Simplify your investment journey with Univest, an all-in-one stock market platform for every investor. It provides high-quality stock market recommendations to over  <b>30 lac users backed by the rese",
+      "released": "Sep 11, 2022",
+      "extraction_country": "in",
+      "extraction_language": "en",
+      "extracted_at": "2026-06-28T21:13:53.041482"
+    },
+    "reviews": [
+      {
+        "id": "2e4a9152-e8c9-49c3-9aee-3d91a6b06f71",
+        "rating": 1,
+        "title": "",
+        "content": "Very disappointing experience. I subscribed to a ₹1 trial, but ₹2799 was automatically deducted for renewal without me realizing it. The auto-renewal process was not clear to me, and the charge came as a surprise. I immediately contacted support and requested a refund, but the experience has been frustrating. Users should carefully check subscription terms before signing up. I hope the company improves transparency and customer support.",
+        "date": "2026-06-22T08:57:23",
+        "helpful_count": 0
+      },
+      {
+        "id": "7000728e-3a45-45e2-99b9-6f46574d5b60",
+        "rating": 1,
+        "title": "",
+        "content": "It's a fraud; don't fall for it. The trading calls come too late on the app and even if you open the app immediately after receiving notification and try to place order most of the time stock was already on higher price and then you try to buy when it comes to near to entry price while that calls exit is still not triggered then they will say sell the trade now but you bought in that range only so your money gets stuck and portfolio remains in negative. Don't fall for it.",
+        "date": "2026-06-25T22:54:50",
+        "helpful_count": 0
+      },
+      {
+        "id": "f8dc1ccd-3232-4a3d-8a62-ae8cda27c77c",
+        "rating": 1,
+        "title": "",
+        "content": "Information-wise, it's a good app. UI/UX-wise, it's the worst app. Even after paying for the app for five years, I still see ads all over the app, which is highly annoying. Developers really need to add a switch to hide those things for all paid users. Trade ideas are good, but the downside is there's no proper risk-reward. They book most equity trades at 2% and keep trailing the bad ones until -10%. There's no stop loss; they will then ask you to average it and try to close it in positive.",
+        "date": "2026-06-13T20:23:23",
+        "helpful_count": 0
+      },
+      {
+        "id": "9cbb88f7-fa1c-4cb1-a1d3-a3ff71b35f74",
+        "rating": 1,
+        "title": "",
+        "content": "actually theres nothing that investors can make use of. List of live and clos3d stocks, new stocks without any analysis but target rates. news is AI generated few sentences and no analysis. Multibaggars stocks, couldn't find good analysis and stocks of last 1 to 2 years generating losses only. there's no way to cancel the subscription. Do read terms before subscription, you may miss something",
+        "date": "2026-05-24T16:15:27",
+        "helpful_count": 0
+      },
+      {
+        "id": "fdebcd34-6862-439d-b8b0-98a3157c13f6",
+        "rating": 1,
+        "title": "",
+        "content": "The idea they post reaches to app after a quite good time lapse, so you never get a chance to buy the future trade in the suggested price. Similarly maximum future ideas doesn't hit target, and exited early, because of which again due to latency issue, the exit call doesn't reach on time and here also you will end up losing money.Now, coming to returns. In their dashboard they have mentioned that they have 85% accuracy for future trades. which is not correct if you consider making money",
+        "date": "2024-06-19T10:35:57",
+        "helpful_count": 0
+      },
+      {
+        "id": "49428746-2e64-47c3-a0ab-557c6a008f18",
+        "rating": 1,
+        "title": "",
+        "content": "Not satisfied and don't recommend this app. It's late, updates are late. Prices already higher than real time. Although having subscription they show full ads. Ads containing irrelevant items runs full page like normal unpaid version. Same information with unpaid version is enough for Normal person. Everytime sent notification of profitable trades but not in real time. It's waste of my money . Thank you. on 18 Aug 2025, years later, now customer care requesting me to delete my review..!!!",
+        "date": "2025-08-20T21:38:56",
+        "helpful_count": 0
+      },
+      {
+        "id": "d306ee1e-2f39-4649-b761-3f27da07915a",
+        "rating": 1,
+        "title": "",
+        "content": "One of the same useless third class tip provider, At the time of writing the review, they have 95% short, long and mid term live stock trades in loss, 100% of future and options trades in deep loss. They just post trade ideas and often close them after a minute or two, showing \"partial profit\", even before notification comes for the trade. But even after desperately trying to show profit, most of them goes in loss. Utter nonsense and definitely not renewing. Mistakes are made only once.",
+        "date": "2024-11-04T14:20:56",
+        "helpful_count": 0
+      },
+      {
+        "id": "c9c75cee-14f5-412c-9244-f949e610b070",
+        "rating": 1,
+        "title": "",
+        "content": "App is ok, but they should give levels in advance. By the time they post the future trade idea, possible that prices might have soared already. If you are really sure about the trade you give, you should give proper levels in advance. There's no point of entering the trade at higher levels. That is happening with almost all the trades. That's frustrating and disappointing.",
+        "date": "2024-08-02T10:36:55",
+        "helpful_count": 0
+      },
+      {
+        "id": "8f2fd9bc-c0f7-4c52-a4fe-364c2de708e7",
+        "rating": 1,
+        "title": "",
+        "content": "This is the worst app I have ever used. All their stock recommendations have been inaccurate and completely useless for me. I subscribed to their stock plan, but they keep sending notifications about options and other plans that I don’t need. They falsely claim high accuracy for their short-term stock suggestions. Over the past month, they recommended 10 stocks, and every single one is currently at a 15-20% loss. Do not waste your money on this subscription. They are misleading people.",
+        "date": "2025-02-18T20:24:31",
+        "helpful_count": 0
+      },
+      {
+        "id": "1a33257d-7604-4acc-b773-2765e94b5aa4",
+        "rating": 1,
+        "title": "",
+        "content": "I have been using this app for some time, but I haven't found the recommendations very useful and profitable. Most of the short-term 3-6 months recommendation eventually ended up negative returns. I am not an options user, so I can't comment on that. May be someone using might rate later. Also, the alerts are late many times. Until then, the buying range is missed.",
+        "date": "2025-01-08T19:54:41",
+        "helpful_count": 0
+      },
+      {
+        "id": "bb5fef1d-e6bb-493d-90b4-a3567e22b437",
+        "rating": 1,
+        "title": "",
+        "content": "The trading signals are bad and mostly end up in losses. There is a clear mislead in terms of accuracy. Would suggest to do your own fundamental and technical analysis rather than trust the 3rd party tips. I took its subscription based on initial impression but that didn't last. I had to book a loss on almost all the trades I've made through this",
+        "date": "2024-09-18T12:18:37",
+        "helpful_count": 0
+      },
+      {
+        "id": "0f66c4a6-6e1e-468f-bdeb-814716b98481",
+        "rating": 1,
+        "title": "",
+        "content": "If there was an option to give rating in minus I would prefer that . My experience was worst . I don't know on what basis they make predictions. I recommend not buy their premium, I bought it for stocks and made loss using their tips. They are just concerned about selling their products tons of promotional Message are sent through out the day .",
+        "date": "2025-01-13T10:14:12",
+        "helpful_count": 0
+      },
+      {
+        "id": "03e2c264-5b54-4ef7-bffe-2c9bf618e7ea",
+        "rating": 1,
+        "title": "",
+        "content": "i did not find much accuracy and not happy at all as there is no proper entry and exit signal. As they do whenever they want before giving any prior signal and we get caught if we buy we get higher price or in the case of sell we get low price. So I have faced price deviation in their call. ======== I don't recommend to anyone to buy pro plus as it's waste of money and u will end up in losing money in future. Please don't believe their post on the app for entry and exit and profit. A big NO.",
+        "date": "2023-12-12T15:48:22",
+        "helpful_count": 0
+      },
+      {
+        "id": "731a4b82-e1cd-4d24-9987-afa0f9c1d647",
+        "rating": 1,
+        "title": "",
+        "content": "not good, lots and lots of advertisements. I find advertisements more than trade setups. I also find the win/loss ratio is bad. wouldn't definitely recommend this app. i highly regret taking membership in this. would instead suggest something like Waya or liquide over Univest surely.",
+        "date": "2026-06-24T21:09:57",
+        "helpful_count": 0
+      },
+      {
+        "id": "0b939f03-453c-4210-9f69-fa35065f9545",
+        "rating": 1,
+        "title": "",
+        "content": "I subscribed to the Univest Pro Super plan by paying ₹6,274. Based on my personal experience, I am not satisfied with the service. After subscribing, I found that access to certain recommendations or segments required additional subscriptions. I also received frequent calls encouraging me to purchase more plans. This was not what I expected when I initially subscribed. I am sharing this as a genuine customer experience and not to spread negativity. Prospective subscribers should carefully unde",
+        "date": "2026-06-24T09:57:10",
+        "helpful_count": 0
+      },
+      {
+        "id": "f8113214-14ad-4f64-bab9-3f91aae409aa",
+        "rating": 1,
+        "title": "",
+        "content": "I don't want rate even a single star to this app. The customer services and whomsoever it may be running this thing is literally non responsive which will irritate you the most when needed. The customer services never picks a call and neither they Reply your mails regarding any issues.",
+        "date": "2026-06-20T01:09:39",
+        "helpful_count": 0
+      },
+      {
+        "id": "eab08919-c0c7-4419-8497-3040c7e85c85",
+        "rating": 1,
+        "title": "",
+        "content": "I subscribed to them 1.5 years ago. Since they are SEBI registered, I thought to trust and invest based on their research. They will show high accuracy because, even for the short term recommendation, they will give exit call only if the position is in profit, even if it is taking years. I have investments, but in negative positions for years. Not sure when to exit. I completely understand stock market involves risk, but here I felt I am completely mislead. Don't waste your money!XIRR is too bad",
+        "date": "2026-06-17T14:19:22",
+        "helpful_count": 0
+      },
+      {
+        "id": "e78a89d1-e9eb-4f91-9ee4-f8c343082ab8",
+        "rating": 1,
+        "title": "",
+        "content": "My experience with Univest was disappointing. The profits shown in their reports do not match real trading results. They appear to calculate entries and exits at prices that are very difficult to achieve in live markets. I followed several of their calls and found that while their reports showed good profits, my actual results were mostly breakeven or worse after slippage and execution delays. I spent over ₹16,000 on the subscription and did not find it worthwhile. Please be very cautious ⚠️",
+        "date": "2026-06-01T22:10:48",
+        "helpful_count": 0
+      },
+      {
+        "id": "2a95d1aa-a7f5-4420-a3ed-cee33498c552",
+        "rating": 1,
+        "title": "",
+        "content": "My experience with Univest's stock recommendations has been disappointing. Although I haven't been actively using the platform recently, I made several investments based on their \"multibagger\" stock recommendations. One of those stocks has declined by nearly 84%, yet no exit call has been issued so far. The other multibagger recommendations are also in the red, with losses ranging from 9% to 20%. Overall, the performance of these recommendations has been far below expectations.",
+        "date": "2026-06-02T20:37:19",
+        "helpful_count": 0
+      },
+      {
+        "id": "7861e55f-2793-4be9-afe7-5b742dd5670e",
+        "rating": 1,
+        "title": "",
+        "content": "I subscribed to Univest based on their representative Naveen’s advice to skip the trial and directly opt for the 3-month plan. He explicitly assured me I could switch to any other plan at no extra cost if I didn’t like the existing one. Trusting this, I made the payment. Barely a day later, when I requested a plan change, Naveen flatly refused and demanded an extra payment for the new plan. This is a clear case of mis-selling and a broken promise. Request don't waste your time and money.",
+        "date": "2026-06-10T00:41:01",
+        "helpful_count": 0
+      },
+      {
+        "id": "ea47c92b-44f4-44cf-b67b-e808dd6ac0ca",
+        "rating": 2,
+        "title": "",
+        "content": "Its a okay app if you want to invest in equity. But their futures recommendation is the worst part. They do not provide any stoploss and may close the future trade anytime they want. Within minutes, by the time u check the message to sell it, it will already make a huge debt on you. They are just trying to make some profits from stocks that are showing some significant increase as there is not much fundamental analysis done by them. I have traded and witnessed the results myself.",
+        "date": "2024-03-06T13:47:47",
+        "helpful_count": 0
+      },
+      {
+        "id": "060080e2-61a7-4d30-82ba-75406995cbd3",
+        "rating": 2,
+        "title": "",
+        "content": "i have invested in Univest demat account, but out of 10 times 8 times the app is getting crash, I don't know what is the problem here, i have updated it , reinstalled it etc etc. still the app is getting crash.",
+        "date": "2026-05-04T10:50:01",
+        "helpful_count": 0
+      },
+      {
+        "id": "8a065e65-b467-4fb1-86bd-9d692032f81d",
+        "rating": 2,
+        "title": "",
+        "content": "Application is not smooth enough for trading, charts are not updated with speed, trade execution is not fast. poor experience",
+        "date": "2026-04-15T11:38:54",
+        "helpful_count": 0
+      },
+      {
+        "id": "b486b837-b64d-4101-a799-7e6c66e69eba",
+        "rating": 2,
+        "title": "",
+        "content": "Univest trading app lags too much during market hours and order execution is not reliable GTT order often fail and real time index data is not show smoothly they legs to update is delayed or sometime inaccurate shows Scalper mode and advanced execution features are missing like in SAHI APP AND ANGEL ONE APP SCALPER MODE this app needs significant improvements for traders",
+        "date": "2026-05-15T14:39:59",
+        "helpful_count": 0
+      },
+      {
+        "id": "bf7e5da9-3f40-45e2-b51b-df7d22792e54",
+        "rating": 2,
+        "title": "",
+        "content": "I have bought the pro edge program,but I did not got any idea from univest, my suggestion for new user to don't use this program . this is just useless for me.this not App suggestions this just about there program.",
+        "date": "2026-05-28T17:03:44",
+        "helpful_count": 0
+      },
+      {
+        "id": "75ef4002-c26c-4604-afec-3633655c45da",
+        "rating": 2,
+        "title": "",
+        "content": "The app is lagging in stocks page needs improvement in the UI as there is delay in placing orders",
+        "date": "2026-06-22T18:41:59",
+        "helpful_count": 0
+      },
+      {
+        "id": "ce3a92c5-78fe-4831-9997-01858df7181d",
+        "rating": 2,
+        "title": "",
+        "content": "1-need improvement in order placing time as the order not getting settled timely on exchange,some orders showing on hold or not getting place at the same time. 2-Comodity trading also required in app 3-Need improvement in trading ideas also 4-Customer support is very poor I have tried many times but the given support number never get connected. 5-Request call back option is also not suitable traders bcoz if you add a request today you will get call back by tomorrow or day after tomorrow.",
+        "date": "2026-03-09T20:59:44",
+        "helpful_count": 0
+      },
+      {
+        "id": "5294501c-6489-4793-bf90-2bf41ef284ec",
+        "rating": 2,
+        "title": "",
+        "content": "Worst user interface. Too many ads and promotions to buy their service in the app. Even after buying stock tips and basket plan, still they show to buy them. Don't they know I already bought it? I am interested only in stocks, there is no option to stop the notifications for Futures, option and commodities. You get 2 calls per day to buy their plans which I tell them repeatedly not interested for. Another issue: No stock purchase confirmation from NSE/NSDL yet. Did they really buy the stocks?",
+        "date": "2026-06-12T19:01:47",
+        "helpful_count": 0
+      },
+      {
+        "id": "07aca9dd-5be3-4732-9263-7c5d628d346a",
+        "rating": 2,
+        "title": "",
+        "content": "I am unable to receive the Pro Trades Notifications and each time I am checking in Telegram and then from there I am going to App. I am using Samsung S20FE 5G. is there anything from my end need to do to receive app notifications or it's a problem in the app.",
+        "date": "2026-02-10T02:47:08",
+        "helpful_count": 0
+      },
+      {
+        "id": "64fa2d1d-7039-45e7-b3a2-c9265fa3e123",
+        "rating": 2,
+        "title": "",
+        "content": "The Univest app has carved out a specific niche in the Indian stock market by focusing on one of the most difficult parts of investing: knowing when to exit. While most apps focus on what to buy, Univest positions itself as a \"Financial GPS\" that helps you manage your existing portfolio and new trades with SEBI-registered research. ​Here is a comprehensive review of the app as of 2026.",
+        "date": "2026-01-18T22:34:52",
+        "helpful_count": 0
+      },
+      {
+        "id": "289abd66-cd1b-4347-bda0-0a40fc98798f",
+        "rating": 2,
+        "title": "",
+        "content": "subscription advertisement shown to users already subscribed too irritating! date and time of recommendation should be shown in all messages if we have to open app from telegram channel then what is the use of telegram channel",
+        "date": "2026-02-25T12:20:28",
+        "helpful_count": 0
+      },
+      {
+        "id": "44723fd3-18f5-4197-a285-dc1ad9790474",
+        "rating": 2,
+        "title": "",
+        "content": "after 3 months my account was activated, my subscription expired this month and I purchased the stocks and options and lost around 30k from last one year.. request you please extend my subscription",
+        "date": "2026-03-06T19:59:21",
+        "helpful_count": 0
+      },
+      {
+        "id": "589c9c3a-44eb-494c-a9e8-fb4133cb20a3",
+        "rating": 2,
+        "title": "",
+        "content": "Calls are good. But the entry or exit price you give will be out of range. Eg, if the entry price is given as 100 it ll be already 105 by the time it appear in the notification. And in same example sometimes u ll give exit at 102, so the entry which v get n exit price u give, ll make us in loss, which is too bad. Useless many times. I know many will be facing the same issue.",
+        "date": "2024-08-23T07:52:31",
+        "helpful_count": 0
+      },
+      {
+        "id": "b8229d01-6387-4ac2-be54-ad752fc783c0",
+        "rating": 2,
+        "title": "",
+        "content": "After 5 months usage noticed few major issues 1)Always Cross check their stock recommendations under \"Idea\" section, before buying search it in \"Search any stock\" section,they contradict with each other sometimes. 2) Univest does not provide notifications when they close a call or revise a target price.3)their stock recommendations are often provided at a time when the stock has already opened above the suggested price,yet Univest still claims to have suggested entry at that price.  Be careful.",
+        "date": "2023-07-04T20:13:19",
+        "helpful_count": 0
+      },
+      {
+        "id": "b41599e5-8dfc-4d83-801f-b9b4e7f479e8",
+        "rating": 2,
+        "title": "",
+        "content": "I've Lost More Than I've Gained. I bought a subscription based on the app's high \"hit accuracy\" claim, which is very misleading. They manipulate this stat by quietly closing loss-making \"short-term\" trades, sometimes months later, without any alert or stop-loss. They don't tell you to exit a losing position; they just close it on their end to boost their accuracy percentage. I've lost money on more trades than I've profited. The app's real performance doesn't match the stats they show. Avoid it.",
+        "date": "2025-09-25T10:12:32",
+        "helpful_count": 0
+      },
+      {
+        "id": "12a1a3ec-d57e-4846-8a0b-eabdc7bb66ee",
+        "rating": 2,
+        "title": "",
+        "content": "Calls don't show up like they're supposed to, just comes up as a missed call (video or audio) and even if all messages are read, it's telling Facebook itself that I have an unread message when I don't. It also tells me I'm not connected to any sort of wifi or mobile data when I am, and have good connection. I've also had issues with messages not wanting to send. I'll have to either connect or disconnect from wifi to get it to go through.",
+        "date": "2022-09-25T20:42:34",
+        "helpful_count": 0
+      },
+      {
+        "id": "f16e1ab3-dcca-4382-b73c-9b5c80673a8c",
+        "rating": 2,
+        "title": "",
+        "content": "Without reason and repeated notifications is ridiculous. I am no happy with the intention as they are trying to force subscribe for the app. I installed 2days back and not even trust it but they are forcefully trying to subscribe. Lots of notifications they don't have notification control or alert preference.",
+        "date": "2024-12-01T13:20:47",
+        "helpful_count": 0
+      },
+      {
+        "id": "8905da10-5f2e-4339-80ab-994eb677fc84",
+        "rating": 2,
+        "title": "",
+        "content": "I have been using univest for few months now and have opted for stock recommendations only. My review is not just based on a single stock. It is based on observations that I have made in few months. My review - Their calls in stock doesn't work the way it should. Will not buy the subscription again.",
+        "date": "2024-10-12T01:14:21",
+        "helpful_count": 0
+      },
+      {
+        "id": "63a800f7-a005-4285-a111-071709873202",
+        "rating": 2,
+        "title": "",
+        "content": "I bought 1 year subscription in equity only. Issue is when ever they post a trade for stock for short term, it will be out of range (hitting upper circuit) which is a major drawback and UNIVEST need to think seriously on it. It this is case, what's fun in taking the subscription.",
+        "date": "2025-01-08T14:55:51",
+        "helpful_count": 0
+      },
+      {
+        "id": "a2b6b8eb-c392-4f4d-8696-ecd377687b3e",
+        "rating": 2,
+        "title": "",
+        "content": "App is good only if u buy the stock on time but they keep on spamming to buy their plans in this cases we miss the genieune calls to buy as they keep spamming even if you buy their plans. So I didn't find any value added unless they keep a seperate number to give stock recommendation.",
+        "date": "2024-12-23T09:09:24",
+        "helpful_count": 0
+      },
+      {
+        "id": "b6248fc6-9e2c-4ea7-9ace-de2aa1e94352",
+        "rating": 3,
+        "title": "",
+        "content": "If you feel you are lonely bored, just download the univest app, you will be occupied so much... People will call you again and again... Just open the app more than anything, full colorful adds saying you can make sooooooo much profits with subscription etc. I just have downloaded, yet to see rest of features but the subscription is making huge noise. For rest, will revert after experience.",
+        "date": "2026-05-11T18:22:07",
+        "helpful_count": 0
+      },
+      {
+        "id": "01b877f7-9d42-4981-aa3a-f455472e4627",
+        "rating": 3,
+        "title": "",
+        "content": "observing issue on app launch, getting black screen with Univest logo. it is not proceeding till app homepage. I emailed regarding the same yesterday but no response received.",
+        "date": "2026-04-22T12:04:16",
+        "helpful_count": 0
+      },
+      {
+        "id": "fd6e753e-4dcc-41ab-91f0-ec937c5c2569",
+        "rating": 3,
+        "title": "",
+        "content": "Got a customer call from the Univest where in a person named Puneeth started to speak in Hindi which I questioned that, has he been directed to speak in Hindi to customer without asking the preferred language. He said Yes and do I have any problem. This Arrogance or company's policy of speaking in Hindi without asking the language of preference will not be viewed in a better context from customer point of view. Hope you change the attitude, and better speak in English or Local language of state.",
+        "date": "2026-04-17T15:54:17",
+        "helpful_count": 0
+      },
+      {
+        "id": "00e49b2f-19ba-4db0-96ab-8ff080c5205b",
+        "rating": 3,
+        "title": "",
+        "content": "Hi, Have activated special plan for the brokerage charges still,i have been charged as regular a customer.",
+        "date": "2026-06-10T10:33:55",
+        "helpful_count": 0
+      },
+      {
+        "id": "ec47b7de-ca2b-47a0-a55c-250d2fdde0f1",
+        "rating": 3,
+        "title": "",
+        "content": "Not a Good really time app. all profitable trades are suggested to be close with small profits and loss making trades are on hold for ever. example targets at 20 points above but they will always close in 3-4 points profit, however if the SL is 20 points they will never close it at 15 points loss also. so profits will always be small and losses are BIG. Do not open demat account with them, coz of poor refresh rate. prices and P&L do not refresh automatically.",
+        "date": "2026-02-03T10:54:39",
+        "helpful_count": 0
+      },
+      {
+        "id": "b342a999-19f1-4f1e-b46e-49199aa64886",
+        "rating": 3,
+        "title": "",
+        "content": "now we are getting Telegram messages also in Hindi. Univest has to create Hindi & English only channels. They should at least mention numbers in English in Webinars. otherwise, their stock suggestions are good, but sometimes the timing is back. Anyway, they have taught me how to invest for the long term through their webinars, which is very helpful. App has issues with notifications from years, which they need to fix.",
+        "date": "2026-03-02T14:17:00",
+        "helpful_count": 0
+      },
+      {
+        "id": "23069a95-3cc2-4342-b2f2-41959dbc165c",
+        "rating": 3,
+        "title": "",
+        "content": "This app is a must-have for any investor. The consolidated view of stocks, MFs, and SIPs is incredibly helpful. I feel much more organized and in control of my finances.",
+        "date": "2026-04-06T20:55:40",
+        "helpful_count": 0
+      },
+      {
+        "id": "94d5c50e-8b97-4c3c-8e46-e9929f1953d5",
+        "rating": 3,
+        "title": "",
+        "content": "Very good user-friendly App. Prediction is 60 persent accuracy. But while opening your app the promotion and plan offers create a lot of nusence, only after scipping this page only we are able to use this app for trade and prediction is very bad.",
+        "date": "2026-03-13T17:51:09",
+        "helpful_count": 0
+      },
+      {
+        "id": "cd01a3ce-9d14-4e21-aaf0-e7a9f8e13a68",
+        "rating": 3,
+        "title": "",
+        "content": "06.02.2026 Univest enabled an AutoPay mandate in a way that was not clearly explained and felt misleading. Even after the trial, they insist on AutoPay. I contacted PhonePe customer support, and they clearly explained that AutoPay can be deleted after the trial without any money deduction, and they helped me cancel it successfully. PhonePe support genuinely saved me from an unwanted auto-debit. Disappointed with Univest. Univest,Don't make customers panic please 🙏",
+        "date": "2026-02-06T23:53:45",
+        "helpful_count": 0
+      },
+      {
+        "id": "598f93f8-7019-4537-80b1-aef1782bd6db",
+        "rating": 3,
+        "title": "",
+        "content": "Not at all a fair app for equity cash trading. They closed their profitable trades in the app and their profits mostly are every low to bear brokerage, dp charges and stcg charges and also they don't close their losing trades even after the time duration for the trade they mentioned already goes away. Looks like an unfair attemp only for selling subscription to the users by showing false accuracy in actual terms",
+        "date": "2026-06-03T17:53:59",
+        "helpful_count": 0
+      },
+      {
+        "id": "99acc397-7012-4887-a5b6-4a30bd92c6b7",
+        "rating": 3,
+        "title": "",
+        "content": "The app quickly tookaway 600INR from me naming it subscription with no mention of how much I can withdraw after 3 months! The app is full of their own ads.",
+        "date": "2026-01-29T15:41:13",
+        "helpful_count": 0
+      },
+      {
+        "id": "899bfbae-40b7-479b-a9fa-9c0aa3879610",
+        "rating": 3,
+        "title": "",
+        "content": "Please add new features in app, total invest value, profit & loss total charges show in one tap...",
+        "date": "2026-02-04T08:46:20",
+        "helpful_count": 0
+      },
+      {
+        "id": "c8d517ae-2a75-46e0-ab3e-3b964d8e4da7",
+        "rating": 3,
+        "title": "",
+        "content": "I have been using this app for some time, but I haven't found the recommendations very useful and profitable. Most of the short-term 3-6 months recommendation eventually ended up negative returns. I am not an options user, so I can't comment on that. May be someone using might rate later. Also, the alerts are late many times. Until then, the buying range is missed.",
+        "date": "2025-03-07T10:42:52",
+        "helpful_count": 0
+      },
+      {
+        "id": "4d6696df-c40b-4773-a6d6-fc85aee75edf",
+        "rating": 3,
+        "title": "",
+        "content": "I didn't subscribe yet but I have gone through their past trades and one thing I found that the risk reward ratio is very poor for each and every trade especially in future and option. Most of the time profit is aound 2000 but loss is 8000. You get profit in 4 trades but you lost all in a single trade. In my view, if we put subscription charges, brokerage, slippage and risk reward ratio all together, it will be very difficult to be in profit.",
+        "date": "2024-09-24T16:26:30",
+        "helpful_count": 0
+      },
+      {
+        "id": "d7e01e17-d018-4a98-94a8-ef7d65e317cd",
+        "rating": 3,
+        "title": "",
+        "content": "Stock suggestions are good with all technical analysis and fundamental analysis , but these are good for long term stocks, if you are looking for short-term, the prices would have reached the target price at the time of notification itself. Also for longterm stocks if it can provide multiple targets it would be good.",
+        "date": "2024-09-01T15:30:35",
+        "helpful_count": 0
+      },
+      {
+        "id": "e8281232-2f8a-4276-ba7e-da38c1b07315",
+        "rating": 3,
+        "title": "",
+        "content": "In messges they will highlight profitable trade with absolute and percentage returns. In loss making trades they ll just tell you to exit without highlighting how much loss. Honesty is most important. When loss increases they give multiple future trades which not viable with limited capital. Seems like entry to trade suggested bit later so one can never execute trade at their entry price. Otherwise certain picks are good but need to refine more.",
+        "date": "2024-09-12T09:34:29",
+        "helpful_count": 0
+      },
+      {
+        "id": "bbe488af-27b6-4d79-825c-d4474f4ccc5d",
+        "rating": 3,
+        "title": "",
+        "content": "\"The thing i appreciate most about univest is the trust factor. every stock suggestion comes with data, charts, and a clear explanation. i’m no longer confused about what to invest in or when to exit. the app has become my daily go-to for tracking my portfolio and getting reliable insights. it’s honestly better than many paid platforms.\"",
+        "date": "2025-07-17T00:05:17",
+        "helpful_count": 0
+      },
+      {
+        "id": "66da7e20-c49e-4cdc-8d3a-698119a6db9b",
+        "rating": 3,
+        "title": "",
+        "content": "stock recommendation are good, but their data is wrong. for example - if they give a recommendation for buy a stock at Rs 100, and you open app instantly, the stock already trading at 101-102, means, stock is trading at 1-2% up. then, when they give notification for sell stock at 104, stock trading at 103. means, you save only 1-2% in short-term recommendation. no one can buy at 100, and no one can sell at 104. but at other part, their stock selection is very good 👍",
+        "date": "2025-09-18T21:15:16",
+        "helpful_count": 0
+      },
+      {
+        "id": "0d4e5ca5-ae91-47ff-bb56-868302ea6f34",
+        "rating": 3,
+        "title": "",
+        "content": "Love the daily updates and market news section.",
+        "date": "2026-04-06T19:33:32",
+        "helpful_count": 0
+      },
+      {
+        "id": "fdfb7a43-fe54-403a-a50a-779a886e8f2d",
+        "rating": 3,
+        "title": "",
+        "content": "Bahut useful app hai, stock tips mast milte hain.",
+        "date": "2026-04-08T15:26:17",
+        "helpful_count": 0
+      },
+      {
+        "id": "acd37162-4818-4056-96d0-3cac5f898276",
+        "rating": 4,
+        "title": "",
+        "content": "When I first entered the stock market, I relied mostly on random tips from social media and friends. Sometimes they worked, but most of the time I felt unsure about my decisions. A colleague recommended Univest, and I decided to give it a try. What I liked immediately was how organized and easy-to-understand the insights were. Instead of chasing rumors, I now spend a few minutes each evening reviewing market updates and research on the app. Univest has helped me develop a more disciplined.",
+        "date": "2026-06-12T14:25:04",
+        "helpful_count": 0
+      },
+      {
+        "id": "f77a7b21-3fc0-47fc-97e9-f751d6d376b1",
+        "rating": 4,
+        "title": "",
+        "content": "I have recently started using the universities app. it is very convenient & customer friendly. A lot of educational information is available in this app. So far trade recommendations given are productive. The only concern is that the notifications are received a bit late, prices are already moved up above the recommendation price. Further, Stop losses are very big . when trade is moving in the opposite direction , losses are also on the higher side.Keep small SL.",
+        "date": "2025-11-20T17:57:29",
+        "helpful_count": 0
+      },
+      {
+        "id": "7163ed78-f5c2-4e17-a5d2-860c425efdac",
+        "rating": 4,
+        "title": "",
+        "content": "Univest has revolutionised the way of investing. I just started in Aug 2025 and have already made profit with 25% in 1.5 months. The app recommendation for short term, mid term and the notification for upcoming dividends, makes it easy for new comers. Worth the investment for the fee you pay. But sometimes, I have seen that app is hanging and not able to open up. This can be improved.",
+        "date": "2025-10-17T04:34:16",
+        "helpful_count": 0
+      },
+      {
+        "id": "3190bcb1-8350-4d8e-91af-e753cc8562f4",
+        "rating": 4,
+        "title": "",
+        "content": "The UniVest app is quite good. the notifications on the group are timely, which is really helpful. However, the trade alerts on the app come a bit late. Because of this, we often end up entering trades at a slightly higher price. If the entry alert could come 2-3 minutes earlier, that would be great. Also, it would be very useful if we get a group alert a few minutes before exiting a trade, so that we can be better prepared. This small change can make a big difference",
+        "date": "2025-06-09T23:06:13",
+        "helpful_count": 0
+      },
+      {
+        "id": "f8c0e901-3e62-4741-9d57-786fdbc448c7",
+        "rating": 4,
+        "title": "",
+        "content": "I found Univest when searching for a platform that could simplify investment research, and it has been a worthwhile discovery. The app combines market insights, stock analysis, and regular updates in a way that is both informative and easy to follow. I like that I can quickly review important developments and identify opportunities without spending too much time on research. The experience feels smooth and reliable, and it has helped me stay more focused on my long-term investment goals.",
+        "date": "2026-06-08T00:02:13",
+        "helpful_count": 0
+      },
+      {
+        "id": "e23b65e9-16b0-46e2-b11c-96fccdbb1096",
+        "rating": 4,
+        "title": "",
+        "content": "I started using Univest a few months ago after realizing that most investment content online was either too complicated or filled with unnecessary jargon. What I liked about Univest was how easy it made understanding market trends and stock-related insights. The app helped me stay updated without spending hours researching on different platforms. The interface is clean, information is presented clearly, and I feel more confident while making investment decisions now. It's been a valuable additio",
+        "date": "2026-06-12T17:08:39",
+        "helpful_count": 0
+      },
+      {
+        "id": "7ff8f89e-bb35-4bc3-9690-b104f6ebe660",
+        "rating": 4,
+        "title": "",
+        "content": "A year ago, I knew very little about investing and mostly relied on random tips from social media. After discovering Univest, I started approaching investing in a much more informed way. The platform helped me understand market updates, stock insights, and investment opportunities without making things overly complicated. I especially like how quickly I can access relevant information whenever I want to research a company or sector.",
+        "date": "2026-06-12T18:43:12",
+        "helpful_count": 0
+      },
+      {
+        "id": "5f02110a-0d09-4e35-be62-d8cae186050b",
+        "rating": 4,
+        "title": "",
+        "content": "A year ago, investing felt intimidating to me because there was so much information available and I never knew which sources to trust. While searching for a simpler way to stay informed, I came across Univest. What started as a trial quickly became a daily habit. Every morning before work, I spend a few minutes checking market updates and reading insights on the app. The information is easy to understand and saves me hours of research. Thanks to Univest, I feel more confident about my financial",
+        "date": "2026-06-12T14:34:32",
+        "helpful_count": 0
+      },
+      {
+        "id": "5028d188-929f-4431-a3a9-fe3ec8229c09",
+        "rating": 4,
+        "title": "",
+        "content": "features are good learning is required for some time for getting more",
+        "date": "2026-06-03T10:48:32",
+        "helpful_count": 0
+      },
+      {
+        "id": "7fcd00c9-a839-4580-9c68-9ea9dd4792af",
+        "rating": 4,
+        "title": "",
+        "content": "Helpful but you cannot build your career by depending on this single platform only...",
+        "date": "2026-06-02T08:30:15",
+        "helpful_count": 0
+      },
+      {
+        "id": "f182d094-0c3e-4560-8e1f-35774a38e336",
+        "rating": 4,
+        "title": "",
+        "content": "A few months ago, I decided to start investing a small portion of my salary every month, but I often felt lost while researching stocks. I would spend hours reading different articles and still end up confused. That changed when I found Univest. The app made it much easier to understand market trends and discover investment ideas in one place. Now, checking Univest has become part of my morning routine. It saves me time, keeps me informed, and has helped me become much more confident in my inves",
+        "date": "2026-06-12T14:21:41",
+        "helpful_count": 0
+      },
+      {
+        "id": "5c07f588-28ba-46b7-83f8-e8a00ad8a3af",
+        "rating": 4,
+        "title": "",
+        "content": "As someone who is still learning about investing, Univest has been surprisingly helpful. I downloaded it after a friend's recommendation and ended up using it daily. The market insights are easy to understand, and the stock research saves a lot of time. One feature I really appreciate is how it explains opportunities without making things overly complicated. Over the last few weeks, it has helped me become more confident and disciplined with my investment decisions.",
+        "date": "2026-06-14T07:06:32",
+        "helpful_count": 0
+      },
+      {
+        "id": "5978d13b-a922-41e6-9ed9-b2e388ee4b21",
+        "rating": 4,
+        "title": "",
+        "content": "Univest offers a surprising number of free tools-like stock analysis, webinars, market insights, and IPO details-without any hidden charges. It's refreshing to see an app that prioritizes your learning and growth over making money off of you. Plus, the trial before purchase is a nice touch. Univest is my all-in-one solution.",
+        "date": "2026-02-27T07:20:15",
+        "helpful_count": 0
+      },
+      {
+        "id": "73f9c310-e7df-4d79-a36e-557abecc6c1e",
+        "rating": 4,
+        "title": "",
+        "content": "The app is fabulous and smart work for stock selection like fundamental, breakouts, screeners, shark trader, invester etc. I am fully satisfied. But my little request for this apps developers is please give a chart analysis platform for dirtctly from stocks recommended by you and anybody. Because when we have going to the stock and select the stocks chart it's shows not available. 1.mention the sector & industry with stocks. 2.sectorwise list of stocks 3.sector perform 4.all time high,month hig.",
+        "date": "2023-05-27T15:37:41",
+        "helpful_count": 0
+      },
+      {
+        "id": "87d3eb19-5218-4dc5-afea-072089761827",
+        "rating": 4,
+        "title": "",
+        "content": "Have been using the app for more than a month now. The calls given actually works and most of their calls hit the target. If we belive the data, it simply means that for short term calls, yoy have the potential to generate approx 6% return every month (72% anually) on your invested amount, which is great way for a passive income. The only issue I faced was with push notifications. I am being told that a new in app notification feature will be launched by mar-apr'24 timeframe which will be great",
+        "date": "2024-02-14T07:56:42",
+        "helpful_count": 0
+      },
+      {
+        "id": "eb5bec68-8c62-480f-a5e4-8e0be3bc5aba",
+        "rating": 4,
+        "title": "",
+        "content": "Most of the stocks I have selected from univest gave a fruitful outcome. But sometimes the target given by Univest do not hit n suddenly those stocks are removed from list of their suggestion. That should not be done. I think a prior notifications must be given for those stock so that we can withdraw our money",
+        "date": "2024-09-12T11:59:36",
+        "helpful_count": 0
+      },
+      {
+        "id": "f9ae626f-805f-4ee6-a374-3511a51b5fb4",
+        "rating": 4,
+        "title": "",
+        "content": "Univest is one of the best stock recommendation apps in India. The only issue is, sometimes, I've to skip some short term trades as the price has moved past the suggested entry level. Other than that, the app is pretty great, easy to use & responsive. I'm a Pro user.",
+        "date": "2023-08-13T10:29:05",
+        "helpful_count": 0
+      },
+      {
+        "id": "6b14508e-99f0-4745-85f9-ae8485d75ee8",
+        "rating": 4,
+        "title": "",
+        "content": "this app is good for trading business and making money I liked this app very much...",
+        "date": "2026-05-30T20:20:30",
+        "helpful_count": 0
+      },
+      {
+        "id": "9f8c3fac-122f-41a7-8a87-5ee424f5c970",
+        "rating": 4,
+        "title": "",
+        "content": "I like how the app has everything in one place—trade calls, stock analysis, market news, even learning material. Saves me from using 3–4 different apps. But I am most impressed by their GTT featurein their demat service. I get advise, place order easily and promptly and am also able to put exit target.",
+        "date": "2025-10-04T15:21:47",
+        "helpful_count": 0
+      },
+      {
+        "id": "441c13bc-dcff-432d-9fb5-a8f6b2c8631b",
+        "rating": 4,
+        "title": "",
+        "content": "Univest is nice app. Today I saw it is coming with PRO version. My suggestion is those who have already invested in elite 12 percent they should be given pro access at no cost. Nowadays there are several options where you can get 12 pc return without paying any additional charges. Hope Univest team would consider this advice.",
+        "date": "2023-07-17T19:53:44",
+        "helpful_count": 0
+      },
+      {
+        "id": "ca206aaa-456b-4dd9-aebc-c91e3bf2736e",
+        "rating": 5,
+        "title": "",
+        "content": "The target price alerts are actually more useful than i expected. Earlier i used to add stocks to my watchlist and then completely forget about them for weeks 😅. Now i get updates and reminders without having to keep checking prices all day. For anyone looking for a trading app India users can use alongside their regular investing routine, this feature alone is pretty handy. Small thing maybe, but it has genuinely helped me stay more organised with my investments and market tracking.",
+        "date": "2026-06-16T14:24:54",
+        "helpful_count": 0
+      },
+      {
+        "id": "3540bf06-9e5f-45bb-8606-ce75b33d6121",
+        "rating": 5,
+        "title": "",
+        "content": "Not a full time trader, just investing from my salary every month after paying bills and expenses. I was looking for ideas around best stocks for long term investing and found a few interesting companies through this app. What i appreciate is that the research doesn't only focus on short term movements. The reports usually explain business fundamentals in a simple way. Obviously i still do my own checking before investing, but the app gives me a good starting point. Been using it regularly and o",
+        "date": "2026-06-16T17:22:51",
+        "helpful_count": 0
+      },
+      {
+        "id": "72413b3d-2c67-4a61-adbd-f389ff010f8c",
+        "rating": 5,
+        "title": "",
+        "content": "I started using Univest after deciding to take a more disciplined approach to investing. One of the biggest advantages for me has been the convenience of having market insights and research tools available in a single platform. Every morning, I spend a few minutes reviewing updates before checking my portfolio, and it helps me stay informed throughout the day. The app is easy to use, loads quickly, and presents information in a clear format. Overall, it has made my investment research more effic",
+        "date": "2026-06-06T11:45:46",
+        "helpful_count": 0
+      },
+      {
+        "id": "a45a8a43-958a-40a9-b647-be9420a27a5e",
+        "rating": 5,
+        "title": "",
+        "content": "The best thing about the Univest app is its prompt customer support and quick responses. I have been a customer for the past 3 years, and your team has never disappointed me. The consistent support, timely assistance, and professional service make the experience truly reliable. Keep up the great work!",
+        "date": "2026-06-17T11:17:44",
+        "helpful_count": 0
+      },
+      {
+        "id": "2be5def4-7163-4600-be1f-6742ebb284dc",
+        "rating": 5,
+        "title": "",
+        "content": "I shifted my trading account to Univest recently and honestly the broking experience has been smooth. Order execution is fast, margins are clearly displayed, and I don't face random rejections like with my earlier broker. What I love most is that I can check research and instantly place the trade without switching apps. It saves me so much time during market hours. If they add mutual funds and bonds too, then I don't think I will need to maintain any other account. 😊",
+        "date": "2025-12-19T10:41:27",
+        "helpful_count": 0
+      },
+      {
+        "id": "f2d2783d-7700-467d-bde0-37382fc5a008",
+        "rating": 5,
+        "title": "",
+        "content": "After trying several investing apps, I found Univest to be one of the most practical for daily market research. I particularly appreciate how the platform organizes insights and updates in a way that saves time. Recently, I used its research tools to study a few stocks before investing, and the process felt much more structured than before. The app is easy to navigate, information is presented clearly, and it helps me stay updated without feeling overwhelmed. A great companion for regular invest",
+        "date": "2026-06-06T00:17:57",
+        "helpful_count": 0
+      },
+      {
+        "id": "ef38e942-3f50-4dc3-9ba7-6a4404700c49",
+        "rating": 5,
+        "title": "",
+        "content": "trading was a bit overwhelming to me bec I didn't really know where to start and how to research everything. I wanted to start long back but too little time to sit and do it manually. so far univest has been useful for me since I don't get timw. I just execute their notifications immediately.",
+        "date": "2026-06-18T17:57:23",
+        "helpful_count": 0
+      },
+      {
+        "id": "655bedb7-55b7-4142-a432-cf0a62b92882",
+        "rating": 5,
+        "title": "",
+        "content": "Last year, I decided to take my investing more seriously and started looking for a platform that could simplify market research. Univest turned out to be exactly what I needed. One evening, while exploring the app, I came across a sector analysis that helped me understand market trends much better than the articles I was reading elsewhere. Since then, I’ve been using it almost daily. The combination of market insights, stock ideas, and a user-friendly interface makes it a valuable companion for",
+        "date": "2026-06-13T22:55:42",
+        "helpful_count": 0
+      },
+      {
+        "id": "f0f4d239-2a10-4603-9777-b05798d683b0",
+        "rating": 5,
+        "title": "",
+        "content": "I began using Univest to strengthen my investment research, and it has made a noticeable difference in how I analyze opportunities. The app brings together market updates, stock insights, and useful information in a clean and accessible format. I no longer need to switch between multiple sources to get a clear picture of market activity. Everything is organized thoughtfully, making research faster and more efficient. The platform is reliable, easy to navigate, and has become an essential part of",
+        "date": "2026-06-06T13:28:04",
+        "helpful_count": 0
+      },
+      {
+        "id": "a769e6c3-edf1-4d67-a69c-24b512a5785d",
+        "rating": 5,
+        "title": "",
+        "content": "Univest has become one of the most useful apps in my daily investing routine. I initially downloaded it to track stock market trends, but the detailed research insights and timely market updates kept me engaged. The stock analysis feels easy to understand even for someone who isn't a full-time trader .I particularly like the watchlist feature and the way investment ideas are explained with supporting data. It helps me make more informed decisions instead of relying on random tips.",
+        "date": "2026-06-23T14:13:40",
+        "helpful_count": 0
+      },
+      {
+        "id": "806b8b84-58ad-43a4-9f0b-86e1e849c0bc",
+        "rating": 5,
+        "title": "",
+        "content": "I installed Univest to get better insights into the stock market, and it has been a very rewarding experience. The app offers a good mix of research, market updates, and stock ideas that help me stay informed throughout the week. Everything is presented in a clean and easy-to-follow format, which makes learning and decision-making much simpler. I appreciate the convenience of having important information available in one place. Univest has become a trusted resource that I regularly depend..",
+        "date": "2026-06-07T06:19:06",
+        "helpful_count": 0
+      },
+      {
+        "id": "25e40373-a9a6-4e16-ac98-d1eb6ff08bbf",
+        "rating": 5,
+        "title": "",
+        "content": "I installed Univest during a volatile market phase and was surprised by how much useful information was available in one place. The stock recommendations, market news, and detailed analysis save a lot of time compared to searching manually. I’ve also found the learning resources valuable for understanding trends and investment strategies. The app feels well-organized, and the real-time updates make it easier to stay connected with the market throughout the day.",
+        "date": "2026-06-18T12:26:30",
+        "helpful_count": 0
+      },
+      {
+        "id": "163e6781-9dc2-4889-b71d-0b7339c525c9",
+        "rating": 5,
+        "title": "",
+        "content": "I installed Univest during a period when I wanted to take investing more seriously instead of just following market headlines. One thing I appreciate is how the app presents stock insights in a simple format that doesn't feel overly technical. Recently, I used it to monitor earnings updates and sector trends, which helped me stay informed before making decisions. The watchlist feature keeps everything organized, and the market updates are timely. For anyone interested in stock research, portfoli",
+        "date": "2026-06-16T23:06:00",
+        "helpful_count": 0
+      },
+      {
+        "id": "aa685f15-3826-4198-b2c1-af522feed4cd",
+        "rating": 5,
+        "title": "",
+        "content": "I used to spend hours reading market news from different sources and still felt unsure about my investment decisions. After discovering Univest, things became much simpler. The app provides research-backed stock ideas and market insights in an easy-to-understand format. I particularly like the detailed explanations behind recommendations, which help me learn rather than just follow tips. Over the last few months, it has become my go-to platform for staying updated and making more confident inves",
+        "date": "2026-06-16T08:01:27",
+        "helpful_count": 0
+      },
+      {
+        "id": "8e02bc49-db7b-47fd-8817-e11b79db2100",
+        "rating": 5,
+        "title": "",
+        "content": "I’ve been using Univest for some time now, and it has become an important part of my investment routine. Before finding this app, I often struggled to organize market information from different sources. Univest brings everything together in a clean and user-friendly way, making research much more efficient. The insights are easy to follow, and the app helps me stay updated on key market developments. It saves time, improves my decision-making process, and makes investing feel much more manageabl",
+        "date": "2026-06-06T11:32:55",
+        "helpful_count": 0
+      },
+      {
+        "id": "d375df76-d655-40fa-846f-98fc570d4942",
+        "rating": 5,
+        "title": "",
+        "content": "A few months ago, I realized I was making investment decisions based more on social media posts than actual research. That’s when I started using Univest. What I like is that it gives me a clear starting point for exploring stocks and understanding market trends. The app is easy to navigate, and the insights are presented in a way that doesn’t feel overwhelming. Now, before making any investment decision, I spend a few minutes on Univest, and it has helped me become much more disciplined as an i",
+        "date": "2026-06-13T20:58:50",
+        "helpful_count": 0
+      },
+      {
+        "id": "d29c4e11-3514-4d0d-9346-a17d7d333001",
+        "rating": 5,
+        "title": "",
+        "content": "A friend recommended Univest when I was struggling to keep track of multiple stocks across different sectors. Since then, it has become one of the first apps I open each morning. I like how I can check market trends, company updates, and stock performance without jumping between different platforms. The expert insights and investment research sections have helped me understand market movements better. It feels less like a complicated finance app and more like a practical tool for making informed",
+        "date": "2026-06-16T23:07:12",
+        "helpful_count": 0
+      },
+      {
+        "id": "7ab15d59-69b9-46a3-b5c7-912374345f90",
+        "rating": 5,
+        "title": "",
+        "content": "I started using Univest to stay updated on market activity without having to spend hours reading reports and articles. The app has made that process much easier by offering concise insights, stock research, and timely updates in one place. I appreciate the clean design and how quickly I can access useful information. It helps me keep track of trends, discover new opportunities, and stay focused on my investment goals. Univest has become an important tool that I rely on almost every day.",
+        "date": "2026-06-07T22:51:19",
+        "helpful_count": 0
+      },
+      {
+        "id": "f8908e7a-72c1-4db8-98c2-231336cc90ad",
+        "rating": 5,
+        "title": "",
+        "content": "I came across Univest while searching for a platform that could help me understand the stock market without complicated jargon. The app has exceeded my expectations with its easy-to-read insights and well-structured research tools. I regularly check it before reviewing my portfolio, and it helps me stay updated on important market developments. Everything feels organized and accessible, which saves a lot of time. For anyone looking to make informed investment decisions, Univest offers a very con",
+        "date": "2026-06-06T00:24:35",
+        "helpful_count": 0
+      },
+      {
+        "id": "d120ec94-31e0-4edb-88a9-0965d8c7fb27",
+        "rating": 5,
+        "title": "",
+        "content": "As someone who follows the stock market casually, Univest has made tracking investment opportunities much easier. I particularly enjoy reading expert-backed insights and seeing how different stocks are performing without digging through multiple websites. The app loads quickly, the watchlist feature is convenient, and the market updates help me stay informed throughout the trading day. It has become one of the apps I check regularly to keep up with market movements and investment research.",
+        "date": "2026-06-18T12:19:15",
+        "helpful_count": 0
+      }
+    ],
+    "review_analysis": {
+      "total_reviews": 100,
+      "average_rating": 3.0,
+      "rating_distribution": {
+        "1": 20,
+        "2": 20,
+        "3": 20,
+        "4": 20,
+        "5": 20
+      }
+    },
+    "reviews_metadata": {
+      "1": {
+        "requested": 20,
+        "fetched": 20
+      },
+      "2": {
+        "requested": 20,
+        "fetched": 20
+      },
+      "3": {
+        "requested": 20,
+        "fetched": 20
+      },
+      "4": {
+        "requested": 20,
+        "fetched": 20
+      },
+      "5": {
+        "requested": 20,
+        "fetched": 20
+      }
+    }
+  },
+  "analysis": {
+    "summary": "Univest is a stock trading app that offers users the ability to trade stocks, F&O, and equity. It has a high user base with over 10 million installs and a decent rating of 4.57. However, the review analysis shows a more mixed reception, with an average rating of 3.0 from 100 reviews. The app is free and does not offer in-app purchases.",
+    "permissions_risk": "Medium",
+    "strengths": [
+      "Large user base with over 10 million installs",
+      "High overall rating of 4.57",
+      "Free to download and use",
+      "Offers a wide range of trading options including stocks, F&O, and equity",
+      "Good information and educational content"
+    ],
+    "concerns": [
+      "Several negative reviews highlight issues with auto-renewal subscriptions and unexpected charges",
+      "Users report that trading calls are often too late, leading to missed opportunities and losses",
+      "Concerns about the app's transparency and customer support",
+      "Some users find the UI/UX to be lacking",
+      "Potential for fraudulent practices as mentioned in some reviews"
+    ]
+  },
+  "analysis_status": "success",
+  "analysis_provider": null
+}

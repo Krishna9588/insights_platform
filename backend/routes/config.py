@@ -1,10 +1,12 @@
 from __future__ import annotations
 
+import os
 from typing import Any, Dict, Optional
 
 from fastapi import APIRouter, HTTPException
 
 from agents.paths import CONFIG_FILE
+from agents.model_connect import get_api_key
 from backend.schemas import AppConfigRequest
 from backend.services import read_json, write_json
 from core.drive_config import get_drive_config
@@ -26,6 +28,25 @@ def save_app_config(req: AppConfigRequest) -> Dict[str, Any]:
     return {"status": "saved", "values": req.values}
 
 
+@router.get("/config/key-status")
+def get_key_status() -> Dict[str, Any]:
+    """
+    Returns which API providers have keys configured (from .env or config.json).
+    Shows masked key preview — never returns the full key.
+    """
+    PROVIDERS = ["gemini", "openai", "claude", "apify", "huggingface", "serper", "youtube", "reddit"]
+    status = {}
+    for provider in PROVIDERS:
+        key = get_api_key(provider)
+        if key:
+            # Mask: show first 4 + last 4 chars
+            masked = key[:4] + "●●●●●●●●" + key[-4:] if len(key) >= 10 else "●●●●●●●●"
+            status[provider] = {"found": True, "preview": masked}
+        else:
+            status[provider] = {"found": False, "preview": None}
+    return {"key_status": status}
+
+
 @router.post("/config/drive/add")
 def add_drive_folder(
     project_name: str,
@@ -40,6 +61,20 @@ def add_drive_folder(
         return entry
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+
+@router.post("/config/drive/test")
+def test_drive_folder(
+    folder_id: str,
+) -> Dict[str, Any]:
+    """Test a Google Drive folder ID to ensure it is accessible."""
+    try:
+        from scrapers.google_drive import GoogleDriveScraper
+        scraper = GoogleDriveScraper() # Uses GOOGLE_DRIVE_API_KEY from .env
+        files = scraper.list_files(folder_id)
+        return {"status": "success", "file_count": len(files), "message": f"Successfully accessed folder. Found {len(files)} files."}
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=f"Drive connection failed: {str(e)}")
 
 
 @router.get("/config/drive")

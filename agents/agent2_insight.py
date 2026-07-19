@@ -282,7 +282,7 @@ def _extract_signals(data_sources: dict) -> dict:
 
     # ── Internal / Google Drive Transcripts ───────────────────────────────────
     transcript_sources = []
-    for key in ("internal_transcripts", "google_drive_transcripts"):
+    for key in ("internal_transcripts", "google_drive_transcripts", "internal_transcripts_drive", "internal_transcripts_local"):
         signal_items = _extract_internal_signal_items(data_sources.get(key, {}))
         if signal_items:
             transcript_sources.extend(signal_items)

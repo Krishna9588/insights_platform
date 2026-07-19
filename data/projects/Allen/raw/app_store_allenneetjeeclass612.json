@@ -1,0 +1,92 @@
+{
+  "extraction_metadata": {
+    "source": "Apple App Store (iTunes API)",
+    "extracted_at": "2026-07-11T12:00:29.840815",
+    "extraction_time_seconds": 1.79,
+    "fields_extracted": 32,
+    "country": "in",
+    "reviews_distribution": {
+      "1": 20,
+      "2": 20,
+      "3": 20,
+      "4": 20,
+      "5": 20
+    },
+    "total_reviews_extracted": 0,
+    "status": "success"
+  },
+  "extracted_data": {
+    "metadata": {
+      "trackId": 6449251524,
+      "trackName": "ALLEN - NEET, JEE & Class 6-12",
+      "bundleId": "in.allendigital.study",
+      "trackViewUrl": "https://apps.apple.com/in/app/allen-neet-jee-class-6-12/id6449251524?uo=4",
+      "artistId": 1365355298,
+      "artistName": "ALLEN Career Institute Pvt. Ltd.",
+      "artistViewUrl": "https://apps.apple.com/in/developer/allen-career-institute-pvt-ltd/id1365355298?uo=4",
+      "sellerName": "ALLEN Career Institute Pvt. Ltd.",
+      "primaryGenreName": "Education",
+      "primaryGenreId": 6017,
+      "genres": [
+        "Education"
+      ],
+      "genreIds": [
+        "6017"
+      ],
+      "averageUserRating": 4.16014,
+      "userRatingCount": 1661,
+      "averageUserRatingForCurrentVersion": 4.16014,
+      "userRatingCountForCurrentVersion": 1661,
+      "price": 0.0,
+      "formattedPrice": "Free",
+      "currency": "INR",
+      "isVppDeviceBasedLicensingEnabled": true,
+      "version": "4.11.0",
+      "releaseNotes": "We've squashed some bugs and made behind-the-scenes improvements to keep things run smoothly.",
+      "releaseDate": "2023-12-19T08:00:00Z",
+      "currentVersionReleaseDate": "2026-07-09T04:56:10Z",
+      "description": "ALLEN App – Your Ranker-Level Learning Partner\nBuilt on 35 years of ALLEN’s legacy of excellence, the ALLEN App now goes beyond coaching halls — putting ranker-level education in every student’s pocket at a price that makes top preparation truly accessible.\n\nWhether you dream of IIT, NEET, Olympiads, or board success, ALLEN gives you the legacy, AI-powered tools, and question archives trusted by thousands of toppers — now available anytime, anywhere.\n\nWhy Students Choose the ALLEN App\n1. Ranker-Level Education – ALLEN brings its proven system within reach of every serious aspirant. Learn smarter without worrying about challenges.\n2. PYQ & Exam Archives – Access 1 lakh+ chapter-wise previous year questions with solutions across JEE Main, JEE Advanced, NEET, Olympiads, BITSAT, CETs, and more. Train with the exact questions that shaped toppers.\n3. LIVE & Recorded Classes – From India’s top faculties with structured study plans that cover every concept deeply.\n4. AI-Powered Study Companion",
+      "shortDescription": "",
+      "minimumOsVersion": "15.0",
+      "fileSizeBytes": 185973760,
+      "contentAdvisoryRating": "4+",
+      "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a9/29/b6/a929b614-9f1b-56a9-069b-9676f30dde88/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/60x60bb.jpg",
+      "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a9/29/b6/a929b614-9f1b-56a9-069b-9676f30dde88/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/100x100bb.jpg",
+      "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a9/29/b6/a929b614-9f1b-56a9-069b-9676f30dde88/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "screenshotUrls": [],
+      "ipadScreenshotUrls": [],
+      "kind": "software",
+      "trackCensoredName": "ALLEN - NEET, JEE & Class 6-12",
+      "privacyViewUrl": null,
+      "supportUrl": null,
+      "websiteUrl": null
+    },
+    "reviews": [],
+    "review_analysis": {
+      "error": "No reviews"
+    },
+    "reviews_metadata": {
+      "1": {
+        "requested": 20,
+        "fetched": 0
+      },
+      "2": {
+        "requested": 20,
+        "fetched": 0
+      },
+      "3": {
+        "requested": 20,
+        "fetched": 0
+      },
+      "4": {
+        "requested": 20,
+        "fetched": 0
+      },
+      "5": {
+        "requested": 20,
+        "fetched": 0
+      }
+    }
+  },
+  "analysis": null
+}

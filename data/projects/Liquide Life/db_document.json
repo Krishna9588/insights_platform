@@ -1,0 +1,1977 @@
+{
+    "project_name": "Liquide Life",
+    "domain": "https://liquide.life/",
+    "ingestion_date": "2026-06-28T13:48:01.854101",
+    "data_sources": {
+        "company_profile": {
+            "status": "success",
+            "file": "/Users/krishnabirla/PycharmProjects/insights_platform/data/projects/Liquide Life/raw/liquide_life.json",
+            "data": {
+                "company_name": "Liquide Life",
+                "domain": "https://liquide.life/",
+                "playstore_link": "https://play.google.com/store/apps/dev?id=7972886756627063462&hl=en_IN&gl=US",
+                "appstore_link": "https://apps.apple.com/in/app/liquide-stocks-mutual-funds/id1612735749",
+                "youtube_official_channel": "Unable to verify",
+                "linkedin_company_page": "https://www.linkedin.com/company/liquidesolutions/",
+                "year_founded": "2021 — Bengaluru, India",
+                "names_of_founders": [
+                    "Anuj Bajpai",
+                    "Paritosh Gunjan",
+                    "Aniket Shirke",
+                    "Kunal Ambasta"
+                ],
+                "c-suite_officer": [
+                    "Anuj Bajpai - Co-Founder & CEO",
+                    "Aniket Dilip Shirke - Co-Founder & CDAO",
+                    "Kunal Ambasta - Co-Founder - COO & CIO",
+                    "Paritosh Kumar Gunjan - Co-Founder"
+                ],
+                "employee_count": "75",
+                "exact_hq_location": "Signet Wing A, Cessna Business Park, Bengaluru, Karnataka 560103, India",
+                "locations_operating_in": [
+                    "India"
+                ],
+                "industry_and_segment": "Wealthtech, Investment Advisory, Financial Services (Stock Market & Mutual Funds), AI-enabled Wealth Advisory App",
+                "available_platforms": "Web & Mobile (both)",
+                "funding_raised": "USD 2.2 million",
+                "funding_stage": "Pre-Seed, Seed (Venture Capital-Backed)",
+                "no_of_users": "Close to 60,000 paying subscribers",
+                "annual_revenue": "Rs 25.8 crore (FY2025)",
+                "key_positioning": "An AI-enabled wealth advisory app and SEBI-registered Research Analyst in India, providing stock trading ideas, research analysis, portfolio tracking, mutual fund analysis, and AI-powered stock reports to help retail and mass-affluent investors make informed decisions and find investing fun and accessible.",
+                "revenue_model": "Subscription-based offering (e.g., Liquide One membership)",
+                "pricing_tiers": [
+                    "Liquide One Quarterly: Rs. 3,499",
+                    "Liquide One Yearly: Rs. 8,999"
+                ],
+                "target_customer_segments": [
+                    "New investors",
+                    "Mass-affluent segment in India",
+                    "Retail investors and traders"
+                ],
+                "tech_stack_highlights": [
+                    "AI/ML-driven investment models",
+                    "AI-powered BOT (LiMo)",
+                    "Supervised machine learning algorithms"
+                ],
+                "milestones": [
+                    "Founded in 2021 in Bengaluru, India.",
+                    "Secured $2.2 million in pre-seed funding (August 2022).",
+                    "Reported Rs 11.5 crore in operating revenues for FY24.",
+                    "Launched integrations with top Indian brokers like Zerodha and Groww (by August 2024).",
+                    "Reported Rs 25.8 crore in operating revenues and a profit of Rs 43 lakh in FY25.",
+                    "Reached close to 60,000 paying subscribers (February 2026).",
+                    "Raising a new funding round led by OTP Ventures (February 2026).",
+                    "Preparing to enter the brokerage business (February 2026)."
+                ],
+                "new_features_launched": [
+                    "Launched AI-powered BOT - LiMo for real-time BUY/SELL/HOLD ratings and as a trading partner.",
+                    "Introduced Mutual Fund Analytics for detailed insights and red flag identification.",
+                    "Launched IPO Verdicts, providing expert advice on upcoming Initial Public Offerings.",
+                    "Implemented personalized Stock Alerts for target price notifications.",
+                    "Enhanced Stock Insights with real-time news signals and detailed analysis.",
+                    "Launched 'Liquide One' membership offering exclusive benefits like smallcase access, expert hotline, VIP screeners, and unlimited LiMo requests.",
+                    "Enabled seamless login and portfolio management through integrations with top Indian brokers like Zerodha and Groww.",
+                    "Developed 'Baskets' for curated collections of stocks, ETFs, and gold for diversified portfolios."
+                ],
+                "recent_partnerships_and_integrations": [
+                    {
+                        "partner": "Zerodha",
+                        "type": "Integration",
+                        "description": "Integration to allow users to login with existing broker accounts and supercharge their portfolio.",
+                        "source": "https://apps.apple.com/in/app/liquide-stocks-mutual-funds/id1612735749",
+                        "date": "2024-08-10"
+                    },
+                    {
+                        "partner": "Groww",
+                        "type": "Integration",
+                        "description": "Integration to allow users to login with existing broker accounts and supercharge their portfolio.",
+                        "source": "https://apps.apple.com/in/app/liquide-stocks-mutual-funds/id1612735749",
+                        "date": "2024-08-10"
+                    },
+                    {
+                        "partner": "smallcase",
+                        "type": "Integration",
+                        "description": "Integration into the Liquide One membership, providing access to curated stock portfolios.",
+                        "source": "https://apps.apple.com/in/app/liquide-stocks-mutual-funds/id1612735749, https://liquide.life/one/, https://smallcase.liquide.life/",
+                        "date": "Recent"
+                    }
+                ],
+                "competitors": [
+                    {
+                        "name": "Seeking Alpha",
+                        "domain": "seekingalpha.com"
+                    },
+                    {
+                        "name": "The Motley Fool",
+                        "domain": "fool.com"
+                    },
+                    {
+                        "name": "TipRanks",
+                        "domain": "tipranks.com"
+                    },
+                    {
+                        "name": "Univest",
+                        "domain": "Unable to verify"
+                    }
+                ],
+                "differentiators": [
+                    {
+                        "feature": "AI-powered BOT, LiMo, provides real-time BUY/SELL/HOLD ratings for stocks, supervised by SEBI-registered experts.",
+                        "user_type": "All Investors",
+                        "frequency": "Continuous",
+                        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQERb5jVu9Hp3YQWojIcxZI0ms6fJUWkLkjscCihpVK0EtN4L8XezZsw2-Itmx-xwoi0hagy7eNlaPLjdWROfMEutJZzkdWnXSPLys1aEq5axafF-k4vk5COZQH4R9jqPJAjGFms2rXHBPpQr7I203DxVsJusn2AsmLlxjMhBPIxVfo6",
+                        "date": "March 17, 2026",
+                        "effect": [
+                            "Offers instant, accessible investment guidance.",
+                            "Reduces research time for users."
+                        ]
+                    },
+                    {
+                        "feature": "SEBI-registered Research Analyst status, providing regulated and expert-supervised investment advisory services.",
+                        "user_type": "All Investors",
+                        "frequency": "Continuous",
+                        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGj70bracG8hZwDXB0qyCOtGO2129zmqZv3lUZAcEAOrvv0RSOIWuYWNCCfnkTjHlw7VUijtgdp5EjokYjOC8kr8HuZkPnlrd63PC0HtyDz9fsiCBPbGpj9rSogN42DRawyXuoih_JkohO66-VOEdtFpNxV",
+                        "date": "Recent",
+                        "effect": [
+                            "Instills trust and credibility among users.",
+                            "Ensures adherence to regulatory standards."
+                        ]
+                    },
+                    {
+                        "feature": "Comprehensive portfolio health analysis and Mutual Fund Analytics to identify red flags and ensure diversification.",
+                        "user_type": "All Investors",
+                        "frequency": "Continuous",
+                        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQERb5jVu9Hp3YQWojIcxZI0ms6fJUWkLkjscCihpVK0EtN4L8XezZsw2-Itmx-xwoi0hagy7eNlaPLjdWROfMEutJZzkdWnXSPLys1aEq5axafF-k4vk5COZQH4R9jqPJAjGFms2rXHBPpQr7I203DxVsJusn2AsmLlxjMhBPIxVfo6",
+                        "date": "March 17, 2026",
+                        "effect": [
+                            "Empowers users to make informed decisions about their investments.",
+                            "Helps optimize portfolio performance."
+                        ]
+                    }
+                ],
+                "market_sentiment": {
+                    "overall": "Mixed",
+                    "analyst_view": "Analysts generally view Liquide positively in the growing wealthtech sector, noting its AI features and recent funding rounds as indicators of growth potential. However, challenges like competition and ensuring the accuracy of AI advice are recognized.",
+                    "user_community_view": "User sentiment is mixed; while some praise the app's ease of use and AI-powered tools like LiMo, others express significant dissatisfaction with inconsistent recommendations, limited support for non-yearly plans, and perceived poor value for subscription costs.",
+                    "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQECOlO3jWd1VtlaF6AVHPYIe3D_tSECuvRkIedos0mqMkga3jvfQDKHlC0_7wGJBIlOOA0V4Clr-0tgWhim6CA5Fc5J7EUFQ5DUiGknQK3QBoTuXACmcOXai38nFexLguIY-xC-BBNQucV8h27HTwGWO1fQV7bY2Dj6zuq_3ctIoX3ToUWmjvPb6uEqQIkvUP49tpdxqVpH8mT7JRnHpsZ27A==, https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFWvfQU3FaHgG2YEc1nZCpa5wKAeR_X79UmHUjtqg0tIcc2iTGGb3znFzyvfNIzXfvNy0lmYMpq2I21asLIt2LMLUzdhCiIGQp1qppQM6TxwS90PITl8Etq8LlJTCgdA82ixju7iB4YGPUw5v4kU1pgzI-ebTTLe0Ve1Tm9Z-uV_PVyA1zCOdbR2f3sDGYEBN8fSVk1LP_1_1_e1Nc=",
+                    "date": "Recent"
+                },
+                "strategic_moves": [
+                    {
+                        "move": "Successfully raised new Seed funding round of approximately Rs 15 crore (approx. USD 1.8M) led by OTP Ventures Fund and M Venture Partners.",
+                        "user_type": "Company",
+                        "frequency": "Rare",
+                        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESrczNPEzU5xvFMD3ulSHXQaja58TzDZJMbMd1tGTBwKCTR8SgPTJCfF1pnUnf_1HREftjT16eZFCpiiZ5riwjvL_S5FwQ8VzjukFJRtQtSyPOpGE95dwBOwaDqybKJpqsUBfanc0qMnh8qfhG7Y1CZoZDze-z0Emoxa2LsAHpr0I_hYzN1OUCNX7p3YKIo6oOr0DaffeXBhT_-nLh2M89LWZZSoLETMRAI3c=",
+                        "date": "February 17, 2026",
+                        "effect": [
+                            "Secured capital for expansion and product development.",
+                            "Increased valuation to Rs 69 crore (approx. USD 8.3M)."
+                        ]
+                    },
+                    {
+                        "move": "Planning to enter the stock brokerage business, utilizing fresh funding to build out broking operations.",
+                        "user_type": "Company",
+                        "frequency": "Continuous",
+                        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESrczNPEzU5xvFMD3ulSHXQaja58TzDZJMbMd1tGTBwKCTR8SgPTJCfF1pnUnf_1HREftjT16eZFCpiiZ5riwjvL_S5FwQ8VzjukFJRtQtSyPOpGE95dwBOwaDqybKJpqsUBfanc0qMnh8qfhG7Y1CZoZDze-z0Emoxa2LsAHpr0I_hYzN1OUCNX7p3YKIo6oOr0DaffeXBhT_-nLh2M89LWZZSoLETMRAI3c=",
+                        "date": "February 17, 2026",
+                        "effect": [
+                            "Diversifying revenue streams and expanding market reach.",
+                            "Potentially competing directly with current partners like Zerodha."
+                        ]
+                    },
+                    {
+                        "move": "Focusing on expanding services to Non-Resident Indian (NRI) investors in six countries.",
+                        "user_type": "Company",
+                        "frequency": "Continuous",
+                        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQtEsMUlTU-XxmQRwqM1SxrwZHOIszJ77MxAk5K8rsv9pPc09nC650meAzbSmyNaBME73KlmHrPwzl0Qn2s4WCDtklwAcRI45jNTlSc-GNj39V9KIFULueDzd74p1w6qRwuLGvjL86",
+                        "date": "August 2022",
+                        "effect": [
+                            "Tapping into a large, affluent market segment outside India.",
+                            "Requires navigating international regulations."
+                        ]
+                    }
+                ],
+                "other_crucial_details": [
+                    "Liquide Solutions Private Limited was founded in 2021, and its latest funding round was a Seed round in January 2026.",
+                    "The company's platform is designed to cater to the mass-affluent segment in India, with an aim to reach a large portion of demat account holders.",
+                    "Liquide offers pro-rata refunds on subscriptions or in-app purchases, aligning with SEBI's guidelines.",
+                    "The platform maintains a blog for financial literacy, providing market insights and news.",
+                    "Liquide has integrations with major Indian brokers including Zerodha, Groww, and smallcase."
+                ],
+                "current_problems_struggling_with": [
+                    {
+                        "description": "Intense competition from numerous other wealthtech platforms in the rapidly growing Indian market.",
+                        "user_type": "Company",
+                        "frequency": "Continuous",
+                        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQtEsMUlTU-XxmQRwqM1SxrwZHOIszJ77MxAk5K8rsv9pPc09nC650meAzbSmyNaBME73KlmHrPwzl0Qn2s4WCDtklwAcRI45jNTlSc-GNj39V9KIFULueDzd74p1w6qRwuLGvjL86",
+                        "date": "August 2022",
+                        "effect": [
+                            "Potential market share stagnation and slower user acquisition."
+                        ]
+                    },
+                    {
+                        "description": "Ensuring the accuracy and consistency of AI-driven investment advice, with user complaints about changing stock verdicts.",
+                        "user_type": "Users & Company",
+                        "frequency": "Occasional",
+                        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHm0tBmbftBSfIduIAQfiAj4sRTKw9WOBNzt7LekJ3ZcVfVjpGxBXLB712n7K6I3p1m-YOJ1OLHKZ-bCm0plS9ORdaZ1sunfk26Vtxa1gLHm_GjCNvVcsKp0Ahzi02eGavwpt6Gwl6ZRLZDZufHLuOD45JuCVIYOHknr13I0o1uZtW_",
+                        "date": "March 17, 2026",
+                        "effect": [
+                            "Reduced user trust and potential financial losses for users following advice.",
+                            "Negative app reviews."
+                        ]
+                    },
+                    {
+                        "description": "Navigating complex regulatory requirements in different countries as the company pursues international expansion to NRI investors.",
+                        "user_type": "Company",
+                        "frequency": "Continuous",
+                        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQtEsMUlTU-XxmQRwqM1SxrwZHOIszJ77MxAk5K8rsv9pPc09nC650meAzbSmyNaBME73KlmHrPwzl0Qn2s4WCDtklwAcRI45jNTlSc-GNj39V9KIFULueDzd74p1w6qRwuLGvjL86",
+                        "date": "August 2022",
+                        "effect": [
+                            "Increased operational complexity and legal compliance costs.",
+                            "Delayed market entry for new regions."
+                        ]
+                    },
+                    {
+                        "description": "Inability to consistently provide frequent swing trades and new recommendations, which limits its utility for short-term and intraday traders.",
+                        "user_type": "Retail Investors (Traders)",
+                        "frequency": "Occasional",
+                        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFWvfQU3FaHgG2YEc1nZCpa5wKAeR_X79UmHUjtqg0tIcc2iTGGb3znFzyvfNIzXfvNy0lmYMpq2I21asLIt2LMLUzdhCiIGQp1qppQM6TxwS90PITl8Etq8LlJTCgdA82ixju7iB4YGPUw5v4kU1pgzI-ebTTLe0Ve1Tm9Z-uV_PVyA1zCOdbR2f3sDGYEBN8fSVk1LP_1_1_e1Nc=",
+                        "date": "June 14, 2023",
+                        "effect": [
+                            "Dissatisfaction among active traders.",
+                            "Higher churn rate for this segment."
+                        ]
+                    },
+                    {
+                        "description": "User reports of slow loading times and non-responsive elements within the app, causing frustration during quick market movements.",
+                        "user_type": "All Users",
+                        "frequency": "Occasional",
+                        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFtcBR1xH09t88i9ROQ2qNmYT28xAXwND3hJE31lOV9ZSzoHxRxOlJ9QkF8RW5rQQ1HdN8IWlPPx38F9ht49jIRWDLwLbvrqamgpjFFSH3lhVpJCXqzznKeCzOLT2MBb2THYQOn4MRg_20TCiTLxQm1pTG5uSdgA6kndBewwUK83srB1xwbLnU=",
+                        "date": "September 29, 2024",
+                        "effect": [
+                            "Poor user experience and potential missed trading opportunities."
+                        ]
+                    }
+                ],
+                "regulatory_and_legal_issues": [
+                    {
+                        "issue": "A user reported raising an issue with SEBI regarding alleged manipulation of stock recommendations.",
+                        "jurisdiction": "India",
+                        "status": "Under Investigation",
+                        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFWvfQU3FaHgG2YEc1nZCpa5wKAeR_X79UmHUjtqg0tIcc2iTGGb3znFzyvfNIzXfvNy0lmYMpq2I21asLIt2LMLUzdhCiIGQp1qppQM6TxwS90PITl8Etq8LlJTCgdA82ixju7iB4YGPUw5v4kU1pgzI-ebTTLe0Ve1Tm9Z-uV_PVyA1zCOdbR2f3sDGYEBN8fSVk1LP_1_1_e1Nc=",
+                        "date": "June 14, 2023",
+                        "effect": [
+                            "Potential reputational damage and regulatory penalties if substantiated.",
+                            "May erode investor trust."
+                        ]
+                    }
+                ],
+                "user_complaints": [
+                    {
+                        "issue": "Limited customer support and a perceived preference for yearly plan users over quarterly subscribers.",
+                        "user_type": "Quarterly Subscribers",
+                        "frequency": "Continuous",
+                        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQECOlO3jWd1VtlaF6AVHPYIe3D_tSECuvRkIedos0mqMkga3jvfQDKHlC0_7wGJBIlOOA0V4Clr-0tgWhim6CA5Fc5J7EUFQ5DUiGknQK3QBoTuXACmcOXai38nFexLguIY-xC-BBNQucV8h27HTwGWO1fQV7bY2Dj6zuq_3ctIoX3ToUWmjvPb6uEqQIkvUP49tpdxqVpH8mT7JRnHpsZ27A==",
+                        "date": "August 11, 2023",
+                        "effect": [
+                            "Frustration and dissatisfaction leading to negative reviews and potential churn."
+                        ]
+                    },
+                    {
+                        "issue": "LiMo AI bot provides generic, pre-defined responses that don't consider real-time market factors or individual circumstances.",
+                        "user_type": "All Users",
+                        "frequency": "Occasional",
+                        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHBZv8yeo2ePvU0Jg6o23rO0hTdeM5WZ_BbRUOH5nXaY_UiXM2N4K5rZa9Jm6FI0SigjGr5SFaFDOTMYYwn5kTdsclI7J5wmS6_XBnpwNOaZVGsXp6mAZKRvL_oBGfqUczzpxfnPXwpR5Te-xLcaJtU4LOcfFUsqVU_KgrqL7PLxFs=",
+                        "date": "August 10, 2024",
+                        "effect": [
+                            "Users feel the advice is not personalized or reliable.",
+                            "Leads to skepticism about AI's effectiveness."
+                        ]
+                    },
+                    {
+                        "issue": "Inconsistent stock recommendations where the LiMo bot gives a 'Buy' verdict then quickly changes to 'Exit' for the same stock.",
+                        "user_type": "All Users",
+                        "frequency": "Occasional",
+                        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHm0tBmbftBSfIduIAQfiAj4sRTKw9WOBNzt7LekJ3ZcVfVjpGxBXLB712n7K6I3p1m-YOJ1OLHKZ-bCm0plS9ORdaZ1sunfk26Vtxa1gLHm_GjCNvVcsKp0Ahzi02eGavwpt6Gwl6ZRLZDZufHLuOD45JuCVIYOHknr13I0o1uZtW_",
+                        "date": "March 17, 2026",
+                        "effect": [
+                            "Loss of confidence in the app's analytical capabilities and potential financial losses."
+                        ]
+                    },
+                    {
+                        "issue": "Allegations of manipulating trade recommendations to appear successful, even with minimal gains, and frequent hitting of stop-losses.",
+                        "user_type": "Subscribers/Traders",
+                        "frequency": "Occasional",
+                        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFWvfQU3FaHgG2YEc1nZCpa5wKAeR_X79UmHUjtqg0tIcc2iTGGb3znFzyvfNIzXfvNy0lmYMpq2I21asLIt2LMLUzdhCiIGQp1qppQM6TxwS90PITl8Etq8LlJTCgdA82ixju7iB4YGPUw5v4kU1pgzI-ebTTLe0Ve1Tm9Z-uV_PVyA1zCOdbR2f3sDGYEBN8fSVk1LP_1_1_e1Nc=",
+                        "date": "June 14, 2023",
+                        "effect": [
+                            "Erosion of trust and accusations of deceptive practices.",
+                            "Potential regulatory scrutiny."
+                        ]
+                    },
+                    {
+                        "issue": "Subscription charges are perceived as expensive and not providing sufficient value, with limited profits (2-5%) from recommendations.",
+                        "user_type": "Subscribers",
+                        "frequency": "Continuous",
+                        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFWvfQU3FaHgG2YEc1nZCpa5wKAeR_X79UmHUjtqg0tIcc2iTGGb3znFzyvfNIzXfvNy0lmYMpq2I21asLIt2LMLUzdhCiIGQp1qppQM6TxwS90PITl8Etq8LlJTCgdA82ixju7iB4YGPUw5v4kU1pgzI-ebTTLe0Ve1Tm9Z-uV_PVyA1zCOdbR2f3sDGYEBN8fSVk1LP_1_1_e1Nc=",
+                        "date": "June 14, 2023",
+                        "effect": [
+                            "Negative customer perception and high churn rate.",
+                            "Difficulty in attracting and retaining paying users."
+                        ]
+                    }
+                ]
+            }
+        },
+        "play_store": {
+            "extraction_metadata": {
+                "source": "Google Play Store",
+                "extracted_at": "2026-06-28T13:46:38.872982",
+                "extraction_time_seconds": 4.52,
+                "fields_extracted": 23,
+                "country": "in",
+                "language": "en",
+                "reviews_distribution": {
+                    "1": 20,
+                    "2": 20,
+                    "3": 20,
+                    "4": 20,
+                    "5": 20
+                },
+                "total_reviews_extracted": 100,
+                "status": "success"
+            },
+            "extracted_data": {
+                "metadata": {
+                    "appId": "life.liquide.app",
+                    "title": "Liquide-Trade, Invest In Stock",
+                    "url": "https://play.google.com/store/apps/details?id=life.liquide.app&hl=en&gl=in",
+                    "developer": "Liquide Life - Stock Investment App",
+                    "developerId": "Liquide+Life+-+Stock+Investment+App",
+                    "category": null,
+                    "genre": "Finance",
+                    "genreId": "FINANCE",
+                    "content_rating": "Rated for 12+",
+                    "score": 4.6323724,
+                    "ratings": 75864,
+                    "reviews": 7567,
+                    "installs": "1,000,000+",
+                    "installs_min": 1000000,
+                    "installs_max": 10000000,
+                    "free": true,
+                    "price": 0.0,
+                    "currency": "INR",
+                    "iap": false,
+                    "iap_price_range": null,
+                    "version": "1.4.9",
+                    "description": "Welcome to Liquide, your trusted partner in the stock market and mutual fund investing! As India's premier SEBI Registered Research Analyst, we bring you a cutting-edge financial advisory experience like no other. With Liquide, you can equip yourself with powerful tools, expert insights, and AI-driven solutions, in one place.\r\n\r\nKey Features:\r\n\r\n1. Stock Trade Recommendations 📈:\r\nEmbark on an exciting trading journey with Liquide's curated stock trade recommendations. Whether you're looking for quick wins or long-term our advice spans, Short-term, Mid-term, and Long-term trade recommendations to match your investment goals.\r\n\r\n2. Portfolio Health Analysis 📊:\r\nUnlock valuable insights into your investment portfolio within minutes of connecting your broker account. Our portfolio health analysis not only provides a comprehensive score but helps identify potential red flags & ensures sector diversification in your holdings.\r\n\r\n3. Mutual Fund Analytics 📊:\r\nIntroducing our new Mutual Fund Analytics! Get detailed analytics and insights into mutual funds, identify red flags, and take informed actions. This tool helps you make better investment decisions and optimize your mutual fund portfolio.\r\n\r\n4. AI-Powered BOT - LiMo 🤖🗣️:\r\nMeet LiMo, India's pioneering AI-powered BOT! LiMo offers real-time BUY/SELL/HOLD ratings for stocks and serves as your round-the-clock trading partner. Whether you're seeking advice or just looking to chat about stocks, LiMo is here to provide instant guidance.\r\n\r\n5. IPO Verdicts 💡:\r\nStay ahead of the IPO game with Liquide's IPO verdicts. We provide expert insights to help you make informed decisions about upcoming Initial Public Offerings. Don't miss out on exciting investment opportunities.\r\n\r\n6. Watchlist 📺👀:\r\nEffortlessly track your favorite stocks by adding them to your personalized watchlist. Stay updated on daily market movements with ease, ensuring you never miss a beat.\r\n\r\n7. Stock Alerts 🚨💰:\r\nTake control of your investments by setting personalized stock price alerts. Liquide will notify you the moment your desired price is reached, ensuring you never miss a trading opportunity again.\r\n\r\n8. Stock Insights 📰🔍:\r\nDive deep into the stock market with Liquide's real-time news signals and detailed stock insights. Stay informed and make strategic decisions with confidence, armed with the latest information.\r\n\r\n9. Market Sentiment 📊🗞️:\r\nGet a daily pulse on the market with our market sentiment feature. Stay ahead of market trends and make informed investment choices based on the prevailing mood.\r\n\r\n10. Baskets 📦✨:\r\nIntroducing Liquide's Baskets, curated collections of stocks, ETFs, and gold designed to help you diversify your portfolio. Our Baskets are crafted to cater to different investment strategies, making it easier for you to spread risk and optimize returns.\r\n\r\n11. Academy 🎓📚:\r\nEmpower yourself with knowledge through our exclusive Academy. Access over 100 hours of in-depth stock market courses, designed to help you learn and grow in the world of investing. Whether you're a beginner or an experienced investor, there's always room to enhance your skills.\r\n\r\nLiquide is more than just an app; it's your trusted partner for stock market and mutual fund success. \r\nFAQs:\r\n1. Do you hold my money or stocks?\r\nNo, we don’t! All trades are safely executed through your broker.\r\n2. Do you share my social and portfolio data with anyone?\r\nNo, no and no! Your data is secure with us and not shared with anyone.\r\n3. Do you buy or sell on my behalf?\r\nNot at all! You make your own decisions - be it buying or selling, we don’t take action for you.\r\n4. Can I delete my Liquide account?\r\nIf you wish to delete your account, please email us at support@liquide.life. Security - Multiple layers of protection ensure that your data is safe and secure.\r\nLiquide is a SEBI registered Research Analyst, Registration no. INH000009816\r\nDISCLAIMER:\r\nStock investing is subject to market risks. Please trade with extreme care and do your own research before investing in stocks",
+                    "summary": "Welcome to Liquide, your trusted partner in the stock market and mutual fund investing! As India's premier SEBI Registered Research Analyst, we bring you a cutting-edge financial advisory experience l",
+                    "released": "Dec 9, 2022",
+                    "extraction_country": "in",
+                    "extraction_language": "en",
+                    "extracted_at": "2026-06-28T13:46:40.351436"
+                },
+                "reviews": [
+                    {
+                        "id": "97ab513c-b0ce-4b6d-826f-fe62f4e86f18",
+                        "rating": 1,
+                        "title": "",
+                        "content": "The app appears to share trade information only after the trade has been closed, presenting it as a successful achievement. You won't receive prior notifications about trades. Although the app claims an 85% accuracy rate in notifications, the trades are often closed before any notification is captured. Later, they are displayed in the app as \"open\" and \"closed\" trades. Initially, I thought I might be missing the notifications, so I set the app to priority it but the issue persisted.",
+                        "date": "2024-11-25T11:49:15",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "fe10776b-4e43-48ab-a487-5d2b49d97e0f",
+                        "rating": 1,
+                        "title": "",
+                        "content": "The experience is worst. All the advice given through WhatsApp is not acceptable. The profit % shown by the app. is wrong and baseless. Interestingly, I want to share my experience of the so called 'arjun' plan. First, the discount was 40% for 1 year subscription and when I didnt subscribe the discount rate increased to 60%. And the app always recommend subscription of 1 year. By which after payment the dissatisfied customer can't do anything.",
+                        "date": "2025-04-26T20:46:09",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "6c215e01-6e46-43ea-9887-eb6849760b3d",
+                        "rating": 1,
+                        "title": "",
+                        "content": "App is extremely good and super useful... But what worst thing they have done is as soon as you open the app... A full add for options trading is displayed with small skip button.. clicking on that redirects user to purchase screen! Please remove that banner as I am not at all interested in options tranding!!!! Still 2-3 banners welcome you.. when you open the app! reducing 1 more star...",
+                        "date": "2025-07-29T15:32:54",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "69be3e19-f219-47cd-b460-90e041df7bd3",
+                        "rating": 1,
+                        "title": "",
+                        "content": "one of the worst apps I don't know but it is meant for only beginners as it gives trade for 1-2% that also after they gave a trade they exit it with a notification that \"the trade has reached an early Target\" even the target has not been reached till yet . it is only for beginners who don't have any knowledge about markets and are happy with 1-1.5% returns and their long term trades are very unfrequent and rare . only the limo AI is good in the whole app. none of the trade targets met till now.",
+                        "date": "2025-05-23T09:52:23",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "9beeb655-f4c7-4c04-a599-ac881330e2bf",
+                        "rating": 1,
+                        "title": "",
+                        "content": "Seriously, there are way too many notifications about buying options trading subscriptions. If someone's not into it, they shouldn't be forced to see those notifications, and there should be a way to turn them off. This is the same problem for like, eight of my friends. If this keeps up, we're not renewing our subscriptions next year.",
+                        "date": "2025-09-15T20:14:10",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "7a69d0c6-896f-49c0-846e-51389c8faad3",
+                        "rating": 1,
+                        "title": "",
+                        "content": "This app is not what it claims. Just recently, the tip suggested buying a stock for 1-3 months. And the next week when I asked LiMO to give me a report about the same stock, it said exit immediately. I mean the app itself is not confident in its analysis. I'd rather do my analysis through other AI tools than paying Liquide 4,000+ just to earn the same amount in the entire year.",
+                        "date": "2026-06-14T23:06:52",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "746f3eac-95a6-47f0-8626-0e10768a6132",
+                        "rating": 1,
+                        "title": "",
+                        "content": "Very disappointed with this app. I am unable to log in, and the customer support team never responds. No one calls back or helps resolve the issue. I paid for the subscription, but I am not getting the service I paid for. This app only focuses on selling subscriptions and does not provide proper support after payment. I strongly do not recommend this app. Please fix my issue immediately or provide a full refund",
+                        "date": "2026-06-26T08:05:34",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "8d836f30-6b57-4a20-8667-09d6ed1c9b29",
+                        "rating": 1,
+                        "title": "",
+                        "content": "Very disappointing app. By the time option calls arrive, the premium has already moved and users enter at bad prices. Most trades end up in losses even though their records look profitable. Adding options to wishlist doesn’t help either because alerts are still delayed. They also keep pushing subscription renewals and spam WhatsApp constantly. Real experience is completely different from what they advertise",
+                        "date": "2026-05-14T16:34:56",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "cd363aef-ccda-4140-b3be-c926033b547d",
+                        "rating": 1,
+                        "title": "",
+                        "content": "-5 star.I won't recommend it. I have invested in 5 of their suggestions 2 hit stop loss and others are around 15% loss.Save your money and stay away from this app. They send thousands of useless notifications on mobile and whatsapp even after doing stop on whatsapp and stopping app as well. no use app. useless. I complained on their support for stopping 50+ notifications per day. they don't solve instead close tickets. sometimes 24hrs window still nothing and told me to close app notifications.",
+                        "date": "2026-04-20T09:54:00",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "5f26621b-5fbb-45b2-900e-4869e81a2061",
+                        "rating": 1,
+                        "title": "",
+                        "content": "Zero star worst application, Their ad appears on social media, in which the influencer says that this company is SEBI registered. I have taken its early plan and all the money is lost. These people do not give any proper advice. They do not have any knowledge about the stock. If they just put it in from inside then say buy or sell it. The application is not that friendly, there are a lot of complications, After the trade is closed, they give performance. No one has given live trade till now.",
+                        "date": "2026-04-29T17:59:24",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "fa268ed9-163f-4719-bd35-7281d3cb3e11",
+                        "rating": 1,
+                        "title": "",
+                        "content": "The CKYC process has been stuck for 10 days, and the team is providing neither a solution nor any assistance. In terms of value, this app isn't worth even a single rupee. I purchased a subscription for ₹3,700; I was told it was for 18 months, but I only received one year's worth, and there is absolutely no support from the team.",
+                        "date": "2026-06-18T19:32:14",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "7731577c-0dbd-495c-a560-0231f26a5020",
+                        "rating": 1,
+                        "title": "",
+                        "content": "Absolutely disappointing and bogus app. Only they want is paid subscription and no technical support. Just getting calls from marketing team for plan upgrade and when asked about app features they just hang up. Moreover I am unable to sync my demat account with the app.",
+                        "date": "2026-05-27T13:02:58",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "63eb8bd5-5ba9-4ed0-968c-a2e54b6609ae",
+                        "rating": 1,
+                        "title": "",
+                        "content": "support is not good. even subscriber is not allow to watch the closed live session . in todays world that is main thing of any app , all other things are available through ai search. kindly tell me how i can cancel the subscription if these issues are not resolved.",
+                        "date": "2026-05-15T09:13:39",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "719d5839-e9cd-4587-aca9-f3cc0a67aded",
+                        "rating": 1,
+                        "title": "",
+                        "content": "Only the IPO recommendation was satisfactory. Apart from that, my experience has been very disappointing. Several stocks recommended by Liquide, such as Icemake and GPPL, are currently down 16%. Greaves Cotton was recommended at ₹193, but I had to sell it at a loss as well. Overall, I have taken many poor investment decisions based on Liquide’s guidance.*",
+                        "date": "2026-06-12T10:22:19",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "df7d45d0-af76-40a7-92ed-16b624623bc0",
+                        "rating": 1,
+                        "title": "",
+                        "content": "Never go for this app and its subscription. All fake recommendations for equity. Always a loss case. The black subscription is worst. No one will follow up with you as promised while buying it. No weekly or monthly recommendations provided after opting for its premium subscription black. Dont waste your money in the app. False cancellation promises",
+                        "date": "2026-05-07T22:33:13",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "0c6ce0e7-dd85-4dde-a9d6-b5bee2dcd583",
+                        "rating": 1,
+                        "title": "",
+                        "content": "Liquid is one of the most disappointing trading apps I have used. Most of the call options and trading signals provided here feel misleading and inaccurate. It seems like the platform lacks real trading knowledge and proper market research, yet makes big claims to attract users. The only thing they appear to do professionally is collect subscription fees from users. Instead of helping traders make profits, the app often leads to confusion and losses.",
+                        "date": "2026-05-11T15:31:30",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "f4d4c362-e00c-4ef9-a6a0-f089ee3f2069",
+                        "rating": 1,
+                        "title": "",
+                        "content": "Don't purchase thus app, no one responding and Mutual fund profoikio not working from past 3 months, and what ever calls you get all are very false, waste of money, don't be trap in discount package messages...Wrost and very pathetic. I lost money paying subscription....",
+                        "date": "2026-04-07T08:15:18",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "f2277795-f1cf-4646-88bd-ae44b97ab385",
+                        "rating": 1,
+                        "title": "",
+                        "content": "extremely disappointed... Stocks recommendations are the worst... forget this, even the reports that I asked about the fundamentals, they are also based on the outdated data... what do I say I am regretting the decision of buying a pro version...",
+                        "date": "2026-06-03T21:22:29",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "171ae2f1-51b8-410d-8550-4e80731b7358",
+                        "rating": 1,
+                        "title": "",
+                        "content": "Worst app. Total waste of money. ​I bought a subscription a month ago but my KYC is still not complete, so I cannot use any services. I never faced this issue with any other demat account. I chatted with customer care multiple times but got no help at all. Please refund my money. 1 star.",
+                        "date": "2026-06-18T13:19:56",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "9c1eb5bb-6fb8-48ad-85d8-13a231eaa040",
+                        "rating": 1,
+                        "title": "",
+                        "content": "i made 8 option trade from 22-4-2026 onwards till 28-4-2026, all of them went in loss, useless app don't follow suggestions blindly. lost nearly 50k by taking 3k subscription. i suggest don't take subscription. even if they give free suggestions think twice before execution.",
+                        "date": "2026-04-28T09:41:25",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "9125fc8c-b684-490a-a3cd-3daf2ca14dab",
+                        "rating": 2,
+                        "title": "",
+                        "content": "I just bought a subscription yesterday. The major aspect is that 1) many trades hit their stop loss in the app they only show trades which achieve target never show trades which gives huge losses . 2) Out of 10 trades 7 trade hits stop loss only they have 30% accuracy. 3) Target and stop loss are too high because of that we get huge losses . 4) No one to one support 5) Don't buy a subscription not Worthy",
+                        "date": "2026-06-16T11:20:27",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "7d2bd2e8-0318-4b94-93ce-637f3c2fd03f",
+                        "rating": 2,
+                        "title": "",
+                        "content": "I have taken yearly subscription and i am not able to use liquidone services because of KYC . and the app is not able to perform kyc . it's hanging up. looks like my money is gone in scam",
+                        "date": "2026-05-14T15:55:08",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "1e868771-007d-45e0-a072-e595dfb82ce1",
+                        "rating": 2,
+                        "title": "",
+                        "content": "They suggest trades with past values. Its a clear scam. They'll say but at 100rs, target is 125rs and even if you open the trading app in 2 seconds, the price is already 104-105. You think target is way high, so u buy at 105. As soon as the price goes up to 106-107, they notify to book partial profit and move stop loss to 100 - at cost. Later they show in result of 7rs profit earned. Whereas, actually you earn only 1 or 2 rs that too if you're quick enough to book it. Else -5 loss at 100rs SL.",
+                        "date": "2026-03-26T00:43:52",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "091eb3ad-9b30-46e9-b4ab-fb0d759278e4",
+                        "rating": 2,
+                        "title": "",
+                        "content": "They showed first that their targets are being hit daily, but when you take subscription and pay money, you are asked to take another plans. You will not get correct recommendations and whatever they give, next day they will ask to exit. However the messages come to your inbox or on whatsapp that 8 out of 9 targets hit. Now for those tips you have to take one more subscription",
+                        "date": "2025-01-10T15:51:20",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "0ec7c68a-a79c-4412-a983-93d44b29aeb6",
+                        "rating": 2,
+                        "title": "",
+                        "content": "It's a good app, no doubt int that. Though the problem is their recommendation comes very fast and it's not always possible to complete the transaction right after getting recommendations. Most of the time, after getting recommendations, by the time I open app to complete the transaction, the stock moved out of price range. It's only for short term trades. Also for short term trades it'd useful only for large capital, otherwise after deductions of all the chargs, you left with nominal profit.",
+                        "date": "2024-05-08T14:57:27",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "97369c04-68e6-44b1-8b1c-a273349f1477",
+                        "rating": 2,
+                        "title": "",
+                        "content": "They recommend stocks when it has already started rising, so when they recommend the price if they recommend 150, when you will actually open your app and buy it will become 155, also lately most of their recommendations resulting in loss,in the notification they will mention we got 18 profit,19 profit,but in real life most of them results in losses.",
+                        "date": "2025-11-21T11:04:31",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "b7eaebba-4708-4a0b-b894-537c59d9b41b",
+                        "rating": 2,
+                        "title": "",
+                        "content": "If you want an app that just tell you buy or not to buy (mostly buy will be the answer) . There is no details report analysis of the company for your understanding. The news they provide are mostly link to trade view or moneycontrol which are again limited . Charts do not have access of full controls of functions as they are third party. Look like I wasted my money",
+                        "date": "2024-09-01T17:19:34",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "64770e9d-4191-41c0-b7a2-d1f23a6d2322",
+                        "rating": 2,
+                        "title": "",
+                        "content": "It's a mediocre app...they calculate their returns in the most optimistic way which are nearly impossible to execute by use. The high rating seems that they are not genuine nature. The app is good for getting details about particular stock but that information is usually free at other sites",
+                        "date": "2024-12-24T15:00:19",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "153b675a-0dd8-48c2-9895-36ca3b971017",
+                        "rating": 2,
+                        "title": "",
+                        "content": "I used this app for a while, but it's not suitable for beginners at all. The app seems fine initially, but as soon as you start asking about stocks, it demands coins. And to purchase those coins, it charges an exorbitant amount. This app is not worth it for beginners, as you could buy some good stocks with that much money. Therefore, I'm giving this app only 2 stars.",
+                        "date": "2024-09-13T20:05:56",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "d14da7f6-88c0-4f0e-8ba6-6016799867d4",
+                        "rating": 2,
+                        "title": "",
+                        "content": "Just uninstalled after 10 days. Could not even use to suggest others in group how good or effective app it is and it started asking for making purchase of coin. Paid moneycontrol 100rs for pro membership n got much better info. Should give an year of free access so people like me can look at numbers from stocks picled up based on reports.",
+                        "date": "2024-02-26T10:42:14",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "a00a2261-57e7-4864-a475-d96130956e31",
+                        "rating": 2,
+                        "title": "",
+                        "content": "This app was good provideding some good information but the main problem is that i am unable to delink my brokerage account there is no such option there was no response no proper communication to reach out only WhatsApp through they were not responsible immediately don't add your broker account once you link you can't delink yourself they can't do it from there end but we will do it but they don't there is chance to misuse of your portfolio data leaks",
+                        "date": "2023-05-12T13:48:41",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "7f4cb493-e122-4916-b5fa-ac844065df77",
+                        "rating": 2,
+                        "title": "",
+                        "content": "I don't understand why contacts, photos, videos, purchase history data is being collected! I don't buy it ! If it were only to provide the stocks insights. Highly sensitive data is comprised! I won't recommend! I belive the app's motive is just more than the providing tech details!",
+                        "date": "2024-11-20T22:00:10",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "588c917e-db46-47f9-99f6-11b99735c0c3",
+                        "rating": 2,
+                        "title": "",
+                        "content": "The btst recommendations, which is their flagship offering are very difficult to make use of. Most of their recommendations offer a potential upside of 2-3% . The stocks surge the recommended buy range rapidly in a matter of minutes, which leaves us in a situation which is as good as not having their subscription.",
+                        "date": "2024-02-12T13:50:28",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "07eb6d90-3a45-4d5b-884b-e88d459efe82",
+                        "rating": 2,
+                        "title": "",
+                        "content": "Not a good experience so far!! There is issue in basket as it keeps on giving prompt for repair with higher amount. Return from basket is not good as well !! Support team is also not much helpful.",
+                        "date": "2025-01-03T18:08:58",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "e2ba381f-004f-45d4-b0f9-458c67ac29d4",
+                        "rating": 2,
+                        "title": "",
+                        "content": "I came across Liquide through one of their Instagram ads. While the video lectures and content are quite good and should be used by all amateur traders, their recommendations are quite bad in my experience. I have mostly booked losses on their recommendations despite their cadence reports of beating the market. I won't recommend this to people who want to blindly trust stock recos.",
+                        "date": "2024-06-19T15:14:59",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "25d27185-8983-4813-9a2f-09d6696d245d",
+                        "rating": 2,
+                        "title": "",
+                        "content": "Very low accuracy, both in terms of stocks and targets. You can't count exiting the trade super early (at practically cost price), rather than reaching target, as a win.",
+                        "date": "2024-08-07T09:58:57",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "b17c5b55-f872-4d44-9830-e43fd9e8170a",
+                        "rating": 2,
+                        "title": "",
+                        "content": "No IPO updates now, which this app previously used to provide. Also one of the big broker INDmoney is also missing. Then howcome I can think of proceeding with the services.",
+                        "date": "2026-01-17T18:08:45",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "8a62d1f6-84f6-4254-b89f-f177114d32cf",
+                        "rating": 2,
+                        "title": "",
+                        "content": "Improve your App experience, notification when clicked does not open app or sometimes does not open with appropriate detail as per notification..",
+                        "date": "2026-02-17T09:40:19",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "59ccd5dc-e213-47b0-8b26-22412fc5edb8",
+                        "rating": 2,
+                        "title": "",
+                        "content": "Most of their trade recommendations are sham, especially the one showing a high upside. Not very trustworthy.",
+                        "date": "2026-02-10T16:28:55",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "acf67fec-9d0c-4dc3-93f9-d3a73a695149",
+                        "rating": 2,
+                        "title": "",
+                        "content": "App has good features but everything inside is costing money which is the worst thing. Even Groww and AngelOne don't ask for money we can invest anywhere and about knowledge they also have good predicting skills. Just making a good looking UI don't work. Remove payment option and then you will get more success. Or else you are cursed.",
+                        "date": "2024-08-23T12:16:16",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "b946b0d4-a4df-4981-a774-b670a10a13a6",
+                        "rating": 3,
+                        "title": "",
+                        "content": "Sometimes notifications are confusion. I get same notification multiple times. Trade recommendations come on Telegram and we must open the link and then the app, which is time-consuming. And app It would be very helpful if recommendations were provided directly in the app with Stock Name, CMP, Target, Stop Loss, and duration, along with quick execution.",
+                        "date": "2026-03-13T18:55:02",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "648e2439-d4ad-46ce-bbd3-255915cedad3",
+                        "rating": 3,
+                        "title": "",
+                        "content": "Editing this review and rating after this review and mail account was activated very next day . app is overall good . the script they suggest is good . Old review - fraud app taking money in advance then ask for kyc , after submitting documents it always shows documents are under review . it's been 3 weeks still showing documents under review . why you guys want advance money , first you do complete the kyc process then ask for money . looks totally fraud to me , as I paid .",
+                        "date": "2026-06-25T14:36:32",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "c7a193de-2fb9-48db-9d7a-3bdff006331d",
+                        "rating": 3,
+                        "title": "",
+                        "content": "no clarity on app. stock recommendations good, not comfortable for usage to see stocks recommendations. Missing how to use app, no support from anywhere.",
+                        "date": "2026-06-20T05:41:05",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "ff472918-7b9d-4939-a2cc-f5255272b841",
+                        "rating": 3,
+                        "title": "",
+                        "content": "it's just informative app, no hand hold support for proper trading ideas for equity Trade, once in a while it gives 1 tip.",
+                        "date": "2026-03-08T11:48:45",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "a6861fa2-2110-4eec-bbcc-05c620a5e3c9",
+                        "rating": 3,
+                        "title": "",
+                        "content": "The app is good. Good UI. Stock assistance by LIMO is good. But don't go for their Arjun product, which degrades all their performance. One of the worst futures and options suggestion platform that they have. No confident strategy that they imply. They provide calls on telegram channels, and the price gets fluctuated so much, and you can't buy at the recommended price. Because of it, your risk to reward ratio doesn't make any sense. There would be more losses that you would make.",
+                        "date": "2024-10-09T14:03:30",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "f2252aa9-4a40-44dc-b1b2-a58d5ed40951",
+                        "rating": 3,
+                        "title": "",
+                        "content": "Liquid team is good, overall is also good but their promotion ads are really setback even you got their membership you are forced to watch it...and when you click on their notification on you mobile it takes you to that infor but again due to ads it got closes and then hard to find that notification about.... I am member from last 10 months.",
+                        "date": "2024-10-10T08:16:21",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "d51be575-8d9e-4a58-b925-02d341b523d8",
+                        "rating": 3,
+                        "title": "",
+                        "content": "I recently paid the subscription price and had got the access. First ghing i noticed was that its ask for a feedback everytime i login or change page.. WTH.. Seriously..! Initial trades has run into losses though market overall is bearish though these recommendation are good if only they beat the market. recent 1.8% and 2 % exit won't get me even my subscription fee back.. Anticipating the rest of the year would be good. Liked Limo reporting though and the clear interface..!",
+                        "date": "2024-08-04T18:50:15",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "50d62a32-a280-450c-873c-cd0830814357",
+                        "rating": 3,
+                        "title": "",
+                        "content": "After the recent upgrade rebalance became a painful act. it's load forever while trying to rebalance meanwhile stocks have already been bought or sold.",
+                        "date": "2026-04-08T11:35:19",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "0aa60e7b-62cb-47bc-b767-ea9b2a64570e",
+                        "rating": 3,
+                        "title": "",
+                        "content": "The market sentimeter does not show the current day scenario, it shows previous days cases, please show the current day sentiments of the market. When we duplicate any report on LIMO it track us back to the reports section where we cannot search any stock that we previously got a report of, please enable the feature to search stock reports on LIMO. And moreover we can see the stock FORECAST of manyy well known stocks and they are not enough, please show forecast of all of the stocks.",
+                        "date": "2024-04-14T12:38:56",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "12ad0c28-8165-48f7-b556-fae94119b66f",
+                        "rating": 3,
+                        "title": "",
+                        "content": "As someone who follows the markets daily, I’ve tried quite a few platforms, but Liquide delivers a refreshing experience. The instant stock research feature saves me a ton of time when screening opportunities. The detailed stock card insights make complex data easy to digest, and the trade recommendations have added real value to my portfolio strategy. For anyone serious about building long-term wealth, this app easily provides the best stock recommendation service in a clean.",
+                        "date": "2025-09-05T12:22:52",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "d6e88d23-8d7a-4b0a-b232-ee8727276e03",
+                        "rating": 3,
+                        "title": "",
+                        "content": "This app helps users invest in stocks and mutual funds with ease. They are reliable, fast, and suitable for beginners.",
+                        "date": "2026-03-22T21:01:30",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "87d94101-5da7-4d22-82db-ee27d2e2b666",
+                        "rating": 3,
+                        "title": "",
+                        "content": "Not very effective app. Half of their predictions are false and they remove those from their records to show high accuracy. (Random guesses have 50% probability of being correct and that's what they are doing) Also, their backend is messed up. Most of the times fails to sync my portfolio with broker or fetch MF portfolio. Hire better developers at least.",
+                        "date": "2024-10-16T16:18:20",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "a2bdd0c2-487e-4593-8e6c-ab43631df92a",
+                        "rating": 3,
+                        "title": "",
+                        "content": "Order placements and executions are fast, reducing the risk of missed opportunities in volatile markets. Most transactions are processed without noticeable delays. The app launches swiftly, and navigating between different sections, such as portfolio tracking, market insights, and order placement, is seamless.",
+                        "date": "2024-11-15T19:13:51",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "a66450fb-d982-4810-985f-756707775ed2",
+                        "rating": 3,
+                        "title": "",
+                        "content": "The worst thing about this app is the information confusion. There are so many open calls that you can't see anywhere. I choose to invest without connecting to broker and I have no way to check if my active trades are still active or liquid has recommended an exit. So many of the trades have gone downhill with no clue as to when liquid recommends and when it exits. Not all notification come on WhatsApp either. Shady info hiding practices going on here.",
+                        "date": "2024-02-19T10:23:04",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "8ba32297-c78a-40e6-a0c2-7be980620aae",
+                        "rating": 3,
+                        "title": "",
+                        "content": "BTST notification not comming timely. It comes once after price is out of recommended range most of time. App has also not clean GUI , make trade section simple, with closed trades and ongoing trade section. I do not like swipe left and right. Instead of btst please provide some more short term trades or swing trades in month at least 10 to 15. Overall app GUI is not clean and clear. It is confusing. Make it simple to understand.",
+                        "date": "2023-11-22T14:45:56",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "868f5bc3-eeca-4686-867d-9d15ceff500b",
+                        "rating": 3,
+                        "title": "",
+                        "content": "App navigation is slow compared to smallcase. I have subscribed to 3 baskets. But unlike smallcase app, we are able to see only the current return. Kindly add Realized return,dividend, total return(realized return+dividend+current return)..only then can we know, how the basket performed over time",
+                        "date": "2025-01-04T21:54:26",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "73fdca12-b5a7-4a4e-916b-bb186aabb39a",
+                        "rating": 3,
+                        "title": "",
+                        "content": "If you’re serious about building wealth through the stock market, the Liquiside App is a game-changer. It provides best stock recommendations tailored for both beginners and experienced traders. The instant stock research feature is a lifesaver, giving you up-to-date insights without spending hours analyzing charts. The stock card insights are detailed and easy to understand, helping you make informed decisions quickly.",
+                        "date": "2025-09-05T18:24:47",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "2579d65e-ba93-4bbd-bf8b-87d978dad875",
+                        "rating": 3,
+                        "title": "",
+                        "content": "Neither good nor bad. do your own research before investing. I don't have gain from using this app. some stocks searched good yield. overall it's ok app.",
+                        "date": "2026-01-09T08:44:23",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "b13a93eb-df3c-4476-bfa7-01c898d635b4",
+                        "rating": 3,
+                        "title": "",
+                        "content": "All are good, but sometimes trades arrive through notifications only. If all suggestions come through Whatsapp, it is really good; for working people, the Whatsapp message will be handy.",
+                        "date": "2024-07-21T23:55:47",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "294c78e6-2422-469f-81df-0dca70a2c7e3",
+                        "rating": 3,
+                        "title": "",
+                        "content": "Ui can be improved. It's too much of saturation in the colors. It's difficult to track where should I look at ... It looks every thing as imprtent to look at ... Which is not a good UI exprence.",
+                        "date": "2024-06-09T21:37:59",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "bfb709ce-0a48-4b74-8b45-6c4a96417380",
+                        "rating": 4,
+                        "title": "",
+                        "content": "One of the best platforms for wealth generation. Gives best stock and trade recommendations. Helped and taught me alot. would definitely recommend.",
+                        "date": "2026-03-21T15:45:01",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "35612ec8-9dc4-4737-b898-bb8e6d7fe918",
+                        "rating": 4,
+                        "title": "",
+                        "content": "I like that Liquide makes investing simple and helps in wealth creation. The stock card insights explain data clearly, but they feel too basic for advanced users. The instant stock research is quick, though sometimes major updates come late. The best stock recommendation works well, but it could be reviewed more often. Trade recommendations are useful, but they should be more personalized to different goals.",
+                        "date": "2025-09-05T16:43:07",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "1c289144-1efb-4926-9779-a1e671996ce1",
+                        "rating": 4,
+                        "title": "",
+                        "content": "The design asthetics of this app is excellent. Got all the required info and neatly presented. Wondering why they din't have a direct discount broking app themselves for stocks and mutual funds instead of connecting to 3rd party brokers. I've would have preferred it for investment. But not good for trades / FO as the app response is slow at times.",
+                        "date": "2025-01-11T23:40:57",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "d63b048e-1d0c-471a-a44c-2d258e96b894",
+                        "rating": 4,
+                        "title": "",
+                        "content": "As someone still learning about investments, I find Liquide very easy to use. The stock card insights make financial data quite simple to understand. The app gives some of the best stock recommendations, and the instant stock research helps me stay updated quickly. Liquide’s trade recommendations guide me to make better choices and grow my wealth with more confidence.",
+                        "date": "2025-09-28T10:00:39",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "6f4372d1-2dfe-4a28-b962-ccaf0dc055d9",
+                        "rating": 4,
+                        "title": "",
+                        "content": "it's operate very smoothly and provide genuine recommendations but it's little expensive to purchase the plan",
+                        "date": "2026-05-13T07:46:57",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "aef80333-1289-4be1-8f50-f2ebdd22ab83",
+                        "rating": 4,
+                        "title": "",
+                        "content": "Best app for growing wealth and stock knowledge.",
+                        "date": "2026-04-29T20:52:35",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "fd7953e3-7a39-4716-89a1-63dd69bb90e2",
+                        "rating": 4,
+                        "title": "",
+                        "content": "I like how trade recommendations are straight forward after instant Stock research, best one for wealth creation.",
+                        "date": "2026-03-20T17:30:55",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "eece6d51-3583-48d0-b36d-e67b5348fcac",
+                        "rating": 4,
+                        "title": "",
+                        "content": "I've been using this app for a while now and it has genuinely helped me build my confidence in investing. The stock cards insights are very easy to understand and save me a lot of time. I also like how quickly I can do instant shock research without jumping between multiple platforms.",
+                        "date": "2025-09-05T09:34:24",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "0743a752-0ffb-45da-8fce-5a7dd57a1659",
+                        "rating": 4,
+                        "title": "",
+                        "content": "Since joining LiquideOne in July, I've seen a substantial improvement in my trading performance. The platform's accuracy in trade recommendations and the wealth of strategic insights it provides are unparalleled. LiquideOne offers a comprehensive approach to investing, combining state-of-the-art technology, expert analysis, and a range of investment options to suit various risk profiles. It's more than just a trading platform; it's a vital partner in my quest for finanical quest.",
+                        "date": "2024-08-31T21:19:42",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "17ced0f3-bcfd-4bf0-8b51-4c9d8cebb91e",
+                        "rating": 4,
+                        "title": "",
+                        "content": "gives reasonable idea to keep stock hold, sell",
+                        "date": "2026-05-06T13:21:10",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "654ecde2-aca2-40c4-9ade-0e72a0e6c0f3",
+                        "rating": 4,
+                        "title": "",
+                        "content": "I’ve been using the Liquid App for my trades, and the recommendations have been spot-on. The app provides clear, well-researched trade suggestions that fit perfectly with my trading style. The real-time updates and easy-to-understand analysis help me make quick, informed decisions. It’s made trading smoother and more successful for me. Definitely worth checking out!",
+                        "date": "2024-09-17T16:23:12",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "50364c60-6d0a-4887-acaf-40f6407d2887",
+                        "rating": 4,
+                        "title": "",
+                        "content": "I’ve been using Liquide for a few weeks now and it has completely changed the way I manage my investments. The instant stock research feature is super quick and helps me stay updated. I really liked the stock card insights which make it easier to understand a company’s fundamentals. Overall one of the best apps for long-term wealth creation",
+                        "date": "2025-09-03T09:42:00",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "853b5fa9-dbed-464d-a9cf-bf429f6a9dd2",
+                        "rating": 4,
+                        "title": "",
+                        "content": "it is best stock recommendation it helps me a lot great app for investing , trade recommendation and a lot to experience have great information about trade , stock markets, investments and a lot more things specifically great for beginners to learn it has enough content and different options to use and utilise effortlessly according to our need",
+                        "date": "2024-11-21T20:37:21",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "1d623e29-e656-49b8-96e9-23f29cd4db0a",
+                        "rating": 4,
+                        "title": "",
+                        "content": "Very user-friendly interface. I found the instant stock research tool extremely helpful when deciding on trades. The trade recommendations feel accurate and reliable. A solid app overall for anyone serious about investing.",
+                        "date": "2025-09-28T18:23:02",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "075382ea-f8ba-49f1-8d97-149102a893ca",
+                        "rating": 4,
+                        "title": "",
+                        "content": "I always get the best stock recommendations here, super useful! The insights are spot on and have helped me make smarter investment choices. Highly recommended for anyone in the stock market.",
+                        "date": "2025-04-18T18:21:09",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "6b3a4cdc-b5e5-40be-a1a6-20cb8a58424f",
+                        "rating": 4,
+                        "title": "",
+                        "content": "The app takes a lot of time to open due to long animation. Please optimize for opening fast. Also other animations like when you are done buying a stock, are also slow, olease look at making the experience faster. People are usually in a hurry to take actions when they open the app.",
+                        "date": "2023-11-22T13:27:17",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "4f9033d9-42c7-4ebc-b53d-c8dace42b715",
+                        "rating": 4,
+                        "title": "",
+                        "content": "This app is really helpful for managing Wealth and making informed decisions. It provides the best stock recommendation with clear explanations. I like the instant stock research feature which saves a lot of time. The stock card insights are easy to understand and very useful. Overall, the trade recommendations feel reliable and well-researched.",
+                        "date": "2025-12-26T22:16:49",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "ece130f6-6280-4fb7-9200-339d34d88e00",
+                        "rating": 4,
+                        "title": "",
+                        "content": "yes it is very usefull and better. but the fees for limo is very high I normal Investor or trader can't afford. if the subscription fee will be low I think the ratings are going to rise.",
+                        "date": "2024-07-30T18:59:40",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "19fa0306-87eb-41af-b25c-9b38b28c6fcf",
+                        "rating": 4,
+                        "title": "",
+                        "content": "Liquide is a great app for building wealth with confidence. It provides smart stock recommendations, instant research, and helpful stock card insights that make decision-making easier. With trade recommendations to guide users, it’s a valuable tool for anyone serious about investing.",
+                        "date": "2024-11-11T18:35:25",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "1a277b77-28cf-466d-af96-30ec4fe0b16e",
+                        "rating": 4,
+                        "title": "",
+                        "content": "Liquide app is very helpful and interesting! This app has the best stock recommendations and trade recommendations that is very helpful and i think the app and wealth promoting management is very important in my opinion for finance!",
+                        "date": "2024-10-19T17:23:46",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "5d16fe00-0890-4e0b-9e35-9d880df43fd8",
+                        "rating": 5,
+                        "title": "",
+                        "content": "When I first download it I like that they gave some free coins to check some features. I found the subscription expensive. But it was good, they have regular meetings. And the user can ask many questions about stock and they respond within 24, with details, which is good for people woubt and is also accurate. Over all great job. (sudjestions is to reduce the cost of the subscription even tho u give discount)",
+                        "date": "2023-06-12T10:47:09",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "e7a87028-b7d4-49c5-b6e4-c025a428c13a",
+                        "rating": 5,
+                        "title": "",
+                        "content": "This stock market app is a very useful platform for both beginners and experienced investors. It provides real-time updates, detailed charts, and accurate market insights that help users make informed decisions. The interface is clean and user-friendly, making it easy to navigate through different sections like portfolio tracking, watchlists, and market news.",
+                        "date": "2026-05-01T11:33:30",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "062ef7cf-dfc6-47fd-ad37-d59de764f33e",
+                        "rating": 5,
+                        "title": "",
+                        "content": "Excellent experience with Liquide! The app is smooth, reliable, and very easy to use. Everything works exactly as expected, and the interface looks professional. Highly recommended.",
+                        "date": "2026-04-25T04:46:41",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "f012ce7d-35bb-4d4b-ac4f-29f99ef73740",
+                        "rating": 5,
+                        "title": "",
+                        "content": "Really good app for stock investing, especially for beginners. The interface is simple and easy to understand. Buying and tracking stocks is smooth, and the insights are helpful. Overall, a reliable app for anyone looking to start or manage investments.",
+                        "date": "2026-03-21T22:56:12",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "64759e8f-a717-4166-a3b1-ec7e3a407e5d",
+                        "rating": 5,
+                        "title": "",
+                        "content": "A great app for anyone serious about building wealth. The instant stock research is fast and useful, and the stock card insights give a clear picture without confusion. Best stock recommendation and trade recommendations features make decision-making much easier.",
+                        "date": "2026-03-18T10:26:00",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "85e450f2-c665-4bc6-902f-a886cb898147",
+                        "rating": 5,
+                        "title": "",
+                        "content": "Great app for building wealth. The instant stock research and stock card insights make it very easy to understand stocks. Really helpful trade recommendations.",
+                        "date": "2026-03-13T18:18:14",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "3c55e676-a0f0-49cb-b1dd-72f52cd77055",
+                        "rating": 5,
+                        "title": "",
+                        "content": "Perfect for anyone focused on wealth creation. Offers instant stock research, smart stock card insights, and reliable trade recommendations. Truly stands out for best stock recommendations!",
+                        "date": "2026-03-17T11:11:59",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "63c3cee0-f36c-40dd-af14-c0159d9c7575",
+                        "rating": 5,
+                        "title": "",
+                        "content": "Best stock recommendations. This app has helped me to build my wealth and understanding stock market as a beginner.",
+                        "date": "2026-05-01T11:51:42",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "0e818242-831f-48be-94a4-1d4e8b767282",
+                        "rating": 5,
+                        "title": "",
+                        "content": "Wealth, stock market insights, and trade recommendations all in one place. Accurate analysis with smart strategies that actually help in decision-making.",
+                        "date": "2026-05-01T11:45:08",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "229986d7-bdf4-4924-8a93-ed4d8b0dd450",
+                        "rating": 5,
+                        "title": "",
+                        "content": "really good app for stock investing, especially for beginners. The interface is simple and easy to understand.",
+                        "date": "2026-04-27T16:05:51",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "a692b6ec-20e4-464f-8da2-b4c2b64fec83",
+                        "rating": 5,
+                        "title": "",
+                        "content": "I've been using Liquide for a while now, and it's been a game-changer for my investment strategy. The app's interface is user-friendly, making navigation a breeze, especially for beginners like me. What sets it apart are the in-depth stock market courses offered, which have significantly enhanced my understanding of trading. Additionally, the real-time BUY/SELL/HOLD ratings have been incredibly helpful for making quick decisions.",
+                        "date": "2024-08-31T13:05:19",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "c5c5e9c9-de41-4083-a6a7-298c514ee562",
+                        "rating": 5,
+                        "title": "",
+                        "content": "The LiMo feature of the app is just too good. It works so great. Just type in the name of the stock you want to know about and the duration for which you will stay invested in it (short, medium or long term) and it generates for you a report immediately. You can rely on the report. It's quite accurate. The UI is smooth. Other features are also good. You should definitely give it a shot. It will be worth every penny of yours.",
+                        "date": "2024-07-27T08:48:50",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "04962240-ab6d-4b08-999e-3d87a870dd9b",
+                        "rating": 5,
+                        "title": "",
+                        "content": "I've been using Liquide for a while and it's honestly one of the smoothest apps I've tried. The instant stock research is quick, the stock card insights are super easy to read, and the best stock recommendation really helps me pick the right companies. I also like how the trade recommendations are practical and simple to follow. Great app if you want to track and grow your wealth without any confusion.",
+                        "date": "2025-09-05T23:05:04",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "3593dcff-9fe3-47ab-ad1d-fa349ad3fd74",
+                        "rating": 5,
+                        "title": "",
+                        "content": "Finding the best stock recommendation in under-vetted, cash-rich busine",
+                        "date": "2026-06-25T09:16:25",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "6c386993-c506-4278-8ba9-27c52c4ad566",
+                        "rating": 5,
+                        "title": "",
+                        "content": "Smooth operation and excellent question quality across quizzes..",
+                        "date": "2026-06-04T19:24:11",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "2641b54a-47e9-4747-b277-1cf46f8dbeb6",
+                        "rating": 5,
+                        "title": "",
+                        "content": "Love this app! It's super user-friendly, and the insights are on point. The educational resources are excellent, keeping me informed and confident in my investment decisions. The BUY/SELL/HOLD indicators simplify trading, and the stock alerts keep me ahead of market trends. Liquide's features cater to all experience levels, making it a must-have for anyone serious about trading. It has made a significant difference in my trading strategy and overall market understanding. Highly recommend!",
+                        "date": "2024-07-04T16:25:11",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "712e5a1e-2146-40f0-a629-db9142bed958",
+                        "rating": 5,
+                        "title": "",
+                        "content": "Liquide is an amazing app for building long-term wealth. The platform provides the best stock recommendation backed by strong data and instant stock research. I really like the detailed stock card insights which make understanding companies so easy. The trade recommendations are clear and helpful. Highly recommended!",
+                        "date": "2026-02-22T23:31:23",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "7cd15706-c329-455f-bfdd-6e63c343833a",
+                        "rating": 5,
+                        "title": "",
+                        "content": "Great usability with instant stock research and clear recommendations. Stock insights are easy to understand and genuinely useful—overall a great experience",
+                        "date": "2026-05-01T11:34:42",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "8ecad9a9-5ce0-4d1e-a307-2e0fa5a1012b",
+                        "rating": 5,
+                        "title": "",
+                        "content": "Liquide is a SEBI-registered stock advisory app that provides AI-powered stock recommendations (LiMo) and curated portfolios (\"baskets\") to simplify investing. While users praise its intuitive interface, reviews are polarizing, very nice app",
+                        "date": "2026-04-25T00:00:53",
+                        "helpful_count": 0
+                    },
+                    {
+                        "id": "be48bd80-2766-459f-8dd3-46dd7385f6e3",
+                        "rating": 5,
+                        "title": "",
+                        "content": "Really good app for stock investing, especially for beginners. The interface is simple and easy to understand. Buying and tracking stocks is smooth, and the insights are helpful. Overall, a reliable app for anyone looking to start or manage investments. 5 people found this helpful",
+                        "date": "2026-04-25T18:14:26",
+                        "helpful_count": 0
+                    }
+                ],
+                "review_analysis": {
+                    "total_reviews": 100,
+                    "average_rating": 3.0,
+                    "rating_distribution": {
+                        "1": 20,
+                        "2": 20,
+                        "3": 20,
+                        "4": 20,
+                        "5": 20
+                    }
+                },
+                "reviews_metadata": {
+                    "1": {
+                        "requested": 20,
+                        "fetched": 20
+                    },
+                    "2": {
+                        "requested": 20,
+                        "fetched": 20
+                    },
+                    "3": {
+                        "requested": 20,
+                        "fetched": 20
+                    },
+                    "4": {
+                        "requested": 20,
+                        "fetched": 20
+                    },
+                    "5": {
+                        "requested": 20,
+                        "fetched": 20
+                    }
+                }
+            },
+            "analysis": {
+                "summary": "Liquide-Trade is a stock investment app developed by Liquide Life. It has a high user rating of 4.63 and over 1 million installs. The app claims to offer an 85% accuracy rate in trade notifications, but user reviews suggest significant issues with the timing and reliability of these notifications. Users also express dissatisfaction with the app's subscription model and the quality of investment advice provided.",
+                "permissions_risk": "Medium",
+                "strengths": [
+                    "High user rating and large install base",
+                    "Claimed 85% accuracy in trade notifications",
+                    "Free to download",
+                    "No in-app purchases",
+                    "User-friendly interface"
+                ],
+                "concerns": [
+                    "Delayed or missing trade notifications",
+                    "Discrepancies in reported trade success rates",
+                    "Aggressive and misleading subscription promotions",
+                    "Poor quality of investment advice",
+                    "Negative user experiences with customer support"
+                ]
+            },
+            "analysis_status": "success",
+            "analysis_provider": null
+        },
+        "app_store": {
+            "extraction_metadata": {
+                "source": "Apple App Store (iTunes API)",
+                "extracted_at": "2026-06-28T13:46:38.873113",
+                "extraction_time_seconds": 1.62,
+                "fields_extracted": 33,
+                "country": "in",
+                "reviews_distribution": {
+                    "1": 20,
+                    "2": 20,
+                    "3": 20,
+                    "4": 20,
+                    "5": 20
+                },
+                "total_reviews_extracted": 0,
+                "status": "success"
+            },
+            "extracted_data": {
+                "metadata": {
+                    "trackId": 1624726081,
+                    "trackName": "Liquide- Stocks & Mutual Funds",
+                    "bundleId": "life.liquide.app",
+                    "trackViewUrl": "https://apps.apple.com/in/app/liquide-stocks-mutual-funds/id1624726081?uo=4",
+                    "artistId": 1624726083,
+                    "artistName": "Liquide Solutions Private Limited",
+                    "artistViewUrl": "https://apps.apple.com/in/developer/liquide-solutions-private-limited/id1624726083?uo=4",
+                    "sellerName": "Liquide Solutions Private Limited",
+                    "primaryGenreName": "Finance",
+                    "primaryGenreId": 6015,
+                    "genres": [
+                        "Finance"
+                    ],
+                    "genreIds": [
+                        "6015"
+                    ],
+                    "averageUserRating": 4.84375,
+                    "userRatingCount": 18003,
+                    "averageUserRatingForCurrentVersion": 4.84375,
+                    "userRatingCountForCurrentVersion": 18003,
+                    "price": 0.0,
+                    "formattedPrice": "Free",
+                    "currency": "INR",
+                    "isVppDeviceBasedLicensingEnabled": true,
+                    "version": "1.4.9",
+                    "releaseNotes": "This update brings UI improvements, resolves multiple bugs including notification navigation issues, and includes library upgrades for better performance and overall app stability.",
+                    "releaseDate": "2022-06-28T07:00:00Z",
+                    "currentVersionReleaseDate": "2026-03-20T06:31:30Z",
+                    "description": "Welcome to Liquide, your trusted partner in stock market and mutual fund investing!\nAs India’s premier SEBI-registered Research Analyst, we bring you a cutting-edge financial advisory experience like no other. With curated stock market tools, Liquide is your personal stock investment guide and advisor, right at your fingertips.\n\nKey Features:\n1. Stock Trade Recommendations\nWhether you're looking for short-term opportunities or long-term strategies, our stock advisor provides recommendations to align with your investment objectives. Whether you're experienced or just starting, we ensure the best support for your journey.\n2. F&O Recommendations \nElevate your trading experience with Futures and Options (F&O), integrated seamlessly within the app. Gain access to advanced F&O strategies and stay ahead with timely insights to help you navigate the market.\n3. Portfolio Health Analysis \nOur portfolio health analysis helps you assess your portfolio's overall strength, highlights areas of concer",
+                    "shortDescription": "",
+                    "minimumOsVersion": "15.1",
+                    "fileSizeBytes": 102691840,
+                    "contentAdvisoryRating": "4+",
+                    "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/88/fc/6d/88fc6df5-99ff-fc15-6ed4-c642f9445ecb/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/60x60bb.jpg",
+                    "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/88/fc/6d/88fc6df5-99ff-fc15-6ed4-c642f9445ecb/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/100x100bb.jpg",
+                    "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/88/fc/6d/88fc6df5-99ff-fc15-6ed4-c642f9445ecb/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+                    "screenshotUrls": [
+                        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/88/5c/50/885c50e7-b305-7225-00e8-34fe20fdf600/7c1320b2-83b2-4527-bebf-92cc71ef88c7_4.7___U0026_5.5___U002801_U0029.png/392x696bb.png",
+                        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/48/e1/c1/48e1c129-d091-3d79-c8a1-e34f23e5211a/3e5e49f3-93e3-4e00-9fd8-e2a46cdc156c_4.7___U0026_5.5___U002802_U0029.png/392x696bb.png",
+                        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/27/9d/da/279dda9f-feeb-e33c-2916-8482c9201942/8749e3a7-beef-45b8-910a-2e5ce27a8c53_4.7___U0026_5.5___U002804_U0029.png/392x696bb.png",
+                        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9a/2e/51/9a2e5182-7e64-fb44-84b6-64753a756831/8ed4c431-528d-481b-a463-53e3d21df8d8_4.7___U0026_5.5___U002808_U0029.png/392x696bb.png",
+                        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/61/73/4b/61734bda-4321-93aa-77ba-5eb1033f7529/5ef72d8a-0a48-491f-af49-555daca426cd_4.7___U0026_5.5___U002807_U0029.png/392x696bb.png",
+                        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9e/ab/cc/9eabcc8a-1682-83d4-27f4-25eea010c982/e4d35065-72c4-47ee-9c26-7b60dee16b36_4.7___U0026_5.5___U002809_U0029.png/392x696bb.png",
+                        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/46/5d/bd/465dbdef-4781-a52f-1b55-f785e09954ec/14f39e15-8b63-4305-bb4e-2e0d62e1a9c2_4.7___U0026_5.5___U002806_U0029.png/392x696bb.png",
+                        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2d/70/4b/2d704bfb-bdf4-9c43-8f2f-7ac971b31f79/d8124721-f81e-4052-b25c-54ac4a167895_4.7___U0026_5.5___U002805_U0029.png/392x696bb.png",
+                        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/07/96/26/07962681-9873-a9fd-f974-c359b92fe1d7/7d62869c-1132-4f55-b1f4-007bb046cda4_4.7___U0026_5.5___U002810_U0029.png/392x696bb.png"
+                    ],
+                    "ipadScreenshotUrls": [],
+                    "kind": "software",
+                    "trackCensoredName": "Liquide- Stocks & Mutual Funds",
+                    "privacyViewUrl": null,
+                    "supportUrl": null,
+                    "websiteUrl": null
+                },
+                "reviews": [],
+                "review_analysis": {
+                    "error": "No reviews"
+                },
+                "reviews_metadata": {
+                    "1": {
+                        "requested": 20,
+                        "fetched": 0
+                    },
+                    "2": {
+                        "requested": 20,
+                        "fetched": 0
+                    },
+                    "3": {
+                        "requested": 20,
+                        "fetched": 0
+                    },
+                    "4": {
+                        "requested": 20,
+                        "fetched": 0
+                    },
+                    "5": {
+                        "requested": 20,
+                        "fetched": 0
+                    }
+                }
+            },
+            "analysis": null
+        },
+        "reddit": {
+            "reddit_0": {
+                "type": "subreddit",
+                "subreddit_info": {
+                    "name": "stocks"
+                },
+                "posts": [
+                    {
+                        "id": "1kqazlj",
+                        "title": "Regeneron to buy bankrupt DNA testing firm 23andMe for $256 million",
+                        "author": "spherocytes",
+                        "subreddit": "stocks",
+                        "url": "https://www.reddit.com/r/stocks/comments/1kqazlj/regeneron_to_buy_bankrupt_dna_testing_firm/",
+                        "selftext": "Regeneron is a major [biotech company](https://www.globenewswire.com/news-release/2025/05/19/3083892/0/en/Regeneron-A-Leading-U-S-Biotechnology-Company-to-Acquire-23andMe-in-Court-Supervised-Sale.html) that focuses on developing pharmaceuticals with an emphasis on immunotherapies and receptor-specific drugs. They have acquired 23andMe through a [bankruptcy auction](https://edition.cnn.com/2025/05/19/business/regeneron-23-and-me?utm_medium=social&utm_source=igCNN&utm_content=2025-05-19T12%3A31%3A59).\n\nThey have developed many important drugs, including a COVID-19 treatment that was in partnership with the (US Government)[https://www.biopharmadive.com/news/regeneron-hhs-coronavirus-antibody-development/571651/] in 2020. \n\nTheir reported revenue was approximately $14.2 billion in 2024 and have experienced continuous increases in revenue for the [last decade](https://www.macrotrends.net/stocks/charts/REGN/regeneron-pharmaceuticals/revenue). \n\nWith this acquisition, Regeneron acquires all units of 23andMe excluding Lemonaid Health, which was 23andMe's telehealth venture. Both companies have said that each of them will be operating as a wholly-owned direct or indirect unit of Regeneron. Regeneron also has stated that it will comply with [23and Me's privacy policies](https://www.reuters.com/business/healthcare-pharmaceuticals/regeneron-buy-bankrupt-genetic-testing-firm-23andme-256-million-2025-05-19/). As of 2025, 23andMe has collected the data of approximately 15 million customers.\n\nThe deal is expected to be closed in the third quarter of 2025.",
+                        "score": 217,
+                        "upvote_ratio": 0.9700000286102295,
+                        "num_comments": 44,
+                        "created_utc": 1747659357,
+                        "edited": false,
+                        "permalink": "/r/stocks/comments/1kqazlj/regeneron_to_buy_bankrupt_dna_testing_firm/",
+                        "is_self": true,
+                        "is_video": false,
+                        "over_18": false,
+                        "spoiler": false,
+                        "gilded": 0,
+                        "all_awardings": [],
+                        "comments": []
+                    },
+                    {
+                        "id": "1kqacig",
+                        "title": "Morgan Stanley says Buy US Stock Dips After Moody’s Cut",
+                        "author": "Progress_8",
+                        "subreddit": "stocks",
+                        "url": "https://www.reddit.com/r/stocks/comments/1kqacig/morgan_stanley_says_buy_us_stock_dips_after/",
+                        "selftext": "According to Morgan Stanley's Michael Wilson, investors should buy any dips in US stocks fueled by Friday’s credit rating cut, as the trade truce with China has reduced the odds of a recession\n\nThe strategist sees a greater chance of a pullback in equities after Moody’s Ratings' downgrade pushed 10-year bond yields above the key 4.5% level.\n\nWilson wrote in a note, “We would be buyers of such a dip.”\n\nThe corporate earnings season recently ended with no major impact from the uncertainty over tariffs.\n\n\"The probability that the market looks through such weakness and deems it temporary just went up because of the trade agreement with China.\"\n\nGoldman Sachs' David Kostin expects the Magnificent Seven to resume outperforming the broader S&P 500.\n\n[https://finance.yahoo.com/news/morgan-stanley-wilson-says-buy-094538688.html](https://finance.yahoo.com/news/morgan-stanley-wilson-says-buy-094538688.html)",
+                        "score": 277,
+                        "upvote_ratio": 0.8600000143051147,
+                        "num_comments": 85,
+                        "created_utc": 1747657465,
+                        "edited": false,
+                        "permalink": "/r/stocks/comments/1kqacig/morgan_stanley_says_buy_us_stock_dips_after/",
+                        "is_self": true,
+                        "is_video": false,
+                        "over_18": false,
+                        "spoiler": false,
+                        "gilded": 0,
+                        "all_awardings": [],
+                        "comments": []
+                    },
+                    {
+                        "id": "1kq9ym3",
+                        "title": "What are the opinions of TMF?",
+                        "author": "Legitimate_98",
+                        "subreddit": "stocks",
+                        "url": "https://www.reddit.com/r/stocks/comments/1kq9ym3/what_are_the_opinions_of_tmf/",
+                        "selftext": "Is it a good time to buy while it is low? If >20 YR Treasuries go up then TMF will soar. I understand there is a lot that needs to happen for that to happen. JPowel is currently controlling the destiny of the entire market it seems like. Trump is doing a good job of messing a lot of it up. Is TMF a good stock to buy up right now? As with all things leveraged always attach tighter than normal trailing stop loss sell orders to not loose too much money. ",
+                        "score": 6,
+                        "upvote_ratio": 0.75,
+                        "num_comments": 9,
+                        "created_utc": 1747656271,
+                        "edited": false,
+                        "permalink": "/r/stocks/comments/1kq9ym3/what_are_the_opinions_of_tmf/",
+                        "is_self": true,
+                        "is_video": false,
+                        "over_18": false,
+                        "spoiler": false,
+                        "gilded": 0,
+                        "all_awardings": [],
+                        "comments": []
+                    },
+                    {
+                        "id": "1kq9xsv",
+                        "title": "Why doesn't this exist yet? Tools that would transform my trading",
+                        "author": "LionOld9711",
+                        "subreddit": "stocks",
+                        "url": "https://www.reddit.com/r/stocks/comments/1kq9xsv/why_doesnt_this_exist_yet_tools_that_would/",
+                        "selftext": "[removed]",
+                        "score": 1,
+                        "upvote_ratio": 1,
+                        "num_comments": 0,
+                        "created_utc": 1747656202,
+                        "edited": false,
+                        "permalink": "/r/stocks/comments/1kq9xsv/why_doesnt_this_exist_yet_tools_that_would/",
+                        "is_self": true,
+                        "is_video": false,
+                        "over_18": false,
+                        "spoiler": false,
+                        "gilded": 0,
+                        "all_awardings": [],
+                        "comments": []
+                    },
+                    {
+                        "id": "1kq9rdw",
+                        "title": "What platforms or tools should you use for your scalping and day trading in stock options?",
+                        "author": "deividellobo",
+                        "subreddit": "stocks",
+                        "url": "https://www.reddit.com/r/stocks/comments/1kq9rdw/what_platforms_or_tools_should_you_use_for_your/",
+                        "selftext": "[removed]",
+                        "score": 1,
+                        "upvote_ratio": 1,
+                        "num_comments": 0,
+                        "created_utc": 1747655660,
+                        "edited": false,
+                        "permalink": "/r/stocks/comments/1kq9rdw/what_platforms_or_tools_should_you_use_for_your/",
+                        "is_self": true,
+                        "is_video": false,
+                        "over_18": false,
+                        "spoiler": false,
+                        "gilded": 0,
+                        "all_awardings": [],
+                        "comments": []
+                    },
+                    {
+                        "id": "1kq8b1a",
+                        "title": "Top Public AI Companies in 2025",
+                        "author": "GuillaumeBrdet",
+                        "subreddit": "stocks",
+                        "url": "https://www.reddit.com/r/stocks/comments/1kq8b1a/top_public_ai_companies_in_2025/",
+                        "selftext": "[removed]",
+                        "score": 1,
+                        "upvote_ratio": 1,
+                        "num_comments": 0,
+                        "created_utc": 1747650510,
+                        "edited": false,
+                        "permalink": "/r/stocks/comments/1kq8b1a/top_public_ai_companies_in_2025/",
+                        "is_self": true,
+                        "is_video": false,
+                        "over_18": false,
+                        "spoiler": false,
+                        "gilded": 0,
+                        "all_awardings": [],
+                        "comments": []
+                    },
+                    {
+                        "id": "1kq7ztn",
+                        "title": "Should I sell my stock?",
+                        "author": "jukaloops",
+                        "subreddit": "stocks",
+                        "url": "https://www.reddit.com/r/stocks/comments/1kq7ztn/should_i_sell_my_stock/",
+                        "selftext": "[removed]",
+                        "score": 1,
+                        "upvote_ratio": 1,
+                        "num_comments": 1,
+                        "created_utc": 1747649273,
+                        "edited": false,
+                        "permalink": "/r/stocks/comments/1kq7ztn/should_i_sell_my_stock/",
+                        "is_self": true,
+                        "is_video": false,
+                        "over_18": false,
+                        "spoiler": false,
+                        "gilded": 0,
+                        "all_awardings": [],
+                        "comments": []
+                    },
+                    {
+                        "id": "1kq7ze4",
+                        "title": "Hinge Health IPO",
+                        "author": "Cam_KeaneYT",
+                        "subreddit": "stocks",
+                        "url": "https://www.reddit.com/r/stocks/comments/1kq7ze4/hinge_health_ipo/",
+                        "selftext": "[removed]",
+                        "score": 1,
+                        "upvote_ratio": 1,
+                        "num_comments": 0,
+                        "created_utc": 1747649224,
+                        "edited": false,
+                        "permalink": "/r/stocks/comments/1kq7ze4/hinge_health_ipo/",
+                        "is_self": true,
+                        "is_video": false,
+                        "over_18": false,
+                        "spoiler": false,
+                        "gilded": 0,
+                        "all_awardings": [],
+                        "comments": []
+                    },
+                    {
+                        "id": "1kq7fyu",
+                        "title": "r/Stocks Daily Discussion Monday - May 19, 2025",
+                        "author": "AutoModerator",
+                        "subreddit": "stocks",
+                        "url": "https://www.reddit.com/r/stocks/comments/1kq7fyu/rstocks_daily_discussion_monday_may_19_2025/",
+                        "selftext": "These daily discussions run from Monday to Friday including during our themed posts.\n\nSome helpful links:\n\n* [Finviz](https://finviz.com/quote.ashx?t=spy) for charts, fundamentals, and aggregated news on individual stocks\n* [Bloomberg market news](https://www.bloomberg.com/markets)\n* StreetInsider news:\n  * [Market Check](https://www.streetinsider.com/Market+Check) - Possibly why the market is doing what it's doing including sudden spikes/dips\n  * [Reuters aggregated](https://www.streetinsider.com/Reuters) - Global news\n\nIf you have a basic question, for example \"what is EPS,\" then google \"investopedia EPS\" and click the investopedia article on it; do this for everything until you have a more in depth question or just want to share what you learned.\n\nPlease discuss your portfolios in the [Rate My Portfolio sticky.](https://www.reddit.com/r/stocks/search?q=author%3Aautomoderator+title%3A%22Rate+My+Portfolio%22&restrict_sr=on&sort=new&t=all).\n\nSee our past [daily discussions here.](https://www.reddit.com/r/stocks/search?q=author%3Aautomoderator+%22r%2Fstocks+daily+discussion%22&restrict_sr=on&sort=new&t=all)  Also links for:  [Technicals](https://www.reddit.com/r/stocks/search?q=author%3Aautomoderator+title%3Atechnicals&restrict_sr=on&include_over_18=on&sort=new&t=all) Tuesday, [Options Trading](https://www.reddit.com/r/stocks/search?q=author%3Aautomoderator+title%3Aoptions&restrict_sr=on&include_over_18=on&sort=new&t=all) Thursday, and [Fundamentals](https://www.reddit.com/r/stocks/search?q=author%3Aautomoderator+title%3Afundamentals&restrict_sr=on&include_over_18=on&sort=new&t=all) Friday.",
+                        "score": 17,
+                        "upvote_ratio": 0.8500000238418579,
+                        "num_comments": 468,
+                        "created_utc": 1747647031,
+                        "edited": false,
+                        "permalink": "/r/stocks/comments/1kq7fyu/rstocks_daily_discussion_monday_may_19_2025/",
+                        "is_self": true,
+                        "is_video": false,
+                        "over_18": false,
+                        "spoiler": false,
+                        "gilded": 0,
+                        "all_awardings": [],
+                        "comments": []
+                    },
+                    {
+                        "id": "1kq73ju",
+                        "title": "Cost Basis Tracker",
+                        "author": "l008com",
+                        "subreddit": "stocks",
+                        "url": "https://www.reddit.com/r/stocks/comments/1kq73ju/cost_basis_tracker/",
+                        "selftext": "Are there any good, online, \"cost basis calculator\" tools one could use to manually track their cost basis of their holdings? Lets say you've owned a stock for many decades and lets say Schwab buys your broker then deleted 15 years of transaction history. But lets say you have possibly all of the buys and sells for your biggest holding and you want to track cost on your own so you don't have to deal with this BS again. ",
+                        "score": 5,
+                        "upvote_ratio": 0.6899999976158142,
+                        "num_comments": 6,
+                        "created_utc": 1747645554,
+                        "edited": false,
+                        "permalink": "/r/stocks/comments/1kq73ju/cost_basis_tracker/",
+                        "is_self": true,
+                        "is_video": false,
+                        "over_18": false,
+                        "spoiler": false,
+                        "gilded": 0,
+                        "all_awardings": [],
+                        "comments": []
+                    },
+                    {
+                        "id": "1kq6u6k",
+                        "title": "What are the basics of the stock market and investment as if you are explaining it to a teenager?",
+                        "author": "Connect-Mix6697",
+                        "subreddit": "stocks",
+                        "url": "https://www.reddit.com/r/stocks/comments/1kq6u6k/what_are_the_basics_of_the_stock_market_and/",
+                        "selftext": "[removed]",
+                        "score": 1,
+                        "upvote_ratio": 1,
+                        "num_comments": 1,
+                        "created_utc": 1747644461,
+                        "edited": false,
+                        "permalink": "/r/stocks/comments/1kq6u6k/what_are_the_basics_of_the_stock_market_and/",
+                        "is_self": true,
+                        "is_video": false,
+                        "over_18": false,
+                        "spoiler": false,
+                        "gilded": 0,
+                        "all_awardings": [],
+                        "comments": []
+                    },
+                    {
+                        "id": "1kq6si4",
+                        "title": "What sectors are you bullish on for the rest of 2025 and why?",
+                        "author": "Less_Cup3326",
+                        "subreddit": "stocks",
+                        "url": "https://www.reddit.com/r/stocks/comments/1kq6si4/what_sectors_are_you_bullish_on_for_the_rest_of/",
+                        "selftext": "[removed]",
+                        "score": 1,
+                        "upvote_ratio": 1,
+                        "num_comments": 0,
+                        "created_utc": 1747644262,
+                        "edited": false,
+                        "permalink": "/r/stocks/comments/1kq6si4/what_sectors_are_you_bullish_on_for_the_rest_of/",
+                        "is_self": true,
+                        "is_video": false,
+                        "over_18": false,
+                        "spoiler": false,
+                        "gilded": 0,
+                        "all_awardings": [],
+                        "comments": []
+                    },
+                    {
+                        "id": "1kq6s9h",
+                        "title": "What is the best way to invest my money in the stock market for a grandson?",
+                        "author": "Connect-Mix6697",
+                        "subreddit": "stocks",
+                        "url": "https://www.reddit.com/r/stocks/comments/1kq6s9h/what_is_the_best_way_to_invest_my_money_in_the/",
+                        "selftext": "[removed]",
+                        "score": 1,
+                        "upvote_ratio": 1,
+                        "num_comments": 1,
+                        "created_utc": 1747644233,
+                        "edited": false,
+                        "permalink": "/r/stocks/comments/1kq6s9h/what_is_the_best_way_to_invest_my_money_in_the/",
+                        "is_self": true,
+                        "is_video": false,
+                        "over_18": false,
+                        "spoiler": false,
+                        "gilded": 0,
+                        "all_awardings": [],
+                        "comments": []
+                    },
+                    {
+                        "id": "1kq6dw0",
+                        "title": "Can you call this conflict of interest?",
+                        "author": "GloriousLebron",
+                        "subreddit": "stocks",
+                        "url": "https://www.reddit.com/r/stocks/comments/1kq6dw0/can_you_call_this_conflict_of_interest/",
+                        "selftext": "[https://imgur.com/HHcSoL3](https://imgur.com/HHcSoL3)\n\nElla Benson serves as a Senior Analyst at Oasis Management and also sits on the Board of Applied Digital (APLD). Oasis holds a significant stake in APLD, its largest by far making up 16.44% of the firm’s total portfolio, valued at roughly $49 million. Oasis is also the 4th shareholder of APLD. This overlap raises questions about a possible conflict of interest, given Benson’s position of influence on both sides. It’s a situation that may warrant closer attention from a governance and transparency standpoint.",
+                        "score": 9,
+                        "upvote_ratio": 0.7699999809265137,
+                        "num_comments": 4,
+                        "created_utc": 1747642444,
+                        "edited": false,
+                        "permalink": "/r/stocks/comments/1kq6dw0/can_you_call_this_conflict_of_interest/",
+                        "is_self": true,
+                        "is_video": false,
+                        "over_18": false,
+                        "spoiler": false,
+                        "gilded": 0,
+                        "all_awardings": [],
+                        "comments": []
+                    },
+                    {
+                        "id": "1kq5rm8",
+                        "title": "Best Gold Mining Stocks To Invest In?",
+                        "author": "Latter-Truth-5968",
+                        "subreddit": "stocks",
+                        "url": "https://www.reddit.com/r/stocks/comments/1kq5rm8/best_gold_mining_stocks_to_invest_in/",
+                        "selftext": "With the global economy facing uncertainty and major investors making big moves, it's time to seriously look at gold and gold mining stocks.\n\nRay Dalio is long gold, reinforcing his view that it's a strategic hedge. Meanwhile, Michael Burry has liquidated much of his portfolio, and Warren Buffett is sitting on a mountain of cash—clearly waiting for the right moment to deploy it.\n\nGiven all this, I’m wondering: Which gold mining stocks are the best to invest in right now?\n\nPersonally, I think two tickers—EGO (Eldorado Gold) and CGAU (Centerra Gold)—are currently undervalued. Both have solid balance sheets, decent production guidance, and exposure to gold prices without extreme risk. But if I had to pick one, CGAU may edge out EGO for its lower cost base and higher free cash flow potential. That said, EGO could have more upside if gold really takes off.\n\nWhat do you think? Any other gold miners on your radar? Would love to hear your thoughts.",
+                        "score": 18,
+                        "upvote_ratio": 0.8299999833106995,
+                        "num_comments": 30,
+                        "created_utc": 1747639732,
+                        "edited": false,
+                        "permalink": "/r/stocks/comments/1kq5rm8/best_gold_mining_stocks_to_invest_in/",
+                        "is_self": true,
+                        "is_video": false,
+                        "over_18": false,
+                        "spoiler": false,
+                        "gilded": 0,
+                        "all_awardings": [],
+                        "comments": []
+                    },
+                    {
+                        "id": "1kq4zoy",
+                        "title": "vgt and qqqm my invest plan",
+                        "author": "HcKechans",
+                        "subreddit": "stocks",
+                        "url": "https://www.reddit.com/r/stocks/comments/1kq4zoy/vgt_and_qqqm_my_invest_plan/",
+                        "selftext": "[removed]",
+                        "score": 1,
+                        "upvote_ratio": 1,
+                        "num_comments": 0,
+                        "created_utc": 1747636511,
+                        "edited": false,
+                        "permalink": "/r/stocks/comments/1kq4zoy/vgt_and_qqqm_my_invest_plan/",
+                        "is_self": true,
+                        "is_video": false,
+                        "over_18": false,
+                        "spoiler": false,
+                        "gilded": 0,
+                        "all_awardings": [],
+                        "comments": []
+                    },
+                    {
+                        "id": "1kq4lcv",
+                        "title": "My channel recommendation",
+                        "author": "Long-Government7124",
+                        "subreddit": "stocks",
+                        "url": "https://www.reddit.com/r/stocks/comments/1kq4lcv/my_channel_recommendation/",
+                        "selftext": "[removed]",
+                        "score": 1,
+                        "upvote_ratio": 1,
+                        "num_comments": 1,
+                        "created_utc": 1747634881,
+                        "edited": false,
+                        "permalink": "/r/stocks/comments/1kq4lcv/my_channel_recommendation/",
+                        "is_self": true,
+                        "is_video": false,
+                        "over_18": false,
+                        "spoiler": false,
+                        "gilded": 0,
+                        "all_awardings": [],
+                        "comments": []
+                    },
+                    {
+                        "id": "1kq4l1y",
+                        "title": "Breaking: House Republicans advance Trump’s “Big Beautiful Bill”",
+                        "author": "C130J_Darkstar",
+                        "subreddit": "stocks",
+                        "url": "https://www.reddit.com/r/stocks/comments/1kq4l1y/breaking_house_republicans_advance_trumps_big/",
+                        "selftext": "https://www.washingtonpost.com/video/politics/house-republicans-advance-trumps-big-beautiful-bill/2025/05/19/ccf8a452-8714-4684-9dcc-6532dd7ad676_video.html?utm_source=reddit.com\n\n*The House Budget Committee passed a massive tax and immigration package central to President Donald Trump’s agenda during a rare Sunday night vote on May 18.*",
+                        "score": 146,
+                        "upvote_ratio": 0.8999999761581421,
+                        "num_comments": 37,
+                        "created_utc": 1747634846,
+                        "edited": false,
+                        "permalink": "/r/stocks/comments/1kq4l1y/breaking_house_republicans_advance_trumps_big/",
+                        "is_self": true,
+                        "is_video": false,
+                        "over_18": false,
+                        "spoiler": false,
+                        "gilded": 0,
+                        "all_awardings": [],
+                        "comments": []
+                    },
+                    {
+                        "id": "1kq3vtp",
+                        "title": "30-Year Yield to 5% in early Asia trading",
+                        "author": "s1n0d3utscht3k",
+                        "subreddit": "stocks",
+                        "url": "https://www.reddit.com/r/stocks/comments/1kq3vtp/30year_yield_to_5_in_early_asia_trading/",
+                        "selftext": "Longer-dated Treasury yields rose to touch the psychological 5% level and US equity futures slid with the dollar in Asia trading after Moody’s Ratings announced Friday evening it was stripping the American government of its top credit rating, dropping the country to Aa1 from Aaa. The company, which trailed rivals, blamed successive presidents and congressional lawmakers for a ballooning budget deficit it said showed little sign of narrowing.\n\nThe downgrade risks reinforcing Wall Street’s growing worries over the US sovereign bond market as Capitol Hill debates even more unfunded tax cuts and the economy looks set to slow as President Donald Trump upends long-established commercial partnerships and re-negotiate trade deals. \n\nOn Monday, 10-year Treasury yields climbed four basis points to 4.52% and their 30-year equivalents rose about six basis points to 5.00%. A move through 5% for the longer-dated benchmark would put levels last seen in 2023 in play — they peaked that year at 5.18%, the highest since 2007.\n\nhttps://www.bloomberg.com/news/articles/2025-05-19/-sell-america-is-back-as-moody-s-pushes-30-year-yield-to-5\n",
+                        "score": 327,
+                        "upvote_ratio": 0.9700000286102295,
+                        "num_comments": 75,
+                        "created_utc": 1747632047,
+                        "edited": false,
+                        "permalink": "/r/stocks/comments/1kq3vtp/30year_yield_to_5_in_early_asia_trading/",
+                        "is_self": true,
+                        "is_video": false,
+                        "over_18": false,
+                        "spoiler": false,
+                        "gilded": 0,
+                        "all_awardings": [],
+                        "comments": []
+                    },
+                    {
+                        "id": "1kq3p9w",
+                        "title": "ITC - DUE TO LOW INFLATION  BIG CUT IN THE COST.",
+                        "author": "Ok_Reaction_3461",
+                        "subreddit": "stocks",
+                        "url": "https://www.reddit.com/r/stocks/comments/1kq3p9w/itc_due_to_low_inflation_big_cut_in_the_cost/",
+                        "selftext": "[removed]",
+                        "score": 1,
+                        "upvote_ratio": 1,
+                        "num_comments": 0,
+                        "created_utc": 1747631319,
+                        "edited": false,
+                        "permalink": "/r/stocks/comments/1kq3p9w/itc_due_to_low_inflation_big_cut_in_the_cost/",
+                        "is_self": true,
+                        "is_video": false,
+                        "over_18": false,
+                        "spoiler": false,
+                        "gilded": 0,
+                        "all_awardings": [],
+                        "comments": []
+                    },
+                    {
+                        "id": "1kq3drf",
+                        "title": "Now that the future has arrived, Musk’s promises are collapsing one by one. Robotaxi,Cybercab and Car sales plummet",
+                        "author": "duck4355555",
+                        "subreddit": "stocks",
+                        "url": "https://www.reddit.com/r/stocks/comments/1kq3drf/now_that_the_future_has_arrived_musks_promises/",
+                        "selftext": "Now that the future has arrived,  Musk's lies are also being exposed one by one. Have you seen the latest news? On June 19, only a very small number of so-called Cybercabs will be used on the road, and only by invitation, but NHTSA still thinks this is wrong. Musk has not responded to NHTSA yet. What kind of autonomous driving will the so-called Cybercab be and how will it be regulated? Of course, Musk's good friends in the White House may directly ask NHTSA to give up all questions about Musk.\n\nMusk is unfortunate because all the liars have been exposed before him, and he has to face more stringent investor supervision. For example, the protagonist of \"Bad Blood\", a lady who doesn't blink, investors are fed up with boasting but not delivering, and Musk must deliver. But the problem is that once it is delivered, the lie will be exposed.\n\nWithout L4 autonomous driving and Robotaxi comparable to Waymo, everything about him is being sniped. Just like when Cybertruck was released, Tesla fans asked me, \"Look, the slap is so fast and strong, call us daddy. Musk is a god.\" Because in the previous year, I have been saying that Cybertruck has no market at all, this is a vertical segment. The main scene of Truck is work, not play. And they think that everything I, a dull ITIL consultant and a third-rate business school auditor, say is ridiculous. But after I shouted daddy to everyone in the chat room and accepted their humiliation. In less than a year, Cybertruck sales collapsed. I want to find them on Twitter and let them prove that I am not wrong. But they all said to me, \"Do facts matter? We made money, hundreds of thousands of dollars in stock market returns. Hold on to your truth and go back to Australia. Loser.\" Now the same is true for Cybercab. Musk made it, but no one will pay for it. He can't even catch up with \"WAYMO, the backward smart driving using lidar\". After all, Waymo is L4 autonomous driving, certified by NHTSA. And Musk is L2. It's ridiculous.\n\nThe European market has given up subsidies for BEVs. The BEV market has collapsed. Now it is the hybrid market, which is dominated by Toyota. I believe that the United States will continue to subsidize and use taxpayers' money to build charging stations one after another, which will continuously put money into Musk's pocket. Of course, there is also China. After all, the Chinese government has many \"good friends\" and \"influential people\" in the United States to help them lobby the White House. So enjoy all Tesla fans, the death knell has sounded.",
+                        "score": 1179,
+                        "upvote_ratio": 0.8700000047683716,
+                        "num_comments": 205,
+                        "created_utc": 1747630100,
+                        "edited": false,
+                        "permalink": "/r/stocks/comments/1kq3drf/now_that_the_future_has_arrived_musks_promises/",
+                        "is_self": true,
+                        "is_video": false,
+                        "over_18": false,
+                        "spoiler": false,
+                        "gilded": 0,
+                        "all_awardings": [],
+                        "comments": []
+                    },
+                    {
+                        "id": "1kq3a5n",
+                        "title": "Downgrade of U.S. credit rating adds new complication to U.S. stock market",
+                        "author": "TravellingBat07",
+                        "subreddit": "stocks",
+                        "url": "https://www.reddit.com/r/stocks/comments/1kq3a5n/downgrade_of_us_credit_rating_adds_new/",
+                        "selftext": "For one, the U.S.′ credit rating was downgraded by Moody’s Ratings to the second highest. This means investors could demand higher returns for U.S. Treasurys amid their ostensibly lower trustworthiness. Rising Treasury yields, in turn, could pressure stocks. Even though Moody is merely the [latest](https://www.cnbc.com/2025/05/16/moodys-downgrades-united-states-credit-rating-on-increase-in-government-debt.html) to join Standard & Poor’s and Fitch Ratings in bumping down the U.S. from the top rating — which did so in 2011 and 2023 respectively — it might send another crack through an already fragile stock market.\n\n  \n[https://www.cnbc.com/2025/05/19/cnbc-daily-open-us-credit-rating-downgrade-will-affect-its-markets.html](https://www.cnbc.com/2025/05/19/cnbc-daily-open-us-credit-rating-downgrade-will-affect-its-markets.html)",
+                        "score": 622,
+                        "upvote_ratio": 0.9599999785423279,
+                        "num_comments": 59,
+                        "created_utc": 1747629724,
+                        "edited": false,
+                        "permalink": "/r/stocks/comments/1kq3a5n/downgrade_of_us_credit_rating_adds_new/",
+                        "is_self": true,
+                        "is_video": false,
+                        "over_18": false,
+                        "spoiler": false,
+                        "gilded": 0,
+                        "all_awardings": [],
+                        "comments": []
+                    },
+                    {
+                        "id": "1kq2xh7",
+                        "title": "New Canadian Investor — Missed the Bear Market, Should I Wait or Invest Now?",
+                        "author": "Various_Maximum6577",
+                        "subreddit": "stocks",
+                        "url": "https://www.reddit.com/r/stocks/comments/1kq2xh7/new_canadian_investor_missed_the_bear_market/",
+                        "selftext": "[removed]",
+                        "score": 1,
+                        "upvote_ratio": 1,
+                        "num_comments": 0,
+                        "created_utc": 1747628414,
+                        "edited": false,
+                        "permalink": "/r/stocks/comments/1kq2xh7/new_canadian_investor_missed_the_bear_market/",
+                        "is_self": true,
+                        "is_video": false,
+                        "over_18": false,
+                        "spoiler": false,
+                        "gilded": 0,
+                        "all_awardings": [],
+                        "comments": []
+                    },
+                    {
+                        "id": "1kq2how",
+                        "title": "Is it allowed to post about great stock communities here",
+                        "author": "Followmypredictions",
+                        "subreddit": "stocks",
+                        "url": "https://www.reddit.com/r/stocks/comments/1kq2how/is_it_allowed_to_post_about_great_stock/",
+                        "selftext": "[removed]",
+                        "score": 1,
+                        "upvote_ratio": 1,
+                        "num_comments": 0,
+                        "created_utc": 1747626890,
+                        "edited": false,
+                        "permalink": "/r/stocks/comments/1kq2how/is_it_allowed_to_post_about_great_stock/",
+                        "is_self": true,
+                        "is_video": false,
+                        "over_18": false,
+                        "spoiler": false,
+                        "gilded": 0,
+                        "all_awardings": [],
+                        "comments": []
+                    },
+                    {
+                        "id": "1kq24fd",
+                        "title": "3 year 30k investment strategy - feedback please",
+                        "author": "livesunderagiantrock",
+                        "subreddit": "stocks",
+                        "url": "https://www.reddit.com/r/stocks/comments/1kq24fd/3_year_30k_investment_strategy_feedback_please/",
+                        "selftext": "I would love some feed back on the following strategy I plan to execute as a side project for myself. I have put together 30k for this. This is not my safe money or retirement money but it’s also not Monopoly money. I am ok with high volatility as I execute this strategy. This is really to see if the strategy is good, understand the time commitment needed and also confirm to myself  that I can manage a good execution and not get impulsive. \n\nSuccess criteria: If done properly, I want to be able to convert this 30k to 50k over 3 years which is assuming a 20% YoY return. My current managed portfolio gets me 11-12% YoY last 7 years so if only I can get close to 20% it makes sense to me to use my own time to do it. I have a full time job so I expect to track the market news and stocks every other hour or so but not be constantly involved. \n\nThe distribution or strategy I have thought is:\n\n1. 40% (12k) in relatively stable stocks that I expect will beat the SPY so I am thinking Meta 5k Goog 5k Amazon 2k\n\n2. 30% (9k) relatively aggressive so I am thinking on two lines:\n2a: invest in stocks with associated risk but also good reward over 3 years like UNH, AMD, AVGO\n2b: invest in options of tickets with lesser risks but continued stable growth for aggressive return like BABA, WMT, TSMC\n\n3. 30% (9k) for buy the dip or DCA into above strategy. \n\nI would love your feedback on:\nA. Over strategy and percentage distribution. \nB. Tickers I have in mind vs others \nC. Anything I have missed in general. Is this sustainable along with a job and family. \n\nThanks again and appreciate your feedback. I expect to make these purchases over the next 2 weeks and do a few house cleaning things:\n1. Track overall and stock level daily move of anything more than 2% to make adjustment\n2. Monthly tracking of anything that moved 5% \n3. Follow broader markets news and adjust cash reserves accordingly. A little lower if outlook looks good and hold at 30% if it’s same. Don’t want to go more than 30% at any point. The idea is to play safe but not to play very very safe. \n4. Limit hopium and fomo, don’t expect magic before or after buying. \n",
+                        "score": 0,
+                        "upvote_ratio": 0.41999998688697815,
+                        "num_comments": 16,
+                        "created_utc": 1747625617,
+                        "edited": false,
+                        "permalink": "/r/stocks/comments/1kq24fd/3_year_30k_investment_strategy_feedback_please/",
+                        "is_self": true,
+                        "is_video": false,
+                        "over_18": false,
+                        "spoiler": false,
+                        "gilded": 0,
+                        "all_awardings": [],
+                        "comments": []
+                    }
+                ],
+                "stats": {
+                    "posts_extracted": 25,
+                    "total_comments": 0,
+                    "category": "new"
+                },
+                "scraped_at": "2026-06-28T13:46:46.231829"
+            }
+        },
+        "youtube": {
+            "youtube_0": [
+                {
+                    "scraped_at": "2026-06-28T08:16:46.637177Z",
+                    "video_id": "2c6pZhOqhp0",
+                    "url": "https://www.youtube.com/watch?v=2c6pZhOqhp0",
+                    "title": "Liquide Stock App Review | Liquide App Kaise Use Kare | Liquide vs Univest Review | Liquide One Plan",
+                    "description": "Liquide Stock App Review | Liquide App Kaise Use Kare | Liquide vs Univest Review | Liquide One Plan\n\nliquide stock app review\nliquid app review\nliquide app review\nliquid app\nliquide app kaise use kare\nliquide\nliquid app ko kaise use karte hain\nhow to use liquide stock app\nliquide stock app\nliquid stock app\nliquide app\nliquid app kya hai\nliquid one app review\nis liquide app good\nlimo app reviews\nunivest app review\nliquide one review\nliquid stock app review\n\n👉Joining Link for Coins - https://wealthdekho.com/liquide\nReferal Code - 7E6FBN\n----------------------------------------------------------------------------------------------------\n💰 Join My Favourite Apps and Earn Money -https://wealthdekho.com/earnmoneyYT\n\n📢 WhatsApp Group - https://wealthdekho.com/wa\n📢 Telegram Channel - https://wealthdekho.com/telegram\n📢 Follow Instagram - https://www.instagram.com/wealthdekho/\n📢 Blog - https://wealthdekho.com/\n\nDisclaimer: Do Your Own Analysis And Invest At Your Own Risk. I am not SEBI Registered.",
+                    "transcript": "",
+                    "transcript_words": 0
+                },
+                {
+                    "scraped_at": "2026-06-28T08:16:53.426882Z",
+                    "video_id": "N_YvXRdfxQ4",
+                    "url": "https://www.youtube.com/watch?v=N_YvXRdfxQ4",
+                    "title": "Liquide App Review, Charges, Pros & Cons",
+                    "description": "Recover Losses; Liquide App Review, Charges, Pros & Cons\n-----------------------------------------\nAbout the video - \nWelcome to our channel where we you the latest technology reviews and app recommendations help you make informed decisions. In this video, we will be diving into the Liquide App, discussing its features, charges, pros, and cons\n\nAre you looking for a solution to recover your losses or to manage your finances better? Look no further! Liquide App might just be what you need. We will walk you through the app's interface, how to use it effectively, and highlight the benefits it offers.\n\nJoin us in this in-depth review of the Liquide App and explore whether it is the right fit for your financial needs. Don't forget to like, comment, and subscribe for more reviews on useful apps like this one!\n\n#recoverlosses #liquideappreview #liquideappcharges\n\n--------------------------------------------------------------\nliquid web review,liquide app review,liquide stock app review,liquid web reviews,liquid web hosting review,liquid exchange review,liquide app review hindi tamil,liquid web review 2024,liquid web reviews 2024,liquid,liquid exchange honest review,how to use liquide app,liquid review,liquidweb review,liquide stock app,liquide app,liquid web review 2024,liquid web wordpress hosting review,liquid platform review,liquid web hosting review 2024\n\n📝Our Website:- https://dematdive.com/\n\n🌴Telegram-    https://t.me/mycompany57\n\n---------------------------------------------------------------------\n--------------------------------------------------------------------- \nOpen Demat Account-   \n\n✅AngelOne-\nhttps://tinyurl.com/26t8ccvz\n\n✅ Upstox -\nhttps://upstox.com/open-account/?f=23AV3U\n\n✅ Zerodha- \nhttps://zerodha.com/open-account?c=TKZ450\n\n✅Paytm money-\nhttps://paytmmoney.onelink.me/9L59/k33acmxs\n---------------------------------------------------------------------\n---------------------------------------------------------------------\nFollow us for more 👇👇-\n\n👩‍💻Facebook-    https://www.facebook.com/dematdive\n\n💌Instagram-   https://www.instagram.com/dematdive/\n\n🐦Twitter-         https://twitter.com/investorvikas\n---------------------------------------------------------------------\n---------------------------------------------------------------------\nSuggested videos -\n\n💥ETF Strategies Playlist:\nhttps://www.youtube.com/playlist?list=PLlvPPofS10chQedd4ODjyxiRTsVCM7ntX\n\n💥AngelOne vs Zerodha vs Upstox vs Groww-\nhttps://youtu.be/nqsPfkQ3LSM\n\n💥Best Blue chips Stocks to Buy Anytime-\nhttps://youtu.be/nyjJ2cLuPlE\n---------------------------------------------------------------------\n---------------------------------------------------------------------\nAbout the Channel- \n \nThis channel Demat Dive provides review videos for all demat accounts, trading apps, and investment apps. \nOur content rotates around the Pros and cons of investment apps, trading apps, and demat accounts so that we can give you an honest and balanced review about any platform or app under review. \n\nApart from Pros and cons We also cover eligibility criteria and charges associated with that app or demat/trading account.\n \nOur vision is to make the financial world more transparent and simplified for the common public.\n---------------------------------------------------------------------\n---------------------------------------------------------------------\nDisclaimer-\n\n1. We are not SEBI registered Advisors, any stock analysis video is not a direct buy/sell recommendation, please do your own research before taking any investment decision. The purpose of this channel is only to Educate you about stock investing.",
+                    "transcript": "",
+                    "transcript_words": 0
+                },
+                {
+                    "scraped_at": "2026-06-28T08:17:00.835900Z",
+                    "video_id": "Bvupb4of6UQ",
+                    "url": "https://www.youtube.com/watch?v=Bvupb4of6UQ",
+                    "title": "No OxygenOS 16.1 for Nord Users! But This Update Fixes Battery Life🔥",
+                    "description": "No OxygenOS 16.1 for the OnePlus Nord series, but the latest update brings noticeable battery life improvements here's everything you need to know!\n#oxygen #oxygenos16 #oneplusnord6 \n\nOnePlus N6 Unboxing & First Impressions! OnePlus Enters a New Budget Era🔥: https://youtu.be/qVtM691b_Vs?si=PIEuqb4v6pE79tV7\n\nOnePlus Nord Buds 4 Are INSANE for ₹3,299! Full Review 🔥\n: https://youtu.be/oVRRCw31pF4?si=2CsmrUvqVbupALDQ\n\nOxygenOS 16.1 JUNE UPDATE is AMAZING on OnePlus 12 Series! Better Battery + New Audio Sharing: https://youtu.be/BuueyW4Vtc0?si=rT2oQ_GYLeidfXzE\n\nOnePlus 16 Crazy Upgrades! 185Hz Display, 1mm Bezels & 9000mAh Battery? 🤯: https://youtu.be/KV7nVuy5oRw?si=IibUekrTLY2mdlL0\n\nBackup & Restore Data on Any OnePlus Device! But OxygenOS 16.1 Still Has a BIG Problem in 2026 😡: https://youtu.be/ghzgIyMOMy4\n\nOnePlus User Should Install This App Right Now! Crazy Customization & Features🔥\n: https://youtu.be/8MGyoU7yhJ4?si=xdoMT_hNE_SZt8Lo\n\nBest Laptop for College Students in 2026? ASUS Vivobook 14\n: https://youtu.be/Qrr__dUgiCc?si=kUd5Qm1FS2j1Ioyc\n\nOppo Find X9 Ultra DESTROYS Samsung S26 Ultra! Camera Test Shocks Everyone 😱: https://youtu.be/0_8Zn277J2Y?si=9AKr1z_8yasH_7KF\n\nFINALLY! Nothing Phone 3 Gets Depth Effect with June Update 🔥AGARO\n: https://youtu.be/A44269AKnNg?si=58XNj0xfdzmVg9Su\n\nOnePlus Users! Watch This BEFORE Updating to OxygenOS 16.1 June Update⚠️: https://youtu.be/eR8vEiAuEPU?si=nyLo2d7PhVaYwndz\n\nOne UI 9 Beta 3 Update Is Here! Bug Fixes Only, No New Features😞\n: https://youtu.be/uea41ddWUL8?si=0NL4f3JHCi9A75sZ\n\nOxyenOS 16.1 FINALLY Added Audio Sharing on Oneplus Phones🔥\n: https://youtu.be/vykGHSCY-yw?si=mjzr4fn_5s-kbG2P\n\niOS 27 is a Game Changer! Every New Feature Explained🔥\n: https://youtu.be/3t7iwHKqTMo?si=dGsPF7qLSwEdZWsV\n\n🔥 WOW Audio Sharing is FINALLY Coming to OxygenOS 16.1! Just Like ColorOS: https://youtu.be/cCAIgBK9_9c?si=mqtZO5jRPoZrSmWi\n\n🚨WARNING! OxygenOS 16.1 Is BUGGY 😳 OnePlus Users Watch Before Updating!: https://youtu.be/mTlsJYJTfQg\n\nOnePlus Stock Launcher Just Got a HUGE Update! Every User Needs to See This🔥: https://youtu.be/_X0PS87YDws?si=R803lkof6C5ye5pV\n\nOnePlus Users Must Check Out This Feature-Packed Dialer🤩: https://youtu.be/y6WnWevnXgc?si=Fv_0dXFiUkxv1FXM\n\nOxygenOS 17 = Liquid Glass Design! OxygenOS 16.1 Underrated Features + New AI Assistant on Oneplus🔥\n: https://youtu.be/nPsKhIih8B8?si=7OYw7XXOMuAygk5m\n\nBest Office Chair by The Sleep Company? Stylux Review😬: https://youtu.be/vI5PFV554dA?si=cl6DGCnZlNWigMTX\n\nOMG! Stable OxygenOS 16.1 Update is Finally Rolling Out to OnePlus 13 Series! Everything EXPLAINED🔥\n: https://youtu.be/Rn8bKNqkfS4?si=IdTGesUnhVJov23l\n\nFollow us on Twitter: https://twitter.com/_techibee\nInstagram: https://www.instagram.com/_techibee/?hl=en \nTelegram: https://t.me/YtTechibee",
+                    "transcript": "",
+                    "transcript_words": 0
+                },
+                {
+                    "scraped_at": "2026-06-28T08:17:08.209590Z",
+                    "video_id": "VuxX3GlEBSk",
+                    "url": "https://www.youtube.com/watch?v=VuxX3GlEBSk",
+                    "title": "iOS 27 🔥 - All New Features & Tips | iOS 27 New Features (HINDI)",
+                    "description": "iOS 27 🔥 - All New Features & Tips | iOS 27 New Features (HINDI)\nThis Video is regarding all new features , tips regarding new iOS 27 which is just released on 8th June 2026.\nThis Video includes almost every main and important feature that you should know about iOS 27 Right Now!\n\nVideo Timestamps:\nIntro-                           00:00\nUpdate Size-              00:48\nHow To Install-          01:07\nSupported Device-    02:35\nMajor Change!-          03:06    \nBattery Life-                04:43\nNew Features-            04:50\nWallpapers-                 04:53\nHomescreen-              05:58\nLiquid Glass!-              06:50\nSystem Volume-         08:40\nPhotos App-                09:35\nAll New Siri-                14:12\nImage Playground-    14:34\nWeather App-              15:12\nShortcuts App-            15:25\nSafari Updates-           15:43\nShould You Update?-  17:23\n\n********************************************\n\niPhone 15 vs Nothing Phone 4a: https://youtu.be/fVum0Ao2erE?si=0-84p58TWm8zF0sl\n\niPhone 17 after 6 Months: https://youtu.be/_mI0Ru392_g?si=rJndvzJjZkX9rkTO\n\nUsed iPhone Prices: https://youtu.be/fSSU2K8DOIk?si=lwIWZLnQmLWnhrtl\n\niPhone 18 Leaks: https://youtu.be/qwvt7htL5yg?si=Wg5Jo7L7YvWF0VOb\n\nRelated Topics\niOS 27 Release\niOS 27 all features\niOS 27 new features\niOS 27 official release\niOS 27 new things\niOS 27 Hindi Review\nWWDC 2026 iOS 27\n#iOS27 \n#GadgetsLife \n\nThanks for watching!\nSUBSCRIBE, SHARE AND LIKE..",
+                    "transcript": "",
+                    "transcript_words": 0
+                },
+                {
+                    "scraped_at": "2026-06-28T08:17:22.031783Z",
+                    "video_id": "wAud20RkVw4",
+                    "url": "https://www.youtube.com/watch?v=wAud20RkVw4",
+                    "title": "What is Liquid Fund || Should You Invest in Liquid Fund #liquidfund",
+                    "description": "Thank you for connecting me . Wow Good News for You 😎\n\nStart your Mutual Fund SIP with in Minutes -  https://rupeezy.in/open-demat-account?referred_by=XzqzH&clicked=true\n\n🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱 \n\nFollow me on Social Site - \n\nJoin Facebook paje- https://www.facebook.com/alakclasses/ \n\nInstagram -: https://www.instagram.com/alakclasses/ \n\nTwitter - https://mobile.twitter.com/AlakClasses \n\nTelegram Group - https://t.me/joinchat/QVhVDRTjvtmIrlQOqUs2iQ \n\n🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿\n\n\n1 - My New Channel - https://www.youtube.com/channel/UC3uQDp8qK6DkNaq7XMyiQQA\n\n\n🌷🌷🌷🌷🌷🌷🌷🌷🌷🌷🌷🌷🌷🌷🌷🌷🌷🌷 \n\nYou Can Purchase Same as Me ---- \n\nMy Laptop - https://amzn.to/2xCoD0g\nMy Mic - https://amzn.to/2WaiceX\nMy Camera - https://amzn.to/3cWu6zd\nMy Mobile - https://amzn.to/3cXeHhU \n\nMy Digital Notepad - https://amzn.to/2Qf4h3u \n\n🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿 \n\n\nDisclaimer- Some contents are used for educational purpose under fair use. Copyright Disclaimer Under Section 107 of the Copyright Act 1976, allowance is made for \"fair use\" for purposes such as criticism, comment, news reporting, teaching, scholarship, and research. Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favor of fair use. All credit for copyright materiel used in video goes to respected owner.\n\n\n\nAlso Watch More Videos..... \n\n👉 How to Become .... - https://youtube.com/playlist?list=PLVtlXVZ0DC9oX_NIrfyDPflLiJ3n7eYzn \n\n👉 What is ..... - https://youtube.com/playlist?list=PLVtlXVZ0DC9omCPNultg04eUWV7rNUF9V \n\n👉 Top 5 ...... - https://youtube.com/playlist?list=PLVtlXVZ0DC9oVwk2U7YrU64fThzv34DKO \n\n👉 10th to Graduation Oriented Videos - https://youtube.com/playlist?list=PLVtlXVZ0DC9o34g2LFc8lm2xWkQ1xiCUR\n\nliquid fund investment\nliquid fund\nliquid fund kya hai\nliquid fund vs debt fund\nliquid fund vs fixed deposit\nliquid funds vs ultra short term debt funds\nliquid fund investment in tamil\nliquid fund kya hota hai\nliquid fund vs overnight fund\nliquid fund taxation\nliquid funds in mutual fund\nliquid fund investment groww\nliquid fund investment telugu\nliquid fund redemption time",
+                    "transcript": "",
+                    "transcript_words": 0
+                },
+                {
+                    "scraped_at": "2026-06-28T08:17:29.326860Z",
+                    "video_id": "fSeQM95x7GA",
+                    "url": "https://www.youtube.com/watch?v=fSeQM95x7GA",
+                    "title": "iOS 27 - Apple Is Back!",
+                    "description": "iOS 27 - Finally On Track! - iOS 27 Beta 2 Released a few days ago. iOS 26.5 Released over a month ago to the public and iOS 26.5.1 is also out.  iOS 26.5 continues to have some big issues now with lag, battery, and more now that it has been out for a bit and we could use iOS 26.6 to fix some of them. iOS 27 replaced iOS 26 this year. iOS 26.2 released to the public a few months ago with a huge update and many new features and fixes for iOS 26.1, but seems to had issues which iOS 26.3 seemed to fix most of.  iOS 26.4 has many new features and changes. iOS 26.5 and iOS 26.5.1 are now the current public release with features and fixes many issues.  iOS 27 has even more to talk about since the iOS 27 Beta 2 is Out What’s new video. iOS 27 is the update we needed to fix Liquid Glass , performance, stability and more.   iOS 18.7.9 also released as an alternate to iOS 26.5. In this video I share new features, updates in iOS 27 and we go over battery life and bugs in iOS 27 using the M5 iPad Pro 13, iPhone 15 Pro Max, iPhone 11, iPhone Air, and iPhone 17 Pro Max.  #iOS27 #Apple #iOS26 #iPhone\n\nThis is also the Weekly iOS 26 Follow Up Review (A Week Later ) of iOS 27 and iOS 26 Release going over iOS 27, iOS 26, iOS 27 Battery life, Issues and bugs.  We also go over iOS 27 Developer Beta and iOS 26.6 Beta 2 and Public Release along with Apple Intelligence and features that could come with iOS 26.6, iOS 27 Beta 3 and iOS 27 Public Beta..\n\nApp Compatibility List - https://bit.ly/3QzXvrz\n\nApple Software Updates - https://support.apple.com/en-us/125039\n\niOS 27 Feature List - https://bit.ly/4aO3C2f\n\niOS 26 Enterprise Features - https://support.apple.com/en-us/125073\n\niOS 26 Security Updates - https://support.apple.com/en-us/100100\n\niOS 26.5 Released May 11, 2026\n\niOS 26.4.2 Released April 22, 2026\n\niOS 26.4.1 Released April 8, 2026\n\niOS 26.4 Released March 24, 2026\n\niOS 26.3 Released February 11, 2026\n\niOS 26.2.1 Released January 26, 2026\n\niOS 26.2 Released December 12, 2025\n\niOS 26.1 Released November 3, 2025\n\niOS 26.0.1 Released September 29, 2025\n\niOS 26 Released September 15, 2025\n\niPhone 17, iPhone Air, iPhone 17 Pro and iPhone 17 Pro Max released on September 19, 2025.\n\n\n⌚️ Watch Band I am using - https://www.tkqlhce.com/click-100632277-15143421\n\n\nRecent Videos:\niPhone 16 - Hands on Every New Color - https://youtu.be/Y7AYzYaC0sg\niOS 18.1 Beta 1 is Out - What’s New? (Apple intelligence) - https://youtu.be/IJXKF6TAVPQ\niOS 17.6 is Out! - What’s New? - https://youtu.be/r0YwZhnIzpM\n100% Battery Health Has Changed - Dropping Fast - https://youtu.be/o7dwwY6tNkw\nWarning! iPhone Has A Serious Scam Problem - https://youtu.be/kBZIq6ICi1U\niOS 17.4.1 is Out! - What’s New? - https://youtu.be/hPcPjD7ZGps\n\n\n*Gear I use*\n🎥📷 CAMERA:  https://geni.us/C80Cam\nLens:  https://geni.us/RkES\n🎤 Microphone - https://amzn.to/3Rhv4eJ\n\n*Find Me Here*\nhttps://discord.gg/zollotech\nhttps://www.twitter.com/zollotech\nhttps://www.facebook.com/zollotech\nhttps://www.instagram.com/aaronzollo\nhttps://www.pinterest.com/zollotech \nWebsite - https://www.zollotech.com\nTelegram - https://t.me/@officialzollotech\n\n\n*Chapters*\n00:00 - Everything New\n00:38 - An Explanation\n01:40 - No longer works\n01:54 - A new Ad\n02:21 - A new Design Kit\n02:48 - Vision Pro losses\n03:22 - Many New Features, Changes and Updates\n03:33 - Icons\n03:49 - Siri Ai\n04:18 - Reset\n04:44 - Apple AirPort Utility\n05:06 - Mail\n05:36 - Freeform\n05:47 - A nice redesign\n06:13 - Shortcuts\n06:24 - Camera\n06:44 - Photos\n06:59 - Home\n07:30 - Weather\n08:00 - Settings\n08:25 - App Updates\n09:17 - AirPOds Update Beta 9A304b\n09:49 - iOS 26.5.2 Release\n10:09 - iOS 26.6 Beta 3 Release\n10:21 - iOS 27 Public Beta and Beta 3 Release\n10:36 - iOS 27 Public Release Date\n10:48 - iPhone 18 Pro Price\n11:11 - AirPods Pro 3 Experience\n11:47 - iOS 27 Experience (Finally On Track)\n11:59 - Bugs and Bug Fixes\n12:15 - Indexing Bug\n12:33 - Keyboard issue\n12:45 - RAM Management\n13:03 - Apple CarPlay Issues\n13:27 - Touch bugs return\n13:39 - Talk To Siri Bug\n14:02 - WiFi Bugs\n14:16 - Wallpaper bug\n14:27 - A few other issues\n14:58 - iOS 18 Experience and iOS 26.6 Experience\n15:34 - iOS 26.5.1 and iOS 26.5 Experience\n15:45 - Heat and Thermals\n16:27 - Benchmarks\n17:17 - Battery Health and Battery Life\n18:38 - Should You Install iOS 27 Beta 2?\n19:04 - Comments\n20:54 - Storage\n21:27 - Waiting For The Next\n21:40 - So Much Better\n21:58 - Apple Is Back\n22:38 - How Is Your iOS 27 Experience?\n23:06 - Conclusion\n\n🎶 Outro Music - Dazzle By Dreem\nEpidemic Sound - 90 day trial) - https://share.epidemicsound.com/qn617r\n\n\nSupport ZOLLOTECH on Amazon:  http://amzn.to/2jxmglN\n\nWallpaper by iB Visuals - https://bit.ly/4g9fcss\nMore from IB Visuals - https://x.com/_iBidule?s=20\n\n[DISCLOSURES]\nThis post may contain affiliate links, which help Aaron / Zollotech with a commission if you make a purchase.\n\nThanks for watching and I’ll see you next time!",
+                    "transcript": "",
+                    "transcript_words": 0
+                },
+                {
+                    "scraped_at": "2026-06-28T08:17:35.858152Z",
+                    "video_id": "cUyvx3h8dJY",
+                    "url": "https://www.youtube.com/watch?v=cUyvx3h8dJY",
+                    "title": "iOS 27 vs Android 17 - Don’t Update Until You Watch This!",
+                    "description": "Apple finally caught up with Siri AI in iOS 27... but only with Google's help. In this video, we compare iOS 27 beta vs Android 17 beta head-to-head — Siri AI vs Gemini Intelligence, Liquid Glass design vs Material 3 Expressive, animations & smoothness, generative editing tools (Cleanup vs Magic Eraser), and the new Parental Controls. Is Apple Intelligence finally good enough to beat Android, or is this still playing catch-up?\n\n\nDo us a favour if you are reading this. Hit the Subscribe button and the Bell icon for notifications on our latest video drops. \n\nAlso subscribe to our other channels:\nTrakin Tech Tamil: https://www.youtube.com/@TrakinTechTamilOfficial\nTrakin Tech (Hindi): at http://www.youtube.com/TrakinTech\n\nVideo Highlights\n***************************************************************\n00:00 Introduction\n00:32 Siri AI vs Gemini Intelligence\n02:47 Design & UI\n03:49 Animations and Smoothness\n04:44 Generative Tools\n06:04 Parental Controls & Wellbeing\n06:21 Unique Features\n07:00 Conclusion\n****************************************************************\nFollow us on:\nWeb: http://trak.in\nInstagram: https://instagram.com/trakintechenglish\nTwitter: https://twitter.com/trakinenglish\nTwitter personal: http://www.twitter.com/r3dash\nFacebook: https://www.facebook.com/trakintechenglish\n\n******************************************************************",
+                    "transcript": "",
+                    "transcript_words": 0
+                },
+                {
+                    "scraped_at": "2026-06-28T08:17:42.711531Z",
+                    "video_id": "PNbVpxi7Evg",
+                    "url": "https://www.youtube.com/watch?v=PNbVpxi7Evg",
+                    "title": "New study says comet 3I/ATLAS might be oldest interstellar visitor ever",
+                    "description": "NBC News’ Gadi Schwartz talks with Harvard astrophysicist Dr. Avi Loeb about a new study that believes 3I/ATLAS may be twice as old as our solar system.\n\nFor more context and news coverage of the most important stories of our day, click here: https://www.nbcnews.com\n\n» Subscribe to NBC News: http://nbcnews.to/SubscribeToNBC\n» Subscribe to Here's the Scoop podcast: https://www.nbcnews.com/heres-the-scoop-daily-podcast\n» NBC News App: https://apps.nbcnews.com/mobile\n» Breaking News Alerts: https://link.nbcnews.com/join/5cj/breaking-news-signup?cid=sm_npd_nn_yt_bn-clip_190621\n» Visit NBCNews.Com: http://nbcnews.to/ReadNBC\n» Find NBC News on Facebook: http://nbcnews.to/LikeNBC\n» Follow NBC News on Twitter: http://nbcnews.to/FollowNBC\n» Follow NBC News on Instagram: http://nbcnews.to/InstaNBC",
+                    "transcript": "",
+                    "transcript_words": 0
+                },
+                {
+                    "scraped_at": "2026-06-28T08:17:50.828284Z",
+                    "video_id": "bsdoieD8h-4",
+                    "url": "https://www.youtube.com/watch?v=bsdoieD8h-4",
+                    "title": "iOS 27 - Everything New!",
+                    "description": "iOS 27 Beta 1 is Out! - What’s New? - Apple released iOS 27 with many more updates than expected or announced at WWDC26.  In this video I go over every feature in iOS 27 beta 1 so far.  iOS 27 is available to developers and iOS 27 Public Beta should release in July.  iOS 27 will release to the Public in September.  I show you all the new Siri AI or Siri 2.0 features, Apple Intelligence updates, Liquid Glass slider and munch more using iPhone 17 Pro Max. #iOS27 #Apple #iPhone\n\niOS 27 - https://www.apple.com/os/ios/?version=no-hero\n\n⌚️ Watch Band I am using - https://www.tkqlhce.com/click-100632277-15143421\n\nRecent Videos:\niPhone 16 pro and iPhone 16 Pro Max Unboxing, Setup and First Look - https://youtu.be/zCk4WBVU5cc\niOS 18 - 18 Important Settings and Tips You Should Know - https://youtu.be/JymaEPQ-UzY\niOS 18 is Out! - What’s New? - https://youtu.be/qpienMcxbGo\niOS 17.6 is Out! - What’s New? - https://youtu.be/r0YwZhnIzpM\n100% Battery Health Has Changed - Dropping Fast - https://youtu.be/o7dwwY6tNkw\nWarning! iPhone Has A Serious Scam Problem - https://youtu.be/kBZIq6ICi1U\n\n\n*Gear I use*\n🎥📷 CAMERA:  https://geni.us/komodox\nLens:  https://geni.us/WR3K4\n🎤 Microphone - https://geni.us/DiN72zU\n\n*Find Me Here*\nhttps://discord.gg/zollotech\nhttps://www.twitter.com/zollotech\nhttps://www.facebook.com/zollotech\nhttps://www.instagram.com/aaronzollo\nhttps://www.pinterest.com/zollotech \nWebsite - https://www.zollotech.com\n\n\n*Chapters*\n00:00 - Everything New\n00:00 - Supported Devices\n00:20 - How to install iOS 27 Betas\n00:43 - Size and Apple also released\n01:06 - Build number and Modem update\n01:31 - New Features, Changes and Updates\n01:43 - Stability, Speed and Reliability\n02:24 - Liquid Glass Slider\n03:03 - New icons\n03:27 - Home screen customization\n04:40 - App Controls\n05:10 - Keyboard\n06:02 - Control Center\n06:21 - Notifications\n06:47 - Wallpaper\n08:06 - New Volume Controls\n08:48 - Alarms\n09:09 - AirPods Updates\n09:49 - Music changes\n10:16 - Apple brought it back\n10:58 - Siri AI is here\n13:44 - Camera and Visual Intelligence\n15:04 - Shortcuts\n15:54 - Wallpaper and Image Playground\n17:34 - Apple Intelligence updates\n18:02 - Battery Improvements\n18:58 - WiFi improvements\n19:54 - Weather\n20:25 - Child Safety\n21:16 - Messages\n22:15 - Safari updates\n23:02 - Facetime\n23:19 - Photos\n27:18 - Notes\n27:33 - Passwords\n27:55 - Phone\n28:24 - Calendar\n29:18 - Apple CarPlay\n31:11 - Home app\n31:41 - Apple Maps\n32:01 - Health\n32:43 - Accessibility features\n34:42 - A great feature\n36:03 - Find My\n36:22 - Purchases\n36:34 - Wallet\n37:00 - Journal\n37:46 - This will take some time\n37:59 - Bugs and Bug Fixes\n38:43 - iOS 27 Beta 2 Release\n38:59 - iOS 27 Public Beta Release\n39:09 - iO 27 Public Release and iOS 26.6 Beta 2\n39:26 - Should you install iOS 27 Beta 1?\n40:04 - Storage\n40:48 - Performance\n41:11 - Battery Health and Battery Life\n41:40 - Benchmarks\n41:59 - Heat\n42:11 - What do you think of iOS 27?\n42:21 - Conclusion\n\nSupport ZOLLOTECH on Amazon:  http://amzn.to/2jxmglN\n\nWallpaper in this video I made - https://bit.ly/4odfXm8\n\n\n[DISCLOSURES]\nThis post may contain affiliate links, which help Aaron / Zollotech with a commission if you make a purchase.\n\nThanks for watching and I’ll see you next time!",
+                    "transcript": "",
+                    "transcript_words": 0
+                },
+                {
+                    "scraped_at": "2026-06-28T08:17:57.597043Z",
+                    "video_id": "6yHi7UJ3zWw",
+                    "url": "https://www.youtube.com/watch?v=6yHi7UJ3zWw",
+                    "title": "iOS 27 Beta 1 - Everything Apple DIDN'T Tell You!",
+                    "description": "I've been using iOS 27 Beta 1 - and these hidden features prove Apple COOKED!\n\n🎨 Our NEW WallpaperZ Store is LIVE - 50% OFF for 4 days ONLY! - https://www.wallpaperzapp.com\n\niOS 27 hands-on! After using iOS 27 Beta 1, here's everything Apple DIDN'T show at WWDC - shockingly fast performance, full-screen widgets hinting at the foldable iPhone Ultra, the new Dynamic Island timer, on-device recovery mode, faster AirDrop, improved Photo Cleanup and the jaw-dropping Spatial Reframe. Plus the Liquid Glass change I'm NOT a fan of. More iOS 27 coverage coming soon!\n\nWallpaperZ:\n🛒 Store - https://www.wallpaperzapp.com\n📱 iOS App - https://l.linklyhq.com/l/1u30X\n📱 Android App - https://l.linklyhq.com/l/1u30Y\n📸 Instagram - https://www.instagram.com/wallpaperzapp/\n🅧 X - https://twitter.com/WallpaperZApp\n🧵 Threads - https://www.threads.net/@wallpaperzapp\n\nZONEofTECH:\n😁 Subscribe - https://goo.gl/yMWV8c\n🌍 Website - https://zoneoftech.com\n📸 Instagram - http://instagram.com/ZONEofTECH\n🅧 X - http://twitter.com/ZONEofTECH\n🚨 TikTok - https://bit.ly/ZoTTikTok\n📘 Facebook - http://facebook.com/ZONEofTECH\n🍿 Channel Membership - https://youtube.com/zoneoftech/join\n\n📧 Business Enquiries: business@zoneoftech.com\n\nProduct Links:\n▶ iPhone 17 - https://geni.us/ZoTiPhone17UK\n▶ iPhone Air - https://geni.us/ZoTiPhoneAir2025UK\n▶ iPhone 17 Pro - https://geni.us/ZoTiPhone17ProUK\n▶ iPhone 17 Pro Max - https://geni.us/ZoTiPhone17ProMaxUK\n▶ iPhone 17e - https://geni.us/ZoTiPhone17e\n➡️ Support ZONEofTECH when shopping through Amazon - https://geni.us/ZoTAmazon\n\nDisclosure: As an affiliate, we earn a small commission from qualifying purchases made using the links above.\n\nMusic from EpidemicSound https://www.epidemicsound.com/referral/2wo1w7\n\nChapters:\n00:00 - Intro\n00:25 - 1/19 Performance\n01:43 - 2/19 Extend your wallpaper\n02:34 - 3/19 Small Clock\n03:23 - 4/19 Extra Large Widgets\n03:57 - 5/19 Landscape Dynamic Island\n04:10 - 6/19 Dynamic Island Timer\n04:31 - 7/19 Independent Alarm Volumes\n05:00 - 8/19 Smoother Camera Switching\n05:15 - 9/19 SOS Slider\n05:26 - 10/19 Liquid Glass\n06:11 - 11/19 Photo Cleanup\n06:46 - 12/19 Camera App\n07:45 - 13/19 Recovery Mode\n08:24 - 14/19 WiFi Settings\n08:43 - 15/19 Copy And Paste\n09:00 - 16/19 Weather App\n09:17 - 17/19 Sharing Numbers\n09:38 - 18/19 Improved Airdrop Speeds\n10:02 - 19/19 Spatial Reframing\n10:42 - Conclusion",
+                    "transcript": "",
+                    "transcript_words": 0
+                }
+            ]
+        }
+    },
+    "processing_status": {
+        "agent2_insights_extracted": false,
+        "agent3_synthesis_done": false,
+        "agent4_product_brief_done": false
+    },
+    "agent2_output": {},
+    "agent3_output": {},
+    "agent4_output": {}
+}

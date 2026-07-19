@@ -1,0 +1,905 @@
+{
+  "extraction_metadata": {
+    "source": "Google Play Store",
+    "extracted_at": "2026-06-28T13:46:38.872982",
+    "extraction_time_seconds": 4.52,
+    "fields_extracted": 23,
+    "country": "in",
+    "language": "en",
+    "reviews_distribution": {
+      "1": 20,
+      "2": 20,
+      "3": 20,
+      "4": 20,
+      "5": 20
+    },
+    "total_reviews_extracted": 100,
+    "status": "success"
+  },
+  "extracted_data": {
+    "metadata": {
+      "appId": "life.liquide.app",
+      "title": "Liquide-Trade, Invest In Stock",
+      "url": "https://play.google.com/store/apps/details?id=life.liquide.app&hl=en&gl=in",
+      "developer": "Liquide Life - Stock Investment App",
+      "developerId": "Liquide+Life+-+Stock+Investment+App",
+      "category": null,
+      "genre": "Finance",
+      "genreId": "FINANCE",
+      "content_rating": "Rated for 12+",
+      "score": 4.6323724,
+      "ratings": 75864,
+      "reviews": 7567,
+      "installs": "1,000,000+",
+      "installs_min": 1000000,
+      "installs_max": 10000000,
+      "free": true,
+      "price": 0.0,
+      "currency": "INR",
+      "iap": false,
+      "iap_price_range": null,
+      "version": "1.4.9",
+      "description": "Welcome to Liquide, your trusted partner in the stock market and mutual fund investing! As India's premier SEBI Registered Research Analyst, we bring you a cutting-edge financial advisory experience like no other. With Liquide, you can equip yourself with powerful tools, expert insights, and AI-driven solutions, in one place.\r\n\r\nKey Features:\r\n\r\n1. Stock Trade Recommendations 📈:\r\nEmbark on an exciting trading journey with Liquide's curated stock trade recommendations. Whether you're looking for quick wins or long-term our advice spans, Short-term, Mid-term, and Long-term trade recommendations to match your investment goals.\r\n\r\n2. Portfolio Health Analysis 📊:\r\nUnlock valuable insights into your investment portfolio within minutes of connecting your broker account. Our portfolio health analysis not only provides a comprehensive score but helps identify potential red flags & ensures sector diversification in your holdings.\r\n\r\n3. Mutual Fund Analytics 📊:\r\nIntroducing our new Mutual Fund Analytics! Get detailed analytics and insights into mutual funds, identify red flags, and take informed actions. This tool helps you make better investment decisions and optimize your mutual fund portfolio.\r\n\r\n4. AI-Powered BOT - LiMo 🤖🗣️:\r\nMeet LiMo, India's pioneering AI-powered BOT! LiMo offers real-time BUY/SELL/HOLD ratings for stocks and serves as your round-the-clock trading partner. Whether you're seeking advice or just looking to chat about stocks, LiMo is here to provide instant guidance.\r\n\r\n5. IPO Verdicts 💡:\r\nStay ahead of the IPO game with Liquide's IPO verdicts. We provide expert insights to help you make informed decisions about upcoming Initial Public Offerings. Don't miss out on exciting investment opportunities.\r\n\r\n6. Watchlist 📺👀:\r\nEffortlessly track your favorite stocks by adding them to your personalized watchlist. Stay updated on daily market movements with ease, ensuring you never miss a beat.\r\n\r\n7. Stock Alerts 🚨💰:\r\nTake control of your investments by setting personalized stock price alerts. Liquide will notify you the moment your desired price is reached, ensuring you never miss a trading opportunity again.\r\n\r\n8. Stock Insights 📰🔍:\r\nDive deep into the stock market with Liquide's real-time news signals and detailed stock insights. Stay informed and make strategic decisions with confidence, armed with the latest information.\r\n\r\n9. Market Sentiment 📊🗞️:\r\nGet a daily pulse on the market with our market sentiment feature. Stay ahead of market trends and make informed investment choices based on the prevailing mood.\r\n\r\n10. Baskets 📦✨:\r\nIntroducing Liquide's Baskets, curated collections of stocks, ETFs, and gold designed to help you diversify your portfolio. Our Baskets are crafted to cater to different investment strategies, making it easier for you to spread risk and optimize returns.\r\n\r\n11. Academy 🎓📚:\r\nEmpower yourself with knowledge through our exclusive Academy. Access over 100 hours of in-depth stock market courses, designed to help you learn and grow in the world of investing. Whether you're a beginner or an experienced investor, there's always room to enhance your skills.\r\n\r\nLiquide is more than just an app; it's your trusted partner for stock market and mutual fund success. \r\nFAQs:\r\n1. Do you hold my money or stocks?\r\nNo, we don’t! All trades are safely executed through your broker.\r\n2. Do you share my social and portfolio data with anyone?\r\nNo, no and no! Your data is secure with us and not shared with anyone.\r\n3. Do you buy or sell on my behalf?\r\nNot at all! You make your own decisions - be it buying or selling, we don’t take action for you.\r\n4. Can I delete my Liquide account?\r\nIf you wish to delete your account, please email us at support@liquide.life. Security - Multiple layers of protection ensure that your data is safe and secure.\r\nLiquide is a SEBI registered Research Analyst, Registration no. INH000009816\r\nDISCLAIMER:\r\nStock investing is subject to market risks. Please trade with extreme care and do your own research before investing in stocks",
+      "summary": "Welcome to Liquide, your trusted partner in the stock market and mutual fund investing! As India's premier SEBI Registered Research Analyst, we bring you a cutting-edge financial advisory experience l",
+      "released": "Dec 9, 2022",
+      "extraction_country": "in",
+      "extraction_language": "en",
+      "extracted_at": "2026-06-28T13:46:40.351436"
+    },
+    "reviews": [
+      {
+        "id": "97ab513c-b0ce-4b6d-826f-fe62f4e86f18",
+        "rating": 1,
+        "title": "",
+        "content": "The app appears to share trade information only after the trade has been closed, presenting it as a successful achievement. You won't receive prior notifications about trades. Although the app claims an 85% accuracy rate in notifications, the trades are often closed before any notification is captured. Later, they are displayed in the app as \"open\" and \"closed\" trades. Initially, I thought I might be missing the notifications, so I set the app to priority it but the issue persisted.",
+        "date": "2024-11-25T11:49:15",
+        "helpful_count": 0
+      },
+      {
+        "id": "fe10776b-4e43-48ab-a487-5d2b49d97e0f",
+        "rating": 1,
+        "title": "",
+        "content": "The experience is worst. All the advice given through WhatsApp is not acceptable. The profit % shown by the app. is wrong and baseless. Interestingly, I want to share my experience of the so called 'arjun' plan. First, the discount was 40% for 1 year subscription and when I didnt subscribe the discount rate increased to 60%. And the app always recommend subscription of 1 year. By which after payment the dissatisfied customer can't do anything.",
+        "date": "2025-04-26T20:46:09",
+        "helpful_count": 0
+      },
+      {
+        "id": "6c215e01-6e46-43ea-9887-eb6849760b3d",
+        "rating": 1,
+        "title": "",
+        "content": "App is extremely good and super useful... But what worst thing they have done is as soon as you open the app... A full add for options trading is displayed with small skip button.. clicking on that redirects user to purchase screen! Please remove that banner as I am not at all interested in options tranding!!!! Still 2-3 banners welcome you.. when you open the app! reducing 1 more star...",
+        "date": "2025-07-29T15:32:54",
+        "helpful_count": 0
+      },
+      {
+        "id": "69be3e19-f219-47cd-b460-90e041df7bd3",
+        "rating": 1,
+        "title": "",
+        "content": "one of the worst apps I don't know but it is meant for only beginners as it gives trade for 1-2% that also after they gave a trade they exit it with a notification that \"the trade has reached an early Target\" even the target has not been reached till yet . it is only for beginners who don't have any knowledge about markets and are happy with 1-1.5% returns and their long term trades are very unfrequent and rare . only the limo AI is good in the whole app. none of the trade targets met till now.",
+        "date": "2025-05-23T09:52:23",
+        "helpful_count": 0
+      },
+      {
+        "id": "9beeb655-f4c7-4c04-a599-ac881330e2bf",
+        "rating": 1,
+        "title": "",
+        "content": "Seriously, there are way too many notifications about buying options trading subscriptions. If someone's not into it, they shouldn't be forced to see those notifications, and there should be a way to turn them off. This is the same problem for like, eight of my friends. If this keeps up, we're not renewing our subscriptions next year.",
+        "date": "2025-09-15T20:14:10",
+        "helpful_count": 0
+      },
+      {
+        "id": "7a69d0c6-896f-49c0-846e-51389c8faad3",
+        "rating": 1,
+        "title": "",
+        "content": "This app is not what it claims. Just recently, the tip suggested buying a stock for 1-3 months. And the next week when I asked LiMO to give me a report about the same stock, it said exit immediately. I mean the app itself is not confident in its analysis. I'd rather do my analysis through other AI tools than paying Liquide 4,000+ just to earn the same amount in the entire year.",
+        "date": "2026-06-14T23:06:52",
+        "helpful_count": 0
+      },
+      {
+        "id": "746f3eac-95a6-47f0-8626-0e10768a6132",
+        "rating": 1,
+        "title": "",
+        "content": "Very disappointed with this app. I am unable to log in, and the customer support team never responds. No one calls back or helps resolve the issue. I paid for the subscription, but I am not getting the service I paid for. This app only focuses on selling subscriptions and does not provide proper support after payment. I strongly do not recommend this app. Please fix my issue immediately or provide a full refund",
+        "date": "2026-06-26T08:05:34",
+        "helpful_count": 0
+      },
+      {
+        "id": "8d836f30-6b57-4a20-8667-09d6ed1c9b29",
+        "rating": 1,
+        "title": "",
+        "content": "Very disappointing app. By the time option calls arrive, the premium has already moved and users enter at bad prices. Most trades end up in losses even though their records look profitable. Adding options to wishlist doesn’t help either because alerts are still delayed. They also keep pushing subscription renewals and spam WhatsApp constantly. Real experience is completely different from what they advertise",
+        "date": "2026-05-14T16:34:56",
+        "helpful_count": 0
+      },
+      {
+        "id": "cd363aef-ccda-4140-b3be-c926033b547d",
+        "rating": 1,
+        "title": "",
+        "content": "-5 star.I won't recommend it. I have invested in 5 of their suggestions 2 hit stop loss and others are around 15% loss.Save your money and stay away from this app. They send thousands of useless notifications on mobile and whatsapp even after doing stop on whatsapp and stopping app as well. no use app. useless. I complained on their support for stopping 50+ notifications per day. they don't solve instead close tickets. sometimes 24hrs window still nothing and told me to close app notifications.",
+        "date": "2026-04-20T09:54:00",
+        "helpful_count": 0
+      },
+      {
+        "id": "5f26621b-5fbb-45b2-900e-4869e81a2061",
+        "rating": 1,
+        "title": "",
+        "content": "Zero star worst application, Their ad appears on social media, in which the influencer says that this company is SEBI registered. I have taken its early plan and all the money is lost. These people do not give any proper advice. They do not have any knowledge about the stock. If they just put it in from inside then say buy or sell it. The application is not that friendly, there are a lot of complications, After the trade is closed, they give performance. No one has given live trade till now.",
+        "date": "2026-04-29T17:59:24",
+        "helpful_count": 0
+      },
+      {
+        "id": "fa268ed9-163f-4719-bd35-7281d3cb3e11",
+        "rating": 1,
+        "title": "",
+        "content": "The CKYC process has been stuck for 10 days, and the team is providing neither a solution nor any assistance. In terms of value, this app isn't worth even a single rupee. I purchased a subscription for ₹3,700; I was told it was for 18 months, but I only received one year's worth, and there is absolutely no support from the team.",
+        "date": "2026-06-18T19:32:14",
+        "helpful_count": 0
+      },
+      {
+        "id": "7731577c-0dbd-495c-a560-0231f26a5020",
+        "rating": 1,
+        "title": "",
+        "content": "Absolutely disappointing and bogus app. Only they want is paid subscription and no technical support. Just getting calls from marketing team for plan upgrade and when asked about app features they just hang up. Moreover I am unable to sync my demat account with the app.",
+        "date": "2026-05-27T13:02:58",
+        "helpful_count": 0
+      },
+      {
+        "id": "63eb8bd5-5ba9-4ed0-968c-a2e54b6609ae",
+        "rating": 1,
+        "title": "",
+        "content": "support is not good. even subscriber is not allow to watch the closed live session . in todays world that is main thing of any app , all other things are available through ai search. kindly tell me how i can cancel the subscription if these issues are not resolved.",
+        "date": "2026-05-15T09:13:39",
+        "helpful_count": 0
+      },
+      {
+        "id": "719d5839-e9cd-4587-aca9-f3cc0a67aded",
+        "rating": 1,
+        "title": "",
+        "content": "Only the IPO recommendation was satisfactory. Apart from that, my experience has been very disappointing. Several stocks recommended by Liquide, such as Icemake and GPPL, are currently down 16%. Greaves Cotton was recommended at ₹193, but I had to sell it at a loss as well. Overall, I have taken many poor investment decisions based on Liquide’s guidance.*",
+        "date": "2026-06-12T10:22:19",
+        "helpful_count": 0
+      },
+      {
+        "id": "df7d45d0-af76-40a7-92ed-16b624623bc0",
+        "rating": 1,
+        "title": "",
+        "content": "Never go for this app and its subscription. All fake recommendations for equity. Always a loss case. The black subscription is worst. No one will follow up with you as promised while buying it. No weekly or monthly recommendations provided after opting for its premium subscription black. Dont waste your money in the app. False cancellation promises",
+        "date": "2026-05-07T22:33:13",
+        "helpful_count": 0
+      },
+      {
+        "id": "0c6ce0e7-dd85-4dde-a9d6-b5bee2dcd583",
+        "rating": 1,
+        "title": "",
+        "content": "Liquid is one of the most disappointing trading apps I have used. Most of the call options and trading signals provided here feel misleading and inaccurate. It seems like the platform lacks real trading knowledge and proper market research, yet makes big claims to attract users. The only thing they appear to do professionally is collect subscription fees from users. Instead of helping traders make profits, the app often leads to confusion and losses.",
+        "date": "2026-05-11T15:31:30",
+        "helpful_count": 0
+      },
+      {
+        "id": "f4d4c362-e00c-4ef9-a6a0-f089ee3f2069",
+        "rating": 1,
+        "title": "",
+        "content": "Don't purchase thus app, no one responding and Mutual fund profoikio not working from past 3 months, and what ever calls you get all are very false, waste of money, don't be trap in discount package messages...Wrost and very pathetic. I lost money paying subscription....",
+        "date": "2026-04-07T08:15:18",
+        "helpful_count": 0
+      },
+      {
+        "id": "f2277795-f1cf-4646-88bd-ae44b97ab385",
+        "rating": 1,
+        "title": "",
+        "content": "extremely disappointed... Stocks recommendations are the worst... forget this, even the reports that I asked about the fundamentals, they are also based on the outdated data... what do I say I am regretting the decision of buying a pro version...",
+        "date": "2026-06-03T21:22:29",
+        "helpful_count": 0
+      },
+      {
+        "id": "171ae2f1-51b8-410d-8550-4e80731b7358",
+        "rating": 1,
+        "title": "",
+        "content": "Worst app. Total waste of money. ​I bought a subscription a month ago but my KYC is still not complete, so I cannot use any services. I never faced this issue with any other demat account. I chatted with customer care multiple times but got no help at all. Please refund my money. 1 star.",
+        "date": "2026-06-18T13:19:56",
+        "helpful_count": 0
+      },
+      {
+        "id": "9c1eb5bb-6fb8-48ad-85d8-13a231eaa040",
+        "rating": 1,
+        "title": "",
+        "content": "i made 8 option trade from 22-4-2026 onwards till 28-4-2026, all of them went in loss, useless app don't follow suggestions blindly. lost nearly 50k by taking 3k subscription. i suggest don't take subscription. even if they give free suggestions think twice before execution.",
+        "date": "2026-04-28T09:41:25",
+        "helpful_count": 0
+      },
+      {
+        "id": "9125fc8c-b684-490a-a3cd-3daf2ca14dab",
+        "rating": 2,
+        "title": "",
+        "content": "I just bought a subscription yesterday. The major aspect is that 1) many trades hit their stop loss in the app they only show trades which achieve target never show trades which gives huge losses . 2) Out of 10 trades 7 trade hits stop loss only they have 30% accuracy. 3) Target and stop loss are too high because of that we get huge losses . 4) No one to one support 5) Don't buy a subscription not Worthy",
+        "date": "2026-06-16T11:20:27",
+        "helpful_count": 0
+      },
+      {
+        "id": "7d2bd2e8-0318-4b94-93ce-637f3c2fd03f",
+        "rating": 2,
+        "title": "",
+        "content": "I have taken yearly subscription and i am not able to use liquidone services because of KYC . and the app is not able to perform kyc . it's hanging up. looks like my money is gone in scam",
+        "date": "2026-05-14T15:55:08",
+        "helpful_count": 0
+      },
+      {
+        "id": "1e868771-007d-45e0-a072-e595dfb82ce1",
+        "rating": 2,
+        "title": "",
+        "content": "They suggest trades with past values. Its a clear scam. They'll say but at 100rs, target is 125rs and even if you open the trading app in 2 seconds, the price is already 104-105. You think target is way high, so u buy at 105. As soon as the price goes up to 106-107, they notify to book partial profit and move stop loss to 100 - at cost. Later they show in result of 7rs profit earned. Whereas, actually you earn only 1 or 2 rs that too if you're quick enough to book it. Else -5 loss at 100rs SL.",
+        "date": "2026-03-26T00:43:52",
+        "helpful_count": 0
+      },
+      {
+        "id": "091eb3ad-9b30-46e9-b4ab-fb0d759278e4",
+        "rating": 2,
+        "title": "",
+        "content": "They showed first that their targets are being hit daily, but when you take subscription and pay money, you are asked to take another plans. You will not get correct recommendations and whatever they give, next day they will ask to exit. However the messages come to your inbox or on whatsapp that 8 out of 9 targets hit. Now for those tips you have to take one more subscription",
+        "date": "2025-01-10T15:51:20",
+        "helpful_count": 0
+      },
+      {
+        "id": "0ec7c68a-a79c-4412-a983-93d44b29aeb6",
+        "rating": 2,
+        "title": "",
+        "content": "It's a good app, no doubt int that. Though the problem is their recommendation comes very fast and it's not always possible to complete the transaction right after getting recommendations. Most of the time, after getting recommendations, by the time I open app to complete the transaction, the stock moved out of price range. It's only for short term trades. Also for short term trades it'd useful only for large capital, otherwise after deductions of all the chargs, you left with nominal profit.",
+        "date": "2024-05-08T14:57:27",
+        "helpful_count": 0
+      },
+      {
+        "id": "97369c04-68e6-44b1-8b1c-a273349f1477",
+        "rating": 2,
+        "title": "",
+        "content": "They recommend stocks when it has already started rising, so when they recommend the price if they recommend 150, when you will actually open your app and buy it will become 155, also lately most of their recommendations resulting in loss,in the notification they will mention we got 18 profit,19 profit,but in real life most of them results in losses.",
+        "date": "2025-11-21T11:04:31",
+        "helpful_count": 0
+      },
+      {
+        "id": "b7eaebba-4708-4a0b-b894-537c59d9b41b",
+        "rating": 2,
+        "title": "",
+        "content": "If you want an app that just tell you buy or not to buy (mostly buy will be the answer) . There is no details report analysis of the company for your understanding. The news they provide are mostly link to trade view or moneycontrol which are again limited . Charts do not have access of full controls of functions as they are third party. Look like I wasted my money",
+        "date": "2024-09-01T17:19:34",
+        "helpful_count": 0
+      },
+      {
+        "id": "64770e9d-4191-41c0-b7a2-d1f23a6d2322",
+        "rating": 2,
+        "title": "",
+        "content": "It's a mediocre app...they calculate their returns in the most optimistic way which are nearly impossible to execute by use. The high rating seems that they are not genuine nature. The app is good for getting details about particular stock but that information is usually free at other sites",
+        "date": "2024-12-24T15:00:19",
+        "helpful_count": 0
+      },
+      {
+        "id": "153b675a-0dd8-48c2-9895-36ca3b971017",
+        "rating": 2,
+        "title": "",
+        "content": "I used this app for a while, but it's not suitable for beginners at all. The app seems fine initially, but as soon as you start asking about stocks, it demands coins. And to purchase those coins, it charges an exorbitant amount. This app is not worth it for beginners, as you could buy some good stocks with that much money. Therefore, I'm giving this app only 2 stars.",
+        "date": "2024-09-13T20:05:56",
+        "helpful_count": 0
+      },
+      {
+        "id": "d14da7f6-88c0-4f0e-8ba6-6016799867d4",
+        "rating": 2,
+        "title": "",
+        "content": "Just uninstalled after 10 days. Could not even use to suggest others in group how good or effective app it is and it started asking for making purchase of coin. Paid moneycontrol 100rs for pro membership n got much better info. Should give an year of free access so people like me can look at numbers from stocks picled up based on reports.",
+        "date": "2024-02-26T10:42:14",
+        "helpful_count": 0
+      },
+      {
+        "id": "a00a2261-57e7-4864-a475-d96130956e31",
+        "rating": 2,
+        "title": "",
+        "content": "This app was good provideding some good information but the main problem is that i am unable to delink my brokerage account there is no such option there was no response no proper communication to reach out only WhatsApp through they were not responsible immediately don't add your broker account once you link you can't delink yourself they can't do it from there end but we will do it but they don't there is chance to misuse of your portfolio data leaks",
+        "date": "2023-05-12T13:48:41",
+        "helpful_count": 0
+      },
+      {
+        "id": "7f4cb493-e122-4916-b5fa-ac844065df77",
+        "rating": 2,
+        "title": "",
+        "content": "I don't understand why contacts, photos, videos, purchase history data is being collected! I don't buy it ! If it were only to provide the stocks insights. Highly sensitive data is comprised! I won't recommend! I belive the app's motive is just more than the providing tech details!",
+        "date": "2024-11-20T22:00:10",
+        "helpful_count": 0
+      },
+      {
+        "id": "588c917e-db46-47f9-99f6-11b99735c0c3",
+        "rating": 2,
+        "title": "",
+        "content": "The btst recommendations, which is their flagship offering are very difficult to make use of. Most of their recommendations offer a potential upside of 2-3% . The stocks surge the recommended buy range rapidly in a matter of minutes, which leaves us in a situation which is as good as not having their subscription.",
+        "date": "2024-02-12T13:50:28",
+        "helpful_count": 0
+      },
+      {
+        "id": "07eb6d90-3a45-4d5b-884b-e88d459efe82",
+        "rating": 2,
+        "title": "",
+        "content": "Not a good experience so far!! There is issue in basket as it keeps on giving prompt for repair with higher amount. Return from basket is not good as well !! Support team is also not much helpful.",
+        "date": "2025-01-03T18:08:58",
+        "helpful_count": 0
+      },
+      {
+        "id": "e2ba381f-004f-45d4-b0f9-458c67ac29d4",
+        "rating": 2,
+        "title": "",
+        "content": "I came across Liquide through one of their Instagram ads. While the video lectures and content are quite good and should be used by all amateur traders, their recommendations are quite bad in my experience. I have mostly booked losses on their recommendations despite their cadence reports of beating the market. I won't recommend this to people who want to blindly trust stock recos.",
+        "date": "2024-06-19T15:14:59",
+        "helpful_count": 0
+      },
+      {
+        "id": "25d27185-8983-4813-9a2f-09d6696d245d",
+        "rating": 2,
+        "title": "",
+        "content": "Very low accuracy, both in terms of stocks and targets. You can't count exiting the trade super early (at practically cost price), rather than reaching target, as a win.",
+        "date": "2024-08-07T09:58:57",
+        "helpful_count": 0
+      },
+      {
+        "id": "b17c5b55-f872-4d44-9830-e43fd9e8170a",
+        "rating": 2,
+        "title": "",
+        "content": "No IPO updates now, which this app previously used to provide. Also one of the big broker INDmoney is also missing. Then howcome I can think of proceeding with the services.",
+        "date": "2026-01-17T18:08:45",
+        "helpful_count": 0
+      },
+      {
+        "id": "8a62d1f6-84f6-4254-b89f-f177114d32cf",
+        "rating": 2,
+        "title": "",
+        "content": "Improve your App experience, notification when clicked does not open app or sometimes does not open with appropriate detail as per notification..",
+        "date": "2026-02-17T09:40:19",
+        "helpful_count": 0
+      },
+      {
+        "id": "59ccd5dc-e213-47b0-8b26-22412fc5edb8",
+        "rating": 2,
+        "title": "",
+        "content": "Most of their trade recommendations are sham, especially the one showing a high upside. Not very trustworthy.",
+        "date": "2026-02-10T16:28:55",
+        "helpful_count": 0
+      },
+      {
+        "id": "acf67fec-9d0c-4dc3-93f9-d3a73a695149",
+        "rating": 2,
+        "title": "",
+        "content": "App has good features but everything inside is costing money which is the worst thing. Even Groww and AngelOne don't ask for money we can invest anywhere and about knowledge they also have good predicting skills. Just making a good looking UI don't work. Remove payment option and then you will get more success. Or else you are cursed.",
+        "date": "2024-08-23T12:16:16",
+        "helpful_count": 0
+      },
+      {
+        "id": "b946b0d4-a4df-4981-a774-b670a10a13a6",
+        "rating": 3,
+        "title": "",
+        "content": "Sometimes notifications are confusion. I get same notification multiple times. Trade recommendations come on Telegram and we must open the link and then the app, which is time-consuming. And app It would be very helpful if recommendations were provided directly in the app with Stock Name, CMP, Target, Stop Loss, and duration, along with quick execution.",
+        "date": "2026-03-13T18:55:02",
+        "helpful_count": 0
+      },
+      {
+        "id": "648e2439-d4ad-46ce-bbd3-255915cedad3",
+        "rating": 3,
+        "title": "",
+        "content": "Editing this review and rating after this review and mail account was activated very next day . app is overall good . the script they suggest is good . Old review - fraud app taking money in advance then ask for kyc , after submitting documents it always shows documents are under review . it's been 3 weeks still showing documents under review . why you guys want advance money , first you do complete the kyc process then ask for money . looks totally fraud to me , as I paid .",
+        "date": "2026-06-25T14:36:32",
+        "helpful_count": 0
+      },
+      {
+        "id": "c7a193de-2fb9-48db-9d7a-3bdff006331d",
+        "rating": 3,
+        "title": "",
+        "content": "no clarity on app. stock recommendations good, not comfortable for usage to see stocks recommendations. Missing how to use app, no support from anywhere.",
+        "date": "2026-06-20T05:41:05",
+        "helpful_count": 0
+      },
+      {
+        "id": "ff472918-7b9d-4939-a2cc-f5255272b841",
+        "rating": 3,
+        "title": "",
+        "content": "it's just informative app, no hand hold support for proper trading ideas for equity Trade, once in a while it gives 1 tip.",
+        "date": "2026-03-08T11:48:45",
+        "helpful_count": 0
+      },
+      {
+        "id": "a6861fa2-2110-4eec-bbcc-05c620a5e3c9",
+        "rating": 3,
+        "title": "",
+        "content": "The app is good. Good UI. Stock assistance by LIMO is good. But don't go for their Arjun product, which degrades all their performance. One of the worst futures and options suggestion platform that they have. No confident strategy that they imply. They provide calls on telegram channels, and the price gets fluctuated so much, and you can't buy at the recommended price. Because of it, your risk to reward ratio doesn't make any sense. There would be more losses that you would make.",
+        "date": "2024-10-09T14:03:30",
+        "helpful_count": 0
+      },
+      {
+        "id": "f2252aa9-4a40-44dc-b1b2-a58d5ed40951",
+        "rating": 3,
+        "title": "",
+        "content": "Liquid team is good, overall is also good but their promotion ads are really setback even you got their membership you are forced to watch it...and when you click on their notification on you mobile it takes you to that infor but again due to ads it got closes and then hard to find that notification about.... I am member from last 10 months.",
+        "date": "2024-10-10T08:16:21",
+        "helpful_count": 0
+      },
+      {
+        "id": "d51be575-8d9e-4a58-b925-02d341b523d8",
+        "rating": 3,
+        "title": "",
+        "content": "I recently paid the subscription price and had got the access. First ghing i noticed was that its ask for a feedback everytime i login or change page.. WTH.. Seriously..! Initial trades has run into losses though market overall is bearish though these recommendation are good if only they beat the market. recent 1.8% and 2 % exit won't get me even my subscription fee back.. Anticipating the rest of the year would be good. Liked Limo reporting though and the clear interface..!",
+        "date": "2024-08-04T18:50:15",
+        "helpful_count": 0
+      },
+      {
+        "id": "50d62a32-a280-450c-873c-cd0830814357",
+        "rating": 3,
+        "title": "",
+        "content": "After the recent upgrade rebalance became a painful act. it's load forever while trying to rebalance meanwhile stocks have already been bought or sold.",
+        "date": "2026-04-08T11:35:19",
+        "helpful_count": 0
+      },
+      {
+        "id": "0aa60e7b-62cb-47bc-b767-ea9b2a64570e",
+        "rating": 3,
+        "title": "",
+        "content": "The market sentimeter does not show the current day scenario, it shows previous days cases, please show the current day sentiments of the market. When we duplicate any report on LIMO it track us back to the reports section where we cannot search any stock that we previously got a report of, please enable the feature to search stock reports on LIMO. And moreover we can see the stock FORECAST of manyy well known stocks and they are not enough, please show forecast of all of the stocks.",
+        "date": "2024-04-14T12:38:56",
+        "helpful_count": 0
+      },
+      {
+        "id": "12ad0c28-8165-48f7-b556-fae94119b66f",
+        "rating": 3,
+        "title": "",
+        "content": "As someone who follows the markets daily, I’ve tried quite a few platforms, but Liquide delivers a refreshing experience. The instant stock research feature saves me a ton of time when screening opportunities. The detailed stock card insights make complex data easy to digest, and the trade recommendations have added real value to my portfolio strategy. For anyone serious about building long-term wealth, this app easily provides the best stock recommendation service in a clean.",
+        "date": "2025-09-05T12:22:52",
+        "helpful_count": 0
+      },
+      {
+        "id": "d6e88d23-8d7a-4b0a-b232-ee8727276e03",
+        "rating": 3,
+        "title": "",
+        "content": "This app helps users invest in stocks and mutual funds with ease. They are reliable, fast, and suitable for beginners.",
+        "date": "2026-03-22T21:01:30",
+        "helpful_count": 0
+      },
+      {
+        "id": "87d94101-5da7-4d22-82db-ee27d2e2b666",
+        "rating": 3,
+        "title": "",
+        "content": "Not very effective app. Half of their predictions are false and they remove those from their records to show high accuracy. (Random guesses have 50% probability of being correct and that's what they are doing) Also, their backend is messed up. Most of the times fails to sync my portfolio with broker or fetch MF portfolio. Hire better developers at least.",
+        "date": "2024-10-16T16:18:20",
+        "helpful_count": 0
+      },
+      {
+        "id": "a2bdd0c2-487e-4593-8e6c-ab43631df92a",
+        "rating": 3,
+        "title": "",
+        "content": "Order placements and executions are fast, reducing the risk of missed opportunities in volatile markets. Most transactions are processed without noticeable delays. The app launches swiftly, and navigating between different sections, such as portfolio tracking, market insights, and order placement, is seamless.",
+        "date": "2024-11-15T19:13:51",
+        "helpful_count": 0
+      },
+      {
+        "id": "a66450fb-d982-4810-985f-756707775ed2",
+        "rating": 3,
+        "title": "",
+        "content": "The worst thing about this app is the information confusion. There are so many open calls that you can't see anywhere. I choose to invest without connecting to broker and I have no way to check if my active trades are still active or liquid has recommended an exit. So many of the trades have gone downhill with no clue as to when liquid recommends and when it exits. Not all notification come on WhatsApp either. Shady info hiding practices going on here.",
+        "date": "2024-02-19T10:23:04",
+        "helpful_count": 0
+      },
+      {
+        "id": "8ba32297-c78a-40e6-a0c2-7be980620aae",
+        "rating": 3,
+        "title": "",
+        "content": "BTST notification not comming timely. It comes once after price is out of recommended range most of time. App has also not clean GUI , make trade section simple, with closed trades and ongoing trade section. I do not like swipe left and right. Instead of btst please provide some more short term trades or swing trades in month at least 10 to 15. Overall app GUI is not clean and clear. It is confusing. Make it simple to understand.",
+        "date": "2023-11-22T14:45:56",
+        "helpful_count": 0
+      },
+      {
+        "id": "868f5bc3-eeca-4686-867d-9d15ceff500b",
+        "rating": 3,
+        "title": "",
+        "content": "App navigation is slow compared to smallcase. I have subscribed to 3 baskets. But unlike smallcase app, we are able to see only the current return. Kindly add Realized return,dividend, total return(realized return+dividend+current return)..only then can we know, how the basket performed over time",
+        "date": "2025-01-04T21:54:26",
+        "helpful_count": 0
+      },
+      {
+        "id": "73fdca12-b5a7-4a4e-916b-bb186aabb39a",
+        "rating": 3,
+        "title": "",
+        "content": "If you’re serious about building wealth through the stock market, the Liquiside App is a game-changer. It provides best stock recommendations tailored for both beginners and experienced traders. The instant stock research feature is a lifesaver, giving you up-to-date insights without spending hours analyzing charts. The stock card insights are detailed and easy to understand, helping you make informed decisions quickly.",
+        "date": "2025-09-05T18:24:47",
+        "helpful_count": 0
+      },
+      {
+        "id": "2579d65e-ba93-4bbd-bf8b-87d978dad875",
+        "rating": 3,
+        "title": "",
+        "content": "Neither good nor bad. do your own research before investing. I don't have gain from using this app. some stocks searched good yield. overall it's ok app.",
+        "date": "2026-01-09T08:44:23",
+        "helpful_count": 0
+      },
+      {
+        "id": "b13a93eb-df3c-4476-bfa7-01c898d635b4",
+        "rating": 3,
+        "title": "",
+        "content": "All are good, but sometimes trades arrive through notifications only. If all suggestions come through Whatsapp, it is really good; for working people, the Whatsapp message will be handy.",
+        "date": "2024-07-21T23:55:47",
+        "helpful_count": 0
+      },
+      {
+        "id": "294c78e6-2422-469f-81df-0dca70a2c7e3",
+        "rating": 3,
+        "title": "",
+        "content": "Ui can be improved. It's too much of saturation in the colors. It's difficult to track where should I look at ... It looks every thing as imprtent to look at ... Which is not a good UI exprence.",
+        "date": "2024-06-09T21:37:59",
+        "helpful_count": 0
+      },
+      {
+        "id": "bfb709ce-0a48-4b74-8b45-6c4a96417380",
+        "rating": 4,
+        "title": "",
+        "content": "One of the best platforms for wealth generation. Gives best stock and trade recommendations. Helped and taught me alot. would definitely recommend.",
+        "date": "2026-03-21T15:45:01",
+        "helpful_count": 0
+      },
+      {
+        "id": "35612ec8-9dc4-4737-b898-bb8e6d7fe918",
+        "rating": 4,
+        "title": "",
+        "content": "I like that Liquide makes investing simple and helps in wealth creation. The stock card insights explain data clearly, but they feel too basic for advanced users. The instant stock research is quick, though sometimes major updates come late. The best stock recommendation works well, but it could be reviewed more often. Trade recommendations are useful, but they should be more personalized to different goals.",
+        "date": "2025-09-05T16:43:07",
+        "helpful_count": 0
+      },
+      {
+        "id": "1c289144-1efb-4926-9779-a1e671996ce1",
+        "rating": 4,
+        "title": "",
+        "content": "The design asthetics of this app is excellent. Got all the required info and neatly presented. Wondering why they din't have a direct discount broking app themselves for stocks and mutual funds instead of connecting to 3rd party brokers. I've would have preferred it for investment. But not good for trades / FO as the app response is slow at times.",
+        "date": "2025-01-11T23:40:57",
+        "helpful_count": 0
+      },
+      {
+        "id": "d63b048e-1d0c-471a-a44c-2d258e96b894",
+        "rating": 4,
+        "title": "",
+        "content": "As someone still learning about investments, I find Liquide very easy to use. The stock card insights make financial data quite simple to understand. The app gives some of the best stock recommendations, and the instant stock research helps me stay updated quickly. Liquide’s trade recommendations guide me to make better choices and grow my wealth with more confidence.",
+        "date": "2025-09-28T10:00:39",
+        "helpful_count": 0
+      },
+      {
+        "id": "6f4372d1-2dfe-4a28-b962-ccaf0dc055d9",
+        "rating": 4,
+        "title": "",
+        "content": "it's operate very smoothly and provide genuine recommendations but it's little expensive to purchase the plan",
+        "date": "2026-05-13T07:46:57",
+        "helpful_count": 0
+      },
+      {
+        "id": "aef80333-1289-4be1-8f50-f2ebdd22ab83",
+        "rating": 4,
+        "title": "",
+        "content": "Best app for growing wealth and stock knowledge.",
+        "date": "2026-04-29T20:52:35",
+        "helpful_count": 0
+      },
+      {
+        "id": "fd7953e3-7a39-4716-89a1-63dd69bb90e2",
+        "rating": 4,
+        "title": "",
+        "content": "I like how trade recommendations are straight forward after instant Stock research, best one for wealth creation.",
+        "date": "2026-03-20T17:30:55",
+        "helpful_count": 0
+      },
+      {
+        "id": "eece6d51-3583-48d0-b36d-e67b5348fcac",
+        "rating": 4,
+        "title": "",
+        "content": "I've been using this app for a while now and it has genuinely helped me build my confidence in investing. The stock cards insights are very easy to understand and save me a lot of time. I also like how quickly I can do instant shock research without jumping between multiple platforms.",
+        "date": "2025-09-05T09:34:24",
+        "helpful_count": 0
+      },
+      {
+        "id": "0743a752-0ffb-45da-8fce-5a7dd57a1659",
+        "rating": 4,
+        "title": "",
+        "content": "Since joining LiquideOne in July, I've seen a substantial improvement in my trading performance. The platform's accuracy in trade recommendations and the wealth of strategic insights it provides are unparalleled. LiquideOne offers a comprehensive approach to investing, combining state-of-the-art technology, expert analysis, and a range of investment options to suit various risk profiles. It's more than just a trading platform; it's a vital partner in my quest for finanical quest.",
+        "date": "2024-08-31T21:19:42",
+        "helpful_count": 0
+      },
+      {
+        "id": "17ced0f3-bcfd-4bf0-8b51-4c9d8cebb91e",
+        "rating": 4,
+        "title": "",
+        "content": "gives reasonable idea to keep stock hold, sell",
+        "date": "2026-05-06T13:21:10",
+        "helpful_count": 0
+      },
+      {
+        "id": "654ecde2-aca2-40c4-9ade-0e72a0e6c0f3",
+        "rating": 4,
+        "title": "",
+        "content": "I’ve been using the Liquid App for my trades, and the recommendations have been spot-on. The app provides clear, well-researched trade suggestions that fit perfectly with my trading style. The real-time updates and easy-to-understand analysis help me make quick, informed decisions. It’s made trading smoother and more successful for me. Definitely worth checking out!",
+        "date": "2024-09-17T16:23:12",
+        "helpful_count": 0
+      },
+      {
+        "id": "50364c60-6d0a-4887-acaf-40f6407d2887",
+        "rating": 4,
+        "title": "",
+        "content": "I’ve been using Liquide for a few weeks now and it has completely changed the way I manage my investments. The instant stock research feature is super quick and helps me stay updated. I really liked the stock card insights which make it easier to understand a company’s fundamentals. Overall one of the best apps for long-term wealth creation",
+        "date": "2025-09-03T09:42:00",
+        "helpful_count": 0
+      },
+      {
+        "id": "853b5fa9-dbed-464d-a9cf-bf429f6a9dd2",
+        "rating": 4,
+        "title": "",
+        "content": "it is best stock recommendation it helps me a lot great app for investing , trade recommendation and a lot to experience have great information about trade , stock markets, investments and a lot more things specifically great for beginners to learn it has enough content and different options to use and utilise effortlessly according to our need",
+        "date": "2024-11-21T20:37:21",
+        "helpful_count": 0
+      },
+      {
+        "id": "1d623e29-e656-49b8-96e9-23f29cd4db0a",
+        "rating": 4,
+        "title": "",
+        "content": "Very user-friendly interface. I found the instant stock research tool extremely helpful when deciding on trades. The trade recommendations feel accurate and reliable. A solid app overall for anyone serious about investing.",
+        "date": "2025-09-28T18:23:02",
+        "helpful_count": 0
+      },
+      {
+        "id": "075382ea-f8ba-49f1-8d97-149102a893ca",
+        "rating": 4,
+        "title": "",
+        "content": "I always get the best stock recommendations here, super useful! The insights are spot on and have helped me make smarter investment choices. Highly recommended for anyone in the stock market.",
+        "date": "2025-04-18T18:21:09",
+        "helpful_count": 0
+      },
+      {
+        "id": "6b3a4cdc-b5e5-40be-a1a6-20cb8a58424f",
+        "rating": 4,
+        "title": "",
+        "content": "The app takes a lot of time to open due to long animation. Please optimize for opening fast. Also other animations like when you are done buying a stock, are also slow, olease look at making the experience faster. People are usually in a hurry to take actions when they open the app.",
+        "date": "2023-11-22T13:27:17",
+        "helpful_count": 0
+      },
+      {
+        "id": "4f9033d9-42c7-4ebc-b53d-c8dace42b715",
+        "rating": 4,
+        "title": "",
+        "content": "This app is really helpful for managing Wealth and making informed decisions. It provides the best stock recommendation with clear explanations. I like the instant stock research feature which saves a lot of time. The stock card insights are easy to understand and very useful. Overall, the trade recommendations feel reliable and well-researched.",
+        "date": "2025-12-26T22:16:49",
+        "helpful_count": 0
+      },
+      {
+        "id": "ece130f6-6280-4fb7-9200-339d34d88e00",
+        "rating": 4,
+        "title": "",
+        "content": "yes it is very usefull and better. but the fees for limo is very high I normal Investor or trader can't afford. if the subscription fee will be low I think the ratings are going to rise.",
+        "date": "2024-07-30T18:59:40",
+        "helpful_count": 0
+      },
+      {
+        "id": "19fa0306-87eb-41af-b25c-9b38b28c6fcf",
+        "rating": 4,
+        "title": "",
+        "content": "Liquide is a great app for building wealth with confidence. It provides smart stock recommendations, instant research, and helpful stock card insights that make decision-making easier. With trade recommendations to guide users, it’s a valuable tool for anyone serious about investing.",
+        "date": "2024-11-11T18:35:25",
+        "helpful_count": 0
+      },
+      {
+        "id": "1a277b77-28cf-466d-af96-30ec4fe0b16e",
+        "rating": 4,
+        "title": "",
+        "content": "Liquide app is very helpful and interesting! This app has the best stock recommendations and trade recommendations that is very helpful and i think the app and wealth promoting management is very important in my opinion for finance!",
+        "date": "2024-10-19T17:23:46",
+        "helpful_count": 0
+      },
+      {
+        "id": "5d16fe00-0890-4e0b-9e35-9d880df43fd8",
+        "rating": 5,
+        "title": "",
+        "content": "When I first download it I like that they gave some free coins to check some features. I found the subscription expensive. But it was good, they have regular meetings. And the user can ask many questions about stock and they respond within 24, with details, which is good for people woubt and is also accurate. Over all great job. (sudjestions is to reduce the cost of the subscription even tho u give discount)",
+        "date": "2023-06-12T10:47:09",
+        "helpful_count": 0
+      },
+      {
+        "id": "e7a87028-b7d4-49c5-b6e4-c025a428c13a",
+        "rating": 5,
+        "title": "",
+        "content": "This stock market app is a very useful platform for both beginners and experienced investors. It provides real-time updates, detailed charts, and accurate market insights that help users make informed decisions. The interface is clean and user-friendly, making it easy to navigate through different sections like portfolio tracking, watchlists, and market news.",
+        "date": "2026-05-01T11:33:30",
+        "helpful_count": 0
+      },
+      {
+        "id": "062ef7cf-dfc6-47fd-ad37-d59de764f33e",
+        "rating": 5,
+        "title": "",
+        "content": "Excellent experience with Liquide! The app is smooth, reliable, and very easy to use. Everything works exactly as expected, and the interface looks professional. Highly recommended.",
+        "date": "2026-04-25T04:46:41",
+        "helpful_count": 0
+      },
+      {
+        "id": "f012ce7d-35bb-4d4b-ac4f-29f99ef73740",
+        "rating": 5,
+        "title": "",
+        "content": "Really good app for stock investing, especially for beginners. The interface is simple and easy to understand. Buying and tracking stocks is smooth, and the insights are helpful. Overall, a reliable app for anyone looking to start or manage investments.",
+        "date": "2026-03-21T22:56:12",
+        "helpful_count": 0
+      },
+      {
+        "id": "64759e8f-a717-4166-a3b1-ec7e3a407e5d",
+        "rating": 5,
+        "title": "",
+        "content": "A great app for anyone serious about building wealth. The instant stock research is fast and useful, and the stock card insights give a clear picture without confusion. Best stock recommendation and trade recommendations features make decision-making much easier.",
+        "date": "2026-03-18T10:26:00",
+        "helpful_count": 0
+      },
+      {
+        "id": "85e450f2-c665-4bc6-902f-a886cb898147",
+        "rating": 5,
+        "title": "",
+        "content": "Great app for building wealth. The instant stock research and stock card insights make it very easy to understand stocks. Really helpful trade recommendations.",
+        "date": "2026-03-13T18:18:14",
+        "helpful_count": 0
+      },
+      {
+        "id": "3c55e676-a0f0-49cb-b1dd-72f52cd77055",
+        "rating": 5,
+        "title": "",
+        "content": "Perfect for anyone focused on wealth creation. Offers instant stock research, smart stock card insights, and reliable trade recommendations. Truly stands out for best stock recommendations!",
+        "date": "2026-03-17T11:11:59",
+        "helpful_count": 0
+      },
+      {
+        "id": "63c3cee0-f36c-40dd-af14-c0159d9c7575",
+        "rating": 5,
+        "title": "",
+        "content": "Best stock recommendations. This app has helped me to build my wealth and understanding stock market as a beginner.",
+        "date": "2026-05-01T11:51:42",
+        "helpful_count": 0
+      },
+      {
+        "id": "0e818242-831f-48be-94a4-1d4e8b767282",
+        "rating": 5,
+        "title": "",
+        "content": "Wealth, stock market insights, and trade recommendations all in one place. Accurate analysis with smart strategies that actually help in decision-making.",
+        "date": "2026-05-01T11:45:08",
+        "helpful_count": 0
+      },
+      {
+        "id": "229986d7-bdf4-4924-8a93-ed4d8b0dd450",
+        "rating": 5,
+        "title": "",
+        "content": "really good app for stock investing, especially for beginners. The interface is simple and easy to understand.",
+        "date": "2026-04-27T16:05:51",
+        "helpful_count": 0
+      },
+      {
+        "id": "a692b6ec-20e4-464f-8da2-b4c2b64fec83",
+        "rating": 5,
+        "title": "",
+        "content": "I've been using Liquide for a while now, and it's been a game-changer for my investment strategy. The app's interface is user-friendly, making navigation a breeze, especially for beginners like me. What sets it apart are the in-depth stock market courses offered, which have significantly enhanced my understanding of trading. Additionally, the real-time BUY/SELL/HOLD ratings have been incredibly helpful for making quick decisions.",
+        "date": "2024-08-31T13:05:19",
+        "helpful_count": 0
+      },
+      {
+        "id": "c5c5e9c9-de41-4083-a6a7-298c514ee562",
+        "rating": 5,
+        "title": "",
+        "content": "The LiMo feature of the app is just too good. It works so great. Just type in the name of the stock you want to know about and the duration for which you will stay invested in it (short, medium or long term) and it generates for you a report immediately. You can rely on the report. It's quite accurate. The UI is smooth. Other features are also good. You should definitely give it a shot. It will be worth every penny of yours.",
+        "date": "2024-07-27T08:48:50",
+        "helpful_count": 0
+      },
+      {
+        "id": "04962240-ab6d-4b08-999e-3d87a870dd9b",
+        "rating": 5,
+        "title": "",
+        "content": "I've been using Liquide for a while and it's honestly one of the smoothest apps I've tried. The instant stock research is quick, the stock card insights are super easy to read, and the best stock recommendation really helps me pick the right companies. I also like how the trade recommendations are practical and simple to follow. Great app if you want to track and grow your wealth without any confusion.",
+        "date": "2025-09-05T23:05:04",
+        "helpful_count": 0
+      },
+      {
+        "id": "3593dcff-9fe3-47ab-ad1d-fa349ad3fd74",
+        "rating": 5,
+        "title": "",
+        "content": "Finding the best stock recommendation in under-vetted, cash-rich busine",
+        "date": "2026-06-25T09:16:25",
+        "helpful_count": 0
+      },
+      {
+        "id": "6c386993-c506-4278-8ba9-27c52c4ad566",
+        "rating": 5,
+        "title": "",
+        "content": "Smooth operation and excellent question quality across quizzes..",
+        "date": "2026-06-04T19:24:11",
+        "helpful_count": 0
+      },
+      {
+        "id": "2641b54a-47e9-4747-b277-1cf46f8dbeb6",
+        "rating": 5,
+        "title": "",
+        "content": "Love this app! It's super user-friendly, and the insights are on point. The educational resources are excellent, keeping me informed and confident in my investment decisions. The BUY/SELL/HOLD indicators simplify trading, and the stock alerts keep me ahead of market trends. Liquide's features cater to all experience levels, making it a must-have for anyone serious about trading. It has made a significant difference in my trading strategy and overall market understanding. Highly recommend!",
+        "date": "2024-07-04T16:25:11",
+        "helpful_count": 0
+      },
+      {
+        "id": "712e5a1e-2146-40f0-a629-db9142bed958",
+        "rating": 5,
+        "title": "",
+        "content": "Liquide is an amazing app for building long-term wealth. The platform provides the best stock recommendation backed by strong data and instant stock research. I really like the detailed stock card insights which make understanding companies so easy. The trade recommendations are clear and helpful. Highly recommended!",
+        "date": "2026-02-22T23:31:23",
+        "helpful_count": 0
+      },
+      {
+        "id": "7cd15706-c329-455f-bfdd-6e63c343833a",
+        "rating": 5,
+        "title": "",
+        "content": "Great usability with instant stock research and clear recommendations. Stock insights are easy to understand and genuinely useful—overall a great experience",
+        "date": "2026-05-01T11:34:42",
+        "helpful_count": 0
+      },
+      {
+        "id": "8ecad9a9-5ce0-4d1e-a307-2e0fa5a1012b",
+        "rating": 5,
+        "title": "",
+        "content": "Liquide is a SEBI-registered stock advisory app that provides AI-powered stock recommendations (LiMo) and curated portfolios (\"baskets\") to simplify investing. While users praise its intuitive interface, reviews are polarizing, very nice app",
+        "date": "2026-04-25T00:00:53",
+        "helpful_count": 0
+      },
+      {
+        "id": "be48bd80-2766-459f-8dd3-46dd7385f6e3",
+        "rating": 5,
+        "title": "",
+        "content": "Really good app for stock investing, especially for beginners. The interface is simple and easy to understand. Buying and tracking stocks is smooth, and the insights are helpful. Overall, a reliable app for anyone looking to start or manage investments. 5 people found this helpful",
+        "date": "2026-04-25T18:14:26",
+        "helpful_count": 0
+      }
+    ],
+    "review_analysis": {
+      "total_reviews": 100,
+      "average_rating": 3.0,
+      "rating_distribution": {
+        "1": 20,
+        "2": 20,
+        "3": 20,
+        "4": 20,
+        "5": 20
+      }
+    },
+    "reviews_metadata": {
+      "1": {
+        "requested": 20,
+        "fetched": 20
+      },
+      "2": {
+        "requested": 20,
+        "fetched": 20
+      },
+      "3": {
+        "requested": 20,
+        "fetched": 20
+      },
+      "4": {
+        "requested": 20,
+        "fetched": 20
+      },
+      "5": {
+        "requested": 20,
+        "fetched": 20
+      }
+    }
+  },
+  "analysis": {
+    "summary": "Liquide-Trade is a stock investment app developed by Liquide Life. It has a high user rating of 4.63 and over 1 million installs. The app claims to offer an 85% accuracy rate in trade notifications, but user reviews suggest significant issues with the timing and reliability of these notifications. Users also express dissatisfaction with the app's subscription model and the quality of investment advice provided.",
+    "permissions_risk": "Medium",
+    "strengths": [
+      "High user rating and large install base",
+      "Claimed 85% accuracy in trade notifications",
+      "Free to download",
+      "No in-app purchases",
+      "User-friendly interface"
+    ],
+    "concerns": [
+      "Delayed or missing trade notifications",
+      "Discrepancies in reported trade success rates",
+      "Aggressive and misleading subscription promotions",
+      "Poor quality of investment advice",
+      "Negative user experiences with customer support"
+    ]
+  },
+  "analysis_status": "success",
+  "analysis_provider": null
+}

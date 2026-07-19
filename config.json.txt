@@ -1,0 +1,23 @@
+{
+  "api_keys": [
+    {
+      "id": "83af1129-b005-47a8-92ac-17f865ed6af2",
+      "name": "Key 1",
+      "key": "AQ.Ab8RN6IIbVPQtO1XNsJwX-w3JVga"
+
+      ""-uZAh_2WfMfEg_u67b4giA",
+      "provider": "gemini",
+      "isDefault": true,
+      "createdAt": "2026-06-26T16:50:26.719Z"
+    }
+  ],
+  "pipeline_defaults": {
+    "enabled": true,
+    "provider": "gemini",
+    "start_from": "agent1",
+    "only": ""
+  },
+  "google_drive": {
+    "defaultFolderId": "https://drive.google.com/drive/folders/1bEds1t0tfck5QqyvPKq9US-SSPLoueid?usp=sharing"
+  }
+}

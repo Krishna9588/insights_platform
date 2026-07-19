@@ -1,0 +1,370 @@
+{
+    "company_name": "Cockroach Labs",
+    "domain": "https://www.cockroachlabs.com/",
+    "playstore_link": null,
+    "appstore_link": null,
+    "youtube_official_channel": "https://www.youtube.com/channel/UCy7Vw2x9a9gBvS7v0oF0C1g",
+    "linkedin_company_page": "https://www.linkedin.com/company/cockroach-labs",
+    "year_founded": "2015 — New York City, United States",
+    "names_of_founders": [
+        "Spencer Kimball",
+        "Peter Mattis",
+        "Ben Darnell"
+    ],
+    "c-suite_officer": [
+        "Spencer Kimball - CEO",
+        "Peter Mattis - CTO",
+        "Nate Stewart - Chief Product Officer",
+        "Lindsay Grenawalt - Chief People Officer",
+        "Sailesh Munagala - Chief Financial Officer"
+    ],
+    "employee_count": "~700",
+    "exact_hq_location": "125 West 25th Street, 11th Floor, New York, NY 10001, United States",
+    "locations_operating_in": [
+        "New York, United States",
+        "Austin, United States",
+        "Bangalore, India",
+        "London, United Kingdom",
+        "Toronto, Canada",
+        "San Francisco, United States"
+    ],
+    "industry_and_segment": "Cloud-native distributed SQL database for online transactional processing (OLTP), Business/Productivity Software, Database Management",
+    "available_platforms": "Web",
+    "funding_raised": "$633 million",
+    "funding_stage": "Series F",
+    "no_of_users": "Over 480 enterprise customers, tens of thousands of deployed clusters, and over 10,000 serverless users",
+    "annual_revenue": "Unable to verify (latest beyond 2021)",
+    "key_positioning": "Cloud-native, distributed SQL database for high scalability, resilience, and survivability (zero downtime, disaster-resistant, ACID transactions, PostgreSQL compatible, global data distribution). Designed for mission-critical OLTP applications.",
+    "revenue_model": "Freemium, usage-based pricing for cloud services (Dedicated and Serverless), enterprise licenses for self-hosted, premium features and 24/7 support, direct sales and cloud marketplaces",
+    "pricing_tiers": [
+        "Free: Serverless tier with 10 GiB storage and 50 million request units/month.",
+        "Serverless Paid: $0.50/GiB storage, $0.20/million requests beyond free tier.",
+        "Dedicated: Usage-based (SaaS-style) fees.",
+        "Enterprise: Custom pricing for self-hosted with premium features/support.",
+        "Cloud Tiers: Basic, Standard, Advanced (usage-based)."
+    ],
+    "target_customer_segments": [
+        "Companies building modern cloud applications",
+        "Enterprise customers managing mission-critical workloads",
+        "Fortune 500 corporations",
+        "Banking & Fintech",
+        "Retail & eCommerce"
+    ],
+    "tech_stack_highlights": [
+        "Distributed SQL",
+        "PostgreSQL wire protocol compatibility",
+        "Raft consensus",
+        "Range-based partitioning",
+        "SERIALIZABLE isolation",
+        "Inspired by Google Spanner",
+        "Go"
+    ],
+    "milestones": [
+        "2015: Company founded in New York City.",
+        "June 2015: Secured $6.3 million in Seed funding.",
+        "March 2016: Series A funding led by Index Ventures.",
+        "2019: Raised $55 million in Series C funding.",
+        "2020: Launched CockroachCloud, a fully managed Database-as-a-Service.",
+        "2020: Raised $86.6 million in Series D funding.",
+        "January 2021: Raised Series E funding.",
+        "December 2021: Raised $278 million in Series F funding at a $5 billion valuation, bringing total funding to $633 million.",
+        "February 2025: Celebrated 10-year anniversary."
+    ],
+    "new_features_launched": [
+        "May 2026: CockroachDB available on IBM Power and IBM Cloud.",
+        "September 2024: Elevated Enterprise Resilience with Advanced AI and Improved Cloud Solutions.",
+        "October 2021: Launched CockroachDB Serverless beta."
+    ],
+    "recent_partnerships_and_integrations": [
+        {
+            "partner": "IBM",
+            "type": "Strategic Partnership",
+            "description": "Strengthened partnership for customer modernization and CockroachDB availability on IBM Power and IBM Cloud.",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpmtmGwn3El-L-tjO_bQkvn10WzpkuiP6aSyw4D_2C9lHoxpRtsH7cgJKPfY7tpQyVqPwDbc3Y5suw60VWzWLDMTwXAr6vmL9fhvwwPlDfhhg2jfT3WniGZY43q9rLa4P-1gbhcZwm8ZW3BxnF",
+            "date": "2026-05-13"
+        },
+        {
+            "partner": "Ory",
+            "type": "Strategic Partnership",
+            "description": "Partnered for identity management across humans, services, and autonomous agents.",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEsq8c-wv0LIr-yG7louFF_7gKC4yUDSIymrhYA-7lZPnPY9Lg7Vmj0canSztSxwlFrTiUTKmFWFc1MGbwzwMgm0x4MOWuz23Uy0n_A3GpLvqLgd1g3RaNRtQhMtv1BE1qcOEmFBKqXhvKDAU2JRCga8IkfPdPrJWVB-frPPvwq3DkT8gFgEErmROrVlT-lX2ujqEcNeA==",
+            "date": "2025-06-13"
+        },
+        {
+            "partner": "Amazon Web Services (AWS)",
+            "type": "Integration",
+            "description": "Collaborated to accelerate Windows-based application and database modernization.",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEp35Z_ygyqOgpGzWUvwY9LUhkSUV7OzUqIvHIzV5eGh7ululdn_np09otxEltBSbY5fqGatFwCrQZUSh4kNX-j2O9ztBW179npqFJyLv15Urre67dGq5AI8613K2tgSYaizJL8sQO1d3Ak",
+            "date": "2025-03-04"
+        },
+        {
+            "partner": "Google Cloud",
+            "type": "Strategic Partnership",
+            "description": "Deepened partnership, with CockroachDB selected to join Google Distributed Cloud.",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZjd2QyG4s8Hv7q2Am5243hX2lKm1quB2J7B92Uwt6SIELLydQfVp0zHwc5TxBRr1pBOY03cFwk79cHzPdNWulleyR3qfbW9qOU7QFErse_4UMway-LD9DKTeyyDqMpcaLJzSD_A==",
+            "date": "2024-04-09"
+        }
+    ],
+    "competitors": [
+        {
+            "name": "MongoDB",
+            "domain": "https://www.mongodb.com/"
+        },
+        {
+            "name": "YugabyteDB",
+            "domain": "https://yugabyte.com/"
+        },
+        {
+            "name": "SingleStore",
+            "domain": "https://www.singlestore.com/"
+        },
+        {
+            "name": "Google Cloud Spanner",
+            "domain": "https://cloud.google.com/spanner"
+        }
+    ],
+    "regulatory_and_legal_issues": [],
+    "differentiators": [
+        {
+            "feature": "Cloud-native, distributed SQL database offering unmatched uptime, scale, and resilience with automatic failover and data replication.",
+            "user_type": "Enterprise customers, Developers, Database Administrators",
+            "frequency": "Continuous",
+            "source": "https://www.g2.com/products/cockroachdb/reviews, https://www.prnewswire.com/news-releases/cockroach-labs-accelerates-momentum-into-2026-as-enterprises-rebuild-for-ai-scale-resilience-302033096.html, https://aws.amazon.com/marketplace/pp/prodview-c2l2z7t2gztq4, https://www.cockroachlabs.com/blog/modernize-data-infrastructure/",
+            "date": "Recent",
+            "effect": [
+                "Ensures applications remain continuously available and performant even during outages or high demand, providing peace of mind for mission-critical workloads.",
+                "Simplifies database management by automating scaling, replication, and failover across distributed environments."
+            ]
+        },
+        {
+            "feature": "PostgreSQL compatibility and a familiar SQL interface, reducing the learning curve for developers already proficient in PostgreSQL.",
+            "user_type": "Developers, Database Administrators",
+            "frequency": "Continuous",
+            "source": "https://www.g2.com/products/cockroachdb/reviews, https://www.cockroachlabs.com/compare/cockroachdb-vs-google-spanner/, https://www.yugabyte.com/yugabytedb-vs-cockroachdb/, https://www.cockroachlabs.com/blog/2024-year-in-review/, https://www.hoop.dev/cockroachdb-vs-spanner-review",
+            "date": "Recent",
+            "effect": [
+                "Facilitates easier migration of existing PostgreSQL applications and allows developers to leverage existing skills and tools.",
+                "Offers the benefits of a distributed database without requiring a complete rewrite of application logic for SQL operations."
+            ]
+        },
+        {
+            "feature": "AI-native capabilities, including Vector Search and integration with pgvector, supporting generative AI applications and operational data.",
+            "user_type": "Developers, Data Scientists, Enterprise customers",
+            "frequency": "Continuous",
+            "source": "https://www.cockroachlabs.com/compare/cockroachdb-vs-google-spanner/, https://channelinsider.com/ai/cockroach-labs-cockroachdb-24-2-ai-resilience/, https://www.cockroachlabs.com/blog/2024-year-in-review/, https://www.prnewswire.com/news-releases/cockroach-labs-sets-a-new-benchmark-in-enterprise-resilience-with-next-generation-ai-capabilities-and-enhanced-cloud-tiers-302257213.html, https://www.crn.com/news/cloud/cockroach-labs-latest-database-release-offers-new-ai-functionality-price-flexibility, https://aitechpark.com/cockroach-labs-launched-next-gen-ai-capabilities-enhanced-cloud-tiers/",
+            "date": "2024-09-26",
+            "effect": [
+                "Enables enterprises to build and scale modern AI-driven applications that require high-performance similarity searches and recommendation systems directly within their transactional database.",
+                "Reduces the need for multiple, separate systems for vector data and operational data, streamlining infrastructure."
+            ]
+        },
+        {
+            "feature": "Multi-cloud and hybrid-cloud deployment flexibility, preventing vendor lock-in and allowing deployment across various cloud providers and on-premises.",
+            "user_type": "Enterprise customers, Cloud Architects",
+            "frequency": "Continuous",
+            "source": "https://www.cockroachlabs.com/compare/cockroachdb-vs-google-spanner/, https://www.cockroachlabs.com/blog/cloud-journeys-multi-cloud-beyond-distributed-sql/, https://builtin.com/companies/cockroach-labs-company-profile",
+            "date": "Recent",
+            "effect": [
+                "Provides businesses with control over their infrastructure choices, leveraging best-of-breed features and pricing from different providers.",
+                "Ensures data sovereignty and resilience by distributing data across diverse environments."
+            ]
+        }
+    ],
+    "current_problems_struggling_with": [
+        {
+            "description": "Steep learning curve and complexity for advanced features and configuration, particularly for beginners or those migrating from traditional databases.",
+            "user_type": "Developers, Database Administrators",
+            "frequency": "Continuous",
+            "source": "https://www.g2.com/products/cockroachdb/reviews, https://www.youtube.com/watch?v=s5Rz-93J2kI, https://aws.amazon.com/marketplace/pp/prodview-c2l2z7t2gztq4",
+            "date": "Recent",
+            "effect": [
+                "Increases onboarding time and requires significant effort to master the distributed architecture nuances."
+            ]
+        },
+        {
+            "description": "High licensing fees and overall cost for self-hosted enterprise deployments, which can be significantly higher than basic PostgreSQL or smaller scale needs.",
+            "user_type": "Enterprise customers, Small-Business",
+            "frequency": "Occasional",
+            "source": "https://www.g2.com/products/cockroachdb/reviews, https://www.ithy.com/blog/cockroachdb-vs-yugabytedb-an-in-depth-comparative-analysis, https://www.reddit.com/r/webdev/comments/171h0x2/is_cockroach_db_as_good_as_it_seems/",
+            "date": "Recent",
+            "effect": [
+                "May deter cost-sensitive large organizations or those not requiring extreme scale from adopting the self-hosted version.",
+                "Leads to comparisons where simpler setups may opt for alternatives like PostgreSQL due to lower cost."
+            ]
+        },
+        {
+            "description": "Latency optimization challenges for globally distributed applications, particularly concerning query routing and high latency for multi-region writes.",
+            "user_type": "Developers, Enterprise customers",
+            "frequency": "Occasional",
+            "source": "https://www.peerspot.com/products/cockroachdb-review, https://news.ycombinator.com/item?id=20464871",
+            "date": "Recent",
+            "effect": [
+                "Can impact real-time performance for applications with users spread across wide geographic areas.",
+                "Requires careful architectural planning to mitigate cross-region write overhead."
+            ]
+        },
+        {
+            "description": "Some advanced features are not as mature or widely supported compared to more traditional, long-established databases.",
+            "user_type": "Developers, Database Administrators",
+            "frequency": "Occasional",
+            "source": "https://www.g2.com/products/cockroachdb/reviews, https://www.yugabyte.com/yugabytedb-vs-cockroachdb/",
+            "date": "Recent",
+            "effect": [
+                "May limit functionality for specific use cases or require workarounds.",
+                "Can make migrations from highly feature-rich PostgreSQL environments more challenging."
+            ]
+        },
+        {
+            "description": "Challenges with lack of integration and tools that work seamlessly across multi-cloud environments.",
+            "user_type": "Enterprise customers, Operations teams",
+            "frequency": "Occasional",
+            "source": "https://www.cockroachlabs.com/blog/multi-cloud-report-challenges/",
+            "date": "2023-12-19",
+            "effect": [
+                "Increases operational complexity and slows down multi-cloud adoption for some enterprises."
+            ]
+        },
+        {
+            "description": "Schema migration speed could be faster compared to other database drivers.",
+            "user_type": "Database Administrators, Developers",
+            "frequency": "Rare",
+            "source": "https://www.peerspot.com/products/cockroachdb-review",
+            "date": "Recent",
+            "effect": [
+                "Can extend maintenance windows or deployment times for applications requiring frequent schema changes."
+            ]
+        }
+    ],
+    "user_complaints": [
+        {
+            "issue": "Steep learning curve for understanding advanced features and distributed architecture nuances.",
+            "user_type": "Developers, Database Administrators",
+            "frequency": "Continuous",
+            "source": "https://www.g2.com/products/cockroachdb/reviews, https://aws.amazon.com/marketplace/pp/prodview-c2l2z7t2gztq4, https://www.youtube.com/watch?v=s5Rz-93J2kI",
+            "date": "Recent",
+            "effect": [
+                "New users find it difficult to get started quickly and fully leverage the database's capabilities without significant time investment."
+            ]
+        },
+        {
+            "issue": "Configuration complexity, particularly for managing data distribution and optimizing performance in specific scenarios.",
+            "user_type": "Developers, Database Administrators",
+            "frequency": "Occasional",
+            "source": "https://www.g2.com/products/cockroachdb/reviews, https://aws.amazon.com/marketplace/pp/prodview-c2l2z7t2gztq4",
+            "date": "Recent",
+            "effect": [
+                "Users need to deeply consider data organization, which can be challenging for complex write-heavy applications."
+            ]
+        },
+        {
+            "issue": "Perceived high cost of licensing for larger self-hosted deployments.",
+            "user_type": "Enterprise customers, Small-Business",
+            "frequency": "Occasional",
+            "source": "https://www.g2.com/products/cockroachdb/reviews, https://www.reddit.com/r/webdev/comments/171h0x2/is_cockroach_db_as_good_as_it_seems/",
+            "date": "Recent",
+            "effect": [
+                "Leads to consideration of alternative, simpler database solutions like standard PostgreSQL for projects that don't absolutely require distributed SQL at scale."
+            ]
+        },
+        {
+            "issue": "Lack of a user-friendly UI for managing the platform and a chatbot for support, relying more on SQL playground or email support.",
+            "user_type": "Database Administrators, Less technical users",
+            "frequency": "Rare",
+            "source": "https://www.peerspot.com/products/cockroachdb-review",
+            "date": "Recent",
+            "effect": [
+                "Can create barriers for users with limited technical knowledge, making management less intuitive."
+            ]
+        },
+        {
+            "issue": "Feature set not always as mature or comprehensive as traditional relational databases.",
+            "user_type": "Developers, Database Administrators",
+            "frequency": "Occasional",
+            "source": "https://www.g2.com/products/cockroachdb/reviews, https://www.yugabyte.com/yugabytedb-vs-cockroachdb/",
+            "date": "Recent",
+            "effect": [
+                "Requires developers to adapt their practices or use workarounds for certain functionalities they might expect from a PostgreSQL-compatible database."
+            ]
+        },
+        {
+            "issue": "Potential for performance bottlenecks with complex SQL queries or heavy update/delete workloads due to consensus and tombstone handling.",
+            "user_type": "Developers, Database Administrators",
+            "frequency": "Rare",
+            "source": "https://news.ycombinator.com/item?id=20464871",
+            "date": "2019-07-18",
+            "effect": [
+                "Requires tuning and optimization to maintain desired performance levels, especially for specific workload patterns."
+            ]
+        }
+    ],
+    "other_crucial_details": [
+        "Cockroach Labs' 2026 AI Report indicates that AI-driven scale is pushing enterprise infrastructure toward failure, underscoring the importance of resilient databases.",
+        "The new Standard tier for CockroachDB Cloud, launched in September 2024, offers a balance of cost efficiency, scalability, and security, completing their enterprise-grade cloud platform.",
+        "The company strongly emphasizes \"Performance under Adversity\" in its messaging, reflecting a core focus on ensuring database resilience even in the face of real-world failures and disruptions.",
+        "Cockroach Labs expanded its MOLT (Migrate Off Legacy Technology) tools in 2024, including MOLT Fetch and MOLT Schema Conversion Tool, to streamline migrations from traditional database environments."
+    ],
+    "market_sentiment": {
+        "overall": "Mixed",
+        "analyst_view": "Analysts view Cockroach Labs as a strong player in the distributed SQL niche, often compared favorably to Google Spanner and YugabyteDB, especially for multi-region, strongly consistent OLTP workloads. They note strengths in resilience, growing partnerships, and revenue, but also identify limitations against hyperscalers in the broader cloud DBMS market and potential pricing sensitivities.",
+        "user_community_view": "User sentiment is generally positive regarding CockroachDB's reliability, scalability, and high availability, along with its PostgreSQL compatibility and automatic management features. However, a common complaint revolves around the steep learning curve, configuration complexity, and the cost for larger self-hosted enterprise deployments.",
+        "source": "https://www.g2.com/products/cockroachdb/reviews, https://builtin.com/companies/cockroach-labs-company-profile, https://aws.amazon.com/marketplace/pp/prodview-c2l2z7t2gztq4, https://www.reddit.com/r/webdev/comments/171h0x2/is_cockroach_db_as_good_as_it_seems/",
+        "date": "Recent"
+    },
+    "strategic_moves": [
+        {
+            "move": "Formed an OEM agreement and deepened partnership with IBM to deliver CockroachDB on IBM Power and IBM Cloud platforms.",
+            "user_type": "Enterprise customers (IBM ecosystem), Cloud Architects",
+            "frequency": "Continuous",
+            "source": "https://www.prnewswire.com/news-releases/cockroachdb-brings-distributed-sql-to-ibm-power-and-ibm-cloud-302488836.html, https://www.prnewswire.com/news/cockroach-labs-inc/, https://www.fundz.net/cockroach-labs-product-launch-2026-05-13, https://siliconangle.com/2025/10/07/exclusive-ibm-tightens-partnership-cockroach-labs-fuel-customer-modernization-initiatives/",
+            "date": "2026-05-13",
+            "effect": [
+                "Expands market reach into the IBM ecosystem, enabling enterprises to modernize mission-critical workloads while preserving existing IBM infrastructure investments.",
+                "Integrates CockroachDB into IBM's sales channels and enterprise platforms, simplifying procurement and deployment for IBM clients."
+            ]
+        },
+        {
+            "move": "Launched CockroachDB 24.2 with next-generation AI capabilities (Vector Search, pgvector integration) and a new Standard tier for CockroachDB Cloud.",
+            "user_type": "Developers, Enterprise customers",
+            "frequency": "Continuous",
+            "source": "https://channelinsider.com/ai/cockroach-labs-cockroachdb-24-2-ai-resilience/, https://www.cockroachlabs.com/blog/2024-year-in-review/, https://www.prnewswire.com/news-releases/cockroach-labs-sets-a-new-benchmark-in-enterprise-resilience-with-next-generation-ai-capabilities-and-enhanced-cloud-tiers-302257213.html, https://www.crn.com/news/cloud/cockroach-labs-latest-database-release-offers-new-ai-functionality-price-flexibility, https://www.cockroachlabs.com/blog/new-product-announcements-roachfest-2024/",
+            "date": "2024-09-26",
+            "effect": [
+                "Positions CockroachDB as a leading solution for AI-driven applications by enabling efficient management of unstructured data and supporting semantic search.",
+                "Offers more flexible and cost-effective cloud tiers, allowing businesses to consolidate workloads and optimize performance."
+            ]
+        },
+        {
+            "move": "Expanded strategic partnerships with AWS and Google Cloud, including an AWS Pay-As-You-Go listing and deeper integrations.",
+            "user_type": "Enterprise customers, Cloud Architects",
+            "frequency": "Continuous",
+            "source": "https://www.cockroachlabs.com/blog/2024-year-in-review/, https://www.crn.com/news/cloud/cockroach-labs-latest-database-release-offers-new-ai-functionality-price-flexibility, https://aitechpark.com/cockroach-labs-launched-next-gen-ai-capabilities-enhanced-cloud-tiers/, https://forgeglobal.com/company/cockroach-labs",
+            "date": "Recent",
+            "effect": [
+                "Increases accessibility and simplifies procurement for customers leveraging AWS and Google Cloud, driving cloud consumption.",
+                "Strengthens the company's position as a multi-cloud distributed SQL provider by enhancing integrations with major cloud ecosystems."
+            ]
+        },
+        {
+            "move": "Introduced 'Performance under Adversity,' a new industry benchmark to measure database performance during failure scenarios.",
+            "user_type": "Enterprise customers, Database Administrators, Analysts",
+            "frequency": "Continuous",
+            "source": "https://www.prnewswire.com/news-releases/cockroach-labs-accelerates-momentum-into-2026-as-enterprises-rebuild-for-ai-scale-resilience-302033096.html, https://builtin.com/companies/cockroach-labs-company-profile",
+            "date": "2025",
+            "effect": [
+                "Reinforces Cockroach Labs' focus on resilience and helps enterprises evaluate database reliability under real-world conditions.",
+                "Sets a new standard for database benchmarking beyond ideal performance scenarios."
+            ]
+        },
+        {
+            "move": "Adjusted licensing model to Business Source License (BSL), converting to Apache 2.0 after three years.",
+            "user_type": "Open-source community, Enterprise customers",
+            "frequency": "Continuous",
+            "source": "https://www.ithy.com/blog/cockroachdb-vs-yugabytedb-an-in-depth-comparative-analysis, https://www.yugabyte.com/blog/cockroachdb-vs-yugabytedb/, https://www.reddit.com/r/webdev/comments/171h0x2/is_cockroach_db_as_good_as_it_seems/",
+            "date": "2024-08-15",
+            "effect": [
+                "Aims to monetize larger commercial deployments more effectively while still providing open-source access after a period.",
+                "Has led to discussions and some user concerns within the open-source community regarding flexibility and cost implications for self-hosted deployments."
+            ]
+        }
+    ]
+}

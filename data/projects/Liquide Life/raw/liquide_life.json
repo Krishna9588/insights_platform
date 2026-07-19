@@ -1,0 +1,316 @@
+{
+    "company_name": "Liquide Life",
+    "domain": "https://liquide.life/",
+    "playstore_link": "https://play.google.com/store/apps/dev?id=7972886756627063462&hl=en_IN&gl=US",
+    "appstore_link": "https://apps.apple.com/in/app/liquide-stocks-mutual-funds/id1612735749",
+    "youtube_official_channel": "Unable to verify",
+    "linkedin_company_page": "https://www.linkedin.com/company/liquidesolutions/",
+    "year_founded": "2021 — Bengaluru, India",
+    "names_of_founders": [
+        "Anuj Bajpai",
+        "Paritosh Gunjan",
+        "Aniket Shirke",
+        "Kunal Ambasta"
+    ],
+    "c-suite_officer": [
+        "Anuj Bajpai - Co-Founder & CEO",
+        "Aniket Dilip Shirke - Co-Founder & CDAO",
+        "Kunal Ambasta - Co-Founder - COO & CIO",
+        "Paritosh Kumar Gunjan - Co-Founder"
+    ],
+    "employee_count": "75",
+    "exact_hq_location": "Signet Wing A, Cessna Business Park, Bengaluru, Karnataka 560103, India",
+    "locations_operating_in": [
+        "India"
+    ],
+    "industry_and_segment": "Wealthtech, Investment Advisory, Financial Services (Stock Market & Mutual Funds), AI-enabled Wealth Advisory App",
+    "available_platforms": "Web & Mobile (both)",
+    "funding_raised": "USD 2.2 million",
+    "funding_stage": "Pre-Seed, Seed (Venture Capital-Backed)",
+    "no_of_users": "Close to 60,000 paying subscribers",
+    "annual_revenue": "Rs 25.8 crore (FY2025)",
+    "key_positioning": "An AI-enabled wealth advisory app and SEBI-registered Research Analyst in India, providing stock trading ideas, research analysis, portfolio tracking, mutual fund analysis, and AI-powered stock reports to help retail and mass-affluent investors make informed decisions and find investing fun and accessible.",
+    "revenue_model": "Subscription-based offering (e.g., Liquide One membership)",
+    "pricing_tiers": [
+        "Liquide One Quarterly: Rs. 3,499",
+        "Liquide One Yearly: Rs. 8,999"
+    ],
+    "target_customer_segments": [
+        "New investors",
+        "Mass-affluent segment in India",
+        "Retail investors and traders"
+    ],
+    "tech_stack_highlights": [
+        "AI/ML-driven investment models",
+        "AI-powered BOT (LiMo)",
+        "Supervised machine learning algorithms"
+    ],
+    "milestones": [
+        "Founded in 2021 in Bengaluru, India.",
+        "Secured $2.2 million in pre-seed funding (August 2022).",
+        "Reported Rs 11.5 crore in operating revenues for FY24.",
+        "Launched integrations with top Indian brokers like Zerodha and Groww (by August 2024).",
+        "Reported Rs 25.8 crore in operating revenues and a profit of Rs 43 lakh in FY25.",
+        "Reached close to 60,000 paying subscribers (February 2026).",
+        "Raising a new funding round led by OTP Ventures (February 2026).",
+        "Preparing to enter the brokerage business (February 2026)."
+    ],
+    "new_features_launched": [
+        "Launched AI-powered BOT - LiMo for real-time BUY/SELL/HOLD ratings and as a trading partner.",
+        "Introduced Mutual Fund Analytics for detailed insights and red flag identification.",
+        "Launched IPO Verdicts, providing expert advice on upcoming Initial Public Offerings.",
+        "Implemented personalized Stock Alerts for target price notifications.",
+        "Enhanced Stock Insights with real-time news signals and detailed analysis.",
+        "Launched 'Liquide One' membership offering exclusive benefits like smallcase access, expert hotline, VIP screeners, and unlimited LiMo requests.",
+        "Enabled seamless login and portfolio management through integrations with top Indian brokers like Zerodha and Groww.",
+        "Developed 'Baskets' for curated collections of stocks, ETFs, and gold for diversified portfolios."
+    ],
+    "recent_partnerships_and_integrations": [
+        {
+            "partner": "Zerodha",
+            "type": "Integration",
+            "description": "Integration to allow users to login with existing broker accounts and supercharge their portfolio.",
+            "source": "https://apps.apple.com/in/app/liquide-stocks-mutual-funds/id1612735749",
+            "date": "2024-08-10"
+        },
+        {
+            "partner": "Groww",
+            "type": "Integration",
+            "description": "Integration to allow users to login with existing broker accounts and supercharge their portfolio.",
+            "source": "https://apps.apple.com/in/app/liquide-stocks-mutual-funds/id1612735749",
+            "date": "2024-08-10"
+        },
+        {
+            "partner": "smallcase",
+            "type": "Integration",
+            "description": "Integration into the Liquide One membership, providing access to curated stock portfolios.",
+            "source": "https://apps.apple.com/in/app/liquide-stocks-mutual-funds/id1612735749, https://liquide.life/one/, https://smallcase.liquide.life/",
+            "date": "Recent"
+        }
+    ],
+    "competitors": [
+        {
+            "name": "Seeking Alpha",
+            "domain": "seekingalpha.com"
+        },
+        {
+            "name": "The Motley Fool",
+            "domain": "fool.com"
+        },
+        {
+            "name": "TipRanks",
+            "domain": "tipranks.com"
+        },
+        {
+            "name": "Univest",
+            "domain": "Unable to verify"
+        }
+    ],
+    "differentiators": [
+        {
+            "feature": "AI-powered BOT, LiMo, provides real-time BUY/SELL/HOLD ratings for stocks, supervised by SEBI-registered experts.",
+            "user_type": "All Investors",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQERb5jVu9Hp3YQWojIcxZI0ms6fJUWkLkjscCihpVK0EtN4L8XezZsw2-Itmx-xwoi0hagy7eNlaPLjdWROfMEutJZzkdWnXSPLys1aEq5axafF-k4vk5COZQH4R9jqPJAjGFms2rXHBPpQr7I203DxVsJusn2AsmLlxjMhBPIxVfo6",
+            "date": "March 17, 2026",
+            "effect": [
+                "Offers instant, accessible investment guidance.",
+                "Reduces research time for users."
+            ]
+        },
+        {
+            "feature": "SEBI-registered Research Analyst status, providing regulated and expert-supervised investment advisory services.",
+            "user_type": "All Investors",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGj70bracG8hZwDXB0qyCOtGO2129zmqZv3lUZAcEAOrvv0RSOIWuYWNCCfnkTjHlw7VUijtgdp5EjokYjOC8kr8HuZkPnlrd63PC0HtyDz9fsiCBPbGpj9rSogN42DRawyXuoih_JkohO66-VOEdtFpNxV",
+            "date": "Recent",
+            "effect": [
+                "Instills trust and credibility among users.",
+                "Ensures adherence to regulatory standards."
+            ]
+        },
+        {
+            "feature": "Comprehensive portfolio health analysis and Mutual Fund Analytics to identify red flags and ensure diversification.",
+            "user_type": "All Investors",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQERb5jVu9Hp3YQWojIcxZI0ms6fJUWkLkjscCihpVK0EtN4L8XezZsw2-Itmx-xwoi0hagy7eNlaPLjdWROfMEutJZzkdWnXSPLys1aEq5axafF-k4vk5COZQH4R9jqPJAjGFms2rXHBPpQr7I203DxVsJusn2AsmLlxjMhBPIxVfo6",
+            "date": "March 17, 2026",
+            "effect": [
+                "Empowers users to make informed decisions about their investments.",
+                "Helps optimize portfolio performance."
+            ]
+        }
+    ],
+    "market_sentiment": {
+        "overall": "Mixed",
+        "analyst_view": "Analysts generally view Liquide positively in the growing wealthtech sector, noting its AI features and recent funding rounds as indicators of growth potential. However, challenges like competition and ensuring the accuracy of AI advice are recognized.",
+        "user_community_view": "User sentiment is mixed; while some praise the app's ease of use and AI-powered tools like LiMo, others express significant dissatisfaction with inconsistent recommendations, limited support for non-yearly plans, and perceived poor value for subscription costs.",
+        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQECOlO3jWd1VtlaF6AVHPYIe3D_tSECuvRkIedos0mqMkga3jvfQDKHlC0_7wGJBIlOOA0V4Clr-0tgWhim6CA5Fc5J7EUFQ5DUiGknQK3QBoTuXACmcOXai38nFexLguIY-xC-BBNQucV8h27HTwGWO1fQV7bY2Dj6zuq_3ctIoX3ToUWmjvPb6uEqQIkvUP49tpdxqVpH8mT7JRnHpsZ27A==, https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFWvfQU3FaHgG2YEc1nZCpa5wKAeR_X79UmHUjtqg0tIcc2iTGGb3znFzyvfNIzXfvNy0lmYMpq2I21asLIt2LMLUzdhCiIGQp1qppQM6TxwS90PITl8Etq8LlJTCgdA82ixju7iB4YGPUw5v4kU1pgzI-ebTTLe0Ve1Tm9Z-uV_PVyA1zCOdbR2f3sDGYEBN8fSVk1LP_1_1_e1Nc=",
+        "date": "Recent"
+    },
+    "strategic_moves": [
+        {
+            "move": "Successfully raised new Seed funding round of approximately Rs 15 crore (approx. USD 1.8M) led by OTP Ventures Fund and M Venture Partners.",
+            "user_type": "Company",
+            "frequency": "Rare",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESrczNPEzU5xvFMD3ulSHXQaja58TzDZJMbMd1tGTBwKCTR8SgPTJCfF1pnUnf_1HREftjT16eZFCpiiZ5riwjvL_S5FwQ8VzjukFJRtQtSyPOpGE95dwBOwaDqybKJpqsUBfanc0qMnh8qfhG7Y1CZoZDze-z0Emoxa2LsAHpr0I_hYzN1OUCNX7p3YKIo6oOr0DaffeXBhT_-nLh2M89LWZZSoLETMRAI3c=",
+            "date": "February 17, 2026",
+            "effect": [
+                "Secured capital for expansion and product development.",
+                "Increased valuation to Rs 69 crore (approx. USD 8.3M)."
+            ]
+        },
+        {
+            "move": "Planning to enter the stock brokerage business, utilizing fresh funding to build out broking operations.",
+            "user_type": "Company",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESrczNPEzU5xvFMD3ulSHXQaja58TzDZJMbMd1tGTBwKCTR8SgPTJCfF1pnUnf_1HREftjT16eZFCpiiZ5riwjvL_S5FwQ8VzjukFJRtQtSyPOpGE95dwBOwaDqybKJpqsUBfanc0qMnh8qfhG7Y1CZoZDze-z0Emoxa2LsAHpr0I_hYzN1OUCNX7p3YKIo6oOr0DaffeXBhT_-nLh2M89LWZZSoLETMRAI3c=",
+            "date": "February 17, 2026",
+            "effect": [
+                "Diversifying revenue streams and expanding market reach.",
+                "Potentially competing directly with current partners like Zerodha."
+            ]
+        },
+        {
+            "move": "Focusing on expanding services to Non-Resident Indian (NRI) investors in six countries.",
+            "user_type": "Company",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQtEsMUlTU-XxmQRwqM1SxrwZHOIszJ77MxAk5K8rsv9pPc09nC650meAzbSmyNaBME73KlmHrPwzl0Qn2s4WCDtklwAcRI45jNTlSc-GNj39V9KIFULueDzd74p1w6qRwuLGvjL86",
+            "date": "August 2022",
+            "effect": [
+                "Tapping into a large, affluent market segment outside India.",
+                "Requires navigating international regulations."
+            ]
+        }
+    ],
+    "other_crucial_details": [
+        "Liquide Solutions Private Limited was founded in 2021, and its latest funding round was a Seed round in January 2026.",
+        "The company's platform is designed to cater to the mass-affluent segment in India, with an aim to reach a large portion of demat account holders.",
+        "Liquide offers pro-rata refunds on subscriptions or in-app purchases, aligning with SEBI's guidelines.",
+        "The platform maintains a blog for financial literacy, providing market insights and news.",
+        "Liquide has integrations with major Indian brokers including Zerodha, Groww, and smallcase."
+    ],
+    "current_problems_struggling_with": [
+        {
+            "description": "Intense competition from numerous other wealthtech platforms in the rapidly growing Indian market.",
+            "user_type": "Company",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQtEsMUlTU-XxmQRwqM1SxrwZHOIszJ77MxAk5K8rsv9pPc09nC650meAzbSmyNaBME73KlmHrPwzl0Qn2s4WCDtklwAcRI45jNTlSc-GNj39V9KIFULueDzd74p1w6qRwuLGvjL86",
+            "date": "August 2022",
+            "effect": [
+                "Potential market share stagnation and slower user acquisition."
+            ]
+        },
+        {
+            "description": "Ensuring the accuracy and consistency of AI-driven investment advice, with user complaints about changing stock verdicts.",
+            "user_type": "Users & Company",
+            "frequency": "Occasional",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHm0tBmbftBSfIduIAQfiAj4sRTKw9WOBNzt7LekJ3ZcVfVjpGxBXLB712n7K6I3p1m-YOJ1OLHKZ-bCm0plS9ORdaZ1sunfk26Vtxa1gLHm_GjCNvVcsKp0Ahzi02eGavwpt6Gwl6ZRLZDZufHLuOD45JuCVIYOHknr13I0o1uZtW_",
+            "date": "March 17, 2026",
+            "effect": [
+                "Reduced user trust and potential financial losses for users following advice.",
+                "Negative app reviews."
+            ]
+        },
+        {
+            "description": "Navigating complex regulatory requirements in different countries as the company pursues international expansion to NRI investors.",
+            "user_type": "Company",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQtEsMUlTU-XxmQRwqM1SxrwZHOIszJ77MxAk5K8rsv9pPc09nC650meAzbSmyNaBME73KlmHrPwzl0Qn2s4WCDtklwAcRI45jNTlSc-GNj39V9KIFULueDzd74p1w6qRwuLGvjL86",
+            "date": "August 2022",
+            "effect": [
+                "Increased operational complexity and legal compliance costs.",
+                "Delayed market entry for new regions."
+            ]
+        },
+        {
+            "description": "Inability to consistently provide frequent swing trades and new recommendations, which limits its utility for short-term and intraday traders.",
+            "user_type": "Retail Investors (Traders)",
+            "frequency": "Occasional",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFWvfQU3FaHgG2YEc1nZCpa5wKAeR_X79UmHUjtqg0tIcc2iTGGb3znFzyvfNIzXfvNy0lmYMpq2I21asLIt2LMLUzdhCiIGQp1qppQM6TxwS90PITl8Etq8LlJTCgdA82ixju7iB4YGPUw5v4kU1pgzI-ebTTLe0Ve1Tm9Z-uV_PVyA1zCOdbR2f3sDGYEBN8fSVk1LP_1_1_e1Nc=",
+            "date": "June 14, 2023",
+            "effect": [
+                "Dissatisfaction among active traders.",
+                "Higher churn rate for this segment."
+            ]
+        },
+        {
+            "description": "User reports of slow loading times and non-responsive elements within the app, causing frustration during quick market movements.",
+            "user_type": "All Users",
+            "frequency": "Occasional",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFtcBR1xH09t88i9ROQ2qNmYT28xAXwND3hJE31lOV9ZSzoHxRxOlJ9QkF8RW5rQQ1HdN8IWlPPx38F9ht49jIRWDLwLbvrqamgpjFFSH3lhVpJCXqzznKeCzOLT2MBb2THYQOn4MRg_20TCiTLxQm1pTG5uSdgA6kndBewwUK83srB1xwbLnU=",
+            "date": "September 29, 2024",
+            "effect": [
+                "Poor user experience and potential missed trading opportunities."
+            ]
+        }
+    ],
+    "regulatory_and_legal_issues": [
+        {
+            "issue": "A user reported raising an issue with SEBI regarding alleged manipulation of stock recommendations.",
+            "jurisdiction": "India",
+            "status": "Under Investigation",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFWvfQU3FaHgG2YEc1nZCpa5wKAeR_X79UmHUjtqg0tIcc2iTGGb3znFzyvfNIzXfvNy0lmYMpq2I21asLIt2LMLUzdhCiIGQp1qppQM6TxwS90PITl8Etq8LlJTCgdA82ixju7iB4YGPUw5v4kU1pgzI-ebTTLe0Ve1Tm9Z-uV_PVyA1zCOdbR2f3sDGYEBN8fSVk1LP_1_1_e1Nc=",
+            "date": "June 14, 2023",
+            "effect": [
+                "Potential reputational damage and regulatory penalties if substantiated.",
+                "May erode investor trust."
+            ]
+        }
+    ],
+    "user_complaints": [
+        {
+            "issue": "Limited customer support and a perceived preference for yearly plan users over quarterly subscribers.",
+            "user_type": "Quarterly Subscribers",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQECOlO3jWd1VtlaF6AVHPYIe3D_tSECuvRkIedos0mqMkga3jvfQDKHlC0_7wGJBIlOOA0V4Clr-0tgWhim6CA5Fc5J7EUFQ5DUiGknQK3QBoTuXACmcOXai38nFexLguIY-xC-BBNQucV8h27HTwGWO1fQV7bY2Dj6zuq_3ctIoX3ToUWmjvPb6uEqQIkvUP49tpdxqVpH8mT7JRnHpsZ27A==",
+            "date": "August 11, 2023",
+            "effect": [
+                "Frustration and dissatisfaction leading to negative reviews and potential churn."
+            ]
+        },
+        {
+            "issue": "LiMo AI bot provides generic, pre-defined responses that don't consider real-time market factors or individual circumstances.",
+            "user_type": "All Users",
+            "frequency": "Occasional",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHBZv8yeo2ePvU0Jg6o23rO0hTdeM5WZ_BbRUOH5nXaY_UiXM2N4K5rZa9Jm6FI0SigjGr5SFaFDOTMYYwn5kTdsclI7J5wmS6_XBnpwNOaZVGsXp6mAZKRvL_oBGfqUczzpxfnPXwpR5Te-xLcaJtU4LOcfFUsqVU_KgrqL7PLxFs=",
+            "date": "August 10, 2024",
+            "effect": [
+                "Users feel the advice is not personalized or reliable.",
+                "Leads to skepticism about AI's effectiveness."
+            ]
+        },
+        {
+            "issue": "Inconsistent stock recommendations where the LiMo bot gives a 'Buy' verdict then quickly changes to 'Exit' for the same stock.",
+            "user_type": "All Users",
+            "frequency": "Occasional",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHm0tBmbftBSfIduIAQfiAj4sRTKw9WOBNzt7LekJ3ZcVfVjpGxBXLB712n7K6I3p1m-YOJ1OLHKZ-bCm0plS9ORdaZ1sunfk26Vtxa1gLHm_GjCNvVcsKp0Ahzi02eGavwpt6Gwl6ZRLZDZufHLuOD45JuCVIYOHknr13I0o1uZtW_",
+            "date": "March 17, 2026",
+            "effect": [
+                "Loss of confidence in the app's analytical capabilities and potential financial losses."
+            ]
+        },
+        {
+            "issue": "Allegations of manipulating trade recommendations to appear successful, even with minimal gains, and frequent hitting of stop-losses.",
+            "user_type": "Subscribers/Traders",
+            "frequency": "Occasional",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFWvfQU3FaHgG2YEc1nZCpa5wKAeR_X79UmHUjtqg0tIcc2iTGGb3znFzyvfNIzXfvNy0lmYMpq2I21asLIt2LMLUzdhCiIGQp1qppQM6TxwS90PITl8Etq8LlJTCgdA82ixju7iB4YGPUw5v4kU1pgzI-ebTTLe0Ve1Tm9Z-uV_PVyA1zCOdbR2f3sDGYEBN8fSVk1LP_1_1_e1Nc=",
+            "date": "June 14, 2023",
+            "effect": [
+                "Erosion of trust and accusations of deceptive practices.",
+                "Potential regulatory scrutiny."
+            ]
+        },
+        {
+            "issue": "Subscription charges are perceived as expensive and not providing sufficient value, with limited profits (2-5%) from recommendations.",
+            "user_type": "Subscribers",
+            "frequency": "Continuous",
+            "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFWvfQU3FaHgG2YEc1nZCpa5wKAeR_X79UmHUjtqg0tIcc2iTGGb3znFzyvfNIzXfvNy0lmYMpq2I21asLIt2LMLUzdhCiIGQp1qppQM6TxwS90PITl8Etq8LlJTCgdA82ixju7iB4YGPUw5v4kU1pgzI-ebTTLe0Ve1Tm9Z-uV_PVyA1zCOdbR2f3sDGYEBN8fSVk1LP_1_1_e1Nc=",
+            "date": "June 14, 2023",
+            "effect": [
+                "Negative customer perception and high churn rate.",
+                "Difficulty in attracting and retaining paying users."
+            ]
+        }
+    ]
+}
