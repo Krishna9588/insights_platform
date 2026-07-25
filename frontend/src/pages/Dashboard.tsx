@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { useStore } from '@/store';
 import { ProjectLogo } from '@/components/ProjectLogo';
 import { getHealth, getProjects, getJobs, getNewsMonitors, cancelJob } from '@/api';
+import { RiSendPlaneFill } from 'react-icons/ri';
+import { MdClose } from 'react-icons/md';
 
 
 export default function Dashboard() {
@@ -169,7 +171,7 @@ export default function Dashboard() {
                         showToast(`Copilot set to: ${name}`);
                       }}
                     >
-                      Ask Copilot <img src="/send.png" alt="Send" style={{ width: 14, height: 14, marginLeft: 6 }} />
+                      Ask Copilot <RiSendPlaneFill size={13} style={{ marginLeft: 6, verticalAlign: 'middle' }} />
                     </button>
                   </div>
                 </div>
@@ -212,7 +214,7 @@ export default function Dashboard() {
                     onClick={() => handleCancelJob(j.id)}
                     title="Cancel Job"
                   >
-                    ✕
+                    <MdClose size={14} />
                   </button>
                 </div>
               </div>

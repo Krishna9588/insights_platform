@@ -1,0 +1,67 @@
+{
+  "type": "search",
+  "query": "python",
+  "posts": [
+    {
+      "id": "1kqb7x0",
+      "title": "Best monitor for Mac?",
+      "author": "EstablishmentBig3345",
+      "subreddit": "Monitors",
+      "url": "https://www.reddit.com/r/Monitors/comments/1kqb7x0/best_monitor_for_mac/",
+      "selftext": "I require 4K resolution, preferably 32 inch, but considering 27 inch too. Will mainly be used for work (Excel, python, trading charts, docs), casual gaming with Xbox Series S, and also YouTube and Netflix.\n\nCurrent shortlist:\n\n**Dell U3223QE**\n 32 inch, 60Hz, 98% DCI-P3. Leaning most towards this, but 60Hz seems low. Don’t know how much it matters, but my laptop and phone are both 120Hz.\n\n**Dell P3225QE**\n32 inch, 100Hz, 99% sRGB. Considering this because of the low price and 100Hz, but colors and picture quality not as good.\n\n*Dell U2725QE*\n27 inch, 120Hz, 99% DCI-P3. Probably the perfect specs in my budget, but it’s 27 inches.\n\n\n",
+      "score": 0,
+      "upvote_ratio": 0.5,
+      "num_comments": 1,
+      "created_utc": 1747659994,
+      "edited": false,
+      "permalink": "/r/Monitors/comments/1kqb7x0/best_monitor_for_mac/",
+      "is_self": true,
+      "is_video": false,
+      "over_18": false,
+      "spoiler": false,
+      "gilded": 0,
+      "all_awardings": [],
+      "comments": [
+        {
+          "id": "mt46c79",
+          "author": "AutoModerator",
+          "body": "Thanks for posting on /r/monitors! If you want to chat more, check out the monitor enthusiasts Discord server at https://discord.gg/MZwg5cQ\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/Monitors) if you have any questions or concerns.*",
+          "score": 1,
+          "created_utc": 1747659994,
+          "edited": false,
+          "depth": 0,
+          "parent_id": "t3_1kqb7x0",
+          "gilded": 0,
+          "awards": [],
+          "replies": []
+        }
+      ]
+    },
+    {
+      "id": "1kqb7gu",
+      "title": "[SEEKING CO-BUILDERS] AutomaVerse – AI Automation Startup with Real Traction (Equity/Revenue Share, Remote)",
+      "author": "AdditionalAverage855",
+      "subreddit": "WFHJobs",
+      "url": "https://www.reddit.com/r/WFHJobs/comments/1kqb7gu/seeking_cobuilders_automaverse_ai_automation/",
+      "selftext": "Hey Reddit! 👋  \nI’m building **AutomaVerse**, an AI-first automation startup focused on changing how creators, solopreneurs, and teams operate — using smart AI agents and real-time systems to automate everything from content to outreach.\n\nWe’re not just brainstorming — we’ve *already shipped*:\n\n* ✅ 20+ fully automated **YouTube Shorts channels**\n* ✅ 10+ **Instagram** and **Facebook** pages, AI-managed\n* ✅ AI-driven systems for CRM, content repurposing, social media posting, and custom automations\n\n# Currently in Development:\n\nWe’re training &amp; deploying **AI agents** for:\n\n* **Sales**: Auto-schedule + pitch + close leads\n* **Research**: Summarize competitors + build reports\n* **Outreach**: Cold emails/DMs with personalization\n* **Content**: Generate scripts, thumbnails, auto-post\n\n# Who We’re Looking For:\n\nIf you’re passionate about AI, automation, or building tools that *actually ship*, I’m looking to collaborate with:\n\n* **AI Developers** (LangChain, AgentOps, RAG pipelines, etc.)\n* **Frontend Engineers** (React/Next.js, Tailwind, framer-motion, 3D)\n* **Automation Experts** (Python, Zapier, Make, APIs, custom scripts)\n* **Growth Hackers** (YouTube, Instagram, Reddit, X, scaling systems)\n* **3D Artists / Motion Designers** (course platforms, immersive UX)\n* **Sales &amp; Outreach Strategists** (leverage AI tools for B2B/B2C lead gen)\n\n# What’s in it for you?\n\n* 💰 Equity + future revenue share (no upfront salary for now)\n* 🌍 Fully remote, async-friendly team\n* 🚀 Real traction, working products, zero fluff\n* 📈 Build with an actual startup, not just an idea\n* 🧠 Work alongside other passionate builders in the AI automation space\n\nIf you’re serious about building, learning, and creating impact in the AI space — drop a comment or DM me.  \nLet’s build something world-class, together. 🚀",
+      "score": 1,
+      "upvote_ratio": 1.0,
+      "num_comments": 0,
+      "created_utc": 1747659959.0,
+      "edited": false,
+      "permalink": "/r/WFHJobs/comments/1kqb7gu/seeking_cobuilders_automaverse_ai_automation/",
+      "is_self": true,
+      "is_video": false,
+      "over_18": false,
+      "spoiler": true,
+      "gilded": 0,
+      "all_awardings": [],
+      "comments": []
+    }
+  ],
+  "stats": {
+    "posts_extracted": 2,
+    "total_comments": 1
+  },
+  "scraped_at": "2026-07-24T22:49:27.113033"
+}

@@ -10,6 +10,7 @@
   /* Canvas & Surfaces */
   --canvas: #f4f4f0; /* light beige/grey */
   --surface: rgba(253, 253, 250, 0.8);
+  --surface-solid: #fdfdfa;
   --surface-soft: rgba(245, 245, 240, 0.8);
   --surface-strong: rgba(235, 235, 230, 0.8);
   --surface-dark: #0f172a;
@@ -105,6 +106,7 @@
 [data-theme="dark"] {
   --canvas: #09090b;
   --surface: rgba(24, 24, 27, 0.6);
+  --surface-solid: #18181b;
   --surface-soft: rgba(39, 39, 42, 0.5);
   --surface-strong: rgba(63, 63, 70, 0.5);
   --ink: #f8fafc;

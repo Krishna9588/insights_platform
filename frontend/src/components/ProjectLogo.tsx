@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { MdSatelliteAlt } from 'react-icons/md';
 
 export function ProjectLogo({ name, domain, size = 32 }: { name: string; domain?: string; size?: number }) {
   const [error, setError] = useState(false);
@@ -21,9 +22,8 @@ export function ProjectLogo({ name, domain, size = 32 }: { name: string; domain?
         width: size, height: size, borderRadius: Math.max(6, size/4), 
         background: 'var(--accent-green)', color: '#fff', 
         display: 'flex', alignItems: 'center', justifyContent: 'center', 
-        fontWeight: 700, fontSize: Math.max(14, size/2)
       }}>
-        📡
+        <MdSatelliteAlt size={Math.max(14, size * 0.55)} />
       </div>
     );
   }

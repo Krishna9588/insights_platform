@@ -4,6 +4,9 @@ import { getProjects, searchProjects, deleteProject } from '@/api';
 import type { Project } from '@/types/api';
 import { ProjectLogo } from '@/components/ProjectLogo';
 import DeleteConfirmModal from '@/components/DeleteConfirmModal';
+import { RiSendPlaneFill } from 'react-icons/ri';
+import { HiSearch, HiFolder, HiChevronRight } from 'react-icons/hi';
+import { MdOutlineArticle, MdBusiness, MdNewspaper, MdShare } from 'react-icons/md';
 
 
 
@@ -91,7 +94,7 @@ function ProjectCard({
           Open Project
         </button>
         <button className="button compact" style={{ flex: 1 }} onClick={onAskCopilot}>
-          Ask Copilot <img src="/send.png" alt="Send" style={{ width: 14, height: 14, marginLeft: 6 }} />
+          Ask Copilot <RiSendPlaneFill size={13} style={{ marginLeft: 6, verticalAlign: 'middle' }} />
         </button>
       </div>
     </div>
@@ -182,11 +185,11 @@ export default function Collection() {
       <header className="topbar" style={{ flexDirection: 'column', alignItems: 'flex-start', gap: 16 }}>
         <div>
           <p className="eyebrow">Primary</p>
-          <h1>Collection</h1>
+          <h1>Projects</h1>
         </div>
         <div style={{ width: '100%', maxWidth: 600 }}>
           <div style={{ display: 'flex', position: 'relative', alignItems: 'center' }}>
-            <span style={{ position: 'absolute', left: 16, top: '50%', transform: 'translateY(-50%)', opacity: 0.45, fontSize: 16 }}>🔍</span>
+            <HiSearch style={{ position: 'absolute', left: 16, top: '50%', transform: 'translateY(-50%)', opacity: 0.45, fontSize: 16 }} />
             <input
               type="text"
               placeholder="Search across all projects & insights..."
@@ -209,9 +212,12 @@ export default function Collection() {
             </p>
             {searchResults.length > 0 ? (
               <div className="collection-search-results">
-                {searchResults.map((r, i) => (
-                  <div key={i} className="list-item" style={{ cursor: 'pointer' }} onClick={() => openProject(r.project_name)}>
-                    <div>
+                {searchResults.map((r, i) => {
+                  const projDomain = projects.find((p: any) => p.project_name === r.project_name || p.name === r.project_name)?.domain;
+                  return (
+                  <div key={i} className="list-item" style={{ cursor: 'pointer', display: 'flex', gap: 16, alignItems: 'flex-start' }} onClick={() => openProject(r.project_name)}>
+                    <ProjectLogo name={r.project_name} domain={projDomain} size={40} />
+                    <div style={{ flex: 1, minWidth: 0 }}>
                       <div className="item-title" style={{ fontSize: 16 }}>{r.project_name}</div>
                       <p style={{
                         marginTop: 8, color: 'var(--body)', fontSize: 14, lineHeight: 1.5,
@@ -224,10 +230,11 @@ export default function Collection() {
                       )}
                     </div>
                     <button className="button compact" onClick={(e) => { e.stopPropagation(); openProject(r.project_name); }}>
-                      Open →
+                      Open <HiChevronRight size={14} style={{ verticalAlign: 'middle' }} />
                     </button>
                   </div>
-                ))}
+                  );
+                })}
               </div>
             ) : (
               <div className="card" style={{ padding: 32, textAlign: 'center' }}>
@@ -259,7 +266,7 @@ export default function Collection() {
 
             {projects.length === 0 && !allLoading ? (
               <div className="card" style={{ padding: 64, textAlign: 'center' }}>
-                <span style={{ fontSize: 40, display: 'block', marginBottom: 16, opacity: 0.4 }}>📂</span>
+                <HiFolder size={40} style={{ display: 'block', marginBottom: 16, opacity: 0.35, color: 'var(--muted)' }} />
                 <h3 style={{ marginBottom: 8 }}>No projects yet</h3>
                 <p className="muted">Start a new research run to populate your collection.</p>
                 <button className="button" style={{ marginTop: 20 }} onClick={() => setActivePage('deep')}>Start Research</button>
@@ -297,25 +304,26 @@ export default function Collection() {
                   Standalone data gathering — social media scrapers, transcripts, company profiles
                 </p>
               </div>
-              <div className="grid cols-2" style={{ gap: 16 }}>
+              <div className="grid cols-4" style={{ gap: 12 }}>
                 {[
-                  { key: 'social', icon: '📱', title: 'Social Media & Stores', desc: 'Reddit, YouTube, App Store, Play Store scrapers' },
-                  { key: 'transcript', icon: '📄', title: 'Transcripts', desc: 'Upload local files or connect Google Drive' },
-                  { key: 'company', icon: '🏢', title: 'Company Profile', desc: 'Scrape company information and market positioning' },
-                  { key: 'news', icon: '📰', title: 'News', desc: 'Monitor news & SEBI filings — Under Development' },
+                  { key: 'social', Icon: MdShare, title: 'Social & Stores', desc: 'Reddit, YouTube, Stores' },
+                  { key: 'transcript', Icon: MdOutlineArticle, title: 'Transcripts', desc: 'Local files and Drive' },
+                  { key: 'company', Icon: MdBusiness, title: 'Company Profile', desc: 'Scrape company context' },
+                  { key: 'news', Icon: MdNewspaper, title: 'News (WIP)', desc: 'SEBI filings and news' },
                 ].map((item) => (
                   <div
                     key={item.key}
                     className="card hoverable"
-                    style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 16, padding: '16px 20px' }}
+                    style={{ cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, padding: '16px 12px', textAlign: 'center' }}
                     onClick={() => setActivePage(item.key)}
                   >
-                    <span style={{ fontSize: 28, flexShrink: 0 }}>{item.icon}</span>
-                    <div style={{ minWidth: 0 }}>
-                      <div style={{ fontWeight: 600, fontSize: 14, color: 'var(--ink)', marginBottom: 2 }}>{item.title}</div>
-                      <div style={{ fontSize: 12, color: 'var(--muted)' }}>{item.desc}</div>
+                    <div style={{ width: 36, height: 36, borderRadius: 10, background: 'var(--surface-strong)', display: 'grid', placeItems: 'center' }}>
+                      <item.Icon size={18} style={{ color: 'var(--accent-blue)' }} />
                     </div>
-                    <span style={{ marginLeft: 'auto', color: 'var(--muted)', fontSize: 18, flexShrink: 0 }}>→</span>
+                    <div>
+                      <div style={{ fontWeight: 600, fontSize: 13, color: 'var(--ink)', marginBottom: 4 }}>{item.title}</div>
+                      <div style={{ fontSize: 11, color: 'var(--muted)' }}>{item.desc}</div>
+                    </div>
                   </div>
                 ))}
               </div>
