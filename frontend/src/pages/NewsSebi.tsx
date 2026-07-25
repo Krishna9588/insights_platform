@@ -66,7 +66,7 @@ export default function NewsSebi() {
     )}
     <div>
       <header className="topbar">
-        <div><p className="eyebrow">Data</p><h1>News & SEBI</h1></div>
+        <div><p className="eyebrow">Data</p><h1>News & Trends</h1></div>
         <div className="actions">
           <button className="button secondary" onClick={load} disabled={loading}>Refresh</button>
         </div>

@@ -49,10 +49,13 @@ except ImportError:
     pass
 
 import logging
-import urllib3
 
 # This silently suppresses the specific InsecureRequestWarning
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+# (urllib3 is already imported guarded above; re-importing unconditionally
+# here would crash the whole module on load in an environment where it's
+# genuinely missing, defeating the point of that guard)
+if "urllib3" in dir():
+    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 logging.getLogger("urllib3").setLevel(logging.ERROR)
 
 # ═══════════════════════════════════════════════════════════════════════════
@@ -93,7 +96,7 @@ def _save_json(data: dict | list, filename: str) -> Path:
 def _video_id_from_url(url: str) -> Optional[str]:
     """Extract YouTube video ID from any standard URL format."""
     patterns = [
-        r"(?:v=|youtu\.be/|embed/|shorts/)([A-Za-z0-9_-]{11})",
+        r"(?:v=|youtu\.be/|embed/|shorts/|live/)([A-Za-z0-9_-]{11})",
         r"^([A-Za-z0-9_-]{11})$",   # bare ID
     ]
     for p in patterns:
@@ -104,14 +107,26 @@ def _video_id_from_url(url: str) -> Optional[str]:
 
 
 def _fetch_url(url: str, timeout: int = 15) -> str:
-    """Simple HTTP GET returning page text; handles SSL issues gracefully."""
-    ctx = ssl.create_default_context()
-    ctx.check_hostname = False
-    ctx.verify_mode = ssl.CERT_NONE
-
+    """
+    Simple HTTP GET returning page text.
+    Tries a normal, certificate-verified request first. Only falls back to
+    an unverified request if the verified one fails with an SSL error
+    (e.g. behind a corporate MITM proxy) - and says so loudly, since
+    disabling certificate verification by default would silently expose
+    every request to man-in-the-middle tampering.
+    """
     req = urllib.request.Request(url, headers=HEADERS)
-    with urllib.request.urlopen(req, timeout=timeout, context=ctx) as resp:
-        return resp.read().decode("utf-8", errors="replace")
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            return resp.read().decode("utf-8", errors="replace")
+    except ssl.SSLError as e:
+        print(f"  [WARN] SSL verification failed ({e}); retrying without cert "
+              f"verification. Only expected on networks with a MITM proxy.")
+        ctx = ssl.create_default_context()
+        ctx.check_hostname = False
+        ctx.verify_mode = ssl.CERT_NONE
+        with urllib.request.urlopen(req, timeout=timeout, context=ctx) as resp:
+            return resp.read().decode("utf-8", errors="replace")
 
 
 # ═══════════════════════════════════════════════════════════════════════════
@@ -174,14 +189,19 @@ def _transcript_via_library(video_id: str) -> Optional[str]:
         return None
 '''
 
-def _transcript_via_library(video_id: str) -> Optional[str]:
+def _transcript_via_library(video_id: str) -> tuple:
     """
     Fetches transcript with multi-stage fallback:
     1. English (Native/Auto) -> 2. Translated to English -> 3. Raw Native (Hindi/etc.)
+
+    Returns (text_or_None, error_reason_or_None). The error reason is only
+    meaningful when text is None - it's what lets us diagnose real failures
+    without needing console access (transcript failures were previously
+    swallowed into a bare None with no trace in the output file).
     """
     try:
         import requests as _req
-        import requests.packages.urllib3 as _u3
+        import urllib3 as _u3
         _u3.disable_warnings()
         session = _req.Session()
         session.verify = False
@@ -211,8 +231,8 @@ def _transcript_via_library(video_id: str) -> Optional[str]:
             try:
                 preferred = list(transcript_list)[0]
                 print(f"  [TRANSCRIPT] Saving raw native track: '{preferred.language_code}'")
-            except Exception:
-                return None
+            except Exception as e:
+                return None, f"no transcript tracks available: {e}"
 
         fetched = preferred.fetch()
 
@@ -226,21 +246,26 @@ def _transcript_via_library(video_id: str) -> Optional[str]:
             if val.strip():
                 text_parts.append(val.strip())
 
-        return " ".join(text_parts)
+        return " ".join(text_parts), None
 
     except Exception as e:
-        print(f"  [WARN] transcript-api failed: {e}")
-        return None
+        reason = f"{type(e).__name__}: {e}"
+        print(f"  [WARN] transcript-api failed: {reason}")
+        return None, reason
 
-def _transcript_via_ytdlp(video_id: str) -> Optional[str]:
+def _transcript_via_ytdlp(video_id: str) -> tuple:
+    """
+    Returns (text_or_None, error_reason_or_None) - see _transcript_via_library
+    for why the reason is captured instead of just printed.
+    """
     try:
         import subprocess
         import glob
-        
+
         url = f"https://www.youtube.com/watch?v={video_id}"
         out_tmp = f"youtube_data/{video_id}_sub"
         cmd = [
-            "yt-dlp",
+            sys.executable, "-m", "yt_dlp",
             "--write-auto-subs",
             "--write-subs",
             "--sub-langs", "en",
@@ -248,15 +273,15 @@ def _transcript_via_ytdlp(video_id: str) -> Optional[str]:
             "-o", out_tmp,
             url
         ]
-        subprocess.run(cmd, capture_output=True, timeout=45)
-        
+        proc = subprocess.run(cmd, capture_output=True, text=True, timeout=45)
+
         vtt_files = glob.glob(f"{out_tmp}*.vtt")
         if vtt_files:
             vtt_file = vtt_files[0]
             with open(vtt_file, "r", encoding="utf-8") as f:
                 content = f.read()
             os.remove(vtt_file)
-            
+
             lines = content.split('\n')
             text_parts = []
             for line in lines:
@@ -265,30 +290,51 @@ def _transcript_via_ytdlp(video_id: str) -> Optional[str]:
                 clean_line = re.sub(r'<[^>]+>', '', line).strip()
                 if clean_line and (not text_parts or clean_line != text_parts[-1]):
                     text_parts.append(clean_line)
-            return " ".join(text_parts)
-        return None
-    except Exception as e:
-        print(f"  [WARN] yt-dlp failed: {e}")
-        return None
+            return " ".join(text_parts), None
 
-def get_transcript(video_id: str) -> Optional[str]:
+        # No .vtt was produced. yt-dlp still returns exit code 0 for "no
+        # subtitles found" as well as for real failures, so the exit code
+        # alone can't distinguish them - surface stderr either way so we
+        # can tell "this video genuinely has no English captions" apart
+        # from "yt-dlp itself was blocked/failed".
+        stderr_tail = (proc.stderr or "").strip().splitlines()[-3:] if proc.stderr else []
+        reason = f"no .vtt produced (exit code {proc.returncode}); stderr: {' | '.join(stderr_tail) or '(empty)'}"
+        return None, reason
+    except Exception as e:
+        reason = f"{type(e).__name__}: {e}"
+        print(f"  [WARN] yt-dlp failed: {reason}")
+        return None, reason
+
+def get_transcript(video_id: str) -> tuple:
     """
     Public helper: get English transcript for a video.
     Tries youtube-transcript-api first, then yt-dlp.
-    Returns plain text string or None.
+    Returns (text_or_None, diagnostics_dict) - diagnostics records which
+    method(s) were tried and why they failed, so a failure is visible in
+    the saved JSON instead of only in console output that may not be kept.
     """
     print(f"  [TRANSCRIPT] Fetching for video: {video_id}")
-    text = _transcript_via_library(video_id)
+    diagnostics = {"method_used": None, "attempts": []}
+
+    text, reason = _transcript_via_library(video_id)
     if text:
-        print(f"  [TRANSCRIPT] ✓ Got {len(text.split())} words via transcript-api")
-        return text
+        print(f"  [TRANSCRIPT] [OK] Got {len(text.split())} words via transcript-api")
+        diagnostics["method_used"] = "youtube-transcript-api"
+        return text, diagnostics
+    diagnostics["attempts"].append({"method": "youtube-transcript-api", "error": reason})
+
     print("  [TRANSCRIPT] Falling back to yt-dlp ...")
-    text = _transcript_via_ytdlp(video_id)
+    text, reason = _transcript_via_ytdlp(video_id)
     if text:
-        print(f"  [TRANSCRIPT] ✓ Got {len(text.split())} words via yt-dlp")
-        return text
-    print("  [TRANSCRIPT] ✗ No transcript found")
-    return None
+        print(f"  [TRANSCRIPT] [OK] Got {len(text.split())} words via yt-dlp")
+        diagnostics["method_used"] = "yt-dlp"
+        return text, diagnostics
+    diagnostics["attempts"].append({"method": "yt-dlp", "error": reason})
+
+    print("  [TRANSCRIPT] [FAIL] No transcript found")
+    for attempt in diagnostics["attempts"]:
+        print(f"    - {attempt['method']}: {attempt['error']}")
+    return None, diagnostics
 
 
 # ═══════════════════════════════════════════════════════════════════════════
@@ -358,8 +404,20 @@ def _get_video_metadata_html(video_id: str) -> dict:
         )
         if desc_match:
             raw_desc = desc_match.group(1)
-            # Unescape JSON string
-            meta["description"] = raw_desc.encode("utf-8").decode("unicode_escape", errors="replace")
+            # Unescape JSON string. Using json.loads (rather than the
+            # unicode_escape codec) matters here: JSON encodes characters
+            # outside the Basic Multilingual Plane (most emoji) as a UTF-16
+            # surrogate pair like \ud83d\ude00. unicode_escape decodes each
+            # \uXXXX independently and does NOT recombine the pair, leaving
+            # two invalid lone-surrogate characters that later crash when
+            # writing the JSON output file. json.loads decodes JSON strings
+            # correctly, including recombining surrogate pairs.
+            try:
+                meta["description"] = json.loads(f'"{raw_desc}"')
+            except json.JSONDecodeError:
+                # Malformed fragment (regex edge case) - fall back to the
+                # raw text rather than crashing the whole scrape.
+                meta["description"] = raw_desc
 
     except Exception as e:
         print(f"  [WARN] HTML metadata scrape failed: {e}")
@@ -378,9 +436,9 @@ def get_video_info(video_id: str) -> dict:
         print("  [METADATA] yt-dlp gave no title, trying HTML fallback ...")
         meta = _get_video_metadata_html(video_id)
     if meta["title"]:
-        print(f"  [METADATA] ✓ Title: {meta['title'][:60]}")
+        print(f"  [METADATA] [OK] Title: {meta['title'][:60]}")
     else:
-        print("  [METADATA] ✗ Could not retrieve title")
+        print("  [METADATA] [FAIL] Could not retrieve title")
     return meta
 
 
@@ -393,10 +451,10 @@ def scrape_single_video(video_id: str) -> dict:
     Fetch title, description, and English transcript for one video.
     Returns a dict; does NOT save to file (caller decides).
     """
-    meta       = get_video_info(video_id)
-    transcript = get_transcript(video_id)
+    meta = get_video_info(video_id)
+    transcript, transcript_diagnostics = get_transcript(video_id)
 
-    return {
+    result = {
         "scraped_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
         "video_id":    meta["video_id"],
         "url":         meta["url"],
@@ -405,6 +463,11 @@ def scrape_single_video(video_id: str) -> dict:
         "transcript":  transcript or "",
         "transcript_words": len(transcript.split()) if transcript else 0,
     }
+    # Only include diagnostics when the transcript actually failed, to keep
+    # successful output clean.
+    if not transcript:
+        result["transcript_error"] = transcript_diagnostics
+    return result
 
 
 # ═══════════════════════════════════════════════════════════════════════════
@@ -457,10 +520,10 @@ def _get_channel_video_ids(channel_url: str, count: int) -> list[str]:
     try:
         result = subprocess.run(cmd, capture_output=True, text=True, timeout=120)
         ids = [line.strip() for line in result.stdout.splitlines() if line.strip()]
-        print(f"  [CHANNEL] ✓ Found {len(ids)} video IDs")
+        print(f"  [CHANNEL] [OK] Found {len(ids)} video IDs")
         return ids[:count]
     except Exception as e:
-        print(f"  [CHANNEL] ✗ Failed to list channel videos: {e}")
+        print(f"  [CHANNEL] [FAIL] Failed to list channel videos: {e}")
         return []
 
 
@@ -522,10 +585,10 @@ def _search_youtube(query: str, count: int) -> list[str]:
     try:
         result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
         ids = [line.strip() for line in result.stdout.splitlines() if line.strip()]
-        print(f"  [SEARCH] ✓ Got {len(ids)} results")
+        print(f"  [SEARCH] [OK] Got {len(ids)} results")
         return ids[:count]
     except Exception as e:
-        print(f"  [SEARCH] ✗ Search failed: {e}")
+        print(f"  [SEARCH] [FAIL] Search failed: {e}")
         return []
 
 
@@ -548,7 +611,7 @@ def mode_search(query: str, count: int = 5) -> list[dict]:
 
     results = []
     for i, vid in enumerate(video_ids, 1):
-        print(f"\n  ── Result {i}/{len(video_ids)}: {vid} ──")
+        print(f"\n  -- Result {i}/{len(video_ids)}: {vid} --")
         try:
             data = scrape_single_video(vid)
             results.append(data)
@@ -567,12 +630,40 @@ def mode_search(query: str, count: int = 5) -> list[dict]:
 # MAIN ENTRY POINT — callable as  youtube_scraper(...)  from outside
 # ═══════════════════════════════════════════════════════════════════════════
 
+def youtube_clean_scraper(user_input: str, count: int = 5) -> dict | list[dict] | None:
+    """
+    A simplified entry point that automatically detects the input type.
+
+    Logic:
+    1. If it contains '/@' or '/channel/' or '/c/', it's treated as a Channel.
+    2. If it contains 'watch?v=', 'youtu.be/', 'shorts/', or is an 11-char ID, it's a Video.
+    3. Otherwise, it's treated as a Search Query.
+    """
+    input_stripped = user_input.strip()
+
+    # 1. Check for Channel patterns
+    if "youtube.com/@" in input_stripped or "/channel/" in input_stripped or "/c/" in input_stripped:
+        print(f"[ROUTER] Detected Channel URL: {input_stripped}")
+        return mode_channel(input_stripped, count=count)
+
+    # 2. Check for Video patterns
+    video_id = _video_id_from_url(input_stripped)
+    if video_id and ("http" in input_stripped or len(input_stripped) == 11):
+        print(f"[ROUTER] Detected Video URL/ID: {video_id}")
+        return mode_video(input_stripped)
+
+    # 3. Default to Search
+    print(f"[ROUTER] Detected Search Query: {input_stripped!r}")
+    return mode_search(input_stripped, count=count)
+
+
 def youtube_scraper(
-    mode: str,
+    mode: str = "auto",
     *,
     video_url:   Optional[str] = None,
     channel_url: Optional[str] = None,
     query:       Optional[str] = None,
+    user_input:  Optional[str] = None,
     count:       int = 5,
 ) -> dict | list[dict] | None:
     """
@@ -580,10 +671,11 @@ def youtube_scraper(
 
     Parameters
     ----------
-    mode        : "video" | "channel" | "search"
-    video_url   : full YouTube video URL  (required for mode="video")
-    channel_url : YouTube channel URL     (required for mode="channel")
-    query       : search term             (required for mode="search")
+    mode        : "video" | "channel" | "search" | "auto"
+    video_url   : full YouTube video URL  (used for mode="video")
+    channel_url : YouTube channel URL     (used for mode="channel")
+    query       : search term             (used for mode="search")
+    user_input  : generic input string    (used for mode="auto")
     count       : how many videos to scrape (used for channel / search modes)
 
     Returns
@@ -594,7 +686,13 @@ def youtube_scraper(
     """
     mode = mode.strip().lower()
 
-    if mode == "video":
+    if mode == "auto":
+        target = user_input or query or video_url or channel_url
+        if not target:
+            raise ValueError("No input provided for mode='auto'")
+        return youtube_clean_scraper(target, count=count)
+
+    elif mode == "video":
         if not video_url:
             raise ValueError("video_url is required for mode='video'")
         return mode_video(video_url)
@@ -607,99 +705,9 @@ def youtube_scraper(
     elif mode == "search":
         if not query:
             raise ValueError("query is required for mode='search'")
+        if "youtube.com/" in query or "youtu.be/" in query:
+            return youtube_clean_scraper(query, count=count)
         return mode_search(query, count=count)
 
     else:
-        raise ValueError(f"Unknown mode: {mode!r}. Use 'video', 'channel', or 'search'.")
-
-
-
-# ═══════════════════════════════════════════════════════════════════════════
-# RUN BLOCK — edit this to run directly from your IDE
-# ═══════════════════════════════════════════════════════════════════════════
-
-if __name__ == "__main__":
-
-    # ── CONFIGURE WHAT YOU WANT TO RUN ──────────────────────────────────
-    # Uncomment ONE of the three blocks below, fill in your values, then hit Run.
-
-    # ── Option A: Single video ───────────────────────────────────────────
-    # result = youtube_scraper(
-    #     mode="video",
-    #     video_url="https://www.youtube.com/watch?v=0N86U8W7A4c",
-    # )
-
-    # ── Option B: Channel (last N videos) ────────────────────────────────
-    # result = youtube_scraper(
-    #     mode="channel",
-    #     channel_url="https://www.youtube.com/@CodeWithHarry",
-    #     count=3,          # change to any number you want
-    # )
-
-    # ── Option C: Search query ────────────────────────────────────────────
-    result = youtube_scraper(
-        mode="search",
-        query="python tutorial for beginners 2024",
-        count=5,          # 5 or 10
-    )
-
-    # ─────────────────────────────────────────────────────────────────────
-    print("\n── Done ──")
-    if isinstance(result, list):
-        print(f"Scraped {len(result)} video(s). Files saved in ./youtube_data/")
-    elif isinstance(result, dict):
-        print(f"Title: {result.get('title')}")
-        print(f"Transcript words: {result.get('transcript_words')}")
-        print(f"Saved in ./youtube_data/")
-
-
-# ═══════════════════════════════════════════════════════════════════════════
-# Testing space
-# ═══════════════════════════════════════════════════════════════════════════
-'''
-def youtube_clean_scraper(user_input: str, count: int = 5) -> dict | list[dict] | None:
-    """
-    A simplified entry point that automatically detects the input type.
-
-    Logic:
-    1. If it contains '/@' or '/channel/', it's treated as a Channel.
-    2. If it contains 'watch?v=', 'youtu.be/', or is an 11-char ID, it's a Video.
-    3. Otherwise, it's treated as a Search Query.
-
-    Parameters
-    ----------
-    user_input : str - Can be a URL (video/channel) or a plain text search query.
-    count      : int - Number of videos to fetch (used for channel and search modes).
-    """
-
-    input_stripped = user_input.strip()
-
-    # 1. Check for Channel patterns
-    # Matches: youtube.com/@handle, youtube.com/channel/UC..., youtube.com/c/Name
-    if "youtube.com/@" in input_stripped or "/channel/" in input_stripped or "/c/" in input_stripped:
-        print(f"[ROUTER] Detected Channel URL")
-        return youtube_scraper(mode="channel", channel_url=input_stripped, count=count)
-
-    # 2. Check for Video patterns
-    # Matches: watch?v=..., youtu.be/..., shorts/..., or a bare 11-character ID
-    video_id = _video_id_from_url(input_stripped)
-    if video_id and ("http" in input_stripped or len(input_stripped) == 11):
-        print(f"[ROUTER] Detected Video URL/ID: {video_id}")
-        return youtube_scraper(mode="video", video_url=input_stripped)
-
-    # 3. Default to Search
-    # If it's not a known YT URL format, we treat the string as a search query
-    print(f"[ROUTER] Detected Search Query")
-    return youtube_scraper(mode="search", query=input_stripped, count=count)
-
-if __name__ == "__main__":
-    # Example 1: Passing a channel
-    youtube_clean_scraper("https://www.youtube.com/@CodeWithHarry", count=3)
-
-    # Example 2: Passing a specific video
-    youtube_clean_scraper("https://www.youtube.com/watch?v=K5KVEU3aaeQ")
-
-    # Example 3: Passing a search query
-    youtube_clean_scraper("latest news on ai agents", count=5)
-    
-'''
+        raise ValueError(f"Unknown mode: {mode!r}. Use 'video', 'channel', 'search', or 'auto'.")

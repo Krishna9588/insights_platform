@@ -1,4 +1,5 @@
 import { useStore } from '@/store';
+import { HiArrowLeft } from 'react-icons/hi';
 
 interface BackButtonProps {
   fallback?: string;
@@ -37,7 +38,7 @@ export default function BackButton({ fallback = 'collection', label = 'Back' }: 
         onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--ink)')}
         onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--muted)')}
       >
-        ← {label}
+        <HiArrowLeft size={14} /> {label}
       </button>
     </div>
   );

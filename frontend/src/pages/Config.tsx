@@ -3,6 +3,8 @@ import { useStore } from '@/store';
 import type { ApiKeyEntry } from '@/store';
 import { getHealth, getAppConfig, saveAppConfig, getKeyStatus } from '@/api';
 import BackButton from '@/components/layout/BackButton';
+import { HiEye, HiEyeOff, HiChevronUp, HiChevronDown, HiInformationCircle } from 'react-icons/hi';
+import { MdClose } from 'react-icons/md';
 
 // Provider catalog — name, color, placeholder pattern, logo
 const LOGO_TOKEN = 'pk_Tw38O-4_RNinmXOwNIgagQ';
@@ -99,7 +101,7 @@ function ApiProviderCard({
             Get key ↗
           </a>
           <span style={{ color: 'var(--muted)', fontSize: 18, lineHeight: 1 }}>
-            {expanded ? '▲' : '▼'}
+            {expanded ? <HiChevronUp size={18} /> : <HiChevronDown size={18} />}
           </span>
         </div>
       </div>
@@ -137,7 +139,7 @@ function ApiProviderCard({
                     onClick={() => toggle(k.id)}
                     title={showKeys[k.id] ? 'Hide key' : 'Reveal key'}
                   >
-                    {showKeys[k.id] ? '🙈' : '👁'}
+                    {showKeys[k.id] ? <HiEyeOff size={15} /> : <HiEye size={15} />}
                   </button>
                   {!k.isDefault && (
                     <button
@@ -153,7 +155,7 @@ function ApiProviderCard({
                     onClick={() => onRemove(k.id)}
                     title="Remove key"
                   >
-                    ✕
+                    <MdClose size={14} />
                   </button>
                 </div>
               </div>
@@ -306,7 +308,7 @@ export default function Config() {
       <header className="topbar">
         <div>
           <p className="eyebrow">System</p>
-          <h1>Configurations</h1>
+          <h1>Settings</h1>
         </div>
         <div className="actions" style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
           <button className="button secondary" onClick={checkHealth} disabled={healthLoading}>
@@ -393,9 +395,11 @@ export default function Config() {
                 <option value="agent4">Agent 4 only</option>
               </select>
             </label>
-            <div className="soft-band" style={{ fontSize: 13 }}>
-              💡 When defaults are <strong>enabled</strong>, the Deep Research and other data pages will
+            <div className="soft-band" style={{ fontSize: 13, display: 'flex', alignItems: 'flex-start', gap: 8 }}>
+              <HiInformationCircle size={16} style={{ color: 'var(--accent-blue)', flexShrink: 0, marginTop: 2 }} />
+              <span> When defaults are <strong>enabled</strong>, the Deep Research and other data pages will
               use these settings automatically — the advanced options panel will still be available to override them.
+              </span>
             </div>
           </div>
         </div>

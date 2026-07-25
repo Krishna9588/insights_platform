@@ -68,7 +68,8 @@ class AppStoreAPIClient:
         if REQUESTS_AVAILABLE:
             self.session = requests.Session()
             self.session.headers.update({
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+                'Accept-Encoding': 'identity'
             })
 
     def _make_request(self, url: str, params: Dict) -> Dict:
@@ -157,13 +158,13 @@ class AppStoreAPIClient:
             'genreIds': app.get('genreIds', []),
 
             # Ratings
-            'averageUserRating': float(app.get('averageUserRating', 0)),
-            'userRatingCount': int(app.get('userRatingCount', 0)),
-            'averageUserRatingForCurrentVersion': float(app.get('averageUserRatingForCurrentVersion', 0)),
-            'userRatingCountForCurrentVersion': int(app.get('userRatingCountForCurrentVersion', 0)),
+            'averageUserRating': float(app.get('averageUserRating') or 0),
+            'userRatingCount': int(app.get('userRatingCount') or 0),
+            'averageUserRatingForCurrentVersion': float(app.get('averageUserRatingForCurrentVersion') or 0),
+            'userRatingCountForCurrentVersion': int(app.get('userRatingCountForCurrentVersion') or 0),
 
             # Pricing
-            'price': float(app.get('price', 0)),
+            'price': float(app.get('price') or 0),
             'formattedPrice': app.get('formattedPrice'),
             'currency': app.get('currency', 'USD'),
             'isVppDeviceBasedLicensingEnabled': app.get('isVppDeviceBasedLicensingEnabled', False),
@@ -175,10 +176,10 @@ class AppStoreAPIClient:
             'currentVersionReleaseDate': app.get('currentVersionReleaseDate'),
 
             # Content
-            'description': app.get('description', '')[:1000],
-            'shortDescription': app.get('shortDescription', '')[:300],
+            'description': (app.get('description') or '')[:1000],
+            'shortDescription': (app.get('shortDescription') or '')[:300],
             'minimumOsVersion': app.get('minimumOsVersion'),
-            'fileSizeBytes': int(app.get('fileSizeBytes', 0)),
+            'fileSizeBytes': int(app.get('fileSizeBytes') or 0),
             'contentAdvisoryRating': app.get('contentAdvisoryRating'),
 
             # Media
@@ -238,11 +239,16 @@ class AppStoreAPIClient:
 
             logger.info(f"Fetching {count} reviews for {rating}★ rating")
 
-            # Calculate pages needed (each page has ~10 reviews typically)
-            pages_needed = max(1, (count // 10) + 1)
+            # The RSS feed can only be sorted by mostRecent/mostHelpful, not
+            # by star rating, so pages are a mix of all ratings. We can't
+            # know in advance how many pages contain a match for this rating
+            # (a 1-star review is rare on a 4.8-star app), so keep paging
+            # until we hit the requested count, the feed runs dry, or we
+            # reach Apple's practical page cap for this endpoint.
             fetched_count = 0
+            MAX_PAGES = 10  # Apple's customer review RSS effectively stops returning data past this
 
-            for page in range(1, pages_needed + 1):
+            for page in range(1, MAX_PAGES + 1):
                 try:
                     url = f"{self.BASE_URL}/{self.country}/rss/customerreviews/page={page}/id={app_id}/sortBy=mostRecent/json"
 
@@ -263,18 +269,18 @@ class AppStoreAPIClient:
                         if 'im:rating' not in entry:
                             continue
 
-                        entry_rating = int(entry.get('im:rating', {}).get('label', 0))
+                        entry_rating = int((entry.get('im:rating') or {}).get('label') or 0)
 
                         # Only add if matches the desired rating
                         if entry_rating == rating:
                             review = {
-                                'id': entry.get('id', {}).get('label', ''),
-                                'author': entry.get('author', {}).get('name', {}).get('label', 'Anonymous'),
+                                'id': (entry.get('id') or {}).get('label', ''),
+                                'author': ((entry.get('author') or {}).get('name') or {}).get('label', 'Anonymous'),
                                 'rating': entry_rating,
-                                'title': entry.get('title', {}).get('label', ''),
-                                'content': entry.get('content', {}).get('label', '')[:1000],
-                                'date': entry.get('updated', {}).get('label', ''),
-                                'version': entry.get('im:version', {}).get('label', 'Unknown'),
+                                'title': (entry.get('title') or {}).get('label', ''),
+                                'content': ((entry.get('content') or {}).get('label') or '')[:1000],
+                                'date': (entry.get('updated') or {}).get('label', ''),
+                                'version': (entry.get('im:version') or {}).get('label', 'Unknown'),
                             }
                             all_reviews.append(review)
                             fetched_count += 1
@@ -297,7 +303,15 @@ class AppStoreAPIClient:
                 "fetched": fetched_count
             }
 
-            logger.info(f"{rating}★: Fetched {fetched_count}/{count} reviews")
+            if fetched_count < count:
+                logger.warning(
+                    f"{rating}★: only found {fetched_count}/{count} reviews within "
+                    f"{MAX_PAGES} pages - this rating is likely rare for this app "
+                    f"in the mostRecent feed. Check reviews_metadata['{rating_str}'] "
+                    f"before assuming the full count was fetched."
+                )
+            else:
+                logger.info(f"{rating}★: Fetched {fetched_count}/{count} reviews")
 
         logger.info(f"Total reviews fetched: {len(all_reviews)}")
 
@@ -387,8 +401,11 @@ def app_store(
     app_id = None
     search_results = []
 
+    url_id_match = re.search(r'id(\d+)', input_str)
     if input_str.isdigit():
         app_id = int(input_str)
+    elif url_id_match:
+        app_id = int(url_id_match.group(1))
     else:
         # Search
         search_results = client.search(input_str, limit=10)

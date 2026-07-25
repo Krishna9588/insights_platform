@@ -5,6 +5,9 @@ import { runPipeline, getProjects } from '@/api';
 import type { Project } from '@/types/api';
 import BackButton from '@/components/layout/BackButton';
 import { ProjectLogo } from '@/components/ProjectLogo';
+import { HiLightningBolt, HiChevronDown, HiInformationCircle } from 'react-icons/hi';
+import { RiSendPlaneFill } from 'react-icons/ri';
+import { SiReddit, SiYoutube, SiApple, SiGoogleplay } from 'react-icons/si';
 
 const indeterminateAnimation = `
 @keyframes indeterminate {
@@ -45,7 +48,7 @@ function ProjectResultCard({
         }}>
           View Project
         </button>
-        <button className="button compact" onClick={onAskCopilot}>Ask Copilot →</button>
+        <button className="button compact" onClick={onAskCopilot} style={{ display: 'flex', alignItems: 'center', gap: 6 }}>Ask Copilot <RiSendPlaneFill size={13} /></button>
       </div>
     </div>
   );
@@ -89,13 +92,9 @@ export function CompanyProfile() {
   return (
     <div>
       <header className="topbar">
-        <div><p className="eyebrow">Data</p><h1>Company Profile</h1></div>
+        <div><p className="eyebrow">Data</p><h1>Company Info</h1></div>
         <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
-          {pipelineDefaults.enabled && (
-            <div className="soft-band" style={{ padding: '8px 14px', fontSize: 13 }}>
-              ⚡ Using defaults from Configurations
-            </div>
-          )}
+          {/* Defaults note removed */}
           <button className="button" onClick={submit} disabled={loading}>
             {loading ? <><span className="spinner" style={{ borderTopColor: '#fff', borderColor: 'rgba(255,255,255,0.3)' }} /> Scraping…</> : 'Scrape Profile'}
           </button>
@@ -121,7 +120,7 @@ export function CompanyProfile() {
               className={`settings-toggle-btn${showAdv ? ' open' : ''}`}
               onClick={() => setShowAdv((v) => !v)}
             >
-              <span className="chevron">▼</span>
+              <HiChevronDown size={14} style={{ transition: 'transform 0.2s', transform: showAdv ? 'rotate(180deg)' : 'none' }} />
               Advanced Settings
             </button>
             {showAdv && (
@@ -155,8 +154,8 @@ export function CompanyProfile() {
                 <strong style={{ color: 'var(--ink)' }}>{lastProject}</strong> — company profile scrape queued.
               </p>
             </div>
-            <button className="button compact" onClick={() => { setChatProject(lastProject); showToast(`Copilot → ${lastProject}`); }}>
-              Ask Copilot →
+            <button className="button compact" onClick={() => { setChatProject(lastProject); showToast(`Copilot set to: ${lastProject}`); }} style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+              Ask Copilot <RiSendPlaneFill size={13} />
             </button>
           </div>
           {foundProject && (
@@ -269,18 +268,67 @@ export function SocialMedia() {
       (p as unknown as Record<string, string>).name === lastProject
   );
 
+  const [activeInfoKey, setActiveInfoKey] = useState<string | null>(null);
+
+  const SCRAPER_INFO: Record<string, { title: string; desc: string; examples: string[]; tips: string }> = {
+    reddit: {
+      title: 'Reddit Scraper Guide',
+      desc: 'Scrapes posts & top comments automatically based on your input:',
+      examples: [
+        'Subreddit: r/stocks or r/IndiaInvestments',
+        'User Profile: u/username',
+        'Search Keywords: Groww review or fintech India',
+        'Direct Post URL: https://www.reddit.com/r/...',
+      ],
+      tips: 'Auto-detects URLs, subreddits, users, and keyword queries.',
+    },
+    youtube: {
+      title: 'YouTube Scraper Guide',
+      desc: 'Extracts video metadata, descriptions, and full transcripts:',
+      examples: [
+        'Search Query: Groww review 2024',
+        'Video URL: https://www.youtube.com/watch?v=...',
+        'Channel URL: https://www.youtube.com/@ChannelHandle',
+      ],
+      tips: 'Auto-fetches English transcripts with auto-caption fallback.',
+    },
+    app_store: {
+      title: 'App Store Scraper Guide',
+      desc: 'Fetches App Store app details, star ratings breakdown, and reviews:',
+      examples: [
+        'App Name: Groww App or Instagram',
+        'App Store Link: https://apps.apple.com/us/app/groww/id1267100789',
+        'Numeric App ID: 1267100789 or id1267100789',
+      ],
+      tips: 'Extracts score breakdown (1★ to 5★) and user reviews.',
+    },
+    play_store: {
+      title: 'Play Store Scraper Guide',
+      desc: 'Scrapes Google Play app details, score, installs, and reviews:',
+      examples: [
+        'App Name: Groww App or Instagram',
+        'Package ID: com.groww.app or com.instagram.android',
+        'Play Store Link: https://play.google.com/store/apps/details?id=...',
+      ],
+      tips: 'Resolves package IDs and Play Store links automatically.',
+    },
+  };
+
   const LOGO_TOKEN = 'pk_Tw38O-4_RNinmXOwNIgagQ';
 
   return (
-    <div>
+    <div style={{ position: 'relative' }}>
+      {/* Click-outside backdrop to close popovers */}
+      {activeInfoKey && (
+        <div
+          style={{ position: 'fixed', inset: 0, zIndex: 99999, background: 'transparent' }}
+          onClick={() => setActiveInfoKey(null)}
+        />
+      )}
+
       <header className="topbar">
-        <div><p className="eyebrow">Data</p><h1>Social Media & Stores</h1></div>
+        <div><p className="eyebrow">Data</p><h1>Social Media & Reviews</h1></div>
         <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
-          {pipelineDefaults.enabled && (
-            <div className="soft-band" style={{ padding: '8px 14px', fontSize: 13 }}>
-              ⚡ Using defaults from Configurations
-            </div>
-          )}
           <button className="button" onClick={submit} disabled={loading}>
             {loading ? <><span className="spinner" style={{ borderTopColor: '#fff', borderColor: 'rgba(255,255,255,0.3)' }} /> Starting…</> : 'Start Scraping'}
           </button>
@@ -297,46 +345,139 @@ export function SocialMedia() {
         </div>
       </div>
 
-      <div className="soft-band" style={{ marginBottom: 20, fontSize: 13 }}>
-        💡 <strong>Note:</strong> Social media scrapers run without AI — they use direct scraping scripts (Reddit API, YouTube scraper, etc.). No Gemini is involved.
-      </div>
-
       <div className="grid cols-2" style={{ gap: 24, alignItems: 'stretch' }}>
 
         {/* Reddit */}
-        <div className="card" style={{ display: 'flex', flexDirection: 'column' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
-            <img
-              src={`https://img.logo.dev/reddit.com?token=${LOGO_TOKEN}&size=32`}
-              alt="Reddit"
-              style={{ width: 32, height: 32, borderRadius: 6 }}
-              onError={(e) => (e.currentTarget.style.display = 'none')}
-            />
-            <h3 style={{ margin: 0 }}>Reddit</h3>
+        <div className="card" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', position: 'relative', overflow: 'visible' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+              <SiReddit size={28} style={{ color: '#ff4500' }} />
+              <h3 style={{ margin: 0 }}>Reddit</h3>
+            </div>
+            <button
+              type="button"
+              onClick={() => setActiveInfoKey(activeInfoKey === 'reddit' ? null : 'reddit')}
+              style={{
+                background: activeInfoKey === 'reddit' ? 'var(--accent-blue)' : 'var(--surface-strong)',
+                color: activeInfoKey === 'reddit' ? '#fff' : 'var(--muted)',
+                border: '1px solid var(--hairline)',
+                borderRadius: '50%',
+                width: 26, height: 26,
+                display: 'grid', placeItems: 'center',
+                cursor: 'pointer',
+                fontSize: 13, fontWeight: 700,
+                fontFamily: 'serif',
+                fontStyle: 'italic',
+                transition: 'all 0.2s',
+                zIndex: 100001,
+              }}
+              title="View input guide"
+            >
+              i
+            </button>
+
+            {activeInfoKey === 'reddit' && (
+              <div
+                style={{
+                  position: 'absolute',
+                  top: 48, right: 0,
+                  width: 330,
+                  backgroundColor: '#1e1f29',
+                  color: '#f3f4f6',
+                  border: '1px solid #3f3f46',
+                  boxShadow: '0 20px 45px rgba(0,0,0,0.9)',
+                  borderRadius: 12,
+                  padding: 16,
+                  zIndex: 100000,
+                  opacity: 1,
+                }}
+                onClick={(e) => e.stopPropagation()}
+              >
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, borderBottom: '1px solid #3f3f46', paddingBottom: 8 }}>
+                  <h4 style={{ margin: 0, fontSize: 14, fontWeight: 600, color: '#ffffff' }}>{SCRAPER_INFO.reddit.title}</h4>
+                  <button type="button" onClick={() => setActiveInfoKey(null)} style={{ background: 'none', border: 'none', color: '#a1a1aa', cursor: 'pointer', padding: 2, fontSize: 14 }}>✕</button>
+                </div>
+                <p style={{ fontSize: 12, color: '#d4d4d8', marginBottom: 10, lineHeight: 1.4 }}>{SCRAPER_INFO.reddit.desc}</p>
+                <div style={{ backgroundColor: '#14151c', borderRadius: 8, padding: 10, marginBottom: 10, border: '1px solid #27272a' }}>
+                  <span style={{ fontSize: 11, fontWeight: 600, color: '#a1a1aa', textTransform: 'uppercase', display: 'block', marginBottom: 6 }}>Input Formats & Examples:</span>
+                  <ul style={{ margin: 0, paddingLeft: 16, fontSize: 12, color: '#ffffff', lineHeight: 1.6 }}>
+                    {SCRAPER_INFO.reddit.examples.map((ex, idx) => <li key={idx}>{ex}</li>)}
+                  </ul>
+                </div>
+                <p style={{ fontSize: 11, color: '#a1a1aa', margin: 0, fontStyle: 'italic' }}>💡 {SCRAPER_INFO.reddit.tips}</p>
+              </div>
+            )}
           </div>
-          <div className="form" style={{ flex: 1 }}>
+          <div className="form" style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
             <label>Subreddit, User, Post URL, or Keywords
               <input value={form.reddit} onChange={(e) => setForm((f) => ({ ...f, reddit: e.target.value }))}
                 placeholder="e.g. r/IndiaInvestments or Groww review" />
-              <div className="input-helper">
-                Enter any URL, subreddit (r/stocks), user (u/username), or search phrase. It will be auto-detected!
-              </div>
             </label>
           </div>
         </div>
 
         {/* YouTube */}
-        <div className="card" style={{ display: 'flex', flexDirection: 'column' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
-            <img
-              src={`https://img.logo.dev/youtube.com?token=${LOGO_TOKEN}&size=32`}
-              alt="YouTube"
-              style={{ width: 32, height: 32, borderRadius: 6 }}
-              onError={(e) => (e.currentTarget.style.display = 'none')}
-            />
-            <h3 style={{ margin: 0 }}>YouTube</h3>
+        <div className="card" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', position: 'relative', overflow: 'visible' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+              <SiYoutube size={28} style={{ color: '#ff0000' }} />
+              <h3 style={{ margin: 0 }}>YouTube</h3>
+            </div>
+            <button
+              type="button"
+              onClick={() => setActiveInfoKey(activeInfoKey === 'youtube' ? null : 'youtube')}
+              style={{
+                background: activeInfoKey === 'youtube' ? 'var(--accent-blue)' : 'var(--surface-strong)',
+                color: activeInfoKey === 'youtube' ? '#fff' : 'var(--muted)',
+                border: '1px solid var(--hairline)',
+                borderRadius: '50%',
+                width: 26, height: 26,
+                display: 'grid', placeItems: 'center',
+                cursor: 'pointer',
+                fontSize: 13, fontWeight: 700,
+                fontFamily: 'serif',
+                fontStyle: 'italic',
+                transition: 'all 0.2s',
+                zIndex: 100001,
+              }}
+              title="View input guide"
+            >
+              i
+            </button>
+
+            {activeInfoKey === 'youtube' && (
+              <div
+                style={{
+                  position: 'absolute',
+                  top: 48, right: 0,
+                  width: 330,
+                  backgroundColor: '#1e1f29',
+                  color: '#f3f4f6',
+                  border: '1px solid #3f3f46',
+                  boxShadow: '0 20px 45px rgba(0,0,0,0.9)',
+                  borderRadius: 12,
+                  padding: 16,
+                  zIndex: 100000,
+                  opacity: 1,
+                }}
+                onClick={(e) => e.stopPropagation()}
+              >
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, borderBottom: '1px solid #3f3f46', paddingBottom: 8 }}>
+                  <h4 style={{ margin: 0, fontSize: 14, fontWeight: 600, color: '#ffffff' }}>{SCRAPER_INFO.youtube.title}</h4>
+                  <button type="button" onClick={() => setActiveInfoKey(null)} style={{ background: 'none', border: 'none', color: '#a1a1aa', cursor: 'pointer', padding: 2, fontSize: 14 }}>✕</button>
+                </div>
+                <p style={{ fontSize: 12, color: '#d4d4d8', marginBottom: 10, lineHeight: 1.4 }}>{SCRAPER_INFO.youtube.desc}</p>
+                <div style={{ backgroundColor: '#14151c', borderRadius: 8, padding: 10, marginBottom: 10, border: '1px solid #27272a' }}>
+                  <span style={{ fontSize: 11, fontWeight: 600, color: '#a1a1aa', textTransform: 'uppercase', display: 'block', marginBottom: 6 }}>Input Formats & Examples:</span>
+                  <ul style={{ margin: 0, paddingLeft: 16, fontSize: 12, color: '#ffffff', lineHeight: 1.6 }}>
+                    {SCRAPER_INFO.youtube.examples.map((ex, idx) => <li key={idx}>{ex}</li>)}
+                  </ul>
+                </div>
+                <p style={{ fontSize: 11, color: '#a1a1aa', margin: 0, fontStyle: 'italic' }}>💡 {SCRAPER_INFO.youtube.tips}</p>
+              </div>
+            )}
           </div>
-          <div className="form" style={{ flex: 1 }}>
+          <div className="form" style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
             <label>Search Query
               <input value={form.youtube} onChange={(e) => setForm((f) => ({ ...f, youtube: e.target.value }))}
                 placeholder="e.g. Groww review 2024" />
@@ -345,17 +486,67 @@ export function SocialMedia() {
         </div>
 
         {/* App Store */}
-        <div className="card" style={{ display: 'flex', flexDirection: 'column' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
-            <img
-              src={`https://img.logo.dev/apple.com?token=${LOGO_TOKEN}&size=32`}
-              alt="App Store"
-              style={{ width: 32, height: 32, borderRadius: 6 }}
-              onError={(e) => (e.currentTarget.style.display = 'none')}
-            />
-            <h3 style={{ margin: 0 }}>App Store</h3>
+        <div className="card" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', position: 'relative', overflow: 'visible' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+              <SiApple size={28} style={{ color: 'var(--ink)' }} />
+              <h3 style={{ margin: 0 }}>App Store</h3>
+            </div>
+            <button
+              type="button"
+              onClick={() => setActiveInfoKey(activeInfoKey === 'app_store' ? null : 'app_store')}
+              style={{
+                background: activeInfoKey === 'app_store' ? 'var(--accent-blue)' : 'var(--surface-strong)',
+                color: activeInfoKey === 'app_store' ? '#fff' : 'var(--muted)',
+                border: '1px solid var(--hairline)',
+                borderRadius: '50%',
+                width: 26, height: 26,
+                display: 'grid', placeItems: 'center',
+                cursor: 'pointer',
+                fontSize: 13, fontWeight: 700,
+                fontFamily: 'serif',
+                fontStyle: 'italic',
+                transition: 'all 0.2s',
+                zIndex: 100001,
+              }}
+              title="View input guide"
+            >
+              i
+            </button>
+
+            {activeInfoKey === 'app_store' && (
+              <div
+                style={{
+                  position: 'absolute',
+                  top: 48, right: 0,
+                  width: 330,
+                  backgroundColor: '#1e1f29',
+                  color: '#f3f4f6',
+                  border: '1px solid #3f3f46',
+                  boxShadow: '0 20px 45px rgba(0,0,0,0.9)',
+                  borderRadius: 12,
+                  padding: 16,
+                  zIndex: 100000,
+                  opacity: 1,
+                }}
+                onClick={(e) => e.stopPropagation()}
+              >
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, borderBottom: '1px solid #3f3f46', paddingBottom: 8 }}>
+                  <h4 style={{ margin: 0, fontSize: 14, fontWeight: 600, color: '#ffffff' }}>{SCRAPER_INFO.app_store.title}</h4>
+                  <button type="button" onClick={() => setActiveInfoKey(null)} style={{ background: 'none', border: 'none', color: '#a1a1aa', cursor: 'pointer', padding: 2, fontSize: 14 }}>✕</button>
+                </div>
+                <p style={{ fontSize: 12, color: '#d4d4d8', marginBottom: 10, lineHeight: 1.4 }}>{SCRAPER_INFO.app_store.desc}</p>
+                <div style={{ backgroundColor: '#14151c', borderRadius: 8, padding: 10, marginBottom: 10, border: '1px solid #27272a' }}>
+                  <span style={{ fontSize: 11, fontWeight: 600, color: '#a1a1aa', textTransform: 'uppercase', display: 'block', marginBottom: 6 }}>Input Formats & Examples:</span>
+                  <ul style={{ margin: 0, paddingLeft: 16, fontSize: 12, color: '#ffffff', lineHeight: 1.6 }}>
+                    {SCRAPER_INFO.app_store.examples.map((ex, idx) => <li key={idx}>{ex}</li>)}
+                  </ul>
+                </div>
+                <p style={{ fontSize: 11, color: '#a1a1aa', margin: 0, fontStyle: 'italic' }}>💡 {SCRAPER_INFO.app_store.tips}</p>
+              </div>
+            )}
           </div>
-          <div className="form" style={{ flex: 1 }}>
+          <div className="form" style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
             <label>App Name or App Store ID
               <input value={form.app_store} onChange={(e) => setForm((f) => ({ ...f, app_store: e.target.value }))}
                 placeholder="e.g. Groww App or 1267100789" />
@@ -364,23 +555,70 @@ export function SocialMedia() {
         </div>
 
         {/* Play Store */}
-        <div className="card" style={{ display: 'flex', flexDirection: 'column' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
-            <img
-              src={`https://img.logo.dev/play.google.com?token=${LOGO_TOKEN}&size=32`}
-              alt="Play Store"
-              style={{ width: 32, height: 32, borderRadius: 6 }}
-              onError={(e) => (e.currentTarget.style.display = 'none')}
-            />
-            <h3 style={{ margin: 0 }}>Play Store</h3>
+        <div className="card" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', position: 'relative', overflow: 'visible' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+              <SiGoogleplay size={28} style={{ color: '#00a173' }} />
+              <h3 style={{ margin: 0 }}>Play Store</h3>
+            </div>
+            <button
+              type="button"
+              onClick={() => setActiveInfoKey(activeInfoKey === 'play_store' ? null : 'play_store')}
+              style={{
+                background: activeInfoKey === 'play_store' ? 'var(--accent-blue)' : 'var(--surface-strong)',
+                color: activeInfoKey === 'play_store' ? '#fff' : 'var(--muted)',
+                border: '1px solid var(--hairline)',
+                borderRadius: '50%',
+                width: 26, height: 26,
+                display: 'grid', placeItems: 'center',
+                cursor: 'pointer',
+                fontSize: 13, fontWeight: 700,
+                fontFamily: 'serif',
+                fontStyle: 'italic',
+                transition: 'all 0.2s',
+                zIndex: 100001,
+              }}
+              title="View input guide"
+            >
+              i
+            </button>
+
+            {activeInfoKey === 'play_store' && (
+              <div
+                style={{
+                  position: 'absolute',
+                  top: 48, right: 0,
+                  width: 330,
+                  backgroundColor: '#1e1f29',
+                  color: '#f3f4f6',
+                  border: '1px solid #3f3f46',
+                  boxShadow: '0 20px 45px rgba(0,0,0,0.9)',
+                  borderRadius: 12,
+                  padding: 16,
+                  zIndex: 100000,
+                  opacity: 1,
+                }}
+                onClick={(e) => e.stopPropagation()}
+              >
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, borderBottom: '1px solid #3f3f46', paddingBottom: 8 }}>
+                  <h4 style={{ margin: 0, fontSize: 14, fontWeight: 600, color: '#ffffff' }}>{SCRAPER_INFO.play_store.title}</h4>
+                  <button type="button" onClick={() => setActiveInfoKey(null)} style={{ background: 'none', border: 'none', color: '#a1a1aa', cursor: 'pointer', padding: 2, fontSize: 14 }}>✕</button>
+                </div>
+                <p style={{ fontSize: 12, color: '#d4d4d8', marginBottom: 10, lineHeight: 1.4 }}>{SCRAPER_INFO.play_store.desc}</p>
+                <div style={{ backgroundColor: '#14151c', borderRadius: 8, padding: 10, marginBottom: 10, border: '1px solid #27272a' }}>
+                  <span style={{ fontSize: 11, fontWeight: 600, color: '#a1a1aa', textTransform: 'uppercase', display: 'block', marginBottom: 6 }}>Input Formats & Examples:</span>
+                  <ul style={{ margin: 0, paddingLeft: 16, fontSize: 12, color: '#ffffff', lineHeight: 1.6 }}>
+                    {SCRAPER_INFO.play_store.examples.map((ex, idx) => <li key={idx}>{ex}</li>)}
+                  </ul>
+                </div>
+                <p style={{ fontSize: 11, color: '#a1a1aa', margin: 0, fontStyle: 'italic' }}>💡 {SCRAPER_INFO.play_store.tips}</p>
+              </div>
+            )}
           </div>
-          <div className="form" style={{ flex: 1 }}>
+          <div className="form" style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
             <label>App Name, URL, or Package ID
               <input value={form.play_store} onChange={(e) => setForm((f) => ({ ...f, play_store: e.target.value }))}
                 placeholder="e.g. Groww App or com.groww.app or URL" />
-              <div className="input-helper">
-                Enter a full Play Store URL, package ID, or just the app's name to search for it automatically.
-              </div>
             </label>
           </div>
         </div>
@@ -527,10 +765,10 @@ export function Storage() {
                     onClick={(e) => { 
                       e.stopPropagation();
                       setChatProject(name); 
-                      showToast(`Copilot → ${name}`); 
+                      showToast(`Copilot set to: ${name}`); 
                     }}
                   >
-                    Ask Copilot ✨
+                    Ask Copilot <RiSendPlaneFill size={13} style={{ marginLeft: 4, verticalAlign: 'middle' }} />
                   </button>
                 </div>
               </div>

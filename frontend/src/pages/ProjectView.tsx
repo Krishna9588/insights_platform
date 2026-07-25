@@ -3,6 +3,10 @@ import { useStore } from '@/store';
 import { getProject, runPipeline, requestFreshData, getAllChatHistory } from '@/api';
 import BackButton from '@/components/layout/BackButton';
 import ReactMarkdown from 'react-markdown';
+import { RiSendPlaneFill } from 'react-icons/ri';
+import { HiArrowLeft, HiExternalLink, HiGlobeAlt, HiChevronRight } from 'react-icons/hi';
+import { MdOutlineFlag, MdSearch, MdWarning, MdGavel, MdRecordVoiceOver, MdAutoAwesome, MdLightbulb, MdLaptop, MdRocketLaunch, MdPlayCircle, MdAndroid, MdNewspaper, MdChat, MdDescription } from 'react-icons/md';
+import { SiApple, SiReddit } from 'react-icons/si';
 
 export default function ProjectView() {
   const { selectedProjectView, setActivePage, setChatProject, showToast } = useStore();
@@ -103,8 +107,8 @@ export default function ProjectView() {
       <header className="topbar">
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 8 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-            <button className="button compact secondary" onClick={() => setActivePage('collection')} style={{ padding: '4px 8px', display: 'flex', alignItems: 'center' }}>
-              ← Back
+            <button className="button compact secondary" onClick={() => setActivePage('collection')} style={{ padding: '4px 8px', display: 'flex', alignItems: 'center', gap: 4 }}>
+              <HiArrowLeft size={13} /> Back
             </button>
             <p className="eyebrow" style={{ margin: 0 }}>Project View</p>
           </div>
@@ -133,7 +137,7 @@ export default function ProjectView() {
                 <div style={{ display: 'flex', gap: 12, alignItems: 'center', marginLeft: 8 }}>
                   {domainStr && (
                     <a href={domainStr.startsWith('http') ? domainStr : `https://${domainStr}`} target="_blank" rel="noreferrer" title="Website" style={{ textDecoration: 'none' }}>
-                      <span style={{ fontSize: 16 }}>🌐</span>
+                      <HiGlobeAlt size={18} style={{ color: 'var(--muted)', verticalAlign: 'middle' }} />
                     </a>
                   )}
                   {profile.youtube_official_channel && (
@@ -178,7 +182,7 @@ export default function ProjectView() {
             }} 
             onClick={handleAskCopilot}
           >
-            Ask Copilot <img src="/send.png" alt="Send" style={{ width: 14, height: 14, marginLeft: 6 }} />
+            Ask Copilot <RiSendPlaneFill size={13} style={{ marginLeft: 6, verticalAlign: 'middle' }} />
           </button>
         </div>
       </header>
@@ -191,7 +195,7 @@ export default function ProjectView() {
           </div>
           {updating && (
             <button className="button compact secondary" onClick={() => setActivePage('dashboard')} style={{ fontSize: 12 }}>
-              View Progress in Dashboard →
+              View Progress in Dashboard <HiChevronRight size={14} style={{ verticalAlign: 'middle' }} />
             </button>
           )}
         </div>
@@ -486,7 +490,7 @@ export default function ProjectView() {
             {activeTab === 'Strategic Moves' && (
               <div className="card" style={{ display: 'flex', flexDirection: 'column' }}>
                 <h3 style={{ marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8 }}>
-                  <span>🎯</span> Strategic Moves
+                  <MdOutlineFlag size={20} style={{ color: 'var(--accent-blue)' }} /> Strategic Moves
                 </h3>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
                   {(profile.strategic_moves || []).map((move: any, i: number) => (
@@ -512,7 +516,7 @@ export default function ProjectView() {
                 {data.agent2_output?.problems && (
                   <div className="card" style={{ display: 'flex', flexDirection: 'column' }}>
                     <h3 style={{ marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8 }}>
-                      <span>🔍</span> Deep Research Insights & Problems
+                      <MdSearch size={20} style={{ color: 'var(--accent-blue)' }} /> Deep Research Insights & Problems
                     </h3>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
                       {data.agent2_output.problems.map((prob: any, i: number) => (
@@ -537,7 +541,7 @@ export default function ProjectView() {
                 {(!data.agent2_output?.problems && profile.current_problems_struggling_with) && (
                   <div className="card" style={{ display: 'flex', flexDirection: 'column' }}>
                     <h3 style={{ marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8 }}>
-                      <span>⚠️</span> Problems Struggling With
+                      <MdWarning size={20} style={{ color: 'var(--warning)' }} /> Problems Struggling With
                     </h3>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
                       {(profile.current_problems_struggling_with || []).map((prob: any, i: number) => (
@@ -560,7 +564,7 @@ export default function ProjectView() {
                     {profile.regulatory_and_legal_issues && (
                       <div className="card">
                         <h3 style={{ marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8 }}>
-                          <span>⚖️</span> Regulatory & Legal
+                          <MdGavel size={20} style={{ color: 'var(--muted)' }} /> Regulatory & Legal
                         </h3>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
                           {profile.regulatory_and_legal_issues.map((issue: any, i: number) => (
@@ -574,7 +578,7 @@ export default function ProjectView() {
                     {profile.user_complaints && (
                       <div className="card">
                         <h3 style={{ marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8 }}>
-                          <span>🗣️</span> User Complaints
+                          <MdRecordVoiceOver size={20} style={{ color: 'var(--muted)' }} /> User Complaints
                         </h3>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
                           {profile.user_complaints.map((comp: any, i: number) => (
@@ -593,7 +597,7 @@ export default function ProjectView() {
             {activeTab === 'Differentiators' && (
               <div className="card">
                 <h3 style={{ marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8 }}>
-                  <span>✨</span> Differentiators
+                  <MdAutoAwesome size={20} style={{ color: 'var(--accent-blue)' }} /> Differentiators
                 </h3>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
                   {(profile.differentiators || []).map((diff: any, i: number) => (
@@ -614,7 +618,7 @@ export default function ProjectView() {
                   <div key={i} className="card" style={{ display: 'flex', flexDirection: 'column' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16, borderBottom: '1px solid var(--hairline)', paddingBottom: 12 }}>
                       <h3 style={{ margin: 0, fontSize: 16, display: 'flex', alignItems: 'center', gap: 8 }}>
-                        <span>💡</span> {item.query}
+                        <MdLightbulb size={18} style={{ color: 'var(--accent-blue)' }} /> {item.query}
                       </h3>
                       <span className="muted" style={{ fontSize: 12 }}>{new Date(item.timestamp).toLocaleString()}</span>
                     </div>
@@ -629,7 +633,7 @@ export default function ProjectView() {
             {activeTab === 'Tech Stack Highlights' && (
               <div className="card">
                 <h3 style={{ marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8 }}>
-                  <span>💻</span> Tech Stack Highlights
+                  <MdLaptop size={20} style={{ color: 'var(--accent-blue)' }} /> Tech Stack Highlights
                 </h3>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12 }}>
                   {(profile.tech_stack_highlights || []).map((tech: string, i: number) => (
@@ -653,7 +657,7 @@ export default function ProjectView() {
             {activeTab === 'Insights' && (
               <div className="card">
                 <h3 style={{ marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8 }}>
-                  <span>💡</span> Strategic Insights
+                  <MdLightbulb size={20} style={{ color: 'var(--accent-blue)' }} /> Strategic Insights
                 </h3>
                 {data.agent3_output?.insights ? (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
@@ -697,7 +701,7 @@ export default function ProjectView() {
             {activeTab === 'Product Briefs' && (
               <div className="card">
                 <h3 style={{ marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8 }}>
-                  <span>🚀</span> Actionable Product Briefs
+                  <MdRocketLaunch size={20} style={{ color: 'var(--accent-blue)' }} /> Actionable Product Briefs
                 </h3>
                 {data.agent4_output?.briefs ? (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
@@ -755,7 +759,7 @@ export default function ProjectView() {
             {activeTab === 'Reddit' && data.data_sources?.reddit && (
               <div className="card">
                 <h3 style={{ marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8 }}>
-                  <span>📱</span> Reddit Data
+                  <SiReddit size={20} style={{ color: '#ff4500' }} /> Reddit Data
                 </h3>
                 {Object.keys(data.data_sources.reddit).map(key => {
                    const item = data.data_sources.reddit[key];
@@ -783,7 +787,7 @@ export default function ProjectView() {
             {activeTab === 'YouTube' && data.data_sources?.youtube && (
               <div className="card">
                 <h3 style={{ marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8 }}>
-                  <span>▶️</span> YouTube Data
+                  <MdPlayCircle size={20} style={{ color: '#FF0000' }} /> YouTube Data
                 </h3>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
                   {(Array.isArray(data.data_sources.youtube) 
@@ -808,7 +812,7 @@ export default function ProjectView() {
             {activeTab === 'Play Store' && data.data_sources?.play_store && (
               <div className="card">
                 <h3 style={{ marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8 }}>
-                  <span>👾</span> Play Store Data
+                  <MdAndroid size={20} style={{ color: '#3DDC84' }} /> Play Store Data
                 </h3>
                 {data.data_sources.play_store.extracted_data && (
                   <div>
@@ -833,7 +837,7 @@ export default function ProjectView() {
             {activeTab === 'App Store' && data.data_sources?.app_store && (
               <div className="card">
                 <h3 style={{ marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8 }}>
-                  <span>🍎</span> App Store Data
+                  <SiApple size={20} style={{ color: 'var(--muted)' }} /> App Store Data
                 </h3>
                 {data.data_sources.app_store.extracted_data && (
                   <div>
@@ -862,7 +866,7 @@ export default function ProjectView() {
             {activeTab === 'News' && data.data_sources?.news && (
               <div className="card">
                 <h3 style={{ marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8 }}>
-                  <span>📰</span> News Data
+                  <MdNewspaper size={20} style={{ color: 'var(--muted)' }} /> News Data
                 </h3>
                 {(() => {
                   const articles = data.data_sources.news.extracted_data?.articles || data.data_sources.news.articles || [];
@@ -887,7 +891,7 @@ export default function ProjectView() {
             {activeTab === 'Chat History' && chatHistory.length > 0 && (
               <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
                 <h3 style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                  <span>💬</span> Copilot Chat History
+                  <MdChat size={20} style={{ color: 'var(--accent-blue)' }} /> Copilot Chat History
                 </h3>
                 {chatHistory.map((item, idx) => (
                   <div key={idx} style={{ background: 'var(--surface-strong)', borderRadius: 12, padding: 20, border: '1px solid var(--border)' }}>
@@ -911,7 +915,7 @@ export default function ProjectView() {
             {activeTab === 'Transcripts' && (data.data_sources?.internal_transcripts || data.data_sources?.google_drive_transcripts || data.data_sources?.internal_transcripts_drive || data.data_sources?.internal_transcripts_local) && (
               <div className="card">
                 <h3 style={{ marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8 }}>
-                  <span>📄</span> Transcripts
+                  <MdDescription size={20} style={{ color: 'var(--muted)' }} /> Transcripts
                 </h3>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
                   {[data.data_sources?.internal_transcripts, data.data_sources?.google_drive_transcripts, data.data_sources?.internal_transcripts_drive, data.data_sources?.internal_transcripts_local].map((sourceGroup: any, idx: number) => {

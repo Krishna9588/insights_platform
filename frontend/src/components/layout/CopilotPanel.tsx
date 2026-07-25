@@ -3,6 +3,9 @@ import { useStore } from '@/store';
 import { askChat, getChatSessions, getChatHistory } from '@/api';
 import ReactMarkdown from 'react-markdown';
 import { ProjectLogo } from '@/components/ProjectLogo';
+import { RiSendPlaneFill } from 'react-icons/ri';
+import { HiOutlineChevronDown, HiOutlinePencilAlt } from 'react-icons/hi';
+import { LuBot } from 'react-icons/lu';
 
 const FAQ = [
   'What are the top complaints about this app?',
@@ -22,14 +25,19 @@ export default function CopilotPanel() {
   const [showFaq, setShowFaq] = useState(true);
   const [sessions, setSessions] = useState<any[]>([]);
   const [isProjectDropdownOpen, setIsProjectDropdownOpen] = useState(false);
+  const [isChatDropdownOpen, setIsChatDropdownOpen] = useState(false);
   const logRef = useRef<HTMLDivElement>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const chatDropdownRef = useRef<HTMLDivElement>(null);
 
   // Close dropdown on outside click
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
         setIsProjectDropdownOpen(false);
+      }
+      if (chatDropdownRef.current && !chatDropdownRef.current.contains(event.target as Node)) {
+        setIsChatDropdownOpen(false);
       }
     };
     document.addEventListener('mousedown', handleClickOutside);
@@ -112,9 +120,8 @@ export default function CopilotPanel() {
 
   return (
     <aside className="copilot">
-      <div className="copilot-header" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 12 }}>
+      <div className="copilot-header" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 12, position: 'relative', zIndex: 10 }}>
         <h2 style={{ margin: 0, fontSize: '26px', fontWeight: 700, textAlign: 'left' }}>Copilot</h2>
-        
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 8, width: '100%' }}>
           {/* Custom Project Dropdown */}
           <div style={{ flex: 1, position: 'relative' }} ref={dropdownRef}>
@@ -131,11 +138,11 @@ export default function CopilotPanel() {
               ) : (
                 <span style={{ fontSize: 14, color: 'var(--muted)' }}>Select project...</span>
               )}
-              <span style={{ fontSize: 10 }}>▼</span>
+              <HiOutlineChevronDown size={12} style={{ opacity: 0.6 }} />
             </button>
             
             {isProjectDropdownOpen && (
-              <div style={{ position: 'absolute', top: '100%', left: 0, right: 0, marginTop: 4, background: 'var(--surface)', border: '1px solid var(--border-strong)', borderRadius: 8, overflow: 'hidden', zIndex: 100, boxShadow: '0 4px 12px rgba(0,0,0,0.2)' }}>
+              <div style={{ position: 'absolute', top: '100%', left: 0, right: 0, marginTop: 4, background: 'var(--surface-solid)', border: '1px solid var(--border-strong)', borderRadius: 8, overflow: 'hidden', zIndex: 100, boxShadow: '0 4px 12px rgba(0,0,0,0.2)' }}>
                 <div style={{ maxHeight: 200, overflowY: 'auto' }}>
                   {projects.map((p: any) => {
                     const name = p.project_name || p.name;
@@ -167,9 +174,48 @@ export default function CopilotPanel() {
             title="New Chat"
             style={{ padding: '4px', display: 'flex', alignItems: 'center', justifyContent: 'center', width: 36, height: 36, borderRadius: 8 }}
           >
-            <img src="/new-chat.png" alt="New Chat" style={{ width: 20, height: 20, objectFit: 'contain' }} />
+            <HiOutlinePencilAlt size={18} />
           </button>
         </div>
+
+        {chatProject && sessions.length > 0 && (
+          <div style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: 6, marginBottom: 8 }}>
+            <span className="eyebrow" style={{ fontSize: 11 }}>Saved Chats</span>
+            <div style={{ position: 'relative' }} ref={chatDropdownRef}>
+              <button 
+                className="btn btn-secondary"
+                style={{ width: '100%', display: 'flex', alignItems: 'center', gap: 8, justifyContent: 'space-between', padding: '6px 12px', minHeight: 36, textAlign: 'left' }}
+                onClick={() => setIsChatDropdownOpen(!isChatDropdownOpen)}
+              >
+                <span style={{ fontSize: 13, color: 'var(--ink)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                  {chatSessionId ? (sessions.find(s => s.session_id === chatSessionId)?.title || 'Chat') : 'Select a previous chat...'}
+                </span>
+                <HiOutlineChevronDown size={12} style={{ opacity: 0.6, flexShrink: 0 }} />
+              </button>
+              
+              {isChatDropdownOpen && (
+                <div style={{ position: 'absolute', top: '100%', left: 0, right: 0, marginTop: 4, background: 'var(--surface-solid)', border: '1px solid var(--border-strong)', borderRadius: 8, overflow: 'hidden', zIndex: 100, boxShadow: '0 4px 12px rgba(0,0,0,0.2)' }}>
+                  <div style={{ maxHeight: 200, overflowY: 'auto' }}>
+                    {sessions.map(s => (
+                      <div 
+                        key={s.session_id}
+                        style={{ padding: '8px 12px', display: 'flex', alignItems: 'center', gap: 8, cursor: 'pointer', background: chatSessionId === s.session_id ? 'var(--surface-strong)' : 'transparent', borderBottom: '1px solid var(--border)' }}
+                        onClick={() => {
+                          loadSession(s.session_id);
+                          setIsChatDropdownOpen(false);
+                        }}
+                        onMouseEnter={(e) => e.currentTarget.style.background = 'var(--surface-strong)'}
+                        onMouseLeave={(e) => e.currentTarget.style.background = chatSessionId === s.session_id ? 'var(--surface-strong)' : 'transparent'}
+                      >
+                        <span style={{ fontSize: 13 }}>{s.title || 'Chat'}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Chat log */}
@@ -177,7 +223,7 @@ export default function CopilotPanel() {
         {chatMessages.length === 0 && (
           <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
             <div style={{ width: 64, height: 64, borderRadius: 16, background: 'rgba(255,255,255,0.05)', display: 'grid', placeItems: 'center', marginBottom: 16 }}>
-              <img src="/assistant.png" alt="Assistant" style={{ width: 40, height: 40, objectFit: 'contain' }} />
+              <LuBot size={36} style={{ color: 'var(--accent-blue)' }} />
             </div>
             <h3 style={{ color: 'var(--ink)', fontSize: 18, marginBottom: 8 }}>How can I help?</h3>
             <p className="muted" style={{ textAlign: 'center', maxWidth: 280, fontSize: 14, marginBottom: 24 }}>
@@ -233,7 +279,7 @@ export default function CopilotPanel() {
               disabled={chatLoading || !input.trim()}
               style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'transparent', padding: 0 }}
             >
-              <img src="/send.png" alt="Send" style={{ width: 24, height: 24, opacity: (chatLoading || !input.trim()) ? 0.5 : 1, transition: 'opacity 0.2s' }} />
+              <RiSendPlaneFill size={20} style={{ opacity: (chatLoading || !input.trim()) ? 0.4 : 1, transition: 'opacity 0.2s', color: 'var(--accent-blue)' }} />
             </button>
           </div>
         </div>

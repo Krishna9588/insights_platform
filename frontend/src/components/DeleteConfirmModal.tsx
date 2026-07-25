@@ -1,4 +1,5 @@
 import React from 'react';
+import { MdDelete } from 'react-icons/md';
 
 /** Confirmation modal for deleting a project or monitor */
 export default function DeleteConfirmModal({
@@ -24,7 +25,7 @@ export default function DeleteConfirmModal({
         padding: 28, display: 'flex', flexDirection: 'column', gap: 16,
       }}>
         <div>
-          <h3 style={{ marginBottom: 8, color: '#ef4444' }}>🗑 Delete Project</h3>
+          <h3 style={{ marginBottom: 8, color: '#ef4444', display: 'flex', alignItems: 'center', gap: 6 }}><MdDelete size={18} /> Delete Project</h3>
           <p style={{ color: 'var(--body)', lineHeight: 1.6, fontSize: 14 }}>
             Are you sure you want to delete <strong style={{ color: 'var(--ink)' }}>{projectName}</strong>?
             <br />This will permanently remove all data, chat history, summaries, and agent outputs.
